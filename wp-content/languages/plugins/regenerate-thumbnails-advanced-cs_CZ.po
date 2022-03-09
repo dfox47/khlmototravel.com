@@ -1,0 +1,205 @@
+# Translation of Plugins - reGenerate Thumbnails Advanced - Stable (latest release) in Czech
+# This file is distributed under the same license as the Plugins - reGenerate Thumbnails Advanced - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-06-01 20:45:52+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: cs_CZ\n"
+"Project-Id-Version: Plugins - reGenerate Thumbnails Advanced - Stable (latest release)\n"
+
+#: templates/admin/view_regenerate_process.php:91
+msgid "%s Activate ShortPixel %s to optimize your newly generated thumbnails."
+msgstr "%s Aktivujte ShortPixel %s pro optimalizaci nově generovaných náhledových obrázků."
+
+#: classes/Plugin.php:159
+msgid "Are you sure you want to delete this image size?"
+msgstr "Opravdu chcete odstranit tuto velikost obrázku?"
+
+#: templates/admin/view_rta_settings.php:86
+msgid "Deselect All"
+msgstr "Odznačit vše"
+
+#: templates/admin/view_regenerate_process.php:76
+msgid "Get more Google love by compressing your site's images! Check out how much ShortPixel can save your site and get +50% credits when signing up as an Regenerate Thumbnails Advanced user! Forever!"
+msgstr "Získejte na Googlu lepší výsledky komprimováním obrázků. Zjistěte, o kolik Vám může ShortPixel zmenšit web a získejte +50% kreditů při registraci jako uživatel pluginu Regenerate Thumbnails Advanced! Navždy!"
+
+#: templates/admin/view_regenerate_process.php:80
+msgid "More info"
+msgstr "Více informací (anglicky)"
+
+#: templates/admin/view_regenerate_process.php:67
+msgid "Optimize your images with ShortPixel, get +50% credits!"
+msgstr "Optimalizujte obrázky pomocí pluginu ShortPixel a získejte +50% kreditů!"
+
+#: templates/admin/view_regenerate_process.php:46
+msgid "Please wait..."
+msgstr "Počkejte prosím..."
+
+#: templates/admin/view_rta_regenerate.php:87
+msgid "Regenerate"
+msgstr "Regenerovat"
+
+#: templates/admin/view_rta_regenerate.php:88
+msgid "Save your settings first"
+msgstr "Nejprve uložte nastavení"
+
+#: templates/admin/view_rta_settings.php:85
+msgid "Select All"
+msgstr "Vybrat vše"
+
+#: templates/admin/view_regenerate_process.php:36
+msgid "Stop Process"
+msgstr "Zastavit proces"
+
+#: classes/Plugin.php:160
+msgid "This will stop the regeneration process. You want to stop?"
+msgstr "Tím se proces opětovného generování zastaví. Opravdu to chcete udělat?"
+
+#: templates/admin/view_regenerate_process.php:86
+msgid "Thumbnails successfully regenerated. <strong>Go to %s ShortPixel Bulk page %s to optimize the updated thumbnails.</strong>"
+msgstr "Náhledové obrázky byly úspěšně znovu vygenerovány. Přejděte na stránku %s ShortPixel hromadné optimalizace %s a optimalizujte aktualizované náhledové obrázky."
+
+#: templates/admin/view_rta_settings.php:8
+msgid "Add New Size"
+msgstr "Přidat novou velikost"
+
+#: templates/admin/view_rta_regenerate.php:13
+msgid "All"
+msgstr "Vše"
+
+#: classes/Controllers/AdminController.php:33
+msgid "Center bottom"
+msgstr "Dole uprostřed"
+
+#: classes/Controllers/AdminController.php:32
+msgid "Center center"
+msgstr "Uprostřed"
+
+#: classes/Controllers/AdminController.php:31
+msgid "Center top"
+msgstr "Nahoře uprostřed"
+
+#: templates/admin/view_rta_settings.php:21
+msgid "Cropping"
+msgstr "Oříznutí"
+
+#: templates/admin/view_rta_settings.php:99
+msgid "Default JPEG Quality"
+msgstr "Výchozí kvalita JPEG"
+
+#: templates/admin/view_rta_settings.php:40
+#: templates/admin/view_rta_settings.php:59
+msgid "Height"
+msgstr "Výška"
+
+#: templates/admin/view_rta_settings.php:22
+msgid "Image Size Name"
+msgstr "Název velikosti obrázku"
+
+#: templates/admin/view_rta_settings.php:48
+#: templates/admin/view_rta_settings.php:65
+msgid "Image Size name"
+msgstr "Název velikosti obrázku"
+
+#: templates/admin/view_rta_settings.php:8
+msgid "Image Sizes"
+msgstr "Velikosti obrázků"
+
+#: classes/Controllers/AdminController.php:30
+msgid "Left bottom"
+msgstr "Vlevo dole"
+
+#: classes/Controllers/AdminController.php:29
+msgid "Left center"
+msgstr "Vlevo uprostřed"
+
+#: classes/Controllers/AdminController.php:28
+msgid "Left top"
+msgstr "Vlevo nahoře"
+
+#: templates/admin/view_rta_settings.php:20
+msgid "Max. Height"
+msgstr "Max. výška"
+
+#: templates/admin/view_rta_settings.php:19
+msgid "Max. Width"
+msgstr "Max. šířka"
+
+#: classes/Controllers/AdminController.php:26
+msgid "No"
+msgstr "Ne"
+
+#: templates/admin/view_rta_regenerate.php:17
+msgid "Past 3 Months"
+msgstr "Uplynulé 3 měsíce"
+
+#: templates/admin/view_rta_regenerate.php:18
+msgid "Past 6 Months"
+msgstr "Uplynulých 6 měsíců"
+
+#: templates/admin/view_rta_regenerate.php:14
+msgid "Past Day"
+msgstr "Poslední den"
+
+#: templates/admin/view_rta_regenerate.php:16
+msgid "Past Month"
+msgstr "Minulý měsíc"
+
+#: templates/admin/view_rta_regenerate.php:15
+msgid "Past Week"
+msgstr "Minulý týden"
+
+#: templates/admin/view_rta_regenerate.php:19
+msgid "Past Year"
+msgstr "Minulý rok"
+
+#: classes/Plugin.php:84 classes/Plugin.php:176 classes/Plugin.php:226
+#: classes/Plugin.php:261 classes/Plugin.php:283 classes/Plugin.php:285
+msgid "Regenerate Thumbnails"
+msgstr "Znovu vygenerování náhledových obrázků"
+
+#. Plugin Name of the plugin
+#: templates/admin/rta_generate_thumbnails.php:6
+msgid "Regenerate Thumbnails Advanced"
+msgstr "Regenerate Thumbnails Advanced"
+
+#: templates/admin/view_rta_regenerate.php:11
+msgid "Regenerate period:"
+msgstr "Období znovu vygenerování:"
+
+#: classes/Controllers/AdminController.php:36
+msgid "Right bottom"
+msgstr "Vpravo dole"
+
+#: classes/Controllers/AdminController.php:35
+msgid "Right center"
+msgstr "Vpravo uprostřed"
+
+#: classes/Controllers/AdminController.php:34
+msgid "Right top"
+msgstr "Vpravo nahoře"
+
+#: templates/admin/view_rta_settings.php:107
+msgid "Save Settings"
+msgstr "Uložit nastavení"
+
+#: templates/admin/view_rta_settings.php:108
+msgid "Saving"
+msgstr "Probíhá ukládání..."
+
+#: templates/admin/rta_generate_thumbnails.php:16 classes/Plugin.php:182
+msgid "Settings"
+msgstr "Nastavení"
+
+#: templates/admin/view_rta_settings.php:38
+#: templates/admin/view_rta_settings.php:58
+msgid "Width"
+msgstr "Šířka"
+
+#: classes/Controllers/AdminController.php:27
+msgid "Yes"
+msgstr "Ano"

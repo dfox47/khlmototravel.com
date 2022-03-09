@@ -1,0 +1,1656 @@
+# Translation of Plugins - CMP &#8211; Coming Soon &amp; Maintenance Plugin by NiteoThemes - Stable (latest release) in Czech
+# This file is distributed under the same license as the Plugins - CMP &#8211; Coming Soon &amp; Maintenance Plugin by NiteoThemes - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-12-23 15:45:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: cs_CZ\n"
+"Project-Id-Version: Plugins - CMP &#8211; Coming Soon &amp; Maintenance Plugin by NiteoThemes - Stable (latest release)\n"
+
+#: inc/settings/settings-counter.php:82
+msgid "Click on a date input to set timer"
+msgstr "Klikněte na datum pro nastavení časovače."
+
+#: cmp-advanced.php:398
+msgid "Custom Login URL"
+msgstr "Vlastní přihlašovací URL"
+
+#: cmp-advanced.php:403 cmp-advanced.php:407
+msgid "Login URL"
+msgstr "Přihlašovací URL"
+
+#: inc/settings/settings-slider.php:94
+msgid "Train"
+msgstr "Vlak"
+
+#: niteo-cmp.php:3089
+msgid "Maintenance"
+msgstr "Ůdržba"
+
+#: niteo-cmp.php:3092
+msgid "Coming Soon"
+msgstr "Již brzy"
+
+#: niteo-cmp.php:3095
+msgid "Redirect"
+msgstr "Přesměrování"
+
+#: cmp-advanced.php:291
+msgid "Notifications"
+msgstr "Notifikace"
+
+#: cmp-advanced.php:588
+msgid "CMP Status Change"
+msgstr "Změna stavu CMP"
+
+#: cmp-advanced.php:565
+msgid "Email Notifications"
+msgstr "E-mailové notifikace"
+
+#: niteo-cmp.php:1885
+msgid "Firstname"
+msgstr "Křestní jméno"
+
+#: niteo-cmp.php:1886
+msgid "Lastname"
+msgstr "Příjmení"
+
+#: niteo-cmp.php:1887
+msgid "Fullname"
+msgstr "Celé jméno"
+
+#: cmp-advanced.php:908
+msgid "Import Settings"
+msgstr "Importovat nastavení"
+
+#: cmp-advanced.php:897
+msgid "Import with media images"
+msgstr "Importovat s obrázky"
+
+#: cmp-advanced.php:885
+msgid "Import CMP Settings"
+msgstr "Importovat CMP nastavení"
+
+#: cmp-advanced.php:878
+msgid "Export to JSON file"
+msgstr "Exportovat do souboru JSON"
+
+#: cmp-advanced.php:293
+msgid "Misc"
+msgstr "Různé"
+
+#: niteo-cmp.php:1089
+msgid "CMP Advanced Settings"
+msgstr "Rozšířené nastavení CMP"
+
+#: inc/cmp-update-process.php:118 niteo-cmp.php:191
+msgid "Hours"
+msgstr "Hodin"
+
+#: inc/cmp-update-process.php:117 niteo-cmp.php:190
+msgid "Minutes"
+msgstr "Minut"
+
+#: inc/settings/settings-typography.php:99
+msgid "Content Animation"
+msgstr "Animace obsahu"
+
+#: inc/cmp-update-process.php:125 niteo-cmp.php:198
+msgid "Scroll"
+msgstr "Posouvat"
+
+#: inc/cmp-update-process.php:124 niteo-cmp.php:197
+msgid "Submit"
+msgstr "Odeslat"
+
+#: inc/cmp-update-process.php:119 niteo-cmp.php:192
+msgid "Days"
+msgstr "Dny"
+
+#: inc/settings/settings-typography.php:88
+msgid "Heading Animation"
+msgstr "Animace nadpisu"
+
+#: inc/cmp-update-process.php:116 niteo-cmp.php:189
+msgid "Seconds"
+msgstr "Sekundy"
+
+#: inc/settings/settings-typography.php:118
+msgid "All font formats are supported - we recommend to upload woff/woff2 for modern browsers and eot for IE compatibility."
+msgstr "Všechny formáty fontů jsou podporovány - doporučujeme vám nahrát woff / woff2 pro moderní prohlížeče a eot pro IE kompatibilitu."
+
+#: inc/settings/settings-typography.php:115
+msgid "Upload Custom Font"
+msgstr "Nahrajte vlastní soubor písma"
+
+#: inc/settings/settings-typography.php:119
+msgid "Uploaded custom fonts will be available in dropdown lists for Heading and Content. Font Preview works only with woff/woff2 formats."
+msgstr "Nahrané vlastní fonty budou dostupné v rozbalovacím seznamu pro nadpis a obsah. Náhled písma pracuje pouze s formáty woff / woff2."
+
+#: inc/cmp-update-process.php:122 niteo-cmp.php:195
+msgid "Oops! We need a valid email address. Please try again."
+msgstr "Jejda! Potřebujeme platnou adresu. Prosím zkuste to znovu."
+
+#: inc/cmp-update-process.php:121 niteo-cmp.php:194
+msgid "Oops! This email address is already on our list."
+msgstr "Jejda! Tato e-mailová adresa je již v našem seznamu."
+
+#: cmp-advanced.php:351 cmp-advanced.php:373
+msgid "You can also add the page URLs manually."
+msgstr "Adresy URL stránek můžete také přidat ručně."
+
+#: inc/cmp-activation-notice.php:19
+msgid "Thank you for installing CMP - Coming soon & Maintenance Plugin!"
+msgstr "Děkujeme, že jste nainstalovali CMP - Coming soon & Maintenance Plugin!"
+
+#: inc/cmp-activation-notice.php:20
+msgid "You can customize the Coming Soon Page in %1$s or activate the Coming Soon Mode by Top bar CMP icon right away!"
+msgstr "Můžete přizpůsobit stránku \"Již brzy\"  v %1$s nebo aktivovat režim \"Již brzy\" ikonou v Top baru!"
+
+#: inc/settings/settings-general.php:27
+msgid "Homepage only"
+msgstr "Pouze úvodní stránka"
+
+#: cmp-subscribers.php:26
+msgid "If you use MailChimp integration, you must check your Subscribers directly in MailChimp!"
+msgstr "Pokud používáte integraci MailChimp, musíte zkontrolovat odběratele přímo v MailChimpu!"
+
+#: inc/settings/settings-general.php:22
+msgid "Whole Website"
+msgstr "Celý web"
+
+#: inc/settings/settings-general.php:39
+msgid "CMP Mode"
+msgstr "CMP režim"
+
+#: inc/settings/settings-general.php:10
+msgid "CMP Status"
+msgstr "CMP stav"
+
+#: cmp-translate.php:50
+msgid "You can edit any text on CMP landing page - button labels, countdown, subscription messages, etc."
+msgstr "Můžete upravovat libovolný text na vstupní stránce CMP - popisky tlačítek, odpočítávání, zprávy o odběru atd."
+
+#: inc/settings/settings-special_effects.php:57
+msgid "Background effects are disabled"
+msgstr "Efekty pozadí jsou zakázány"
+
+#: inc/settings/settings-background.php:136
+msgid "Every CMP Theme is using unique default background."
+msgstr "Každá CMP šablona používá jedinečné výchozí pozadí."
+
+#: inc/settings/settings-logo.php:54
+msgid "Set custom logo height"
+msgstr "Nastavit vlastní výšku loga"
+
+#: inc/class-cmp-subscribers.php:66
+msgid "Delete All"
+msgstr "Smazat vše"
+
+#: cmp-advanced.php:755 cmp-advanced.php:787
+msgid "Insert Javascript or CSS external file URL"
+msgstr "Vložte Javascript nebo CSS externí soubor URL"
+
+#: niteo-cmp.php:1427
+msgid "There was an error unzipping the file due to error: "
+msgstr "Při rozbalení souboru došlo k chybě:"
+
+#: cmp-help.php:15
+msgid "WordPress Support Forum"
+msgstr "Fórum podpory WordPress"
+
+#: cmp-help.php:13
+msgid "If you have any questions or issue feel free to ask on Wordpress Support Forum! We are happy to help :)"
+msgstr "Máte-li jakékoli dotazy nebo otázky, neváhejte se zeptat na WordPress Support Forum! Rádi vám pomůžeme :)"
+
+#: cmp-help.php:12
+msgid "Thank you for using our CMP – Coming Soon & Maintenance plugin"
+msgstr "Děkujeme, že používáte náš plugin CMP - Coming Soon & Maintenance"
+
+#: inc/settings/settings-special_effects.php:61
+msgid "Effect Color"
+msgstr "Barva efektu"
+
+#: inc/settings/settings-special_effects-disabled.php:24
+#: inc/settings/settings-special_effects.php:36
+msgid "Floating Bubbles"
+msgstr "Plovoucí bubliny"
+
+#: cmp-advanced.php:776 cmp-advanced.php:808
+msgid "Add More"
+msgstr "Přidat více"
+
+#: cmp-advanced.php:747
+msgid "Custom External Scripts"
+msgstr "Vlastní externí skripty"
+
+#: cmp-advanced.php:783
+msgid "Footer Scripts"
+msgstr "Zápatí skripty"
+
+#: cmp-advanced.php:751
+msgid "Head Scripts"
+msgstr "Skripty hlavičky"
+
+#: inc/settings/settings-background.php:510
+msgid "Overlay Call To Action Button URL"
+msgstr "URL pro tlačítko call to action"
+
+#: inc/settings/settings-background.php:507
+msgid "Overlay Call To Action Button Text"
+msgstr "Text pro tlačítko call to action"
+
+#: inc/settings/settings-background.php:504
+msgid "Overlay Text"
+msgstr "Text překrytí"
+
+#: inc/settings/settings-background.php:501
+msgid "Overlay Heading"
+msgstr "Nadpis překrytí"
+
+#: inc/settings/settings-background.php:498
+msgid "Display Text Overlay"
+msgstr "Zobrazit text překrytí"
+
+#: inc/settings/settings-background.php:495
+msgid "Text Overlay"
+msgstr "Text překrytí"
+
+#: inc/settings/settings-subscribe.php:229
+msgid "3rd Party Plugin Shortcode"
+msgstr "Zkratka pluginu třetí strany"
+
+#: inc/settings/settings-background.php:511
+msgid "Insert Valid URL"
+msgstr "Vložit platnou adresu URL"
+
+#: inc/settings/settings-contact_form-disabled.php:32
+msgid "Contact Form is not supported by the selected Theme."
+msgstr "Kontaktní formulář není podporován vybranou šablonou."
+
+#: inc/settings/settings-special_effects-disabled.php:39
+msgid "Special Effects are not supported by the selected Theme. Please activate another Theme with Special Effects Support."
+msgstr "Speciální efekty nejsou podporovány vybranou šablonou. Aktivujte prosím jinou šablonu s podporou speciálních efektů."
+
+#: cmp-upload.php:17
+msgid "Install New CMP Theme"
+msgstr "Instalovat novou CMP šablonu."
+
+#: inc/settings/settings-content.php:44
+msgid "Heading"
+msgstr "Nadpis"
+
+#: inc/settings/settings-content.php:40
+msgid "Main Content"
+msgstr "Hlavní obsah"
+
+#: niteo-cmp.php:1422
+msgid "Theme has been updated to latest version!"
+msgstr "Šablona je aktualizována na nejnovější verzi!"
+
+#: inc/settings/settings-slider-disabled.php:30
+msgid "Slider settings is not supported by the selected Theme."
+msgstr "Nastavení posuvníku není podporováno vybranou šablonou."
+
+#: cmp-translate.php:49 niteo-cmp.php:631
+msgid "CMP Translation"
+msgstr "CMP Překlad"
+
+#: niteo-cmp.php:628
+msgid "CMP Basic Setup"
+msgstr "CMP - Základní nastavení"
+
+#: inc/settings/settings-contact_form.php:61
+msgid "Contact Form Heading"
+msgstr "Záhlaví kontaktního formuláře"
+
+#: inc/settings/settings-counter-disabled.php:27
+msgid "Countdown Timer is not supported by the selected Theme."
+msgstr "Odpočítávání není vybranou šablonou podporováno."
+
+#: inc/settings/settings-logo-disabled.php:36
+msgid "Logo settings is not supported by the selected Theme."
+msgstr "Vybraná šablona nepodporuje nastavení loga."
+
+#: inc/settings/settings-subscribe-disabled.php:38
+msgid "Subscribe Form is not supported by the selected Theme."
+msgstr "Formulář odběratelů není podporován vybranou šablonou."
+
+#: inc/settings/settings-footer.php:90
+msgid "Contact Address"
+msgstr "Kontaktní adresa"
+
+#: niteo-cmp.php:630
+msgid "CMP Subscribers"
+msgstr "CMP Odběratelé"
+
+#: niteo-cmp.php:867
+msgid "Counter expired and Coming soon / Maintanance mode was disabled."
+msgstr "Odpočet vypršel a Coming soon / Maintenance mód je deaktivován."
+
+#: cmp-settings.php:607
+msgid "Customize"
+msgstr "Nastavení"
+
+#: cmp-advanced.php:688
+msgid " Once enabled, you can quickly enable or disable Coming Soon Mode or check out CMP Preview without visiting CMP Settings Plugin page."
+msgstr "Pokud jej znovu povolíte, můžete rychle povolit nebo zakázat režim Coming Soon nebo zkontrolovat náhled CMP bez návštěvy stránky CMP Settings Plugin."
+
+#: cmp-advanced.php:686
+msgid "CMP Top Bar is disabled."
+msgstr "Ikona horního panelu CMP je zakázána."
+
+#: cmp-advanced.php:429
+msgid "CMP Bypass by User Roles"
+msgstr "CMP Bypass podle uživatelských rolí"
+
+#: niteo-cmp.php:860
+msgid "Counter expired but it is set to make no action - you should login to your Wordpress Admin and adjust the expired timer or disable Coming Soon / Maintenance Mode."
+msgstr "Počítadlo vypršelo, ale je nastaveno tak, aby neprovádělo žádnou akci - měli byste se přihlásit ke svému WordPress Adminu a nastavit odpočet vypršení nebo zakázat režim \"Již brzy\" / Údržba."
+
+#: cmp-advanced.php:662
+msgid "You can specify which roles have access to CMP Top Bar"
+msgstr "Můžete určit, které role mají přístup k ikoně horní lišty CMP."
+
+#: niteo-cmp.php:871
+msgid "Counter expired and your Website is redirected to external URL per settings."
+msgstr "Platnost počítadla vypršela a vaše webové stránky jsou přesměrovány na externí URL podle nastavení."
+
+#: inc/settings/settings-seo.php:51
+msgid "SEO Image"
+msgstr "SEO obrázek"
+
+#: inc/settings/settings-theme-selector.php:122
+msgid "Get %s"
+msgstr "Získat %s"
+
+#: inc/settings/settings-seo.php:71
+msgid "Search Engine Visibility"
+msgstr "Viditelnost pro vyhledávače"
+
+#: inc/settings/settings-seo.php:45
+msgid "It is recommended to keep description between 50–300 characters."
+msgstr "Doporučujeme držet popis mezi 50–300 znaky."
+
+#: inc/settings/settings-seo.php:41
+msgid "SEO Description"
+msgstr "SEO popis"
+
+#: inc/settings/settings-seo.php:63
+msgid "By default selected Background image is displayed on Social Networks if your Website is shared. You can overwrite the image by selecting your custom image here."
+msgstr "Ve výchozím nastavení je obrázek na pozadí zobrazen na sociálních sítích, pokud jsou vaše webové stránky sdílené. Obrázek můžete přepsat výběrem vlastního obrázku."
+
+#: inc/settings/settings-seo.php:75
+msgid "It is up to search engines to honor this request."
+msgstr "Je na vyhledávačích, aby tento požadavek splnili."
+
+#: inc/settings/settings-seo.php:23
+msgid "By default your standard Favicon will be used but you can override it for CMP page by selecting different Favicon."
+msgstr "Standardně bude použita vaše stávající Favicona. Můžete ji přepsat pro stránku CMP výběrem jiné Favicony."
+
+#: inc/settings/settings-seo.php:74
+msgid "Discourage search engines from indexing this site - applies only for CMP page."
+msgstr "Odradit vyhledávače od indexování těchto stránek - platí pouze pro stránku CMP."
+
+#: inc/settings/settings-seo.php:35
+msgid "It is recommended to keep title under 60 characters."
+msgstr "Doporučujeme ponechat nadpis pod 60 znaky."
+
+#: inc/settings/settings-seo.php:31
+msgid "SEO Title"
+msgstr "SEO Název"
+
+#: inc/settings/settings-seo.php:85
+msgid "Send no-cache headers. If you don't want the CMP page's preview to be cached by Facebook or other social media then enable this option."
+msgstr "Odeslat záhlaví bez mezipaměti. Pokud nechcete, aby se náhled stránky CMP ukládal do mezipaměti službou Facebook nebo jinými sociálními médii, povolte tuto možnost."
+
+#: inc/settings/settings-seo.php:82
+msgid "No-cache Headers"
+msgstr "Záhlaví bez vyrovnávací paměti"
+
+#: cmp-settings.php:609
+msgid "SEO & Analytics"
+msgstr "SEO & Analytics"
+
+#: inc/settings/settings-typography.php:14
+msgid "Google Fonts"
+msgstr "Google písma"
+
+#: inc/settings/settings-background.php:280
+msgid "Unsplash"
+msgstr "Unsplash"
+
+#: niteo-cmp.php:1261
+msgid " click to update to %s version from NiteoThemes server now"
+msgstr "klikněte pro aktualizaci na verzi %s ze serveru NiteoThemes"
+
+#: inc/settings/settings-subscribe.php:248
+msgid "* Did you know you can translate Subscribe form Labels and Placeholders to your language in %s Settings?"
+msgstr "* Věděli jste, že můžete přeložit popisky / symboly do svého jazyka v nastavení %s ?"
+
+#: inc/settings/settings-subscribe.php:244
+msgid "Subscribe Form message (can be GDPR or any custom message). Supports anchor HTML tags."
+msgstr "Zpráva formuláře odběratelů (může být GDPR nebo libovolné vlastní zprávy). Podporuje kotvy HTML tagů."
+
+#: inc/settings/settings-slider.php:102
+msgid "Mask Transition Effect"
+msgstr "Efekt masky přechodu"
+
+#: inc/settings/settings-slider.php:69
+msgid "Slider Effect"
+msgstr "Efekt posuvníku"
+
+#: cmp-sidebar.php:11
+msgid "Selected CMP Theme"
+msgstr "Vybraná CMP šablona"
+
+#: inc/settings/settings-subscribe.php:343
+msgid "Enable MailChimp Double Opt In"
+msgstr "Povolit MailChimp Double Opt In"
+
+#: inc/settings/settings-subscribe-disabled.php:18
+#: inc/settings/settings-subscribe.php:189
+msgid "CMP Subscribe Form"
+msgstr "CMP Formulář pro odběratele"
+
+#: inc/settings/settings-background.php:483
+msgid "Background Blur Amount"
+msgstr "Intenzita rozmazání pozadí"
+
+#: inc/settings/settings-background.php:443
+msgid "Background Overlay Color"
+msgstr "Barva překrytí pozadí"
+
+#: inc/settings/settings-background.php:450
+msgid "Select Gradient Overlay"
+msgstr "Překrytí přechodem"
+
+#: inc/settings/settings-background.php:190
+#: inc/settings/settings-background.php:229
+msgid "Delete Images"
+msgstr "Smazat obrázek"
+
+#: themes/hardwork/hardwork-settings.php:31
+msgid "Footer Background Opacity"
+msgstr "Zápatí - průhlednost pozadí"
+
+#: themes/hardwork/hardwork-settings.php:24
+msgid "Footer Background Color"
+msgstr "Barva pozadí zápatí"
+
+#: inc/settings/settings-background.php:477
+msgid "Background Overlay Opacity"
+msgstr "Průhlednost překrytí pozadí"
+
+#: inc/settings/settings-background.php:426
+msgid "Set Background Overlay"
+msgstr "Nastavit překrytí pozadí"
+
+#: inc/settings/settings-background.php:423
+msgid "Background Overlay"
+msgstr "Překrytí pozadí"
+
+#: inc/settings/settings-typography.php:77
+msgid "Fonts preview"
+msgstr "Náhled písma"
+
+#: inc/settings/settings-special_effects-disabled.php:6
+#: inc/settings/settings-special_effects-disabled.php:13
+#: inc/settings/settings-special_effects.php:18
+#: inc/settings/settings-special_effects.php:25
+msgid "Special Effects"
+msgstr "Speciální efekty"
+
+#: cmp-sidebar.php:62
+msgid "Are you missing a cool feature or do you have idea how to improve CMP plugin? You can %s on official Wordpress Support Forum."
+msgstr "Chybí vám nějaká funkce nebo máte nápad, jak vylepšit plugin CMP? Můžete %s napsat na oficiálním fóru podpory WordPress."
+
+#: inc/settings/settings-special_effects-disabled.php:18
+#: inc/settings/settings-special_effects.php:30
+msgid "Constellation"
+msgstr "Konstelace"
+
+#: inc/settings/settings-subscribe.php:232
+msgid "If you use 3rd party shortcode for subscribe or contact form, you might need to apply custom CSS to style the form correctly."
+msgstr "Použijete-li pro formulář odběratelů či kontaktní formulář \"shortcode\" třetí strany, budete možná muset použít vlastní CSS styl."
+
+#: inc/settings/settings-subscribe.php:319
+msgid "MailChimp API Key"
+msgstr "MailChimp API klíč"
+
+#: inc/settings/settings-subscribe.php:318
+msgid "MailChimp API key"
+msgstr "MailChimp API klíč"
+
+#: inc/settings/settings-subscribe.php:305
+msgid "MailChimp Integration"
+msgstr "MailChimp integrace"
+
+#: inc/class-cmp-feedback.php:196
+msgid "CMP - Coming Soon & Maintenance"
+msgstr "CMP - Coming Soon & Maintenance"
+
+#: inc/class-cmp-feedback.php:161
+msgid "Do you like CMP - Coming soon & Maintenace Plugin?"
+msgstr "Libí se vám CMP - Coming soon & Maintenance plugin?"
+
+#: inc/settings/settings-subscribe.php:338
+msgid "Please insert MailChimp API key to retrieve Lists."
+msgstr "Chcete-li načíst seznamy, vložte prosím klíč API služby MailChimp."
+
+#: inc/settings/settings-subscribe.php:321
+msgid "You can find or create new API key in your %s."
+msgstr "Ve vašem %s můžete najít nebo vytvořit nový API klíč."
+
+#: inc/settings/settings-subscribe.php:320
+msgid "Retrieve Lists"
+msgstr "Načíst seznamy"
+
+#: inc/settings/settings-subscribe.php:304
+msgid "CMP Custom Subscribe List"
+msgstr "CMP - seznam vlastních odběratelů"
+
+#: inc/settings/settings-subscribe.php:302
+msgid "Select how to save your Subscribers"
+msgstr "Vyberte způsob uložení odběratelů"
+
+#: inc/settings/settings-subscribe.php:242
+msgid "CMP Subscribe form will be used. It is guaranteed to always match selected CMP Theme's style."
+msgstr "Bude použit vlastní CMP formulář pro přihlášení odběratelů. Je zaručeno, že bude vždy odpovídat vybranému stylu šablony."
+
+#: inc/class-cmp-feedback.php:165 inc/cmp-activation-notice.php:22
+msgid "Dismiss"
+msgstr "Zavřít"
+
+#: inc/class-cmp-feedback.php:162
+msgid "You have been using %1$s plugin for %2$s now! Please leave a quick review or feedback to help us grow our little plugin. Thank you."
+msgstr "Používáte plugin %1$s pro %2$s! Prosím, zanechte rychlou recenzi nebo zpětnou vazbu, která nám pomůže v růstu nášeho pluginu. Děkujeme."
+
+#: inc/class-cmp-feedback.php:107
+msgid "a second"
+msgstr "sekunda"
+
+#: inc/class-cmp-feedback.php:105
+msgid "%s seconds"
+msgstr "%s sekund"
+
+#: inc/class-cmp-feedback.php:99
+msgid "a minute"
+msgstr "minuta"
+
+#: inc/class-cmp-feedback.php:97
+msgid "%s minutes"
+msgstr "%s minut"
+
+#: inc/class-cmp-feedback.php:91
+msgid "an hour"
+msgstr "hodina"
+
+#: inc/class-cmp-feedback.php:164
+msgid "Leave feedback"
+msgstr "Zanechte zpětnou vazbu"
+
+#: inc/settings/settings-subscribe.php:312
+msgid "Emails will be stored in custom CMP list with CSV export support. If you ever delete CMP plugin then subscriber list will be purged as well."
+msgstr "E-maily budou uloženy do CMP listu s podporou exportu do CSV. Pokud smažete CMP plugin, bude smazán také seznam odběratelů."
+
+#: cmp-sidebar.php:47
+msgid "Leave Feedback"
+msgstr "Odeslat zpětnou vazbu"
+
+#: inc/class-cmp-feedback.php:89
+msgid "%s hours"
+msgstr "%s hodin"
+
+#: inc/class-cmp-feedback.php:83
+msgid "a day"
+msgstr "den"
+
+#: inc/class-cmp-feedback.php:81
+msgid "%s days"
+msgstr "%s dnů"
+
+#: inc/class-cmp-feedback.php:75
+msgid "a week"
+msgstr "týden"
+
+#: inc/class-cmp-feedback.php:73
+msgid "%s weeks"
+msgstr "%s týdnů"
+
+#: inc/class-cmp-feedback.php:67
+msgid "a year"
+msgstr "rok"
+
+#: inc/class-cmp-feedback.php:65
+msgid "%s years"
+msgstr "%s let"
+
+#: inc/class-cmp-subscribers.php:192 inc/cmp-update-process.php:127
+#: niteo-cmp.php:200
+msgid "Last Name"
+msgstr "Příjmení"
+
+#: inc/settings/settings-contact_form-disabled.php:6
+#: inc/settings/settings-contact_form.php:27
+msgid "Contact Form"
+msgstr "Kontaktní formulář"
+
+#: inc/settings/settings-contact_form-disabled.php:13
+#: inc/settings/settings-contact_form.php:35
+msgid "Contact Form Options"
+msgstr "Nastavení kontaktního formuláře"
+
+#: inc/settings/settings-contact_form.php:66
+msgid "Select your contact form"
+msgstr "Vyberte kontaktní formulář."
+
+#: inc/settings/settings-contact_form-disabled.php:18
+#: inc/settings/settings-contact_form.php:40
+msgid "3rd Party"
+msgstr "Třetí strana"
+
+#: inc/settings/settings-contact_form.php:107
+msgid "If the list is empty, please make sure you have installed %s plugin and you have created a Contact Form. If not, you can create new Contact Form in %s > Contact > New"
+msgstr "Pokud je seznam prázdný, ujistěte se, že máte nainstalovaný plugin %s a vytvořili jste kontaktní formulář. Pokud ne, můžete vytvořit nový kontaktní formulář v %s > Kontakt > Nový"
+
+#: inc/settings/settings-contact_form.php:85
+msgid "Please install Contact Form 7 plugin to select contact form."
+msgstr "Chcete-li vybrat kontaktní formulář, nainstalujte si prosím Contact Form 7."
+
+#: inc/settings/settings-contact_form.php:81
+msgid "No contact forms detected. Please create a new Contact Form 7."
+msgstr "Nebyly zjištěny žádné kontaktní formuláře. Vytvořte nový formulář pomocí Contact Form 7."
+
+#: cmp-advanced.php:519
+msgid "You can Enable CMP Bypass where you can set custom URL parameter to bypass CMP page. You can send this URL to anyone who would like to sneak peak into your Website while it is under development or maintanence."
+msgstr "Můžete povolit tzv. Bypass CMP, kde můžete nastavit vlastní parametr URL, který obejde stránku CMP. Tuto adresu můžete odeslat komukoli, kdo by chtěl na vaše webové stránky, zatímco jsou ve vývoji nebo údržbě."
+
+#: cmp-advanced.php:510
+msgid "Set bypass cookie Expiration Time in seconds"
+msgstr "Nastavit dobu vynechání souboru cookie v sekundách"
+
+#: cmp-advanced.php:508
+msgid "You can use passphrase which contains letters, numbers, underscores or dashes only."
+msgstr "Můžete použít hesla, které obsahují pouze písmena, číslice, podtržítka nebo pomlčky."
+
+#: cmp-advanced.php:505
+msgid "Set Bypass Passphrase"
+msgstr "Set Bypass heslo"
+
+#: cmp-advanced.php:503
+msgid "You can use this URL to bypass CMP maintenance page. Once you access your website with this URL, CMP Cookie will be set with default expiration of 2 days. If the cookie expires, you need to access your website again with this URL."
+msgstr "Tuto adresu URL můžete použít k obejití stránky údržby CMP. Po přístupu na vaše webové stránky s touto adresou URL bude soubor CMP cookie nastaven s výchozím vypršením 2 dnů. Pokud platnost souboru cookie vyprší, je nutné znovu přistupovat k vaší webové stránce pomocí této adresy URL."
+
+#: cmp-advanced.php:499
+msgid "Bypass URL"
+msgstr "URL obejití"
+
+#: cmp-advanced.php:469
+msgid "CMP Bypass URL"
+msgstr "CMP obejití URL"
+
+#: inc/class-cmp-subscribers.php:191 inc/cmp-update-process.php:126
+#: niteo-cmp.php:199
+msgid "First Name"
+msgstr "Křestní jméno"
+
+#: inc/settings/settings-logo.php:39
+msgid "Click to set.."
+msgstr "Vložit kliknutím."
+
+#: cmp-advanced.php:513
+msgid "You can set custom Bypass CMP Cookie expiration time in seconds (1hour = 3600). Default expiration time is 2 days (172800)."
+msgstr "Můžete nastavit vlastní dobu expirace souborů cookie CMP v sekundách (1 hod = 3600). Výchozí doba vypršení platnosti je 2 dny (172800)."
+
+#: cmp-advanced.php:515
+msgid "Please note this solution is using browser cookies which might not work correctly if you are using caching plugins."
+msgstr "Vezměte prosím na vědomí, že toto řešení používá soubory cookie prohlížeče, které nemusí fungovat správně, pokud používáte zásuvné moduly pro ukládání do mezipaměti."
+
+#: inc/settings/settings-slider.php:86
+msgid "Slice"
+msgstr "Slice"
+
+#: themes/construct/construct-settings.php:37
+msgid "Social Background Color"
+msgstr "Barva pozadí sociálních ikon"
+
+#: inc/settings/settings-theme-selector.php:53
+#: inc/settings/settings-theme-selector.php:115
+msgid "PREVIEW"
+msgstr "NÁHLED"
+
+#: cmp-advanced.php:433
+msgid "Bypass User Roles"
+msgstr "Obejít role uživatelů"
+
+#: cmp-advanced.php:675
+msgid "Administrator role can always access Top Bar"
+msgstr "Role správce může vždy přistupovat k ikoně v horní liště"
+
+#: inc/render/social-icons.php:39
+msgid "Phone"
+msgstr "Telefon"
+
+#: inc/settings/settings-social-media.php:51
+#: inc/settings/settings-social-media.php:109
+msgid "Phone Number"
+msgstr "Telefonní číslo"
+
+#: niteo-cmp.php:1261
+msgid "There is a <b>recommended</b> update of <b>CMP Theme: %s</b> available:"
+msgstr "K dispozici je <b> doporučená </b> aktualizace <b> CMP šablony: %s</b> k dispozici:"
+
+#: inc/settings/settings-social-media.php:47
+#: inc/settings/settings-social-media.php:97
+msgid "Email Address"
+msgstr "E-mailová adresa"
+
+#: inc/settings/settings-seo.php:134
+msgid "Insert Google Analytics Tracking ID"
+msgstr "Google Analytics Tracking ID"
+
+#: inc/settings/settings-seo.php:121 inc/settings/settings-seo.php:122
+msgid "Other"
+msgstr "Ostatní"
+
+#: inc/settings/settings-seo.php:115 inc/settings/settings-seo.php:116
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: inc/settings/settings-seo.php:105
+msgid "Analytics"
+msgstr "Analytika"
+
+#: inc/settings/settings-background.php:502
+#: inc/settings/settings-background.php:505
+#: inc/settings/settings-background.php:508
+#: inc/settings/settings-contact_form.php:62
+#: inc/settings/settings-content.php:47 inc/settings/settings-subscribe.php:245
+#: inc/settings/settings-subscribe.php:279
+msgid "Leave empty to disable"
+msgstr "Nechte prázdné pro nezobrazování"
+
+#: inc/settings/settings-theme-selector.php:7
+msgid "Available Themes"
+msgstr "Dostupné šablony"
+
+#: inc/cmp-update-process.php:128 niteo-cmp.php:201
+msgid "Subscribe"
+msgstr "Přihlásit se k odběru"
+
+#: inc/settings/settings-seo.php:97
+msgid "Website Analytics"
+msgstr "Analýza webu"
+
+#: cmp-advanced.php:437
+msgid "Select User Roles to bypass CMP landing page"
+msgstr "Vyberte položku Role uživatele k obejití vstupní stránky CMP."
+
+#: cmp-advanced.php:384
+msgid "CMP landing page is displayed on all pages by default. You can enable Page Whitelist to display CMP only on specific page(s) or Page Blacklist to exclude CMP landing page on specific page(s) by enabling Page Whitelist or Page Blacklist here."
+msgstr "Vstupní stránka CMP se standardně zobrazuje na všech stránkách. Chcete-li zobrazit seznam CMP pouze na konkrétní stránce (stránkách) nebo na stránce Blacklist (Černá listina stránek), můžete povolit funkci Whitelist stránek tak, aby byla stránka s cílovou stránkou CMP vyloučena na konkrétních stránkách."
+
+#: cmp-advanced.php:371
+msgid "If you want to exclude some pages from CMP you can select them here."
+msgstr "Pokud chcete vyloučit některé stránky z CMP, můžete je vybrat zde."
+
+#: cmp-advanced.php:361
+msgid "CMP Blacklist - select the pages to NOT display CMP landing page"
+msgstr "CMP Blacklist - vyberte stránky, na které se nezobrazí vstupní stránka CMP."
+
+#: cmp-advanced.php:349
+msgid "By default CMP is enabled on all pages. Leave this field empty to use default settings."
+msgstr "Ve výchozím nastavení je CMP povoleno na všech stránkách. Chcete-li použít výchozí nastavení, ponechte toto pole prázdné."
+
+#: cmp-advanced.php:341 cmp-advanced.php:363
+msgid "Homepage"
+msgstr "Úvodní stránka"
+
+#: cmp-advanced.php:324
+msgid "Page Blacklist"
+msgstr "Stránka Blacklist"
+
+#: cmp-advanced.php:305
+msgid "CMP Page Whitelist and Blacklist Settings"
+msgstr "Nastavení seznamu stránek Whitelist a Blacklist"
+
+#: cmp-advanced.php:318
+msgid "Page Whitelist"
+msgstr "Stranka Whitelist"
+
+#: inc/settings/settings-theme-selector.php:92
+msgid "Download more CMP Themes"
+msgstr "Stáhnout více CMP šablon"
+
+#: inc/settings/settings-seo.php:131
+msgid "Analytics is disabled"
+msgstr "Analytics jsou zakázány"
+
+#: cmp-advanced.php:454
+msgid "Administrator role always bypass CMP by default."
+msgstr "Role administrátora ve výchozím nastavení vždy obchází CMP."
+
+#: cmp-advanced.php:313 cmp-advanced.php:477
+msgid "Whitelist Settings"
+msgstr "Nastavení whitelistu"
+
+#: inc/settings/settings-background.php:242
+msgid "Random from User"
+msgstr "Náhodně od uživatele"
+
+#: inc/settings/settings-background.php:250
+msgid "Display Unsplash Photo"
+msgstr "Zobrazit Unsplash foto"
+
+#: inc/settings/settings-background.php:269
+msgid "Limit photos to specific keyword (fashion, nature, technology..)"
+msgstr "Omezit fotografie na konkrétní klíčové slovo (móda, příroda, technologie ..)"
+
+#: inc/settings/settings-background.php:276
+msgid "Enter Unsplash User ID"
+msgstr "Zadejte Unsplash uživatelské ID"
+
+#: inc/settings/settings-background.php:246
+msgid "Enter Unsplash Photo URL or Unsplash Photo ID"
+msgstr "Zadejte Unsplash foto URL nebo Unsplash foto ID"
+
+#: inc/settings/settings-background.php:263
+msgid "Enter <a href=\"%s\">Unsplash Collection</a> URL or Collection ID."
+msgstr "Zadejte <a href=\"%s\"> URL nebo ID Unsplash kolekce </a>."
+
+#: inc/settings/settings-footer.php:109
+msgid "Contact Phone"
+msgstr "Kontaktní telefon"
+
+#: inc/settings/settings-counter.php:76
+msgid "Counter Heading"
+msgstr "Nadpis odpočtu"
+
+#: inc/settings/settings-typography.php:37
+#: inc/settings/settings-typography.php:68
+msgid "Letter Spacing"
+msgstr "Rozestup písmen"
+
+#: inc/settings/settings-typography.php:31
+#: inc/settings/settings-typography.php:63
+msgid "Font Size"
+msgstr "Velikost písma"
+
+#: inc/settings/settings-typography.php:90
+#: inc/settings/settings-typography.php:101
+msgid "No animation"
+msgstr "Bez animace"
+
+#: inc/settings/settings-typography.php:14
+#: inc/settings/settings-typography.php:49
+msgid "Select Font Family from "
+msgstr "Vyberte rodinu písma z"
+
+#: inc/settings/settings-typography.php:73
+msgid "Line Height"
+msgstr "Výška řádky"
+
+#: inc/settings/settings-footer.php:72
+msgid "Contacts Title"
+msgstr "Kontakty název"
+
+#: inc/settings/settings-footer.php:59
+msgid "Extended Footer Content"
+msgstr "Rozšířený obsah zápatí"
+
+#: inc/settings/settings-typography.php:94
+#: inc/settings/settings-typography.php:105
+msgid "Fade In Right"
+msgstr "Mizení doprava"
+
+#: inc/settings/settings-typography.php:93
+#: inc/settings/settings-typography.php:104
+msgid "Fade In Left"
+msgstr "Mizení doleva"
+
+#: inc/settings/settings-typography.php:92
+#: inc/settings/settings-typography.php:103
+msgid "Fade In Up"
+msgstr "Mizení nahoru"
+
+#: inc/settings/settings-typography.php:91
+#: inc/settings/settings-typography.php:102
+msgid "Fade In Down"
+msgstr "Mizení dolu"
+
+#: inc/settings/settings-typography.php:21
+#: inc/settings/settings-typography.php:56
+msgid "Variant"
+msgstr "Varianta"
+
+#: inc/settings/settings-footer.php:25 inc/settings/settings-footer.php:100
+msgid "Contact Email"
+msgstr "Kontaktní e-mail"
+
+#: niteo-cmp.php:1048
+msgid "Maintenance Mode:"
+msgstr "Režim údržby:"
+
+#: inc/settings/settings-background.php:432
+msgid "Gradient"
+msgstr "Přechod"
+
+#: niteo-cmp.php:1052
+msgid "Coming Soon Mode:"
+msgstr "Režim \"Již brzy\""
+
+#: niteo-cmp.php:1056
+msgid "Redirect Mode:"
+msgstr "Režim přesměrování:"
+
+#: niteo-cmp.php:1097
+msgid "CMP Preview"
+msgstr "CMP náhled"
+
+#: niteo-cmp.php:632
+msgid "Upload CMP Theme"
+msgstr "Nahrát CMP šablonu"
+
+#: inc/settings/settings-background.php:411
+#: inc/settings/settings-background.php:469
+msgid "Select second gradient color:"
+msgstr "Druhá barva přechodu:"
+
+#: inc/settings/settings-background.php:408
+#: inc/settings/settings-background.php:466
+msgid "Select first gradient color:"
+msgstr "První barva přechodu:"
+
+#: inc/settings/settings-background.php:403
+#: inc/settings/settings-background.php:460
+msgid "Custom Gradient"
+msgstr "Volitelný přechod"
+
+#: inc/settings/settings-background.php:51
+msgid "Dark grey"
+msgstr "Tmavě šedá"
+
+#: inc/settings/settings-background.php:50
+msgid "Grey"
+msgstr "Šedá"
+
+#: inc/settings/settings-background.php:49
+msgid "Light grey"
+msgstr "Světle šedá"
+
+#: inc/settings/settings-background.php:48
+msgid "Violet"
+msgstr "Fialová"
+
+#: inc/settings/settings-background.php:47
+msgid "Purple"
+msgstr "Purpurová"
+
+#: inc/settings/settings-background.php:46
+msgid "Sky blue"
+msgstr "Nebesky modrá"
+
+#: inc/settings/settings-background.php:45
+msgid "Green Pastel"
+msgstr "Zelená pastelová"
+
+#: inc/settings/settings-background.php:44
+msgid "Green"
+msgstr "Zelená"
+
+#: inc/settings/settings-background.php:43
+msgid "Yellow"
+msgstr "Žlutá"
+
+#: inc/settings/settings-background.php:42
+msgid "Orange"
+msgstr "Oranžová"
+
+#: inc/settings/settings-background.php:41
+msgid "Red"
+msgstr "Červená"
+
+#: inc/settings/settings-background.php:40
+msgid "Sublime Vivid"
+msgstr "Sublime Vivid"
+
+#: inc/settings/settings-background.php:38
+msgid "Horizon"
+msgstr "Horizon"
+
+#: inc/settings/settings-background.php:37
+msgid "Rose Water"
+msgstr "Růžová voda"
+
+#: inc/settings/settings-background.php:36
+msgid "Bloody Mary"
+msgstr "Krvavá Mary"
+
+#: inc/settings/settings-background.php:35
+msgid "Aqua Marine"
+msgstr "Námořní modrá"
+
+#: inc/settings/settings-background.php:34
+msgid "Purlple Paradise"
+msgstr "Nachový ráj"
+
+#: inc/settings/settings-background.php:33
+msgid "Shroom Haze"
+msgstr "Shroom Haze"
+
+#: inc/settings/settings-background.php:32
+msgid "Calm Darya"
+msgstr "Klidná Darya"
+
+#: inc/settings/settings-background.php:31
+msgid "Influenza"
+msgstr "Influezna"
+
+#: inc/settings/settings-background.php:30
+msgid "Miaka"
+msgstr "Miaka"
+
+#: inc/settings/settings-background.php:29
+msgid "Blury Beach"
+msgstr "Rozmazané pláže"
+
+#: inc/settings/settings-background.php:393
+msgid "Select Gradient Background"
+msgstr "Zvolte přechodové pozadí"
+
+#: inc/settings/settings-background.php:103
+msgid "Gradient Color"
+msgstr "Barva přechodu"
+
+#: inc/class-cmp-translate.php:49
+msgid "Translation"
+msgstr "Překlad"
+
+#: inc/class-cmp-translate.php:48
+msgid "String"
+msgstr "Řetězec"
+
+#: inc/class-cmp-translate.php:20
+msgid "Tranlation String"
+msgstr "Řetězec překladu"
+
+#: inc/class-cmp-translate.php:19
+msgid "Translation string"
+msgstr "Řetězec překladu"
+
+#: inc/settings/settings-background.php:39
+msgid "Youtube"
+msgstr "YouTube"
+
+#: niteo-cmp.php:584 niteo-cmp.php:627 niteo-cmp.php:992
+msgid "CMP Settings"
+msgstr "CMP Nastavení"
+
+#: inc/class-cmp-translate.php:94
+msgid "No Translation Variables!"
+msgstr "Žádné překladové proměnné!"
+
+#: inc/settings/settings-background.php:308
+msgid "Select or Upload custom Video file"
+msgstr "Vyberte nebo nahrajte vlastní video"
+
+#: inc/settings/settings-background.php:291
+msgid "Custom Video File"
+msgstr "Vlastní video"
+
+#: inc/settings/settings-background.php:88
+msgid "Video"
+msgstr "Video"
+
+#: inc/settings/settings-background.php:343
+msgid "Media Library"
+msgstr "Knihovna medií"
+
+#: inc/settings/settings-general.php:56
+msgid "Delay Time in Seconds"
+msgstr "Doba zpoždění v sekundách"
+
+#: inc/settings/settings-slider.php:109
+msgid "Number of Unplash media Slides (applies only for Unsplash photos)"
+msgstr "Počet snímků (platí pouze pro fotografie ve službě Unsplash)"
+
+#: inc/settings/settings-slider-disabled.php:5
+#: inc/settings/settings-slider.php:34
+msgid "Image Slider Setup"
+msgstr "Nastavení obrázkového posuvníku"
+
+#: inc/settings/settings-footer-disabled.php:8
+msgid "Footer is not supported by the selected Theme."
+msgstr "Zápatí není podporováno vybranou šablonou."
+
+#: inc/settings/settings-background.php:292
+msgid "Vimeo (coming soon...)"
+msgstr "Vimeo (již brzy...)"
+
+#: inc/settings/settings-background.php:290
+#: inc/settings/settings-social-media.php:58
+msgid "YouTube"
+msgstr "YouTube"
+
+#: inc/settings/settings-background.php:287
+msgid "Select Video Source"
+msgstr "Vyberte zdroj pro video"
+
+#: inc/settings/settings-background.php:77
+msgid "Custom Images"
+msgstr "Vlastní obrázky"
+
+#: cmp-sidebar.php:61
+msgid "Request new features"
+msgstr "Vyžádejte si nové funkce"
+
+#: inc/settings/settings-background.php:303
+msgid "Enter Vimeo URL"
+msgstr "Zadejte URL Vimeo"
+
+#: inc/settings/settings-background.php:297
+msgid "Enter Youtube URL"
+msgstr "Zadejte URL služby Youtube"
+
+#. Author URI of the plugin
+msgid "https://www.niteothemes.com"
+msgstr "https://www.niteothemes.com"
+
+#: niteo-cmp.php:1947
+msgid "CMP Settings Saved"
+msgstr "Nastavení CMP uloženo"
+
+#: niteo-cmp.php:1883
+msgid "Date"
+msgstr "Datum"
+
+#: inc/class-cmp-subscribers.php:279
+msgid "No subscribers yet!"
+msgstr "Zatím žádní odběratelé!"
+
+#: inc/class-cmp-subscribers.php:81
+msgid "Delete"
+msgstr "Smazat"
+
+#: inc/class-cmp-subscribers.php:195
+msgid "IP Address"
+msgstr "IP adresa"
+
+#: inc/class-cmp-subscribers.php:194
+msgid "Time"
+msgstr "Čas"
+
+#: inc/class-cmp-subscribers.php:190 niteo-cmp.php:1882
+msgid "ID"
+msgstr "ID"
+
+#: inc/class-cmp-subscribers.php:65
+msgid "Delete Selected"
+msgstr "Smazat označené"
+
+#: cmp-sidebar.php:43
+msgid "Thank you for rating us with five stars!"
+msgstr "Děkujeme, že jste nás ohodnotili pěti hvězdičkami!"
+
+#: inc/settings/settings-seo.php:11
+msgid "Favicon"
+msgstr "Favicon"
+
+#: inc/settings/settings-background.php:59
+msgid "Graphic Background"
+msgstr "Grafické pozadí"
+
+#: inc/settings/settings-logo.php:73
+msgid "Logo is disabled"
+msgstr "Logo je zakázáno"
+
+#: inc/settings/settings-logo-disabled.php:22
+#: inc/settings/settings-logo-disabled.php:23 inc/settings/settings-logo.php:22
+#: inc/settings/settings-logo.php:23
+msgid "Graphic Logo"
+msgstr "Grafické logo"
+
+#: inc/settings/settings-logo-disabled.php:16
+#: inc/settings/settings-logo-disabled.php:17 inc/settings/settings-logo.php:16
+#: inc/settings/settings-logo.php:17
+msgid "Text Logo"
+msgstr "Textové logo"
+
+#: inc/settings/settings-logo-disabled.php:12 inc/settings/settings-logo.php:12
+msgid "Logo setup"
+msgstr "Nastavení loga"
+
+#: inc/settings/settings-logo-disabled.php:5 inc/settings/settings-logo.php:5
+msgid "Logo Setup"
+msgstr "Nastavení loga"
+
+#: inc/settings/settings-slider.php:107
+msgid "Slider Autostart"
+msgstr "Automatický start posuvníku"
+
+#: inc/settings/settings-slider.php:79
+msgid "Fade"
+msgstr "Slábnutí"
+
+#: inc/settings/settings-slider.php:73
+msgid "Slide"
+msgstr "Posuvník"
+
+#: inc/settings/settings-slider.php:63
+msgid "To display Slider on CMP Landing page make sure you inserted two or more Custom Photos from Media Library. Slider is also disabled when Specific Unsplash photo or Default Media is selected."
+msgstr "Chcete-li zobrazit posuvník na vstupní stránce CMP, ujistěte se, že jste z knihovny médií vložili dvě nebo více uživatelských fotografií. Posuvník je deaktivován, když je vybrána možnost Specifická fotka nebo Výchozí médium."
+
+#: inc/settings/settings-slider.php:59
+msgid "Slider is disabled."
+msgstr "Posuvník je zakázán."
+
+#: inc/settings/settings-slider-disabled.php:11
+#: inc/settings/settings-slider.php:40 inc/settings/settings-slider.php:66
+msgid "Slider setup"
+msgstr "Nastavení posuvníku"
+
+#: inc/class-cmp-subscribers.php:16
+msgid "subscribers"
+msgstr "Odběratelé"
+
+#: inc/class-cmp-subscribers.php:15
+msgid "subscriber"
+msgstr "Odběratel"
+
+#: cmp-subscribers.php:30
+msgid "Export All Subscribers"
+msgstr "Exportování všech odběratelů"
+
+#: cmp-subscribers.php:25
+msgid "View / Edit CMP Subscribers"
+msgstr "Prohlédnout / Editovat CMP odběratele"
+
+#: cmp-sidebar.php:44
+msgid "If you find our CMP plugin useful, please show us some love and give 5%s feedback by pressing button below."
+msgstr "Pokud se vám náš CMP plugin líbí a je užitečný, napište nám to a dejte 5%s zpětnou vazbu stisknutím tlačítka níže."
+
+#: inc/settings/settings-general.php:53
+msgid "Choose Redirect Mode if you want to redirect your website to another URL."
+msgstr "Chcete-li přesměrovat webovou stránku na jinou adresu URL, zvolte režim Přesměrování."
+
+#: inc/settings/settings-general.php:52
+msgid "Redirect Mode"
+msgstr "Režim přesměrování"
+
+#: inc/class-cmp-subscribers.php:193 inc/render/social-icons.php:34
+#: niteo-cmp.php:1884
+msgid "Email"
+msgstr "E-mail"
+
+#. Author of the plugin
+msgid "NiteoThemes"
+msgstr "NiteoThemes"
+
+#. Description of the plugin
+msgid "Display customizable landing page for Coming Soon, Maintenance & Under Construction page."
+msgstr "Zobrazit přizpůsobitelnou vstupní stránku pro stránku Coming Soon, Maintenance & Under Construction."
+
+#. Plugin Name of the plugin
+msgid "CMP - Coming Soon & Maintenance Plugin"
+msgstr "CMP - Coming Soon & Maintenance Plugin"
+
+#: themes/countdown/countdown-social_settings.php:10
+msgid "Below Content (big icons)"
+msgstr "Pod obsahem (velké ikony)"
+
+#: inc/settings/settings-counter.php:114
+msgid "Enter redirect URL"
+msgstr "Zadejte URL přesměrování"
+
+#: inc/settings/settings-counter.php:94
+msgid "No Action"
+msgstr "Bez akce"
+
+#: inc/settings/settings-counter.php:91
+msgid "Countdown action:"
+msgstr "Odpočet:"
+
+#: cmp-advanced.php:482 cmp-advanced.php:648 cmp-advanced.php:715
+#: cmp-advanced.php:836 inc/settings/settings-counter-disabled.php:13
+#: inc/settings/settings-counter.php:54
+#: inc/settings/settings-lang-switcher-disabled.php:17
+#: inc/settings/settings-lang-switcher.php:48
+#: inc/settings/settings-login-icon.php:42
+#: inc/settings/settings-progress-bar.php:51
+#: inc/settings/settings-slider-disabled.php:16
+#: inc/settings/settings-slider.php:45
+msgid "Enabled"
+msgstr "Povoleno"
+
+#: inc/settings/settings-counter-disabled.php:8
+#: inc/settings/settings-counter.php:49 inc/settings/settings-counter.php:86
+msgid "Counter setup"
+msgstr "Nastavení odpočtu"
+
+#: inc/settings/settings-counter-disabled.php:2
+#: inc/settings/settings-counter.php:43
+msgid "Countdown Timer Setup"
+msgstr "Nastavení časovače odpočtu"
+
+#: inc/settings/settings-login-icon.php:64
+#: themes/construct/construct-settings.php:28
+msgid "Background Color"
+msgstr "Barva pozadí"
+
+#: themes/construct/construct-settings.php:19
+#: themes/countdown/countdown-settings.php:26
+#: themes/hardwork/hardwork-settings.php:15
+msgid "Font Color"
+msgstr "Barva písma"
+
+#: themes/construct/construct-settings.php:13
+msgid "Headings and active elements color (buttons, hover links, etc)."
+msgstr "Barvy nadpisů a aktivních prvků (tlačítka, odkazy,.. atd.)."
+
+#: themes/construct/construct-settings.php:9
+#: themes/countdown/countdown-settings.php:16
+msgid "Active Color"
+msgstr "Aktivní barva"
+
+#: themes/construct/construct-settings.php:6
+#: themes/countdown/countdown-settings.php:13
+#: themes/hardwork/hardwork-settings.php:11
+msgid "Customize Colors"
+msgstr "Nastavení barev"
+
+#: niteo-cmp.php:1452
+msgid "General Error during updating Theme files."
+msgstr "Chyba při aktualizaci souborů šablony."
+
+#: niteo-cmp.php:1366
+msgid " file extension is not supported. Please upload ZIP file containing CMP Theme."
+msgstr "Přípona souboru není podporována. Nahrajte soubor ZIP obsahující CMP šablonu."
+
+#: niteo-cmp.php:1366
+msgid "Unable to upload new Theme file ."
+msgstr "Nelze nahrát nový soubor šablony."
+
+#: niteo-cmp.php:1348
+msgid "There was an error unzipping the file!"
+msgstr "Při rozbalení souboru došlo k chybě!"
+
+#: inc/settings/settings-seo.php:6
+msgid "SEO Settings"
+msgstr "SEO nastavení"
+
+#: inc/settings/settings-social-media.php:85
+msgid "Position"
+msgstr "Pozice"
+
+#: inc/settings/settings-social-media.php:28
+msgid "Click on Social Icons below to enable Social Media settings."
+msgstr "Chcete-li povolit zobrazení ikon sociálních sítí, klikněte na níže uvedené ikony."
+
+#: inc/settings/settings-social-media.php:15
+msgid "Social Section Title"
+msgstr "Sociální sítě - nadpis"
+
+#: inc/settings/settings-social-media.php:7
+msgid "Social Media"
+msgstr "Sociální sítě"
+
+#: inc/settings/settings-contact_form.php:55
+#: inc/settings/settings-subscribe.php:215
+msgid "Subscribe Form is disabled."
+msgstr "Formulář pro odběr je zakázán."
+
+#: inc/settings/settings-subscribe-disabled.php:24
+#: inc/settings/settings-subscribe.php:201
+msgid "3rd Party Plugin"
+msgstr "Plugin třetí strany"
+
+#: inc/settings/settings-subscribe-disabled.php:13
+#: inc/settings/settings-subscribe.php:184
+msgid "Subscribe Form Options"
+msgstr "Nastavení formuláře pro odběr"
+
+#: inc/settings/settings-background.php:385
+msgid "Select Color"
+msgstr "Vyberte barvu"
+
+#: inc/settings/settings-background.php:371
+msgid "Custom Pattern..."
+msgstr "Vlastní vzor"
+
+#: inc/settings/settings-background.php:364
+msgid "Select Pattern"
+msgstr "Vyberte vzor"
+
+#: inc/settings/settings-background.php:241
+msgid "Random from Collection"
+msgstr "Náhodné z kolekce"
+
+#: inc/settings/settings-background.php:240
+msgid "Specific Photo"
+msgstr "Specifická fotka"
+
+#: inc/settings/settings-background.php:237
+msgid "Choose Unsplash Feed"
+msgstr "Vyberte Unsplash feed"
+
+#: inc/settings/settings-background.php:98
+#: inc/settings/settings-background.php:430
+msgid "Solid Color"
+msgstr "Plná barva"
+
+#: inc/settings/settings-background.php:93
+msgid "Graphic Pattern"
+msgstr "Grafický vzor"
+
+#: inc/settings/settings-background.php:83
+msgid "Unsplash library"
+msgstr "Unsplash knihovna"
+
+#: inc/settings/settings-background.php:66
+msgid "Banner Settings"
+msgstr "Nastavení banneru"
+
+#: inc/settings/settings-content.php:53
+msgid "Message"
+msgstr "Zpráva"
+
+#: inc/settings/settings-theme-selector.php:99
+msgid "Premium Themes"
+msgstr "Prémiové šablony"
+
+#: inc/settings/settings-social-media.php:85
+#: inc/settings/settings-theme-selector.php:66
+msgid "Active"
+msgstr "Aktivní"
+
+#: cmp-translate.php:55 inc/class-cmp-render_settings.php:31
+msgid "Save All Changes"
+msgstr "Uložit všechny změny"
+
+#: inc/settings/settings-general.php:47
+msgid "Maintenance Mode"
+msgstr "Režim údržby"
+
+#: cmp-advanced.php:330 cmp-advanced.php:488 cmp-advanced.php:654
+#: cmp-advanced.php:721 cmp-advanced.php:842
+#: inc/settings/settings-background.php:434
+#: inc/settings/settings-contact_form-disabled.php:24
+#: inc/settings/settings-contact_form.php:46
+#: inc/settings/settings-counter-disabled.php:19
+#: inc/settings/settings-counter.php:60
+#: inc/settings/settings-footer-disabled.php:6
+#: inc/settings/settings-lang-switcher-disabled.php:23
+#: inc/settings/settings-lang-switcher.php:54
+#: inc/settings/settings-login-icon.php:48
+#: inc/settings/settings-logo-disabled.php:28
+#: inc/settings/settings-logo-disabled.php:29 inc/settings/settings-logo.php:28
+#: inc/settings/settings-logo.php:29 inc/settings/settings-progress-bar.php:57
+#: inc/settings/settings-seo.php:109 inc/settings/settings-seo.php:110
+#: inc/settings/settings-slider-disabled.php:22
+#: inc/settings/settings-slider.php:51
+#: inc/settings/settings-special_effects-disabled.php:30
+#: inc/settings/settings-special_effects.php:48
+#: inc/settings/settings-subscribe-disabled.php:30
+#: inc/settings/settings-subscribe.php:207
+msgid "Disabled"
+msgstr "Zakázáno"
+
+#: inc/settings/settings-general.php:6
+msgid "General Settings"
+msgstr "Základní nastavení"
+
+#: cmp-settings.php:615
+msgid "Preview"
+msgstr "Náhled"
+
+#: cmp-settings.php:611
+msgid "Custom CSS"
+msgstr "Vlastní CSS"
+
+#: cmp-settings.php:605 inc/settings/settings-footer.php:63
+msgid "Content"
+msgstr "Obsah"
+
+#: cmp-settings.php:602
+msgid "Settings"
+msgstr "Nastavení"
+
+#: themes/countdown/countdown-social_settings.php:11
+msgid "Footer (small icons)"
+msgstr "Zápatí (malé ikony)"
+
+#: themes/countdown/countdown-social_settings.php:6
+msgid "Social Icons Location"
+msgstr "Umístění sociálních ikon"
+
+#: inc/settings/settings-counter.php:97
+msgid "URL Redirect"
+msgstr "URL přesměrování"
+
+#: inc/settings/settings-counter.php:89
+msgid "Select Date.."
+msgstr "Vyber datum.."
+
+#: inc/settings/settings-counter.php:68
+msgid "Countdown timer is disabled."
+msgstr "Odpočítávání je zakázáno."
+
+#: inc/cmp-update-process.php:123 niteo-cmp.php:196
+msgid "Thank you! Your sign up request was successful."
+msgstr "Děkujme! Váš registrační požadavek byl úspěšný."
+
+#: niteo-cmp.php:1444
+msgid "Error during updating Theme files:"
+msgstr "Chyba při aktualizaci souborů šablony:"
+
+#: niteo-cmp.php:1353 niteo-cmp.php:1436
+msgid "Error creating Theme subdirectory!"
+msgstr "Chyba při vytváření podadresáře šablony!"
+
+#: niteo-cmp.php:1344
+msgid " theme was successfully installed!"
+msgstr "Šablona byla úspěšně nainstalována!"
+
+#: cmp-upload.php:22
+msgid "Select CMP Theme ZIP file to upload"
+msgstr "Vyberte soubor CMP šablona  ZIP, který chcete nahrát"
+
+#: inc/settings/settings-css.php:7
+msgid "Enter Custom CSS"
+msgstr "Zadejte Vlastní CSS"
+
+#: inc/settings/settings-footer.php:15
+msgid "Copyright"
+msgstr "Autorská práva"
+
+#: inc/settings/settings-footer-disabled.php:2
+#: inc/settings/settings-footer.php:11
+msgid "Footer Content"
+msgstr "Obsah zápatí"
+
+#: inc/settings/settings-general.php:43
+msgid "Returns standard 200 HTTP OK response code to indexing robots. Set this option if you want to use our plugin as \"Coming Soon\" page."
+msgstr "Vrátí standardní kód odpovědi 200 HTTP OK pro roboty indexování. Tuto možnost nastavte, pokud chcete použít náš plugin jako stránku \"Připravujeme\"."
+
+#: inc/settings/settings-general.php:42
+msgid "Coming Soon & Landing Page"
+msgstr "Připravujeme & vstupní stránka"
+
+#: cmp-settings.php:580
+msgid "JavaScript appears to be disabled in your browser. For this plugin to work correctly, please enable JavaScript or switch to a more modern browser."
+msgstr "JavaScript se zdá být ve vašem prohlížeči zakázán. Aby tento plugin fungoval správně, povolte JavaScript nebo přepněte na modernější prohlížeč."
+
+#: inc/settings/settings-social-media.php:85
+msgid "Website URL"
+msgstr "URL stránky"
+
+#: inc/settings/settings-social-media.php:26
+msgid "Social Media Icons"
+msgstr "Ikony sociálních sítí"
+
+#: inc/settings/settings-subscribe.php:313
+msgid "Total Subscribers: "
+msgstr "Celkem odběratelů:"
+
+#: inc/settings/settings-subscribe.php:231
+msgid "You can find Shortode in your Contact Form Plugin settings. Should be something similar to code below: "
+msgstr "Shortode můžete najít v nastavení pluginu kontaktního formuláře. Mělo by to být něco podobného kódu níže:"
+
+#: inc/settings/settings-subscribe-disabled.php:6
+#: inc/settings/settings-subscribe.php:177
+msgid "Subscribe Form"
+msgstr "Formulář odběratelů"
+
+#: inc/settings/settings-typography.php:45
+msgid "Content Font"
+msgstr "Písmo obsahu"
+
+#: inc/settings/settings-typography.php:11
+msgid "Headings Font"
+msgstr "Písmo záhláví"
+
+#: inc/settings/settings-typography.php:7
+msgid "Customize Fonts"
+msgstr "Přizpůsobení písma"
+
+#: inc/settings/settings-background.php:239
+msgid "Random Photo"
+msgstr "Náhodné foto"
+
+#: inc/settings/settings-background.php:280
+msgid "is a world leading source for free to use high quality stock images. All of the images that are submitted and published on Unsplash fall under under the <a href=\"https://unsplash.com/license\"> Unsplash license</a>, which means you can use the image for any personal or commercial use."
+msgstr "Je přední světový zdroj k použití vysoce kvalitních obrázků zdarma. Všechny obrázky, které jsou odeslány a publikovány na webu Unsplash, spadají pod <a href=\"https://unsplash.com/license\"> licenci Unsplash </a>, což znamená, že můžete použít obrázek pro jakékoli osobní nebo komerční účely."
+
+#: inc/settings/settings-background.php:145
+msgid "Pro Tip! You can select multiple Media from your library by holding CTRL+click (Command+click if you use MacOS) while selecting photos."
+msgstr "Pro tip! Můžete vybrat více médií ze své knihovny podržením klávesy CTRL + klepnutí (příkaz Command + klik, pokud používáte MacOS) při výběru fotografií."
+
+#: inc/settings/settings-background.php:71
+msgid "Default Media"
+msgstr "Výchozí media"
+
+#: inc/settings/settings-theme-selector.php:55
+#: inc/settings/settings-theme-selector.php:117
+msgid "DETAILS"
+msgstr "DETAILY"
+
+#: inc/settings/settings-theme-selector.php:13
+msgid "Free Themes"
+msgstr "Šablony zdarma"
+
+#: inc/settings/settings-general.php:48
+msgid "Returns 503 HTTP Service unavailable code to indexing robots. Set this option if your site is down due to maintanance and you want to display Maintanance page."
+msgstr "Vrací 503 HTTP Service nedostupný kód pro indexování robotů. Tuto možnost nastavte, pokud jsou vaše stránky kvůli údržbě vypnuty a chcete zobrazit stránku Maintenance."
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/cmp-coming-soon-maintenance/"
+msgstr "https://cs.wordpress.org/plugins/cmp-coming-soon-maintenance/"
+
+#: inc/cmp-update-process.php:120 niteo-cmp.php:193
+msgid "Insert your email address."
+msgstr "Vložte svou e-mailovou adresu."

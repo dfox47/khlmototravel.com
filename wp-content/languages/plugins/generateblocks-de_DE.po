@@ -1,0 +1,169 @@
+# Translation of Plugins - GenerateBlocks - Stable (latest release) in German
+# This file is distributed under the same license as the Plugins - GenerateBlocks - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-12-18 21:18:42+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - GenerateBlocks - Stable (latest release)\n"
+
+#: includes/class-rest.php:170
+msgid "CSS files regenerated."
+msgstr "CSS-Dateien neu generiert."
+
+#: includes/class-rest.php:150
+msgid "No changes found."
+msgstr "Keine Änderungen gefunden."
+
+#. translators: Shape number
+#: includes/functions.php:686 includes/functions.php:691
+#: includes/functions.php:696 includes/functions.php:701
+#: includes/functions.php:706 includes/functions.php:711
+#: includes/functions.php:716 includes/functions.php:721
+#: includes/functions.php:726 includes/functions.php:731
+#: includes/functions.php:736 includes/functions.php:741
+msgid "Triangle %s"
+msgstr "Dreieck %s"
+
+#: includes/functions.php:682
+msgid "Triangles"
+msgstr "Dreiecke"
+
+#. translators: Shape number
+#: includes/functions.php:661 includes/functions.php:666
+#: includes/functions.php:671 includes/functions.php:676
+msgid "Curve %s"
+msgstr "Kurve %s"
+
+#: includes/functions.php:657
+msgid "Curves"
+msgstr "Kurven"
+
+#. translators: Shape number
+#: includes/functions.php:651
+msgid "Angle %s"
+msgstr "Winkel %s"
+
+#: includes/functions.php:647
+msgid "Angles"
+msgstr "Winkel"
+
+#. translators: Shape number
+#: includes/functions.php:606 includes/functions.php:611
+#: includes/functions.php:616 includes/functions.php:621
+#: includes/functions.php:626 includes/functions.php:631
+#: includes/functions.php:636 includes/functions.php:641
+msgid "Wave %s"
+msgstr "Welle %s"
+
+#: includes/functions.php:602
+msgid "Waves"
+msgstr "Wellen"
+
+#: includes/class-rest.php:157
+msgid "Settings saved."
+msgstr "Einstellungen gespeichert."
+
+#: includes/dashboard.php:284
+msgid "Learn more"
+msgstr "Mehr erfahren"
+
+#: includes/dashboard.php:281
+msgid "Happy customers"
+msgstr "Zufriedene Kunden"
+
+#: includes/dashboard.php:277
+msgid "Active websites"
+msgstr "Aktive Websites"
+
+#: includes/dashboard.php:268
+msgid "Downloads"
+msgstr "Downloads"
+
+#: includes/dashboard.php:265
+msgid "Looking for a WordPress theme? GenerateBlocks and GeneratePress are built with the same principles in mind and complement each other perfectly."
+msgstr "Auf der Suche nach einem WordPress-Theme? GenerateBlocks und GeneratePress sind nach den gleichen Prinzipien aufgebaut und ergänzen sich perfekt."
+
+#: includes/dashboard.php:253 dist/blocks.js:9
+#: src/blocks/button-container/block.js:35 src/blocks/button/block.js:31
+msgid "Drive conversions with beautiful buttons."
+msgstr "Mit schönen Buttons Conversions fördern."
+
+#: includes/dashboard.php:252 dist/blocks.js:9
+#: src/blocks/button-container/block.js:34
+msgid "Buttons"
+msgstr "Buttons"
+
+#: includes/dashboard.php:240 dist/blocks.js:15 src/blocks/headline/block.js:33
+msgid "Craft text-rich content with advanced typography."
+msgstr "Erstelle textreiche Inhalte mit fortgeschrittener Typografie."
+
+#: includes/dashboard.php:239 dist/blocks.js:15 src/blocks/headline/block.js:32
+#: src/blocks/headline/edit.js:1269 src/blocks/headline/edit.js:1283
+msgid "Headline"
+msgstr "Überschrift"
+
+#: includes/dashboard.php:227 dist/blocks.js:3 src/blocks/grid/block.js:34
+msgid "Create advanced layouts with flexible grids."
+msgstr "Erstelle erweiterte Layouts mit flexiblen Rastern."
+
+#: includes/dashboard.php:226 dist/blocks.js:3 src/blocks/grid/block.js:33
+#: src/blocks/grid/edit.js:210
+msgid "Grid"
+msgstr "Raster"
+
+#: includes/dashboard.php:214 dist/blocks.js:9 src/blocks/container/block.js:35
+msgid "Organize your content into rows and sections."
+msgstr "Organisiere deine Inhalte in Zeilen und Abschnitten."
+
+#: includes/dashboard.php:213 dist/blocks.js:7 dist/blocks.js:9
+#: src/blocks/container/block.js:34 src/blocks/container/edit.js:473
+msgid "Container"
+msgstr "Container"
+
+#: includes/dashboard.php:202 dist/blocks.js:3 dist/blocks.js:9
+#: dist/blocks.js:15 src/blocks/grid/edit.js:818
+#: src/blocks/container/edit.js:1983 src/blocks/button-container/edit.js:390
+#: src/blocks/button/edit.js:971 src/blocks/headline/edit.js:1193
+msgid "Documentation"
+msgstr "Dokumentation (engl.)"
+
+#: includes/dashboard.php:201
+msgid "Learn More"
+msgstr "Mehr erfahren"
+
+#: includes/dashboard.php:29 includes/dashboard.php:30
+#: includes/dashboard.php:137
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: includes/class-settings.php:51 includes/class-settings.php:52
+#: includes/dashboard.php:142 dist/dashboard.js:1 src/dashboard.js:107
+msgid "Settings"
+msgstr "Einstellungen"
+
+#. Author URI of the plugin
+msgid "https://tomusborne.com"
+msgstr "https://tomusborne.com"
+
+#. Author of the plugin
+msgid "Tom Usborne"
+msgstr "Tom Usborne"
+
+#. Description of the plugin
+#: includes/dashboard.php:198
+msgid "A small collection of lightweight WordPress blocks that can accomplish nearly anything."
+msgstr "Eine kleine Sammlung von leichtgewichtigen WordPress-Blöcken, die fast alles erreichen können."
+
+#. Plugin URI of the plugin
+msgid "https://generateblocks.com"
+msgstr "https://generateblocks.com"
+
+#. Plugin Name of the plugin
+#: includes/general.php:135 includes/dashboard.php:20 includes/dashboard.php:21
+msgid "GenerateBlocks"
+msgstr "GenerateBlocks"

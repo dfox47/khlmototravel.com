@@ -1,0 +1,2019 @@
+# Translation of Plugins - Cookie Information | Free GDPR Consent Solution - Stable (latest release) in Czech
+# This file is distributed under the same license as the Plugins - Cookie Information | Free GDPR Consent Solution - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-12-12 08:23:20+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: cs_CZ\n"
+"Project-Id-Version: Plugins - Cookie Information | Free GDPR Consent Solution - Stable (latest release)\n"
+
+#: WordPress/Settings.php:61
+msgid "https://www.example.com/privacypolicy"
+msgstr "https://www.example.com/privacypolicy"
+
+#: WordPress/Admin/Pages/PageSettings.php:184
+msgctxt "admin"
+msgid "Enter the webpage link where people can read your Privacy Policy. "
+msgstr "Zadejte odkaz na webovou stránku, kde si lidé mohou přečíst vaše zásady ochrany osobních údajů."
+
+#: WordPress/Admin/Pages/PageSettings.php:153
+msgctxt "admin"
+msgid "Your text will be used in the following pop-up sentence: “Learn more on %1s page.”"
+msgstr "Váš text bude použit v následující vyskakovací větě: „Další informace na stránce %1s.“"
+
+#: WordPress/Admin/Pages/PageSettings.php:152
+msgctxt "admin"
+msgid "Our Privacy Policy"
+msgstr "Naše zásady ochrany osobních údajů"
+
+#: WordPress/Admin/Pages/PageDashboard.php:95
+msgctxt "admin"
+msgid "Upgrade"
+msgstr "Aktualizovat"
+
+#: WordPress/Admin/Pages/PageDashboard.php:82
+msgctxt "admin"
+msgid "Try out our premium plan for free for 30 days"
+msgstr "Vyzkoušejte náš prémiový plán zdarma na 30 dní"
+
+#: WordPress/Admin/Pages/PageDashboard.php:82
+msgctxt "admin"
+msgid "Our free plugin lets you manually add data processors to your cookie pop-up. <strong>Want to automate this process? <br>%s</strong>"
+msgstr "Náš bezplatný plugin vám umožňuje ručně přidat zpracovatele dat do vyskakovacího okna cookie. <strong>Chcete tento proces automatizovat? <br> %s</strong>"
+
+#: Utils/Banner.php:119
+msgctxt "admin"
+msgid "Currently in full compliant mode"
+msgstr "Momentálně v plně kompatibilním režimu"
+
+#: Utils/Banner.php:118
+msgctxt "admin"
+msgid "Currently in GDPR-only mode"
+msgstr "Momentálně v režimu pouze GDPR"
+
+#: Utils/Banner.php:107
+msgctxt "admin"
+msgid "Cookie pop-up is live"
+msgstr "Vyskakovací okno cookie je aktivní"
+
+#: Utils/Banner.php:106
+msgctxt "admin"
+msgid "Cookie pop-up is not live"
+msgstr "Vyskakovací okno cookie není aktivní"
+
+#: Templates/Admin/Pages/Wizard/Steps/welcome.php:28
+msgctxt "admin"
+msgid "Let’s get you set up!"
+msgstr "Jdeme na to."
+
+#: Templates/Admin/Pages/Wizard/Steps/welcome.php:25
+msgctxt "admin"
+msgid "Where is your website’s privacy policy? (the pop-up needs to link to it)"
+msgstr "Kde jsou zásady ochrany osobních údajů vašeho webu? (vyskakovací okno na něj musí odkazovat)"
+
+#: Templates/Admin/Pages/Wizard/Steps/welcome.php:24
+msgctxt "admin"
+msgid "What kind of website do you want to add the pop-up to?"
+msgstr "Na jaký typ webu chcete vyskakovací okno přidat?"
+
+#: Templates/Admin/Pages/Wizard/Steps/welcome.php:22
+msgctxt "admin"
+msgid "We’re just missing these details:"
+msgstr "Jen nám chybí tyto detaily:"
+
+#: Templates/Admin/Pages/Wizard/Steps/welcome.php:19
+msgctxt "admin"
+msgid "You’re just a few steps away from being GDPR compliant."
+msgstr "Od souladu s GDPR vás dělí jen pár kroků."
+
+#: Templates/Admin/Pages/Wizard/Steps/welcome.php:15
+msgctxt "admin"
+msgid "Get your GDPR foundation in place"
+msgstr "Připravte si základy GDPR"
+
+#: Templates/Admin/Pages/Wizard/Steps/welcome.php:13
+msgctxt "admin"
+msgid "Start"
+msgstr "Začít"
+
+#: Templates/Admin/Pages/Wizard/Steps/privacy.php:14
+msgctxt "admin"
+msgid "Your privacy policy lets your customers know what type of data you’re collecting, and what you’re doing with that data."
+msgstr "Vaše zásady ochrany osobních údajů dávají vašim zákazníkům vědět, jaký typ dat shromažďujete a co s těmito daty děláte."
+
+#: Templates/Admin/Pages/Wizard/Steps/privacy.php:9
+#: Templates/Admin/Pages/Wizard/Steps/privacy.php:11
+msgctxt "admin"
+msgid "Add privacy policy"
+msgstr "Přidat zásady ochrany osobních údajů"
+
+#: Templates/Admin/Pages/Wizard/Steps/done.php:27
+msgctxt "admin"
+msgid "Manually add data processors (e.g. Google Analytics, Facebook, etc.)"
+msgstr "Ručně přidat zpracovatele dat (např. Google Analytics, Facebook atd.)"
+
+#: Templates/Admin/Pages/Wizard/Steps/done.php:21
+msgctxt "admin"
+msgid "Customize your pop-up"
+msgstr "Přizpůsobte si vyskakovací okno"
+
+#: Templates/Admin/Pages/Wizard/Steps/done.php:17
+msgctxt "admin"
+msgid "Did you know that you can enrich your pop-up even more with your free plugin?"
+msgstr "Věděli jste, že vyskakovací okna můžete ještě více obohatit pomocí bezplatného pluginu?"
+
+#: Templates/Admin/Pages/Wizard/Steps/done.php:16
+msgctxt "admin"
+msgid "Good job! Your cookie pop-up is now live. 🎉"
+msgstr "Dobrá práce! Vaše vyskakovací okno cookie je nyní aktivní. 🎉"
+
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:64
+msgctxt "admin"
+msgid "Try our free 30-day trial so you can: "
+msgstr "Vyzkoušejte naši bezplatnou 30denní zkušební verzi, abyste mohli:"
+
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:60
+msgctxt "admin"
+msgid "But, if you’re concerned about being 100% compliant globally, we recommend turning your compliance up a notch. "
+msgstr "Pokud se však obáváte o 100% globálně vyhovění předpisům, doporučujeme posouvat váš soulad o stupeň výš."
+
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:56
+msgctxt "admin"
+msgid "For personal websites in the EU, this plugin’s got you covered. "
+msgstr "Pro osobní webové stránky v EU vám tento plugin pomůže."
+
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:50
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:69
+msgctxt "admin"
+msgid "<strong>Unlock our powerful</strong> scanner that notifies you whenever one of your webpages is illegally tracking and saving private data."
+msgstr "<strong>Odemkněte náš výkonný</strong> skener, který vás upozorní, kdykoli některá z vašich webových stránek nelegálně sleduje a ukládá soukromá data."
+
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:37
+msgctxt "admin"
+msgid "Business websites often have to comply <strong>with more</strong> than just GDPR."
+msgstr "Firemní weby musí často splňovat <strong>více</strong> než jen GDPR."
+
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:26
+msgctxt "admin"
+msgid "A personal website"
+msgstr "Osobní web"
+
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:15
+msgctxt "admin"
+msgid "What kind of website do you need a cookie pop-up for?"
+msgstr "Pro jaký druh webu potřebujete vyskakovací okno cookie?"
+
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:9
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:11
+msgctxt "admin"
+msgid "Select website type"
+msgstr "Vyberte typ webu"
+
+#: Templates/Admin/Pages/Wizard/main.php:82
+msgctxt "admin"
+msgid "Skip for now"
+msgstr "Prozatím přeskočit"
+
+#: Templates/Admin/Pages/Wizard/main.php:61
+#: Templates/Admin/Pages/Wizard/Steps/done.php:12
+#: Templates/Admin/Pages/Wizard/Steps/done.php:14
+msgctxt "admin"
+msgid "Finish"
+msgstr "Dokončit"
+
+#: Templates/Admin/Pages/Wizard/main.php:56
+msgctxt "admin"
+msgid "Next"
+msgstr "Další"
+
+#: Templates/Admin/Pages/Wizard/main.php:47
+msgctxt "admin"
+msgid "Back"
+msgstr "Zpět"
+
+#: Templates/Admin/Pages/Settings/policy.php:41
+msgctxt "admin"
+msgid "Where can people find your Privacy Policy? (URL)"
+msgstr "Kde mohou lidé najít vaše zásady ochrany osobních údajů? (URL)"
+
+#: Templates/Admin/Pages/Settings/policy.php:27
+msgctxt "admin"
+msgid "What do you call your Privacy Policy (the link text)?"
+msgstr "Jak nazýváte své zásady ochrany osobních údajů (text odkazu)?"
+
+#: Templates/Admin/Pages/Settings/main.php:85
+msgctxt "admin"
+msgid "Take the tour"
+msgstr "Začít s prohlídkou"
+
+#: Templates/Admin/Pages/Settings/main.php:82
+msgctxt "admin"
+msgid "We recommend taking Cookie Information’s tour to find out if you’re set up correctly and to learn more about the features of this free plugin. "
+msgstr "Doporučujeme absolvovat prohlídku Informace o souborech cookie, abyste zjistili, zda jste správně nastaveni, a abyste se dozvěděli více o funkcích tohoto bezplatného pluginu."
+
+#: Templates/Admin/Pages/Settings/main.php:81
+msgctxt "admin"
+msgid "Skipped the tour?"
+msgstr "Přeskočili jste prohlídku?"
+
+#: Templates/Admin/Pages/Processors/footer.php:32
+msgctxt "admin"
+msgid "Reset Cookie pop-up"
+msgstr "Resetovat vyskakovací okno cookie"
+
+#: Templates/Admin/Pages/Processors/footer.php:29
+msgctxt "admin"
+msgid "To enable the Cookie pop-up, activate one (or more) data processors."
+msgstr "Chcete-li povolit vyskakovací okno cookie, aktivujte jeden (nebo více) datových procesorů."
+
+#: Templates/Admin/Pages/Processors/footer.php:29
+msgctxt "admin"
+msgid "<strong>(!)</strong> By deactivating the pop-up, you’ll no longer be asking people for consent, and you’re at risk of being non-compliant."
+msgstr "<strong>(!)</strong> Deaktivací vyskakovacího okna již nebudete lidi žádat o souhlas a riskujete, že nebudete v souladu."
+
+#: Templates/Admin/Pages/Processors/footer.php:26
+#: WordPress/Admin/Pages/PageDashboard.php:80
+msgctxt "admin"
+msgid "Cookie pop-up"
+msgstr "Vyskakovací okno cookie"
+
+#: Templates/Admin/Pages/Premium/main.php:58
+msgctxt "admin"
+msgid "Turn on"
+msgstr "Zapnout"
+
+#: Templates/Admin/Pages/Premium/main.php:53
+msgctxt "admin"
+msgid "Already have a Cookie Information account and added your domain? Great! Hit the toggle below, and we’ll automatically Replace your free pop-up with the global one."
+msgstr "Máte již účet s informacemi o souborech cookie a přidali jste svou doménu? Skvělý! Stiskněte přepínač níže a my vaše bezplatné vyskakovací okno automaticky nahradíme globálním."
+
+#: Templates/Admin/Pages/Premium/main.php:50
+msgctxt "admin"
+msgid "Replace your free pop-up with the upgraded one"
+msgstr "Nahraďte své bezplatné vyskakovací okno upgradovaným"
+
+#: Templates/Admin/Pages/Premium/main.php:37
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:51
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:70
+msgctxt "admin"
+msgid "<strong>Customize your content</strong> and so much more!"
+msgstr "<strong>Přizpůsobte si obsah</strong> a mnohem více!"
+
+#: Templates/Admin/Pages/Premium/main.php:36
+msgctxt "admin"
+msgid "<strong>Unlock our powerful scanner</strong> that notifies you whenever one of your webpages is illegally tracking and saving private data."
+msgstr "<strong>Odemkněte náš výkonný skener,</strong> který vás upozorní, kdykoli některá z vašich webových stránek nelegálně sleduje a ukládá soukromá data."
+
+#: Templates/Admin/Pages/Premium/main.php:35
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:49
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:68
+msgctxt "admin"
+msgid "<strong>Remove all risk</strong> by complying with all global privacy regulations  (GDPR, ePrivacy, and CCPA)"
+msgstr "<strong>Odstraňte všechna rizika</strong> dodržováním všech globálních předpisů na ochranu soukromí (GDPR, ePrivacy a CCPA)"
+
+#: Templates/Admin/Pages/Premium/main.php:32
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:45
+msgctxt "admin"
+msgid "If so, we recommend trying our free 30-day trial so you can:"
+msgstr "Pokud ano, doporučujeme vyzkoušet naši bezplatnou 30denní zkušební verzi, abyste mohli:"
+
+#: Templates/Admin/Pages/Premium/main.php:31
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:41
+msgctxt "admin"
+msgid "Is that you?"
+msgstr "Podaří se vám to taky?"
+
+#: Templates/Admin/Pages/Premium/main.php:27
+msgctxt "admin"
+msgid "Business websites often have to comply with more than just GDPR"
+msgstr "Firemní weby musí často splňovat více než jen GDPR"
+
+#: Templates/Admin/Pages/Premium/main.php:22
+msgctxt "admin"
+msgid "Upgrade and unlock all business features"
+msgstr "Upgradujte a odemkněte všechny obchodní funkce"
+
+#: Templates/Admin/Pages/Dashboard/welcome.php:24
+msgctxt "admin"
+msgid "You’re currently using our the fully featured consent solution, so we’ve got you covered."
+msgstr "Aktuálně používáte naše plně funkční řešení pro souhlas, takže jsme vám pomohli."
+
+#: Templates/Admin/Pages/Dashboard/welcome.php:14
+msgctxt "admin"
+msgid "Do you have a business website that needs to comply with all global privacy regulations  (GDPR, ePrivacy, and CCPA)? Then you should try our global consent solutions (and steer clear of huge fines!)."
+msgstr "Máte firemní web, který musí splňovat všechny globální předpisy na ochranu soukromí (GDPR, ePrivacy a CCPA)? Pak byste měli vyzkoušet naše globální řešení pro souhlas (a vyhnout se vysokým pokutám!)."
+
+#: Templates/Admin/Pages/Dashboard/welcome.php:11
+msgctxt "admin"
+msgid "You’re currently using our free GDPR consent solution, so we’ve got you covered in the EU."
+msgstr "Aktuálně používáte naše bezplatné řešení pro souhlas s GDPR, takže jsme pro vás v EU pokryti."
+
+#: Templates/Admin/Pages/Dashboard/main.php:61
+msgctxt "admin"
+msgid "Try it out now"
+msgstr "Vyzkoušejte to hned"
+
+#: Templates/Admin/Pages/Dashboard/main.php:59
+msgctxt "admin"
+msgid "Try our premium plan for free for 30 days, and make sure your website is globally compliant."
+msgstr "Vyzkoušejte náš prémiový plán zdarma na 30 dní a ujistěte se, že váš web je globálně kompatibilní."
+
+#: Templates/Admin/modal.php:59
+msgctxt "admin"
+msgid "Try 30 days for free"
+msgstr "Vyzkoušejte 30 dní zdarma"
+
+#: Templates/Admin/modal.php:55
+msgctxt "admin"
+msgid "Recommended for companies that want to remove all risk and stay fully compliant with all global privacy regulations (GDPR, ePrivacy, and CCPA)."
+msgstr "Doporučeno pro společnosti, které chtějí odstranit všechna rizika a zůstat plně v souladu se všemi globálními předpisy na ochranu soukromí (GDPR, ePrivacy a CCPA)."
+
+#: Templates/Admin/modal.php:52
+msgctxt "admin"
+msgid "Global compliance (business websites)"
+msgstr "Globální soulad (firemní weby)"
+
+#: Templates/Admin/modal.php:41
+msgctxt "admin"
+msgid "Continue with the GDPR-only plugin"
+msgstr "Pokračujte s pluginem pouze pro GDPR"
+
+#: Templates/Admin/modal.php:37
+msgctxt "admin"
+msgid "Recommended if your website is used by people in the EU."
+msgstr "Doporučeno, pokud váš web používají lidé v EU."
+
+#: Templates/Admin/modal.php:34
+msgctxt "admin"
+msgid "GDPR-only (personal websites)"
+msgstr "Pouze GDPR (osobní webové stránky)"
+
+#: Templates/Admin/modal.php:12
+msgctxt "admin"
+msgid "Choose your consent solution"
+msgstr "Vyberte řešení pro souhlas"
+
+#: Templates/Admin/header.php:16 Templates/Admin/Pages/Dashboard/welcome.php:17
+msgctxt "admin"
+msgid "Sign up for a 30-day free trial"
+msgstr "Přihlaste se k 30denní bezplatné zkušební verzi"
+
+#. Description of the plugin
+msgid "This plugin helps your website stay compliant with GDPR using a free cookie pop-up."
+msgstr "Tento plugin pomáhá vašemu webu zůstat v souladu s GDPR pomocí bezplatného vyskakovacího okna cookie."
+
+#: WordPress/Admin/Pages/PageSettings.php:347
+msgctxt "admin"
+msgid "Please make sure that the access request form shortcode %s is active on the selected page"
+msgstr "Ujistěte se prosím, že je na vybrané stránce aktivní formulář žádosti o přístup %s"
+
+#: WordPress/Admin/Pages/PageSettings.php:203
+msgctxt "admin"
+msgid "Font family for bar and pop-up"
+msgstr "Rodina písem pro lištu a vyskakovací okno"
+
+#: WordPress/Admin/Pages/PageSettings.php:116
+msgctxt "admin"
+msgid "Consent bar & pop-up"
+msgstr "Lišta souhlasu a vyskakovací okno"
+
+#: Templates/Admin/Pages/Settings/request.php:22
+#: WordPress/Admin/Pages/PageSettings.php:119
+msgctxt "admin"
+msgid "Request user data form"
+msgstr "Vyžádat data uživatele"
+
+#: Templates/Admin/Pages/Settings/consent.php:51
+msgctxt "admin"
+msgid "Consent bar settings"
+msgstr "Nastavení lišty souhlasu"
+
+#: Templates/Admin/Pages/Settings/consent.php:25
+msgctxt "admin"
+msgid "Consent bar & pop-up settings"
+msgstr "Nastavení lišty souhlasu a vyskakovacích oken"
+
+#: Templates/Admin/modal.php:72
+msgctxt "admin"
+msgid "Signup for Cookie Information"
+msgstr "Přihlášení k odběru informací o souborech cookie"
+
+#: Templates/Admin/modal.php:23
+msgid "Back"
+msgstr "Zpět"
+
+#: Integrations/WPRegistration.php:96
+msgid "No users found with email address%1s."
+msgstr "S e-mailovou adresou%1s nebyl nalezen žádný uživatel."
+
+#: Integrations/Plugins/WooCommerce.php:87
+msgid "No orders found with email address%1s."
+msgstr "Nebyly nalezeny žádné objednávky s e-mailovou adresou%1s."
+
+#: Integrations/Plugins/GravityForms.php:92
+msgid "No form entries found with email address%1s."
+msgstr "Nebyly nalezeny žádné položky formuláře s e-mailovou adresou%1s."
+
+#: WordPress/Shortcodes/RequestAccessForm.php:126
+msgid "If needed, you can put in a new request here: %1s"
+msgstr "V případě potřeby můžete zadat nový požadavek zde: %1s"
+
+#: WordPress/Shortcodes/RequestAccessForm.php:102
+msgid "No data is stored in relation to this email address"
+msgstr "V souvislosti s touto e-mailovou adresou nejsou uložena žádná data"
+
+#: WordPress/Shortcodes/RequestAccessForm.php:42
+msgid "The request form has been disabled, you can enable it <a href=\"%s\">here</a>."
+msgstr "Formulář žádosti byl deaktivován, můžete jej aktivovat <a href=\"%s\">zde</a> ."
+
+#: WordPress/Shortcodes/ProcessorSettingsLink.php:46
+msgctxt "admin"
+msgid "You need to make sure you have added at least one (1) active data processor."
+msgstr "Musíte se ujistit, že jste přidali alespoň jeden (1) aktivní datový procesor."
+
+#: WordPress/Settings.php:306
+msgctxt "admin"
+msgid "Instant (no animation)"
+msgstr "Okamžitě (bez animace)"
+
+#: WordPress/Settings.php:305
+msgctxt "admin"
+msgid "Zoom out"
+msgstr "Oddálit"
+
+#: WordPress/Settings.php:304
+msgctxt "admin"
+msgid "Bounce out"
+msgstr "Poskakování ven"
+
+#: WordPress/Settings.php:303
+msgctxt "admin"
+msgid "Fade out"
+msgstr "Stmívání"
+
+#: WordPress/Settings.php:293
+msgctxt "admin"
+msgid "Top"
+msgstr "Nahoře"
+
+#: WordPress/Settings.php:292
+msgctxt "admin"
+msgid "Bottom"
+msgstr "Dole"
+
+#: WordPress/Settings.php:280
+msgctxt "admin"
+msgid "Use the font of my website"
+msgstr "Použijte písmo mého webu"
+
+#: WordPress/Cron.php:32
+msgctxt "admin"
+msgid "Once a month"
+msgstr "Jednou měsíčně"
+
+#: WordPress/Config.php:116
+msgctxt "admin"
+msgid "Thank you very much for choosing this plugin to help you with your GDPR Compliance. This is a free tool that offers Compliance. We also provide a version that automates many of these tasks and makes sure that you are always up to date: %1s"
+msgstr "Děkujeme, že jste si vybrali tento plugin, který vám pomůže s dodržováním GDPR. Toto je bezplatný nástroj, který nabízí shodu. Poskytujeme také verzi, která automatizuje mnoho z těchto úloh a zajišťuje, že budete vždy aktuální: %1s"
+
+#: WordPress/Config.php:114
+msgctxt "admin"
+msgid "try it out here"
+msgstr "zkuste to tady"
+
+#: WordPress/Config.php:107
+msgctxt "admin"
+msgid "Welcome to Cookie Information | Free WP GDPR Consent Plugin"
+msgstr "Vítejte v informacích o souborech cookie | Zdarma WP GDPR Consent Plugin"
+
+#: WordPress/Ajax/UpdateProcessorMode.php:59
+msgctxt "admin"
+msgid "No active data processors."
+msgstr "Žádní aktivní zpracovatelé dat."
+
+#: WordPress/Ajax/ResetConsent.php:48
+msgctxt "admin"
+msgid "Consent has been reset"
+msgstr "Souhlas byl resetován"
+
+#: WordPress/Ajax/ResetConsent.php:45
+msgctxt "admin"
+msgid "Unable to reset consent"
+msgstr "Souhlas nelze resetovat"
+
+#: WordPress/Ajax/ProcessRequest.php:62
+msgctxt "admin"
+msgid "Unable to (fully) anonymize all data."
+msgstr "Nelze (plně) anonymizovat všechna data."
+
+#: WordPress/Ajax/ProcessRequest.php:62
+msgctxt "admin"
+msgid "Data anonymized."
+msgstr "Data anonymizována."
+
+#: WordPress/Ajax/DeleteRequest.php:48
+msgctxt "admin"
+msgid "Unable to delete request."
+msgstr "Žádost nelze smazat."
+
+#: WordPress/Ajax/DeleteRequest.php:48
+msgctxt "admin"
+msgid "Request deleted."
+msgstr "Žádost smazána."
+
+#: WordPress/Admin/Pages/PageWizard.php:53
+msgctxt "admin"
+msgid "Wizard"
+msgstr "Průvodce"
+
+#: WordPress/Admin/Pages/PageSettings.php:354
+msgctxt "admin"
+msgid "Anonymize request explanation"
+msgstr "Anonymizovat vysvětlení požadavku"
+
+#: WordPress/Admin/Pages/PageSettings.php:345
+msgctxt "admin"
+msgid "Visitors will receive a link to this page on which the visitor can view all the data stored which is associated with their email address."
+msgstr "Návštěvníci obdrží odkaz na tuto stránku, na které si návštěvník může prohlédnout všechna uložená data, která jsou spojena s jejich e-mailovou adresou."
+
+#: WordPress/Admin/Pages/PageSettings.php:340
+msgctxt "admin"
+msgid "Request access page"
+msgstr "Požádat o přístup"
+
+#: WordPress/Admin/Pages/PageSettings.php:331
+msgctxt "admin"
+msgid "Checkbox text"
+msgstr "Text zaškrtávacího políčka"
+
+#: WordPress/Admin/Pages/PageSettings.php:320
+msgctxt "admin"
+msgid "Activate request form"
+msgstr "Aktivujte formulář žádosti"
+
+#: WordPress/Admin/Pages/PageSettings.php:288
+msgctxt "admin"
+msgid "Button text color"
+msgstr "Barva textu tlačítka"
+
+#: WordPress/Admin/Pages/PageSettings.php:279
+msgctxt "admin"
+msgid "Button background"
+msgstr "Pozadí tlačítka"
+
+#: WordPress/Admin/Pages/PageSettings.php:270
+msgctxt "admin"
+msgid "Text color"
+msgstr "Barva textu"
+
+#: WordPress/Admin/Pages/PageSettings.php:261
+msgctxt "admin"
+msgid "Bar color"
+msgstr "Barva sloupce"
+
+#: WordPress/Admin/Pages/PageSettings.php:252
+msgctxt "admin"
+msgid "Settings button text"
+msgstr "Tlačítko nastavení"
+
+#: WordPress/Admin/Pages/PageSettings.php:243
+msgctxt "admin"
+msgid "Accept button text"
+msgstr "Přijmout text tlačítka"
+
+#: WordPress/Admin/Pages/PageSettings.php:233
+msgctxt "admin"
+msgid "Animation"
+msgstr "Animace"
+
+#: WordPress/Admin/Pages/PageSettings.php:223
+msgctxt "admin"
+msgid "Position"
+msgstr "Pozice"
+
+#: WordPress/Admin/Pages/PageSettings.php:217
+msgctxt "admin"
+msgid "Google fonts API key"
+msgstr "Google fonts API klíč"
+
+#: WordPress/Admin/Pages/PageSettings.php:213
+msgctxt "admin"
+msgid "Google Fonts API key"
+msgstr "Google Fonts API klíč"
+
+#: WordPress/Admin/Pages/PageSettings.php:194
+#: WordPress/Admin/Pages/PageSettings.php:306
+msgctxt "admin"
+msgid "Explanation"
+msgstr "Vysvětlení"
+
+#: WordPress/Admin/Pages/PageSettings.php:174
+msgctxt "admin"
+msgid "Select the page where the Privacy Policy is written."
+msgstr "Vyberte stránku, kde jsou napsány Zásady ochrany osobních údajů."
+
+#: WordPress/Admin/Pages/PageSettings.php:159
+msgctxt "admin"
+msgid "Use external privacy policy"
+msgstr "Použijte externí zásady ochrany osobních údajů"
+
+#: WordPress/Admin/Pages/PageSettings.php:113
+msgctxt "admin"
+msgid "Privacy Policy"
+msgstr "Zásady ochrany osobních údajů"
+
+#: WordPress/Admin/Pages/PageRequests.php:153
+#: WordPress/Admin/Pages/PageRequests.php:160
+#: WordPress/Ajax/DeleteRequest.php:44 WordPress/Ajax/ProcessRequest.php:58
+msgctxt "admin"
+msgid "Unable to locate request."
+msgstr "Žádost nelze najít."
+
+#: WordPress/Admin/Pages/PageRequests.php:126
+msgctxt "admin"
+msgid "Request cancelled."
+msgstr "Žádost zrušena!"
+
+#: WordPress/Admin/Pages/PageRequests.php:51
+msgctxt "admin"
+msgid "1 request to process"
+msgid_plural "%1s requests to process"
+msgstr[0] "1 požadavek ke zpracování"
+msgstr[1] "%1s požadavky ke zpracování"
+msgstr[2] "%1s požadavků ke zpracování"
+
+#: WordPress/Admin/Pages/PageDashboard.php:91
+msgctxt "admin"
+msgid "Change settings of the Privacy Policy, Consent bar and pop-up, Request user data form and Integrations."
+msgstr "Změňte nastavení zásad ochrany osobních údajů, lišty souhlasu a vyskakovacího okna, formuláře žádosti o uživatelská data a integrací."
+
+#: WordPress/Admin/Actions.php:38
+msgctxt "admin"
+msgid "Consent updated."
+msgstr "Souhlas aktualizován."
+
+#: WordPress/Admin.php:133
+msgctxt "admin"
+msgid "To update the settings and read about what this plugin can do, go to our %1s page."
+msgstr "Chcete-li aktualizovat nastavení a přečíst si o tom, co tento plugin umí, přejděte na naši stránku %1s."
+
+#: WordPress/Admin.php:133
+msgctxt "admin"
+msgid "<strong>Awesome!</strong> You have activated the %1s plugin."
+msgstr "<strong>Úžasné!</strong> Aktivovali jste plugin %1s."
+
+#: WordPress/Admin.php:117
+msgctxt "admin"
+msgid "%1s Settings"
+msgstr "Nastavení %1s"
+
+#: Utils/Wizard.php:130
+msgctxt "admin"
+msgid "To setup the plugin and see what this plugin can do, go to our %1s."
+msgstr "Chcete-li nastavit plugin a zjistit, co tento plugin umí, přejděte na naše %1s."
+
+#: Utils/Wizard.php:130
+msgctxt "admin"
+msgid "<strong>Hey!</strong> Thank you for installing %s!"
+msgstr "<strong>Ahoj!</strong> Děkujeme za instalaci %s!"
+
+#: Utils/Wizard.php:129
+msgctxt "admin"
+msgid "First time setup Wizard"
+msgstr "Průvodce prvním nastavením"
+
+#: Utils/Request.php:258
+msgctxt "admin"
+msgid "%1s and %2s"
+msgstr "%1s a %2s"
+
+#: Utils/Request.php:245
+msgctxt "admin"
+msgid "1 hour"
+msgid_plural "%1s hours"
+msgstr[0] "1 hodina"
+msgstr[1] "%1s hodiny"
+msgstr[2] "%1s hodin"
+
+#: Utils/Request.php:241
+msgctxt "admin"
+msgid "1 day"
+msgid_plural "%1s days"
+msgstr[0] "1 den"
+msgstr[1] "%1s dny"
+msgstr[2] "%1s dnů"
+
+#: Utils/Request.php:237
+msgctxt "admin"
+msgid "1 month"
+msgid_plural "%1s months"
+msgstr[0] "1 měsíc"
+msgstr[1] "%1s měsíce"
+msgstr[2] "%1s měsíců"
+
+#: Utils/Request.php:233
+msgctxt "admin"
+msgid "1 year"
+msgid_plural "%1s years"
+msgstr[0] "1 rok"
+msgstr[1] "%1s roky"
+msgstr[2] "%1s roků"
+
+#: Utils/Request.php:196
+msgctxt "admin"
+msgid "0 seconds"
+msgstr "0 sekund"
+
+#: Utils/Redirect.php:18
+msgid "Redirecting to %s"
+msgstr "Přesměrování na %s"
+
+#: Utils/Integration.php:75
+msgid "Please accept the privacy policy"
+msgstr "Přijměte prosím zásady ochrany osobních údajů"
+
+#: Utils/FormHandler.php:40
+msgctxt "admin"
+msgid "Consent deleted."
+msgstr "Souhlas byl smazán."
+
+#: Utils/FormHandler.php:35
+msgctxt "admin"
+msgid "Something went wrong."
+msgstr "Něco se pokazilo."
+
+#: Utils/FormHandler.php:28
+msgctxt "admin"
+msgid "Consent could not be found."
+msgstr "Souhlas nebyl nalezen."
+
+#: Utils/Elements.php:148
+msgctxt "admin"
+msgid "<strong>NOTE:</strong> %1$s"
+msgstr "<strong>POZNÁMKA:</strong> %1$s"
+
+#: Utils/Elements.php:47
+msgctxt "admin"
+msgid "<strong>ERROR</strong>: %1$s"
+msgstr "<strong>CHYBA</strong>: %1$s"
+
+#: Utils/Anonymous.php:32
+msgctxt "admin"
+msgid "Anonymous"
+msgstr "Anonymní"
+
+#: Utils/AdminHelper.php:265
+msgctxt "admin"
+msgid "Note"
+msgstr "Poznámka"
+
+#: Utils/AdminForm.php:463
+msgctxt "admin"
+msgid "Save settings"
+msgstr "Uložit nastavení"
+
+#: Utils/AdminForm.php:117
+msgctxt "admin"
+msgid "Enable"
+msgstr "Povolit"
+
+#: Utils/AdminForm.php:116
+msgctxt "admin"
+msgid "Disable"
+msgstr "Zakázat"
+
+#: Utils/AdminForm.php:106
+msgctxt "admin"
+msgid "No"
+msgstr "Ne"
+
+#: Templates/Admin/modal.php:18 Templates/Front/Consent/modal.php:17
+msgid "Close popup"
+msgstr "Zavřít popup"
+
+#: Templates/Front/Consent/modal.php:16
+msgid "Privacy settings"
+msgstr "Privacy Settings"
+
+#: Templates/Front/Consent/modal-content.php:63
+msgid "Powered by Cookie Information"
+msgstr "Provozováno na Cookie Information"
+
+#: Templates/Admin/Wizard/Intro.php:17
+msgctxt "admin"
+msgid "Let's get you all set up!"
+msgstr "Pojďme vše nastavit!"
+
+#: Templates/Admin/Wizard/Intro.php:14
+msgctxt "admin"
+msgid "If you want to get a taste of what you can expect, you can try the full suite of Cookie Information for 30 days free"
+msgstr "Pokud chcete ochutnat, co můžete očekávat, můžete vyzkoušet celou sadu informací o souborech cookie na 30 dní zdarma"
+
+#: Templates/Admin/Wizard/Intro.php:12
+msgctxt "admin"
+msgid "If you run a business within the EU, we strongly recommend changing to the business version to secure 100% compliance. Features include customizable consent pop-ups, automated cookie policies, integration to Google Products, and much more."
+msgstr "Pokud podnikáte v rámci EU, důrazně doporučujeme přejít na obchodní verzi, abyste zajistili 100% shodu. Mezi funkce patří přizpůsobitelná vyskakovací okna se souhlasem, zásady automatických souborů cookie, integrace do produktů Google a mnoho dalšího."
+
+#: Templates/Admin/Wizard/Intro.php:10
+msgctxt "admin"
+msgid "We will significantly extend the features of this plugin to protect our community against the increasing pressure from Data Protection Agencies, giving hefty fines for non-compliant cookie consents. To enable business users to comply with GDPR, we will offer a business solution that easily allows you to become compliant and avoid fines."
+msgstr "Významně rozšíříme funkce tohoto pluginu, abychom chránili naši komunitu před narůstajícím tlakem ze strany agentur pro ochranu osobních údajů a udělujeme vysoké pokuty za nevyhovující souhlasy se soubory cookie. Abychom firemním uživatelům umožnili dodržovat GDPR, nabídneme obchodní řešení, které vám snadno umožní dosáhnout souladu a vyhnout se pokutám."
+
+#: Templates/Admin/Pages/Wizard/Steps/consent.php:11
+msgctxt "admin"
+msgid "Setup your first consent"
+msgstr "Nastavte svůj první souhlas"
+
+#: Templates/Admin/Pages/Wizard/Steps/consent.php:9
+msgctxt "admin"
+msgid "Setup first consent"
+msgstr "Nejprve nastavte souhlas"
+
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:18
+msgctxt "admin"
+msgid "A business website"
+msgstr "Obchodní web"
+
+#: WordPress/Admin/Pages/PageAdmin.php:31
+msgctxt "admin"
+msgid "Cookie Information"
+msgstr "Informace o cookie"
+
+#: Templates/Admin/Pages/Wizard/main.php:20
+msgctxt "admin"
+msgid "First time setup wizard - Cookie Information | Free WP GDPR Consent Plugin"
+msgstr "Průvodce prvním nastavením – Informace o souborech cookie | Zdarma WP GDPR Consent Plugin"
+
+#: Templates/Admin/Pages/Settings/request.php:29
+msgctxt "admin"
+msgid "Request User data"
+msgstr "Vyžádat data uživatele"
+
+#: Templates/Admin/Pages/Settings/request.php:14
+msgctxt "admin"
+msgid "Request User"
+msgstr "Žádost o uživateli"
+
+#: WordPress/Admin/Pages/PageSettings.php:180
+msgctxt "admin"
+msgid "Privacy policy url"
+msgstr "URL adresa zásad ochrany osobních údajů"
+
+#: Templates/Admin/Pages/Settings/policy.php:35
+#: WordPress/Admin/Pages/PageSettings.php:171
+msgctxt "admin"
+msgid "Privacy policy page"
+msgstr "Stránka zásad ochrany osobních údajů"
+
+#: Templates/Admin/Pages/Settings/policy.php:49
+msgctxt "admin"
+msgid "External privacy policy?"
+msgstr "Externí zásady ochrany osobních údajů?"
+
+#: WordPress/Admin/Pages/PageSettings.php:148
+msgctxt "admin"
+msgid "Privacy policy link text"
+msgstr "Odkaz na Zásady ochrany osobních údajů"
+
+#: Templates/Admin/Pages/Settings/policy.php:21
+msgctxt "admin"
+msgid "Privacy policy link settings"
+msgstr "Nastavení odkazu na zásady ochrany osobních údajů"
+
+#: Templates/Admin/Pages/Settings/policy.php:16
+msgctxt "admin"
+msgid "Privacy policy"
+msgstr "Zásady ochrany osobních údajů"
+
+#: Templates/Admin/Pages/Settings/Integrations/item-manage.php:23
+msgctxt "admin"
+msgid "Activate"
+msgstr "Aktivovat"
+
+#: Templates/Admin/Pages/Settings/Integrations/item-form.php:58
+msgctxt "admin"
+msgid "HTML is not allowed because of technical limitations with tooltips."
+msgstr "HTML není povoleno kvůli technickým omezením s popisky."
+
+#: Templates/Admin/Pages/Settings/Integrations/item-form.php:58
+msgctxt "admin"
+msgid "Required message"
+msgstr "Povinná zpráva"
+
+#: Templates/Admin/Pages/Settings/Integrations/item-form.php:51
+msgctxt "admin"
+msgid "Error message"
+msgstr "Hlášení o chybě"
+
+#: Templates/Admin/Pages/Settings/Integrations/item-form.php:43
+msgctxt "admin"
+msgid "Change the text of the checkbox"
+msgstr "Změňte text zaškrtávacího políčka"
+
+#: Templates/Admin/Pages/Settings/Integrations/item-form.php:39
+msgctxt "admin"
+msgid "Change the text and messages of the checkbox"
+msgstr "Změňte text a zprávy zaškrtávacího políčka"
+
+#: Templates/Admin/Pages/Settings/Integrations/item-form.php:31
+msgctxt "admin"
+msgid "Activate for this form"
+msgstr "Aktivovat pro tento formulář:"
+
+#: Templates/Admin/Pages/Settings/Integrations/item-form.php:28
+msgctxt "admin"
+msgid "Form: %1s"
+msgstr "Formulář: %1s"
+
+#: Templates/Admin/Pages/Settings/Integrations/item-content.php:51
+msgctxt "admin"
+msgid "Disable integration"
+msgstr "Zakázat integraci"
+
+#: Templates/Admin/Pages/Settings/Integrations/item-active.php:13
+msgctxt "admin"
+msgid "Active"
+msgstr "Aktivní"
+
+#: Templates/Admin/Pages/Settings/integrations.php:13
+msgctxt "admin"
+msgid "Integrate GDPR Consent Compliance into forms that you use on your website. By enabling the integrations a checkbox will be added. You can manage what text to display per integration."
+msgstr "Integrujte soulad se souhlasem s GDPR do formulářů, které používáte na svém webu. Povolením integrací bude přidáno zaškrtávací políčko. U každé integrace můžete spravovat, jaký text se má zobrazit."
+
+#: Templates/Admin/Pages/Settings/integrations.php:12
+#: WordPress/Admin/Pages/PageSettings.php:122
+msgctxt "admin"
+msgid "Integrations"
+msgstr "Integrace"
+
+#: Templates/Admin/Pages/Settings/consent.php:136
+msgctxt "admin"
+msgid "Consent pop-up settings"
+msgstr "Nastavení vyskakovacího okna souhlasu"
+
+#: Templates/Admin/Pages/Settings/consent.php:53
+msgctxt "admin"
+msgid "Preview"
+msgstr "Náhled"
+
+#: Templates/Admin/Pages/Settings/consent.php:32
+msgctxt "admin"
+msgid "your Cookie Information account"
+msgstr "váš účet s informacemi o souborech cookie"
+
+#: Templates/Admin/Pages/Settings/consent.php:32
+msgctxt "admin"
+msgid "Style your Consent Bar and Consent Pop-up at %1s."
+msgstr "Upravte styl lišty souhlasu a vyskakovacího okna souhlasu na %1s."
+
+#: Templates/Admin/Pages/Requests/main.php:131
+msgctxt "admin"
+msgid "Are you sure you want to delete this request?"
+msgstr "Opravdu to chcete odstranit?"
+
+#: Templates/Admin/Pages/Requests/main.php:109
+#: Templates/Admin/Pages/Settings/Integrations/item-manage.php:25
+msgctxt "admin"
+msgid "Manage"
+msgstr "Správa"
+
+#: Templates/Admin/Pages/Requests/main.php:94
+msgctxt "admin"
+msgid "IP Address"
+msgstr "IP adresa"
+
+#: Templates/Admin/Pages/Requests/main.php:90
+msgctxt "admin"
+msgid "Date of request"
+msgstr "Datum žádosti"
+
+#: Templates/Admin/Pages/Requests/main.php:35
+msgctxt "admin"
+msgid "Here are the requests that are done via the request form. Requests are anonymized automatically after 30 days when no action is taken."
+msgstr "Zde jsou žádosti, které jsou prováděny prostřednictvím formuláře žádosti. Žádosti jsou automaticky anonymizovány po 30 dnech, kdy neprovedete žádnou akci."
+
+#: Templates/Admin/Pages/Requests/main.php:32
+#: Templates/Admin/Pages/Requests/main.php:98
+#: WordPress/Admin/Pages/PageRequests.php:39
+msgctxt "admin"
+msgid "Requests"
+msgstr "Požadavek"
+
+#: Templates/Admin/Pages/Requests/main.php:21
+msgctxt "admin"
+msgid "No expired requests here."
+msgstr "Nejsou zde žádné žádosti, jejichž platnost vypršela."
+
+#: Templates/Admin/Pages/Requests/main.php:20
+msgctxt "admin"
+msgid "Expired requests"
+msgstr "Žádosti, jejichž platnost vypršela"
+
+#: Templates/Admin/Pages/Requests/main.php:16
+msgctxt "admin"
+msgid "No active requests to manage."
+msgstr "Žádné aktivní požadavky ke správě."
+
+#: Templates/Admin/Pages/Requests/main.php:15
+#: Templates/Admin/Pages/Requests/main.php:44
+msgctxt "admin"
+msgid "Active requests"
+msgstr "Aktivní požadavky"
+
+#: Templates/Admin/Pages/Requests/Edit/main.php:99
+msgctxt "admin"
+msgid "Actions"
+msgstr "Akce"
+
+#: Templates/Admin/Pages/Requests/Edit/main.php:84
+msgctxt "admin"
+msgid "%1s entries requested, %2s anonymized"
+msgstr "Požadované položky: %1s, %2s anonymizováno"
+
+#: Templates/Admin/Pages/Requests/Edit/main.php:74
+msgctxt "admin"
+msgid "Found data"
+msgstr "Nalezená data"
+
+#: Templates/Admin/Pages/Requests/Edit/main.php:61
+msgctxt "admin"
+msgid "Request by %1s"
+msgstr "Žádost od %1s"
+
+#: Templates/Admin/Pages/Requests/Edit/main.php:41
+msgctxt "admin"
+msgid "Anonymize all data that is found for this request."
+msgstr "Anonymizovat všechna data nalezená pro tento požadavek."
+
+#: Templates/Admin/Pages/Requests/Edit/main.php:40
+#: Templates/Admin/Pages/Requests/Edit/main.php:44
+msgctxt "admin"
+msgid "Anonymize all"
+msgstr "Anonymizovat všechny"
+
+#: Templates/Admin/Pages/Requests/Edit/main.php:36
+#: Templates/Admin/Pages/Requests/Edit/main.php:43
+msgid "All requests have been processed."
+msgstr "Všechny žádosti byly zpracovány."
+
+#: Templates/Admin/Pages/Requests/Edit/main.php:34
+msgctxt "admin"
+msgid "If you cancel this request, the user can not choose anymore which data he/she/they would like to be anonymized. The user can submit a new request though."
+msgstr "Pokud tento požadavek zrušíte, uživatel si již nebude moci vybrat, která data si přeje být anonymizována. Uživatel však může odeslat nový požadavek."
+
+#: Templates/Admin/Pages/Requests/Edit/main.php:33
+#: Templates/Admin/Pages/Requests/Edit/main.php:37
+msgctxt "admin"
+msgid "Cancel request"
+msgstr "Zrušit žádost"
+
+#: Templates/Admin/Pages/Requests/Edit/main.php:29
+msgctxt "admin"
+msgid "The data wil be anonymized in %1s when no action is taken."
+msgstr "Pokud neprovedete žádnou akci, data budou anonymizována za %1s."
+
+#: Templates/Admin/Pages/Requests/Edit/main.php:19
+msgctxt "admin"
+msgid "This request was submitted by %1s on %2s."
+msgstr "Tuto žádost odeslal %1s dne %2s."
+
+#: Templates/Admin/Pages/Processors/main.php:63
+msgctxt "admin"
+msgid "Add data processor"
+msgstr "Přidejte procesor dat"
+
+#: Templates/Admin/Pages/Processors/main.php:60
+msgctxt "admin"
+msgid "Data processors"
+msgstr "Zpracovatelé dat"
+
+#: Templates/Admin/Pages/Processors/main.php:36
+msgctxt "admin"
+msgid "Disabled data processors (%1$s)"
+msgstr "Zakázané procesory dat (%1$s)"
+
+#: Templates/Admin/Pages/Processors/main.php:30
+msgctxt "admin"
+msgid "Active data processors (%1$s)"
+msgstr "Aktivní datové procesory (%1$s)"
+
+#: Templates/Admin/Pages/Processors/item.php:64
+#: Templates/Admin/Pages/Requests/main.php:142
+msgctxt "admin"
+msgid "Cancel"
+msgstr "Storno"
+
+#: Templates/Admin/Pages/Processors/item.php:58
+#: Templates/Admin/Pages/Requests/main.php:136 Utils/AdminForm.php:107
+msgctxt "admin"
+msgid "Yes"
+msgstr "Ano"
+
+#: Templates/Admin/Pages/Processors/item.php:53
+msgctxt "admin"
+msgid "Are you sure you want to delete this processor?"
+msgstr "Opravdu to chcete odstranit?"
+
+#: Templates/Admin/Pages/Processors/item.php:48
+#: Templates/Admin/Pages/Requests/main.php:116
+msgctxt "admin"
+msgid "Delete"
+msgstr "Smazat"
+
+#: Templates/Admin/Pages/Processors/item.php:42
+msgctxt "admin"
+msgid "Edit"
+msgstr "Upravit"
+
+#: Templates/Admin/Pages/Processors/item.php:29
+msgctxt "admin"
+msgid "(Last edited on %1s)"
+msgstr "(Naposledy upraveno %1s)"
+
+#: Templates/Admin/Pages/Processors/item.php:21
+msgctxt "admin"
+msgid "never"
+msgstr "nikdy"
+
+#: Templates/Admin/Pages/Processors/item-required.php:11
+msgctxt "admin"
+msgid "Not required"
+msgstr "Není nutné"
+
+#: Templates/Admin/Pages/Processors/footer.php:54 WordPress/Admin.php:117
+#: WordPress/Admin.php:131 WordPress/Admin/Pages/PageDashboard.php:89
+#: WordPress/Admin/Pages/PageSettings.php:46
+msgctxt "admin"
+msgid "Settings"
+msgstr "Nastavení"
+
+#: Templates/Admin/Pages/Processors/footer.php:44
+msgctxt "admin"
+msgid "Change settings"
+msgstr "Změnit nastavení"
+
+#: Templates/Admin/Pages/Processors/footer.php:41
+msgctxt "admin"
+msgid "Change the colors of the consent bar and the settings."
+msgstr "Změňte barvy lišty souhlasu a nastavení."
+
+#: Templates/Admin/Pages/Processors/footer.php:40
+msgctxt "admin"
+msgid "Change the look"
+msgstr "Změňte vzhled"
+
+#: Templates/Admin/Pages/Processors/footer.php:35
+msgctxt "admin"
+msgid "Reset"
+msgstr "Resetovat"
+
+#: Templates/Admin/Pages/Processors/footer.php:33
+msgctxt "admin"
+msgid "Want to reset the Cookie pop-up? This means that the consent bar will appear again for all users."
+msgstr "Chcete resetovat vyskakovací okno cookie? To znamená, že lišta souhlasu se znovu zobrazí všem uživatelům."
+
+#: WordPress/Ajax/UpdateProcessorMode.php:69
+msgctxt "admin"
+msgid "To enable the consent bar, activate one (or more) data processor(s)."
+msgstr "Chcete-li povolit panel souhlasu, aktivujte jeden (nebo více) zpracovatelů dat."
+
+#: Templates/Admin/Pages/Processors/footer.php:28
+msgctxt "admin"
+msgid "Toggle consent bar"
+msgstr "Přepnout panel souhlasu"
+
+#: Templates/Admin/Pages/Settings/consent.php:16
+msgctxt "admin"
+msgid "Consent bar"
+msgstr "Lišta souhlasu"
+
+#: Templates/Admin/Pages/Processors/footer.php:17
+msgctxt "admin"
+msgid "not active"
+msgstr "není aktivní"
+
+#: Templates/Admin/Pages/Processors/footer.php:17
+msgctxt "admin"
+msgid "active"
+msgstr "aktivní"
+
+#: Templates/Admin/Pages/Processors/Edit/main.php:84
+msgctxt "admin"
+msgid "Save processor"
+msgstr "Ušetřete procesor"
+
+#: Templates/Admin/Pages/Processors/Edit/main.php:76
+msgctxt "admin"
+msgid "Code snippet"
+msgstr "Úryvek kódu"
+
+#: Templates/Admin/Pages/Processors/Edit/main.php:67
+msgctxt "admin"
+msgid "Placement"
+msgstr "Umístění"
+
+#: Templates/Admin/Pages/Processors/Edit/main.php:59
+msgctxt "admin"
+msgid "Code wrap"
+msgstr "Zalamování kódu"
+
+#: Templates/Admin/Pages/Processors/Edit/main.php:54
+msgctxt "admin"
+msgid "Describe your processor script as thoroughly as possible. %1s will not work here."
+msgstr "Popište skript procesoru co nejdůkladněji. %1s zde nebude fungovat."
+
+#: Templates/Admin/Pages/Processors/Edit/main.php:53
+msgctxt "admin"
+msgid "A short description of the processor"
+msgstr "Krátký popis procesoru"
+
+#: Templates/Admin/Pages/Processors/Edit/main.php:51
+msgctxt "admin"
+msgid "Description"
+msgstr "Popis"
+
+#: Templates/Admin/Pages/Processors/Edit/main.php:46
+msgctxt "admin"
+msgid "Name your processor wisely, the name of the processor is shown in the popup of the processorbar. For example name it \"Google Analytics\" or \"Advertisement\""
+msgstr "Pojmenujte svůj procesor moudře, název procesoru se zobrazí ve vyskakovacím okně na procesorové liště. Pojmenujte jej například \"Google Analytics\" nebo \"Reklama\""
+
+#: Templates/Admin/Pages/Processors/Edit/main.php:45
+#: WordPress/Admin/Pages/PageSettings.php:297
+msgctxt "admin"
+msgid "Title"
+msgstr "Název"
+
+#: Templates/Admin/Pages/Processors/Edit/main.php:42
+msgctxt "admin"
+msgid "Title of processor"
+msgstr "Titul zpracovatele"
+
+#: Templates/Admin/Pages/Processors/Edit/main.php:35
+msgctxt "admin"
+msgid "ID"
+msgstr "ID"
+
+#: Templates/Admin/Pages/Processors/Edit/main.php:31
+msgctxt "admin"
+msgid "Active processor?"
+msgstr "Aktivní procesor?"
+
+#: Templates/Admin/Pages/Processors/Edit/main.php:26
+#: Templates/Admin/Pages/Processors/item-required.php:13
+msgctxt "admin"
+msgid "Required"
+msgstr "Požadováno"
+
+#: Templates/Admin/Pages/Processors/Edit/main.php:16
+msgctxt "admin"
+msgid "New processor"
+msgstr "Nový procesor"
+
+#: Templates/Admin/Pages/Processors/Edit/main.php:16
+msgctxt "admin"
+msgid "Edit processor"
+msgstr "Upravit procesor"
+
+#: Templates/Admin/Pages/Dashboard/main.php:72
+#: WordPress/Admin/Pages/PageDashboard.php:48
+#: WordPress/Admin/Pages/PageDashboard.php:75
+msgctxt "admin"
+msgid "Dashboard"
+msgstr "Řídící panel"
+
+#: Templates/Admin/Pages/Dashboard/main.php:48
+msgctxt "admin"
+msgid "Manage data requests"
+msgstr "Spravujte požadavky na data"
+
+#: Templates/Admin/Pages/Dashboard/main.php:46
+msgctxt "admin"
+msgid "Last request is from %1s"
+msgstr "Poslední požadavek je od %1s"
+
+#: Templates/Admin/Pages/Dashboard/main.php:45
+msgctxt "admin"
+msgid "%1s Data request"
+msgid_plural "%1s Data requests"
+msgstr[0] "%1s Požadavek na data"
+msgstr[1] "%1s Požadavky na data"
+msgstr[2] "%1s Požadavků na data"
+
+#: Templates/Admin/Pages/Dashboard/main.php:38
+msgctxt "admin"
+msgid "Manage data processors"
+msgstr "Správa zpracovatelů dat"
+
+#: Templates/Admin/Pages/Dashboard/main.php:36
+msgctxt "admin"
+msgid "not showing"
+msgstr "nezobrazuje se"
+
+#: Templates/Admin/Pages/Dashboard/main.php:36
+msgctxt "admin"
+msgid "showing"
+msgstr "Zobrazuje se"
+
+#: Templates/Admin/Pages/Dashboard/main.php:36
+#: Templates/Admin/Pages/Processors/footer.php:27
+msgctxt "admin"
+msgid "The consent bar is %1s"
+msgstr "Lišta souhlasu je %1s"
+
+#: Templates/Admin/Pages/Dashboard/main.php:35
+msgctxt "admin"
+msgid "%1s Active data processor"
+msgid_plural "%1s Active data processors"
+msgstr[0] "%1s Aktivní datový procesor"
+msgstr[1] "%1s Aktivní datové procesory"
+msgstr[2] "%1s Aktivních datových procesorů"
+
+#: Templates/Admin/Pages/Dashboard/main.php:28
+msgctxt "admin"
+msgid "Manage checkboxes"
+msgstr "Spravovat zaškrtávací políčka"
+
+#: Templates/Admin/Pages/Dashboard/main.php:26
+msgctxt "admin"
+msgid "%1s form doesn’t seem to have a checkbox enabled"
+msgid_plural "%1s forms don’t seem to have a checkbox enabled"
+msgstr[0] "Zdá se, že formulář %1s nemá zaškrtávací políčko"
+msgstr[1] "Zdá se, že formuláře %1s nemají zaškrtávací políčko"
+msgstr[2] "Zdá se, že formuláře %1s nemají zaškrtávací políčko"
+
+#: Templates/Admin/Pages/Dashboard/main.php:25
+msgctxt "admin"
+msgid "%1s Active checkbox"
+msgid_plural "%1s Active checkboxes"
+msgstr[0] "%1s Aktivní zaškrtávací políčko"
+msgstr[1] "%1s Aktivní zaškrtávací políčka"
+msgstr[2] "%1s Aktivních zaškrtávacích políček"
+
+#: Templates/Admin/Pages/dashboard.php:66
+msgctxt "admin"
+msgid "Dashboard navigation"
+msgstr "Navigace na ovládacím panelu"
+
+#: Templates/Admin/Pages/dashboard.php:57
+msgctxt "admin"
+msgid "F jS, Y"
+msgstr "F jS, Y"
+
+#: Templates/Admin/page-after.php:8
+msgctxt "admin"
+msgid "Cookie Information, Consent Management Platform"
+msgstr "Informace o souborech cookie, platforma pro správu souhlasu"
+
+#: Templates/Admin/page-after.php:8
+msgctxt "admin"
+msgid "Powered by %1s"
+msgstr "Používá technologii %1s"
+
+#: Templates/Admin/header.php:34
+msgctxt "admin"
+msgid "Support"
+msgstr "Podpora"
+
+#: Templates/Admin/header.php:28
+msgctxt "admin"
+msgid "About"
+msgstr "O nás"
+
+#: Templates/Admin/header.php:25
+msgctxt "admin"
+msgid "Plugin help"
+msgstr "Soubor nápovědy k pluginu"
+
+#: Templates/Admin/Form/field-todo.php:8
+msgctxt "admin"
+msgid "No render method yet, please add one in %1s"
+msgstr "Zatím žádná metoda vykreslování, přidejte ji za %1s"
+
+#: Templates/Admin/Form/field-pageselect.php:28
+msgctxt "admin"
+msgid "Edit page"
+msgstr "Upravit stránku"
+
+#: Templates/Admin/Form/field-pageselect.php:22
+msgctxt "admin"
+msgid "Select a page"
+msgstr "Vyber stránku"
+
+#: Templates/Admin/Elements/updatecount.php:10
+msgctxt "admin"
+msgid "Update available"
+msgstr "Je dostupná aktualizace"
+
+#: Objects/RequestDelete.php:454
+msgid "%1s #%2s with email address %3s."
+msgstr "%1s #%2s s e-mailovou adresou %3s."
+
+#: Objects/RequestDelete.php:440
+msgctxt "admin"
+msgid "You're not allowed to edit form entries."
+msgstr "Nemáte oprávnění upravovat položky formuláře."
+
+#: Objects/RequestDelete.php:422
+msgctxt "admin"
+msgid "This comment doesn't exist."
+msgstr "Komentář neexistuje."
+
+#: Objects/RequestDelete.php:403
+msgctxt "admin"
+msgid "This user doesn't exist."
+msgstr "Tento uživatel neexistuje."
+
+#: Objects/RequestDelete.php:381 WordPress/Ajax/ProcessRequest.php:83
+msgid "No requests to process."
+msgstr "Požadavky na zpracování"
+
+#: Objects/RequestDelete.php:368 Objects/RequestDelete.php:374
+msgid "Unable to locate request."
+msgstr "Žádost nelze najít."
+
+#: Objects/DataProcessor.php:323
+msgctxt "admin"
+msgid "Footer (at the end of the <body> tag)"
+msgstr "Zápatí (na konci <body> štítek)"
+
+#: Objects/DataProcessor.php:322
+msgctxt "admin"
+msgid "Body (direct after the <body> tag)"
+msgstr "Tělo (přímo po <body> štítek)"
+
+#: Objects/DataProcessor.php:321
+msgctxt "admin"
+msgid "Head (in the <head> tag)"
+msgstr "Hlava (v <head> štítek)"
+
+#: Objects/DataProcessor.php:311
+msgctxt "admin"
+msgid "Do not wrap my code"
+msgstr "Nezalamujte můj kód"
+
+#: Objects/DataProcessor.php:310
+msgctxt "admin"
+msgid "Wrap my code in <script> tags"
+msgstr "Zabalte můj kód <script> tags"
+
+#: Objects/Data/User.php:56
+msgid "Registration"
+msgstr "Registrace"
+
+#: Objects/Data/Data.php:250
+msgid "Anonymize selected data"
+msgstr "Anonymizovat vybraná data"
+
+#: Objects/Data/Data.php:107
+msgid "Form"
+msgstr "Formulář"
+
+#: Integrations/WPRegistration.php:130
+msgctxt "amount of users"
+msgid "Anonymize selected user"
+msgid_plural "Anonymize selected user(s)"
+msgstr[0] "Anonymizovat vybraného uživatele"
+msgstr[1] "Anonymizovat vybrané uživatele"
+msgstr[2] "Anonymizovat vybrané uživatele"
+
+#: Integrations/WPRegistration.php:112
+msgctxt "admin"
+msgid "WordPress Registration"
+msgstr "WordPress Registrační formulář"
+
+#: Integrations/WPComments.php:221
+msgctxt "admin"
+msgid "GDPR accepted on"
+msgstr "GDPR akceptováno v"
+
+#: Integrations/WPComments.php:130
+msgctxt "amount of comments"
+msgid "Anonymize selected comment"
+msgid_plural "Anonymize selected comment(s)"
+msgstr[0] "Anonymizovat vybraný komentář"
+msgstr[1] "Anonymizovat vybrané komentáře"
+msgstr[2] "Anonymizovat vybrané komentáře"
+
+#: Integrations/WPComments.php:112
+msgctxt "admin"
+msgid "WordPress Comments"
+msgstr "WordPress komentáře"
+
+#: Integrations/Plugins/WooCommerce.php:136
+msgctxt "amount of shop orders"
+msgid "Anonymize selected shop order"
+msgid_plural "Anonymize selected shop order(s)"
+msgstr[0] "Anonymizovat objednávku vybraného obchodu"
+msgstr[1] "Anonymizovat vybrané objednávky obchodu"
+msgstr[2] "Anonymizovat vybrané objednávky obchodu"
+
+#: Integrations/Plugins/WooCommerce.php:125
+msgctxt "admin"
+msgid "When activated the GDPR checkbox will be added at the end of the WooCommerce checkout form."
+msgstr "Po aktivaci bude na konec formuláře pro platbu WooCommerce přidáno zaškrtávací políčko GDPR."
+
+#: Integrations/Plugins/WooCommerce.php:108
+msgctxt "admin"
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: Integrations/Plugins/WooCommerce.php:105
+msgid "Orders"
+msgstr "Objednávky"
+
+#: Integrations/Plugins/GravityForms.php:204
+msgctxt "admin"
+msgid "enabled"
+msgstr "povoleno"
+
+#: Integrations/Plugins/GravityForms.php:204
+msgctxt "admin"
+msgid "disabled"
+msgstr "zakázáno"
+
+#: Integrations/Plugins/GravityForms.php:151
+msgctxt "admin"
+msgid "Gravity Forms"
+msgstr "Gravity Forms"
+
+#: Integrations/Plugins/ContactForm.php:425
+msgid ""
+"GDPR accepted on:\n"
+"%1s"
+msgstr ""
+"GDPR přijato dne:\n"
+"%1s"
+
+#: Integrations/Plugins/ContactForm.php:182
+msgctxt "admin"
+msgid "published"
+msgstr "vypsané"
+
+#: Integrations/Plugins/ContactForm.php:182
+msgctxt "admin"
+msgid "draft"
+msgstr "koncept"
+
+#: Integrations/Plugins/ContactForm.php:162
+#: Integrations/Plugins/GravityForms.php:185
+msgctxt "amount of entries"
+msgid "Anonymize selected entry"
+msgid_plural "Anonymize selected entry/entries"
+msgstr[0] "Anonymizovat vybraný záznam"
+msgstr[1] "Anonymizace vybraného záznamu/záznamů"
+msgstr[2] "Anonymizace vybraného záznamu/záznamů"
+
+#: Integrations/Plugins/ContactForm.php:151
+#: Integrations/Plugins/GravityForms.php:174
+msgctxt "admin"
+msgid "When activated the GDPR checkbox will be added at the end of each <strong>activated</strong> form."
+msgstr "Po aktivaci bude na konec každého <strong>aktivovaného</strong> formuláře přidáno zaškrtávací políčko GDPR."
+
+#: Integrations/Plugins/ContactForm.php:128
+msgctxt "admin"
+msgid "Contact Form 7"
+msgstr "Kontaktní formulář 7"
+
+#: Integrations/Plugins/ContactForm.php:125
+#: Integrations/Plugins/GravityForms.php:148
+msgid "Forms Entries"
+msgstr "Zápisy do formulářů"
+
+#: Integrations/Plugins/AbstractPlugin.php:161
+msgctxt "admin"
+msgid "No active %1s forms found. Please create a form and return to set the checkbox message(s)."
+msgstr "Nebyly nalezeny žádné aktivní formuláře %1s. Vytvořte prosím formulář a vraťte se k nastavení zpráv zaškrtávacích políček."
+
+#: Integrations/Plugins/AbstractPlugin.php:153
+msgctxt "admin"
+msgid "Currently the %1s plugin is installed, but %2s. The plugin will be supported from version %3s and up."
+msgstr "Momentálně je nainstalován plugin %1s, ale %2s. Plugin bude podporován od verze %3s a vyšší."
+
+#: Integrations/Plugins/AbstractPlugin.php:151
+msgctxt "admin"
+msgid "this version is not supported"
+msgstr "tato verze není podporována"
+
+#: Integrations/Plugins/AbstractPlugin.php:142
+msgctxt "admin"
+msgid "Currently the %1s plugin is installed, but %2s."
+msgstr "Momentálně je nainstalován plugin %1s, ale %2s."
+
+#: Integrations/Plugins/AbstractPlugin.php:140
+msgctxt "admin"
+msgid "not activated"
+msgstr "není aktivován"
+
+#: Integrations/Plugins/AbstractPlugin.php:131
+msgctxt "admin"
+msgid "Currently the %1s plugin is not installed."
+msgstr "Momentálně není plugin %1s nainstalován."
+
+#. Plugin Name of the plugin
+msgid "Cookie Information | Free WP GDPR Consent Plugin"
+msgstr "Vítejte v informacích o souborech cookie | Zdarma WP GDPR Consent Plugin"
+
+#: Templates/Admin/modal.php:15 Templates/Admin/Pages/Premium/main.php:41
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:73
+msgctxt "admin"
+msgid "Start your 30-day free trial"
+msgstr "Spustit 30denní bezplatnou zkušební verzi"
+
+#: Templates/Admin/Wizard/Intro.php:16
+msgctxt "admin"
+msgid "It appears you have not yet completed the first time setup."
+msgstr "Zdá se, že jste ještě nedokončili první nastavení."
+
+#: Utils/Wizard.php:137
+msgctxt "admin"
+msgid "WP GDPR Compliance will become even better!"
+msgstr "Soulad s WP GDPR bude ještě lepší!"
+
+#: Templates/Admin/Pages/Wizard/Steps/done.php:24
+msgctxt "admin"
+msgid "Manage your Privacy Policy page"
+msgstr "Spravujte svou stránku Zásady ochrany osobních údajů"
+
+#: Templates/Admin/Pages/Wizard/Steps/privacy.php:13
+msgctxt "admin"
+msgid "You are required to have a privacy policy on your website to comply with GDPR guidelines. Here you can add a link from your consent pop to your privacy policy."
+msgstr "Abyste vyhověli pokynům GDPR, musíte mít na svém webu zásady ochrany osobních údajů. Zde můžete přidat odkaz z vyskakovacího okna souhlasu na vaše zásady ochrany osobních údajů."
+
+#: Templates/Admin/Pages/Wizard/Steps/consent.php:13
+msgctxt "admin"
+msgid "Most websites use services and plugins for statistical and marketing that require the user's consent to comply with GDPR. Here you can add the first of the services you use. You can always change this later."
+msgstr "Většina webových stránek využívá pro statistiku a marketing služby a pluginy, které vyžadují souhlas uživatele s dodržováním GDPR. Zde můžete přidat první ze služeb, které používáte. Vždy to můžete později změnit."
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://cookieinformation.com/"
+msgstr "https://cookieinformation.com/"
+
+#. Author of the plugin
+msgid "Cookie Information"
+msgstr "Informace o cookie"
+
+#: Integrations/WPRegistration.php:220
+msgid "User has given consent when registering"
+msgstr "Uživatel dal při registraci souhlas"
+
+#: WordPress/Settings.php:70
+msgid "More information"
+msgstr "Více informací"
+
+#: Integrations/WPRegistration.php:119
+msgctxt "admin"
+msgid "When activated the GDPR checkbox will be added automatically, just above the register button."
+msgstr "Při aktivaci bude zaškrtávací pole GDPR přidáno těsně nad tlačítko registrace."
+
+#: Integrations/WPComments.php:170
+msgid "This checkbox is checked because you are an admin"
+msgstr "Toto zaškrtávací políčko je zaškrtnuto, protože jste administrátor"
+
+#: WordPress/Admin/Pages/PageSettings.php:164
+msgctxt "admin"
+msgid "Enabling this will allow you to use an external Privacy Policy instance"
+msgstr "Pokud to povolíte, budete moci používat externí instance zásad ochrany osobních údajů"
+
+#: WordPress/Ajax/ProcessAction.php:134
+msgid "Missing token."
+msgstr "Chybějící token"
+
+#: Utils/Integration.php:76
+msgid "You need to accept this checkbox"
+msgstr "Toto políčko musíte přijmout."
+
+#: Templates/Front/Consent/modal-content.php:27
+msgid "(no title)"
+msgstr "(žádný název)"
+
+#: WordPress/Shortcodes/ProcessorSettingsLink.php:67
+msgid "Let your visitors re-access their settings by placing a link to the modal with the shortcode %1s or add the \"%2s\" class to a menu item."
+msgstr "Umožněte návštěvníkům znovu získat přístup k jejich nastavením umístěním odkazu na modální s krátkým kódem %1s nebo přidáním třídy \"%2s\" do položky nabídky."
+
+#: WordPress/Settings.php:72
+msgid "This site uses functional cookies and external scripts to improve your experience."
+msgstr "Tento web používá ke zlepšení vašeho života funkční cookies a externí skripty."
+
+#: WordPress/Settings.php:85
+msgid "This site uses functional cookies and external scripts to improve your experience. Which cookies and scripts are used and how they impact your visit is specified on the left. You may change your settings at any time. Your choices will not impact your visit."
+msgstr "Tento web používá ke zlepšení vašeho života funkční cookies a externí skripty. Které soubory cookie a skripty se používají a jak ovlivňují vaši návštěvu, jsou uvedeny vlevo. Nastavení můžete kdykoli změnit. Vaše volba nebude mít vliv na vaši návštěvu."
+
+#: WordPress/Settings.php:83
+msgid "Privacy Settings"
+msgstr "Nastavení soukromí"
+
+#: WordPress/Front/Consent/Modal.php:76
+msgid "Save my settings"
+msgstr "Uložit moje nastavení"
+
+#: WordPress/Front/Consent/Modal.php:67
+msgid "These settings will only apply to the browser and device you are currently using."
+msgstr "Tato nastavení se vztahují pouze na prohlížeč a zařízení, které právě používáte."
+
+#: WordPress/Settings.php:73
+msgid "Accept"
+msgstr "Příjmout"
+
+#: WordPress/Settings.php:70 WordPress/Shortcodes/ProcessorSettingsLink.php:50
+#: WordPress/Shortcodes/ProcessorSettingsLink.php:64
+msgid "My settings"
+msgstr "Moje nastavení"
+
+#: Templates/Front/Form/AccessRequest/main.php:9
+#: WordPress/Shortcodes/RequestAccessForm.php:58
+msgid "Send"
+msgstr "Odeslat"
+
+#: Templates/Front/Form/AccessRequest/main.php:7
+#: WordPress/Shortcodes/RequestAccessForm.php:56
+msgid "Your Email Address"
+msgstr "Vaše e-mailová adresa"
+
+#: WordPress/Shortcodes/RequestAccessForm.php:144
+msgid "If needed, you can put in a new request after 24 hours here: %1s"
+msgstr "V případě potřeby můžete po 24 hodinách podat novou žádost: %1s"
+
+#: WordPress/Shortcodes/RequestAccessForm.php:138
+msgid "You are only able to view your data when visiting this page on the same device with the same IP and in the same browser session as when you performed your request. This is an extra security measure to keep your data safe."
+msgstr "Data můžete zobrazit pouze při návštěvě této stránky na stejném zařízení se stejnou IP adresou a ve stejné relaci prohlížeče, jako když jste provedli svůj požadavek. Jedná se o zvláštní bezpečnostní opatření, které udrží vaše data v bezpečí."
+
+#: Templates/Email/access_request.php:20
+msgid "If your link is invalid you can fill in a new request after 24 hours: %1s."
+msgstr "Pokud je váš odkaz neplatný, můžete vyplnit nový požadavek po 24 hodinách: %1s."
+
+#: Templates/Email/access_request.php:18
+msgid "This page is available for 24 hours and can only be reached from the same device, IP address and browser session you requested from."
+msgstr "Tato stránka je k dispozici 24 hodin a může být zobrazena pouze ze stejného zařízení, IP adresy a relace prohlížeče, ze kterého jste požadovali přístup."
+
+#: Objects/Data/Comment.php:55
+msgid "Comment"
+msgstr "Komentář"
+
+#: Objects/RequestDelete.php:491
+msgctxt "admin"
+msgid "Successfully sent a confirmation mail to the user."
+msgstr "Uživateli byla úspěšně odeslána potvrzovací zpráva."
+
+#: Objects/RequestDelete.php:479
+msgid "The following has been processed:"
+msgstr "Bylo zpracováno následující:"
+
+#: Objects/RequestDelete.php:478
+msgid "We have successfully processed your request and your data has been anonymized on %s."
+msgstr "Vaše žádost byla úspěšně zpracována a vaše data byla anonymizována na %s."
+
+#: Objects/RequestDelete.php:474
+msgid "%s - Your request"
+msgstr "%s - Vaše žádost"
+
+#: Templates/Email/delete_request.php:14
+msgid "You can manage this request in the admin panel: %1s"
+msgstr "Tuto žádost můžete spravovat na panelu správce: %1s"
+
+#: Templates/Email/delete_request.php:12
+msgid "You have received a new anonymize request on %1s."
+msgstr "Na %1s jste obdrželi novou žádost o anonymizaci."
+
+#: WordPress/Ajax/ProcessAction.php:172
+msgid "%1s - New anonymize request"
+msgstr "%1s - Nový požadavek na anonymizaci"
+
+#: WordPress/Ajax/ProcessAction.php:101 WordPress/Ajax/ProcessAction.php:167
+msgid "Something went wrong while saving the request. Please try again."
+msgstr "Při ukládání požadavku došlo k nějaké chybě. Opakujte akci nebo kontaktujte administrátora na mailu: info@mujdron.eu"
+
+#: WordPress/Shortcodes/RequestAccessForm.php:120
+msgid "This request is expired or doesn't exist."
+msgstr "Platnost této žádosti vypršela nebo neexistuje."
+
+#: Integrations/WPComments.php:96
+msgid "No comments found with email address%1s."
+msgstr "Nebyly nalezeny žádné komentáře s e-mailovou adresou %1s."
+
+#: Integrations/WPComments.php:109
+msgid "Comments"
+msgstr "Komentáře"
+
+#: Utils/Request.php:107
+msgid "No data found with email address%1s."
+msgstr "S e-mailovou adresou %1s nebyl nalezen žádný uživatel."
+
+#: Integrations/WPRegistration.php:109
+msgid "Users"
+msgstr "Uživatelé"
+
+#: Objects/Data/Data.php:89 Objects/Data/Data.php:106
+msgid "Date"
+msgstr "Datum"
+
+#: WordPress/Admin/Pages/PageSettings.php:325
+msgctxt "admin"
+msgid "Enabling this will create one private page containing the necessary shortcode: %1s. You can determine when and how to publish this page yourself."
+msgstr "Povolením této možnosti vytvoříte jednu soukromou stránku obsahující potřebný zkratkový kód: %1s. Kdy a jak publikovat tuto stránku můžete sami."
+
+#: Templates/Admin/Pages/Settings/request.php:24
+msgctxt "admin"
+msgid "Allow your site's visitors to request their data stored in the WordPress database (comments, WooCommerce orders etc.). Data found is send to their email address and allows them to put in an additional request to have the data anonymized."
+msgstr "Umožněte návštěvníkům vašich stránek požádat o jejich data uložená v databázi WordPress (komentáře, WooCommerce objednávky atd.). Nalezené údaje jsou odesílány na jejich e-mailovou adresu a mohou jim být zaslány další požadavky na anonymní data."
+
+#: WordPress/Ajax/ProcessAction.php:175
+msgid "Requests"
+msgstr "Požadavek"
+
+#: WordPress/Config.php:97
+msgid "Below we show you all of the data stored by %1s on %1s. Select the data you wish the site owner to anonymize so it cannot be linked to your email address any longer. It is the site's owner responsibility to act upon your request. When your data is anonymized you will receive an email confirmation."
+msgstr "Níže vám ukážeme všechna data uložená v %1s na %1s. Vyberte data, která si přejete, aby majitel webu anonymizoval, aby již nemohl být propojen s vaší e-mailovou adresou. Je odpovědností vlastníka webu jednat na základě vaší žádosti. Jakmile budou vaše data anonymizována, obdržíte e-mailem potvrzení."
+
+#: Objects/Data/Data.php:100
+msgid "City"
+msgstr "Město"
+
+#: Objects/Data/Data.php:99
+msgid "Postcode / ZIP"
+msgstr "PSČ"
+
+#: Objects/Data/Data.php:98
+msgid "Address"
+msgstr "Adresa"
+
+#: Objects/Data/Data.php:97
+msgid "Name"
+msgstr "Jméno"
+
+#: Objects/Data/Data.php:95 Objects/Data/WooCommerceOrder.php:82
+msgid "Order"
+msgstr "Pořadí"
+
+#: Objects/Data/Data.php:88 Objects/Data/Data.php:109
+msgid "IP Address"
+msgstr "IP adresa"
+
+#: Objects/Data/Data.php:86
+msgid "Content"
+msgstr "Obsah"
+
+#: Objects/Data/Data.php:85
+msgid "Author"
+msgstr "Autor"
+
+#: Objects/Data/Data.php:74
+msgid "Registered on"
+msgstr "Registrován na"
+
+#: Objects/Data/Data.php:73
+msgid "Website"
+msgstr "Webová stránka"
+
+#: Objects/Data/Data.php:72 Objects/Data/Data.php:87 Objects/Data/Data.php:96
+#: Objects/Data/Data.php:108
+msgid "Email Address"
+msgstr "Emailová adresa"
+
+#: Objects/Data/Data.php:71
+msgid "Display Name"
+msgstr "Zobrazit jméno"
+
+#: Objects/Data/Data.php:70
+msgid "Username"
+msgstr "Přihlašovací jméno"
+
+#: Objects/Data/Data.php:48
+msgid "Email Address is required."
+msgstr "Je vyžadována emailová adresa."
+
+#: Objects/RequestDelete.php:390
+msgctxt "admin"
+msgid "This request has already been processed."
+msgstr "Tento požadavek již byl zpracován."
+
+#: Objects/RequestDelete.php:431
+msgctxt "admin"
+msgid "You're not allowed to edit WooCommerce orders."
+msgstr "Nejste oprávněni upravovat WooCommerce objednávky."
+
+#: Objects/RequestDelete.php:416
+msgctxt "admin"
+msgid "You're not allowed to edit comments."
+msgstr "Nemůžete upravovat komentáře."
+
+#: Objects/RequestDelete.php:397
+msgctxt "admin"
+msgid "You're not allowed to edit users."
+msgstr "Nejste oprávněni upravovat uživatele."
+
+#: WordPress/Ajax/ProcessRequest.php:53
+msgctxt "admin"
+msgid "The access request functionality is not enabled."
+msgstr "Funkce žádosti o přístup není povolena."
+
+#: WordPress/Ajax/ProcessAction.php:150
+msgid "No session found."
+msgstr "Nebyla nalezena žádná relace."
+
+#: WordPress/Ajax/ProcessAction.php:154
+msgid "Session doesn't match."
+msgstr "Relace nesouhlasí."
+
+#: WordPress/Ajax/ProcessAction.php:139
+msgid "No value selected."
+msgstr "Nebyla vybrána žádná hodnota."
+
+#: WordPress/Ajax/ProcessAction.php:145
+msgid "Missing or invalid type."
+msgstr "Typ nebyl nalezen nebo je neplatný."
+
+#: WordPress/Ajax/ProcessAction.php:87
+msgid "You have already requested your data. Please check your mailbox. After 24 hours you can put in a new request."
+msgstr "Data jste již požadovali. Zkontrolujte prosím svou poštovní schránku. Po 24 hodinách si můžete dát nový požadavek."
+
+#: WordPress/Ajax/ProcessAction.php:216
+msgid "Success. You will receive an email with your data shortly."
+msgstr "Hotovo. Brzy obdržíte email s údaji."
+
+#: WordPress/Ajax/ProcessAction.php:116
+msgid "page"
+msgstr "stránka"
+
+#: Templates/Email/access_request.php:16
+msgid "Please visit this %1s to view the data linked to the email address %2s."
+msgstr "Chcete-li zobrazit svá data, navštivte prosím %1s, data jsou spojená s e-mailovou adresou %2s."
+
+#: Templates/Email/access_request.php:14
+msgid "You have requested to access your data on %1s."
+msgstr "Požádali jste o přístup k vašim údajům na %1s."
+
+#: WordPress/Ajax/ProcessAction.php:112
+msgid "%1s - Your data request"
+msgstr "%1s - Váš požadavek na údaje"
+
+#: WordPress/Ajax/ProcessAction.php:82
+msgid "You need to accept the privacy checkbox."
+msgstr "Musíte přijmout zaškrtávací políčko soukromí."
+
+#: WordPress/Ajax/ProcessAction.php:77
+msgid "Missing or incorrect email address."
+msgstr "Chybějící nebo nesprávná emailová adresa."
+
+#: Integrations/WPComments.php:148
+msgctxt "admin"
+msgid "Please disable the custom comments form in Jetpack to make your WordPress Comments GDPR compliant."
+msgstr "Prosím, zakažte vlastní komentáře formulář v jetpack, aby se vaše WordPress komentáře GDPR kompatibilní."
+
+#: Templates/Front/Consent/modal-content-option.php:19
+msgid "Enable?"
+msgstr "Povolit?"
+
+#: Integrations/AbstractIntegration.php:252 WordPress/Settings.php:58
+msgid "Privacy Policy"
+msgstr "Zásady ochrany osobních údajů"
+
+#: Utils/AdminHelper.php:266
+msgctxt "admin"
+msgid "No HTML allowed due to plugin limitations."
+msgstr "Z důvodu omezení modulů není povolen žádný kód HTML."
+
+#: Integrations/AbstractIntegration.php:237
+msgid "Accepted on %s."
+msgstr "Přijato na %s."
+
+#: Integrations/Plugins/WooCommerce.php:199
+msgid "GDPR accepted on:"
+msgstr "GDPR akceptováno v:"
+
+#: Integrations/AbstractIntegration.php:232
+msgid "Not accepted."
+msgstr "Nebylo akceptováno."
+
+#: Utils/AdminHelper.php:289
+msgid "You can use: %1s"
+msgstr "Můžete použít: %1s"
+
+#: Integrations/WPComments.php:119
+msgctxt "admin"
+msgid "When activated the GDPR checkbox will be added automatically, just above the submit button."
+msgstr "Při aktivaci GDPR CheckBox bude přidán automaticky těsně nad tlačítko Odeslat."
+
+#: Integrations/WPComments.php:198
+msgid "Comment Submission Failure"
+msgstr "Chyba odeslání komentáře"
+
+#: Integrations/WPRegistration.php:167 Templates/Front/Elements/error.php:12
+msgid "<strong>ERROR</strong>: %1s"
+msgstr "<strong>CHYBA</strong>: %1s"
+
+#: WordPress/Config.php:89
+msgid "By using this form you agree with the storage and handling of your data by this website."
+msgstr "By using this form you agree with the storage and handling of your data by this website."
+
+#: WordPress/Ajax/ProcessAction.php:67
+msgid "Missing type."
+msgstr "Chybí typ."
+
+#: WordPress/Ajax/AbstractAjax.php:77
+msgid "Missing data."
+msgstr "Chybí data."
