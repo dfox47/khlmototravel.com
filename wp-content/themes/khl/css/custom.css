@@ -1,0 +1,129 @@
+/* Add here all your CSS customizations */
+
+hr.my-5 {
+	background: none;
+	margin: 15px 0;
+	margin-top: 1.8rem !important;
+	margin-bottom: 1.8rem !important;
+}
+
+div.wrapper-payment-types {
+	float: left !important;
+	width: auto !important;
+}
+
+div.wrapper-payment-imgs {
+	float: left !important;
+	width: auto !important;
+
+}
+
+img.payment-imgs {
+	float: left;
+}
+
+.cd-photo {
+	height: 95px;
+	position: relative;
+	background-image: url('/img/khl/assets/placeholder.jpg');
+	background-repeat: no-repeat;
+	background-position: center center; /* fixed*/ 
+	-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+	border-radius: 4px;
+}
+
+#wpcf7-f1410-o1 .wpcf7-form-control-wrap {
+	height: 37px !important;
+	float: left !important;
+	width: 280px !important;
+}
+
+#wpcf7-f1410-o1 .input-group-append {
+	float: left !important;
+}
+
+#wpcf7-f1410-o2 .wpcf7-form-control-wrap {
+	height: 37px !important;
+	float: left !important;
+	width: 280px !important;
+}
+
+#wpcf7-f1410-o2 .input-group-append {
+	float: left !important;
+}
+
+.input-group-rounded .input-group-append .btn {
+	height: 37px !important;
+    padding: 0.66rem !important;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    z-index: 3;
+}
+
+.ws-normal {
+	color: #fff;
+}
+
+/* Gallery fix */
+.owl-carousel .owl-item img.tour-gallery {
+	height: 120px;
+}
+
+@media (max-width: 575px) {
+	.owl-carousel .owl-item img.tour-gallery {
+		height: 305px;
+	}
+}
+
+@media (max-width: 991px) {
+	.owl-carousel .owl-item img.tour-gallery {
+		height: 196px;
+	}
+}
+/* Gallery fix */
+
+
+
+/* Form */
+.ezfc-theme-default {
+	border-radius: 5px !important;
+	border: 1px solid #dee2e6 !important;
+	padding: 15px;
+}
+
+.ezfc-submit {
+  background-color: #F7941D !important;
+  border-color: #F7941D #F7941D #C37400;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  padding: 0.8rem 2.5rem !important;
+  font-weight: 600;  
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border-radius: .25rem;
+  border: 1px solid transparent;
+}
+
+.ezfc-price-wrapper {
+	color: #F7941D;
+}
+
+.ezfc-price {
+	padding: 0px;
+	margin: 0px;
+}
+
+.ezfc-price-currency-before {
+	display: none;
+}
+
+.ezfc-label {
+	font-weight: bold;
+}
+/* Form */
+
+

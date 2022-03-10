@@ -1,0 +1,391 @@
+/*
+Theme Name: KHL
+Version: 1.0.1
+Description:  KHL Motor Travel
+Text Domain:  khl
+Author: KHL Motor Travel
+Author URI: https://www.khlmototravel.com/
+*/
+
+@import "vars";
+@import "defaults";
+
+@import "book";
+@import "calendar";
+@import "header";
+@import "home";
+@import "tours";
+
+
+
+@keyframes dotFlashing {
+	0% {
+		background-color: #fff;
+	}
+	50% {
+		background-color: #000;
+	}
+	100% {
+		background-color: #fff;
+	}
+}
+
+
+
+body {
+	max-width: none !important;
+}
+
+h1 {
+	font-family: $font_josefin;
+}
+
+h2 {
+	font-family: $font_josefin;
+}
+
+h3 {
+	font-family: $font_josefin;
+}
+
+
+
+.active {
+	background: none;
+}
+
+.body {
+	background-color: #FFF;
+}
+
+
+
+.btn_close {
+	background-color: #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	height: 40px;
+	position: absolute;
+	right: -20px;
+	top: -20px;
+	transition: $transition;
+	width: 40px;
+	z-index: 3;
+
+	&:hover {
+		background-color: #000;
+
+		&::after,
+		&::before {
+			background-color: #fff;
+		}
+	}
+
+	&::after,
+	&::before {
+		background-color: #000;
+		content: "";
+		height: 1px;
+		position: absolute;
+		left: 8px;
+		top: 19px;
+		width: 24px;
+	}
+
+	&::after {
+		transform: rotate(45deg);
+	}
+
+	&::before {
+		transform: rotate(-45deg);
+	}
+}
+
+.btn_primary {
+	background-color: $c_text;
+	border: 0 none;
+	color: #fff;
+	cursor: pointer;
+	font-family: $font_josefin;
+	font-size: 18px;
+	margin: 0 12px;
+	padding: 10px 20px;
+	transition: $transition;
+
+	&:active,
+	&:focus,
+	&:hover {
+		background-color: $c_main;
+		color: #fff;
+	}
+}
+
+.btn_submit {
+	align-items: center;
+	background-color: $c_main;
+	border: 1px solid transparent;
+	color: #fff;
+	cursor: pointer;
+	font-family: $font_josefin;
+	font-size: 18px;
+	justify-content: center;
+	margin: 0 12px;
+	padding: 10px 20px;
+	text-align: center;
+	transition: $transition;
+
+	&:hover {
+		background-color: rgba(0,0,0, 0);
+		border-color: $c_main;
+		color: $c_main;
+	}
+}
+
+.btn_vk {
+	max-width: 60px;
+
+	img {
+		max-height: 25px;
+	}
+}
+
+.calendar-list {
+	margin: 0 0 30px !important;
+}
+
+.entry-title {
+	font-family: $font_josefin;
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+.lang_de_only {}
+
+.lang_de_DE {
+	.lang_en_only,
+	.lang_ru_only {
+		display: none;
+	}
+}
+
+.lang_en_only {}
+
+.lang_en_US {
+	.lang_de_only,
+	.lang_ru_only {
+		display: none;
+	}
+}
+
+.lang_ru_only {}
+
+.lang_ru_RU {
+	.lang_en_only,
+	.lang_de_only {
+		display: none;
+	}
+}
+
+
+
+.loader {
+	animation-delay: .5s;
+	animation: dotFlashing 3s infinite;
+	background-color: #000;
+	border-radius: 5px;
+	display: none;
+	height: 10px;
+	position: relative;
+	width: 10px;
+
+	&::after,
+	&::before {
+		animation: dotFlashing 3s infinite;
+		background-color: #000;
+		border-radius: 50%;
+		content: '';
+		display: inline-block;
+		height: 10px;
+		position: absolute;
+		top: 0;
+		width: 10px;
+	}
+
+	&::after {
+		animation-delay: 1s;
+		left: 15px;
+	}
+
+	&::before {
+		animation-delay: 0s;
+		left: -15px;
+	}
+}
+
+.loading {
+	font-size: 0;
+
+	.loader {
+		display: block;
+	}
+}
+
+
+
+.map-img {
+	&:hover {
+		transform: none;
+	}
+}
+
+.menu-item {
+	a,
+	a:visited {
+		font-family: $font_josefin;
+	}
+}
+
+.navigation-branding {
+	img {
+		padding: 0;
+	}
+}
+
+
+
+.page-template-pageTourSpecial {
+	#content {
+		background: url(/wp-content/uploads/2021/08/shutterstock_636336056-2048x1365-1.jpg) center center no-repeat scroll transparent;
+		background-size: cover;
+		padding: 138px 30px 30px;
+	}
+
+	#page {
+		position: relative;
+		max-width: none;
+		z-index: 3;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	h3 {
+		text-align: center;
+	}
+
+	main {
+		background-color: rgba(#fff, .9);
+		margin: 0 auto;
+		max-width: 800px;
+		padding: 30px;
+		width: 100%;
+	}
+}
+
+.popup {
+	align-items: center;
+	display: none;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+
+	&__bg {
+		background-color: #000;
+		height: 100%;
+		left: 0;
+		opacity: .5;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+	&__content {
+		background-color: #fff;
+		height: 95%;
+		max-width: 900px;
+		position: relative;
+		width: 95%;
+		z-index: 3;
+	}
+}
+
+.popup_active {
+	overflow: hidden;
+
+	.popup {
+		display: flex;
+	}
+}
+
+.popup_desc {
+	height: 100%;
+	overflow-y: auto;
+	padding: 30px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.price {
+	color: $c_main;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.privacy_policy {
+	padding: 15px 30px;
+	text-align: center;
+
+	a,
+	a:visited {
+		display: inline-block;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+
+
+.site-main {
+	margin: 106px 0 0;
+}
+
+
+
+.text-center {
+	text-align: center;
+}
+
+.topmenu_active {
+	.main-nav {
+		> ul {
+			display: block !important;
+		}
+	}
+
+	.menu-toggle {
+		display: none;
+	}
+}
+
+.wp-block-image {
+	img {
+		height: auto;
+	}
+}
+
+

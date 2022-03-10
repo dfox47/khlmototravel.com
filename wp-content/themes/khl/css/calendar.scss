@@ -1,0 +1,87 @@
+
+
+
+.calendar_item {
+	border-bottom: 1px solid $c_main;
+	color: $c_text;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px 0 15px;
+	text-decoration: none;
+	transition: $transition;
+
+	&:hover {
+		background-color: $c_main;
+		color: #fff;
+
+		.calendar_item__title {
+			color: #fff;
+		}
+	}
+
+	&__book {
+		width: 14%;
+	}
+
+	&__date {
+		padding: 0 10px 0 15px;
+		width: 19%;
+	}
+
+	&__days {
+		padding: 0 10px 0 0;
+		width: 14%;
+	}
+
+	&__desc {
+		padding: 0 10px 0 0;
+		width: 24%;
+	}
+
+	&__price {
+		padding: 0 10px 0 0;
+		width: 10%;
+	}
+
+	&__title {
+		color: $c_main;
+		font-family: $font_josefin;
+		font-size: 23px;
+		font-weight: 700;
+		padding: 0 10px 0 0;
+		transition: $transition;
+		width: 19%;
+	}
+
+	@media #{$tablet} {
+		padding: 15px;
+
+		&__book {
+			width: 100%;
+		}
+
+		&__date {
+			padding: 0;
+			width: 100%;
+		}
+
+		&__days {
+			width: 100%;
+		}
+
+		&__desc {
+			width: 100%;
+		}
+
+		&__price {
+			width: 100%;
+		}
+
+		&__title {
+			padding: .5em 0;
+			width: 100%;
+		}
+	}
+}
+
+

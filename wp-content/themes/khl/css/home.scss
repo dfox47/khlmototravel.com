@@ -1,0 +1,65 @@
+
+
+
+.home_tour {
+	align-items: center;
+	background: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg) no-repeat center center scroll transparent;
+	background-size: cover;
+	color: #fff;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	min-height: calc(100vh - 100px);
+	padding: 100px 0;
+	position: relative;
+
+	&::after {
+		background-color: #000;
+		content: "";
+		height: 100%;
+		left: 0;
+		opacity: .5;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+	&__days {
+		font-size: 28px;
+		margin: .5em 0 1em;
+		position: relative;
+		z-index: 3;
+	}
+
+	&__date {
+		font-size: 34px;
+		position: relative;
+		z-index: 3;
+	}
+
+	&__readmore {
+		font-size: 30px;
+		position: relative;
+		text-transform: uppercase;
+		z-index: 3;
+	}
+
+	&__subtitle {
+		font-size: 22px;
+		opacity: .5;
+		position: relative;
+		z-index: 3;
+	}
+
+	&__title {
+		font-size: 70px;
+		font-family: $font_rubik;
+		font-weight: 700;
+		position: relative;
+		text-transform: uppercase;
+		z-index: 3;
+	}
+}
+
+
