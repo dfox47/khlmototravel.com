@@ -453,6 +453,250 @@ get_header(); ?>
 						<span class="calendar_item__book">More details</span>
 					</a>
 				<?php }
+				// bg
+				else if (get_locale() == 'bg_BG') { ?>
+					<h2>April 2022</h2>
+
+					<a class="calendar_item" href="/moto-tours/turkey/">
+						<span class="calendar_item__date">8 - 18 April</span>
+						<span class="calendar_item__title">Turkey</span>
+						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
+						<span class="calendar_item__days">11 days</span>
+						<span class="calendar_item__price">2450 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/turkey/">
+						<span class="calendar_item__date">29 April - 9 Mai</span>
+						<span class="calendar_item__title">Turkey</span>
+						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
+						<span class="calendar_item__days">11 days</span>
+						<span class="calendar_item__price">2450 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
+						<span class="calendar_item__date">30 April - 10 Mai</span>
+						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>
+						<span class="calendar_item__desc">Bulgaria | Offroad</span>
+						<span class="calendar_item__days">11 days</span>
+						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+
+
+					<h2>May 2022</h2>
+
+					<a class="calendar_item" href="/moto-tours/turkey/">
+						<span class="calendar_item__date">20 - 30 May</span>
+						<span class="calendar_item__title">Turkey</span>
+						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
+						<span class="calendar_item__days">11 days</span>
+						<span class="calendar_item__price">2450 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
+						<span class="calendar_item__date">21 - 27 May</span>
+						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
+						<span class="calendar_item__desc">Bulgaria | Offroad</span>
+						<span class="calendar_item__days">7 days</span>
+						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+
+
+					<h2>June 2022</h2>
+
+					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
+						<span class="calendar_item__date">4 - 10 June</span>
+						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
+						<span class="calendar_item__desc">Bulgaria | Offroad</span>
+						<span class="calendar_item__days">7 days</span>
+						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/5-countries">
+						<span class="calendar_item__date">6 - 19 June</span>
+						<span class="calendar_item__title">Balkan Moto Cruise</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
+						<span class="calendar_item__days">14 days</span>
+						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
+						<span class="calendar_item__date">18 - 28 June</span>
+						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>
+						<span class="calendar_item__desc">Bulgaria | Offroad</span>
+						<span class="calendar_item__days">11 days</span>
+						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/5-countries">
+						<span class="calendar_item__date">24 June - 7 July</span>
+						<span class="calendar_item__title">Balkan Moto Cruise</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
+						<span class="calendar_item__days">14 days</span>
+						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+
+
+					<h2>July 2022</h2>
+
+					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
+						<span class="calendar_item__date">9 - 15 July</span>
+						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
+						<span class="calendar_item__desc">Bulgaria | Offroad</span>
+						<span class="calendar_item__days">7 days</span>
+						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/romania/">
+						<span class="calendar_item__date">15 - 23 July</span>
+						<span class="calendar_item__title">Romania</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
+						<span class="calendar_item__days">9 days</span>
+						<span class="calendar_item__price">1900 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
+						<span class="calendar_item__date">23 July - 2 August</span>
+						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>
+						<span class="calendar_item__desc">Bulgaria | Offroad</span>
+						<span class="calendar_item__days">11 days</span>
+						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/5-countries">
+						<span class="calendar_item__date">31 July - 13 August</span>
+						<span class="calendar_item__title">Balkan Moto Cruise</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
+						<span class="calendar_item__days">14 days</span>
+						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+
+
+					<h2>August 2022</h2>
+
+					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
+						<span class="calendar_item__date">8 - 14 August</span>
+						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
+						<span class="calendar_item__desc">Bulgaria | Offroad</span>
+						<span class="calendar_item__days">7 days</span>
+						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/romania/">
+						<span class="calendar_item__date">19 - 27 August</span>
+						<span class="calendar_item__title">Romania</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
+						<span class="calendar_item__days">9 days</span>
+						<span class="calendar_item__price">1900 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
+						<span class="calendar_item__date">20 - 30 August</span>
+						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>
+						<span class="calendar_item__desc">Bulgaria | Offroad</span>
+						<span class="calendar_item__days">11 days</span>
+						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+
+
+					<h2>September 2022</h2>
+
+					<a class="calendar_item" href="/moto-tours/romania/">
+						<span class="calendar_item__date">2 - 10 September</span>
+						<span class="calendar_item__title">Romania</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
+						<span class="calendar_item__days">9 days</span>
+						<span class="calendar_item__price">1900 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
+						<span class="calendar_item__date">3 - 9 September</span>
+						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
+						<span class="calendar_item__desc">Bulgaria | Offroad</span>
+						<span class="calendar_item__days">7 days</span>
+						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/5-countries">
+						<span class="calendar_item__date">16 - 29 September</span>
+						<span class="calendar_item__title">Balkan Moto Cruise</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
+						<span class="calendar_item__days">14 days</span>
+						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
+						<span class="calendar_item__date">17 - 27 September</span>
+						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>
+						<span class="calendar_item__desc">Bulgaria | Offroad</span>
+						<span class="calendar_item__days">11 days</span>
+						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
+						<span class="calendar_item__date">17 - 23 September</span>
+						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
+						<span class="calendar_item__desc">Bulgaria | Offroad</span>
+						<span class="calendar_item__days">7 days</span>
+						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+
+
+					<h2>October 2022</h2>
+
+					<a class="calendar_item" href="/moto-tours/turkey/">
+						<span class="calendar_item__date">10 - 20 October</span>
+						<span class="calendar_item__title">Turkey</span>
+						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
+						<span class="calendar_item__days">11 days</span>
+						<span class="calendar_item__price">2450 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
+						<span class="calendar_item__date">3 - 9 October</span>
+						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
+						<span class="calendar_item__desc">Bulgaria | Offroad</span>
+						<span class="calendar_item__days">7 days</span>
+						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
+						<span class="calendar_item__date">17 - 23 October</span>
+						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
+						<span class="calendar_item__desc">Bulgaria | Offroad</span>
+						<span class="calendar_item__days">7 days</span>
+						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__book">More details</span>
+					</a>
+				<?php }
 				// de
 				else if (get_locale() == 'de_DE') { ?>
 					<h2>April 2022</h2>

@@ -34,8 +34,6 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 
 		<h3 class="text-center"><?php echo __('Calendar for 2022', 'khl_template'); ?></h3>
 
-
-
 		<div class="tours_list">
 			<?php
 			// en
@@ -179,6 +177,150 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 						<span class="tours_desc__duration">7 days</span>
 
 						<span class="tours_desc__more">Read more</span>
+					</span>
+				</a>
+			<?php }
+			// bg
+			else if (get_locale() == 'bg_BG') { ?>
+				<!-- Balkan Moto Cruise | 6 - 18 June 2022 -->
+				<a class="tours_list__item" href="/bg/moto-tours/5-countries">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Около Балканите</span>
+
+						<span class="tours_desc__destinations">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
+
+						<span class="tours_dates">
+							<span class="tours_dates__item">6 - 18 Юни 2022</span>
+							<span class="tours_dates__item">24 Юни - 6 Юли 2022</span>
+							<span class="tours_dates__item">31 Юли - 12 Август 2022</span>
+							<span class="tours_dates__item">16 - 28 Септември 2022</span>
+						</span>
+
+						<span class="tours_desc__duration">14 дни</span>
+
+						<span class="tours_desc__more">Повече</span>
+					</span>
+				</a>
+
+				<!-- Bulgaria -->
+				<a class="tours_list__item" href="/bg/moto-tours/highlights-of-bulgaria/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/03/BMW-1200-GS_512_gimp.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">България</span>
+
+						<span class="tours_desc__destinations">София, Белоградчик, Велико Търново, Велинград, Девин, Банско</span>
+
+						<span class="tours_dates">
+							<span class="tours_dates__item">След предишни дискусии. Група от 4 човека</span>
+						</span>
+
+						<span class="tours_desc__duration">9 дни</span>
+
+						<span class="tours_desc__more">Повече</span>
+					</span>
+				</a>
+
+				<!-- Romania | 15 - 23 July 2022 -->
+				<a class="tours_list__item" href="/bg/moto-tours/romania/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/08/Photo_6553967_DJI_367_jpg_7369832_0_2021713112238_photo_original-scaled.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Румъния</span>
+
+						<span class="tours_desc__destinations">София, Белоградчик, Новаци, Турда, Брашов, Букурещ, Русе</span>
+
+						<span class="tours_dates">
+							<span class="tours_dates__item">15 - 23 Юли 2022</span>
+							<span class="tours_dates__item">19 - 27 Август 2022</span>
+							<span class="tours_dates__item">2 - 10 Септември 2022</span>
+						</span>
+
+						<span class="tours_desc__duration">9 дни</span>
+
+						<span class="tours_desc__more">Повече</span>
+					</span>
+				</a>
+
+				<!-- Turkey -->
+				<a class="tours_list__item" href="/bg/moto-tours/die-tuerkei/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/turkey.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Турция</span>
+
+						<span class="tours_dates">
+							<span class="tours_dates__item">8 - 18 Април 2022</span>
+							<span class="tours_dates__item">29 Април - 9 Май 2022</span>
+							<span class="tours_dates__item">20 - 30 Май 2022</span>
+							<span class="tours_dates__item">10 - 20 Октомври 2022</span>
+						</span>
+
+						<span class="tours_desc__duration">11 дни</span>
+
+						<span class="tours_desc__more">Повече</span>
+					</span>
+				</a>
+
+				<!-- Turkey | offroad -->
+				<a class="tours_list__item" href="javascript:void(0);">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/enduro.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Турция | Offroad</span>
+
+						<span class="tours_desc__duration">15 дни</span>
+
+						<span class="tours_desc__more">Повече</span>
+					</span>
+				</a>
+
+				<!-- Bulgaria | offroad | 11 days -->
+				<a class="tours_list__item" href="/bg/moto-tours/bulgari-offroad-11-dnej/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-03.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">България | Offroad</span>
+
+						<span class="tours_desc__destinations">София, Велико Търново, Велинград</span>
+
+						<span class="tours_dates">
+							<span class="tours_dates__item">30 Април - 10 Май 2022</span>
+							<span class="tours_dates__item">18 - 28 Юни 2022</span>
+							<span class="tours_dates__item">23 Юли - 2 Август 2022</span>
+							<span class="tours_dates__item">20 - 30 Август 2022</span>
+							<span class="tours_dates__item">17 - 27 Септември 2022</span>
+						</span>
+
+						<span class="tours_desc__duration">11 дни</span>
+
+						<span class="tours_desc__more">Повече</span>
+					</span>
+				</a>
+
+				<!-- Bulgaria | offroad | 7 days -->
+				<a class="tours_list__item" href="/bg/moto-tours/bulgaria-offroad-7-day/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-08.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">България | Offroad</span>
+
+						<span class="tours_desc__destinations">София, Велико Търново, Велинград</span>
+
+						<span class="tours_dates">
+							<span class="tours_dates__item">21 - 27 May 2022</span>
+							<span class="tours_dates__item">4 - 10 Юни 2022</span>
+							<span class="tours_dates__item">9 - 15 Юли 2022</span>
+							<span class="tours_dates__item">8 - 14 Август 2022</span>
+							<span class="tours_dates__item">3 - 9 Октомври 2022</span>
+							<span class="tours_dates__item">17 - 23 Октомври 2022</span>
+						</span>
+
+						<span class="tours_desc__duration">7 дни</span>
+
+						<span class="tours_desc__more">Повече</span>
 					</span>
 				</a>
 			<?php }
