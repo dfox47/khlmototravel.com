@@ -3,9 +3,9 @@
 /*
 Plugin Name: FooGallery
 Description: FooGallery is the most intuitive and extensible gallery management tool ever created for WordPress
-Version:     2.1.18
+Version:     2.1.34
 Author:      FooPlugins
-Plugin URI:  https://fooplugins.com/foogallery/
+Plugin URI:  https://fooplugins.com/foogallery-wordpress-gallery-plugin/
 Author URI:  https://fooplugins.com
 Text Domain: foogallery
 License:     GPL-2.0+
@@ -25,7 +25,7 @@ if ( function_exists( 'foogallery_fs' ) ) {
         define( 'FOOGALLERY_PATH', plugin_dir_path( __FILE__ ) );
         define( 'FOOGALLERY_URL', plugin_dir_url( __FILE__ ) );
         define( 'FOOGALLERY_FILE', __FILE__ );
-        define( 'FOOGALLERY_VERSION', '2.1.18' );
+        define( 'FOOGALLERY_VERSION', '2.1.34' );
         define( 'FOOGALLERY_SETTINGS_VERSION', '2' );
         require_once FOOGALLERY_PATH . 'includes/constants.php';
         // Create a helper function for easy SDK access.

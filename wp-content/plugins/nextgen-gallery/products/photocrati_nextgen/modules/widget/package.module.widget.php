@@ -289,7 +289,7 @@ class C_Widget_MediaRSS extends WP_Widget
         $title = apply_filters('widget_title', empty($instance['title']) ? '&nbsp;' : $instance['title'], $instance, $this->id_base);
         $parent->render_partial('photocrati-widget#display_mediarss', array('self' => $this, 'instance' => $instance, 'title' => $title, 'settings' => $settings, 'before_widget' => $before_widget, 'before_title' => $before_title, 'after_widget' => $after_widget, 'after_title' => $after_title, 'widget_id' => $widget_id));
     }
-    function get_mrss_link($mrss_url, $show_icon = TRUE, $title, $text)
+    function get_mrss_link($mrss_url, $show_icon, $title, $text)
     {
         $out = '';
         if ($show_icon) {

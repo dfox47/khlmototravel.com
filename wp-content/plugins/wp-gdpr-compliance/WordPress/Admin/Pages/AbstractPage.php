@@ -19,7 +19,6 @@ abstract class AbstractPage {
      */
     public static function init() {
 	    add_action('admin_menu', [ static::class, 'addAdminMenu' ], 9);
-	    add_action('admin_menu', [ static::class, 'ftsURLIntercept' ], PHP_INT_MAX);
     }
 
     /**
@@ -32,20 +31,6 @@ abstract class AbstractPage {
             $hook = add_menu_page(static::getPageTitle(), static::getMenuTitle(), static::getCapability(), static::getMenuSlug(), [ static::class, 'generate' ], static::getMenuIcon(), static::getPosition());
         }
         add_action('load-' . $hook, [ static::class, 'loadPage' ]);
-    }
-
-	/**
-	 * Change all the admin menu items to go to the FTS when not completed.
-	 */
-    public static function ftsURLIntercept() {
-	    if (static::isSubMenu() || Wizard::isCompleted()) {
-	    	return;
-	    }
-
-	    global $submenu;
-	    foreach ($submenu[static::getPageSlug()] ?? [] as $i => $item) {
-	    	$submenu[static::getPageSlug()][$i][2] = PageWizard::getPageUrl();
-	    }
     }
 
     /**

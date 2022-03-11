@@ -3015,7 +3015,12 @@ function duplicate_sa_slider_post_as_draft() {
 				$meta_key = $meta_info->meta_key;
 				if ($meta_key == '_wp_old_slug') continue;
 				$meta_value = addslashes($meta_info->meta_value);
-				$sql_query_sel[]= "SELECT $new_post_id, '$meta_key', '$meta_value'";
+				$sql_query_sel[] = $wpdb->prepare(
+					"SELECT %d, %s, $s",
+					$new_post_id,
+					$meta_key,
+					$meta_value
+				);
 			}
 			$sql_query.= implode(" UNION ALL ", $sql_query_sel);
 			$wpdb->query($sql_query);

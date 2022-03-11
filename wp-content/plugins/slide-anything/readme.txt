@@ -98,6 +98,9 @@ Adding a SLIDE ANYTHING slider using the WordPress 5.0 'Block Editor' is pretty 
 
 == Changelog ==
 
+= 2.3.41 =
+* A security fix to remove a vunerability to SQL injection with the slide duplication function.
+
 = 2.3.40 =
 * Set the hover title text for slide links to an empty string (i.e. blank)
 
@@ -734,3 +737,6 @@ Adding a SLIDE ANYTHING slider using the WordPress 5.0 'Block Editor' is pretty 
 
 = 2.3.40 =
 * Set the hover title text for slide links to an empty string (i.e. blank)
+
+= 2.3.41 =
+* A security fix to remove a vunerability to SQL injection with the slide duplication function.

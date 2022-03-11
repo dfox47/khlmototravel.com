@@ -6,6 +6,7 @@ use WebpConverter\Error\Notice\LibsNotInstalledNotice;
 use WebpConverter\Error\Notice\LibsWithoutWebpSupportNotice;
 use WebpConverter\PluginData;
 use WebpConverter\PluginInfo;
+use WebpConverter\Settings\Option\AccessTokenOption;
 use WebpConverter\Settings\Page\PageIntegration;
 use WebpConverterVendor\MattPlugins\DeactivationModal;
 
@@ -26,9 +27,19 @@ class DeactivationModalGenerator {
 	 */
 	protected $plugin_data;
 
-	public function __construct( PluginInfo $plugin_info, PluginData $plugin_data ) {
-		$this->plugin_info = $plugin_info;
-		$this->plugin_data = $plugin_data;
+	/**
+	 * @var StatsManager
+	 */
+	private $stats_manager;
+
+	public function __construct(
+		PluginInfo $plugin_info,
+		PluginData $plugin_data,
+		StatsManager $stats_manager = null
+	) {
+		$this->plugin_info   = $plugin_info;
+		$this->plugin_data   = $plugin_data;
+		$this->stats_manager = $stats_manager ?: new StatsManager();
 	}
 
 	/**
@@ -133,8 +144,30 @@ class DeactivationModalGenerator {
 					new DeactivationModal\Model\FormValue(
 						'request_plugin_settings',
 						function () {
-							$settings_json = json_encode( $this->plugin_data->get_plugin_settings() );
+							$plugin_settings = $this->plugin_data->get_plugin_settings();
+							$access_token    = $plugin_settings[ AccessTokenOption::OPTION_NAME ] ?? '';
+							if ( $access_token ) {
+								$plugin_settings[ AccessTokenOption::OPTION_NAME ] = substr( $access_token, 0, 32 ) . str_repeat( '*', 32 );
+							}
+
+							$settings_json = json_encode( $plugin_settings );
 							return base64_encode( $settings_json ?: '' ); // phpcs:ignore WordPress.PHP.DiscouragedPHPFunctions
+						}
+					)
+				)
+				->set_value(
+					new DeactivationModal\Model\FormValue(
+						'request_plugin_stats',
+						function () {
+							$stats_data = [
+								'usage_time'          => $this->stats_manager->get_plugin_usage_time(),
+								'first_version'       => $this->stats_manager->get_plugin_first_version(),
+								'regeneration_images' => $this->stats_manager->get_regeneration_images_count(),
+								'calculation_images'  => $this->stats_manager->get_calculation_images_count(),
+							];
+
+							$stats_json = json_encode( $stats_data );
+							return base64_encode( $stats_json ?: '' ); // phpcs:ignore WordPress.PHP.DiscouragedPHPFunctions
 						}
 					)
 				)

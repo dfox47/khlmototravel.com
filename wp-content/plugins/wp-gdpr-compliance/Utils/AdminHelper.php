@@ -36,33 +36,10 @@ class AdminHelper {
 	 * @return string
 	 */
 	public static function getPageUrl( $page = '' ) {
-		$args = $_GET;
-		foreach ( self::singleArgs() as $key ) {
-			unset( $args[ $key ] );
-		}
-
+		$args = [];
 		$args['page'] = $page;
 
 		return add_query_arg( $args, admin_url( 'admin.php' ) );
-	}
-
-	/**
-	 * Lists the query args that should only be used one single time
-	 * @return array
-	 */
-	public static function singleArgs() {
-		return [
-			Plugin::PLUGIN_SLUG . '-action',
-			'clone',
-			'delete',
-			'edit',
-			'new',
-			'_wpnonce',
-			'activate',
-			'plugin_status',
-			'tab',
-			'section'
-		];
 	}
 
 	/**
