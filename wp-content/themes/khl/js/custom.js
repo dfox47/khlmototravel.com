@@ -101,7 +101,7 @@ $(window).bind('load', function() {
 	$('.js-btn-submit').on('click', function (e) {
 		e.preventDefault();
 
-		var $this = $(this);
+		let $this = $(this);
 
 		$this.addClass('loading');
 

@@ -10,10 +10,15 @@ Author URI: https://www.khlmototravel.com/
 @import "vars";
 @import "defaults";
 
+@import "bike";
 @import "book";
 @import "calendar";
 @import "header";
 @import "home";
+@import "jquery-ui";
+@import "lang";
+@import "order";
+@import "popup";
 @import "tours";
 
 
@@ -46,6 +51,16 @@ h2 {
 
 h3 {
 	font-family: $font_josefin;
+}
+
+
+
+#sticky-navv {
+	a {
+		&.btn_vk {
+			display: none;
+		}
+	}
 }
 
 
@@ -161,37 +176,6 @@ h3 {
 .hidden {
 	display: none;
 }
-
-
-
-.lang_de_only {}
-
-.lang_de_DE {
-	.lang_en_only,
-	.lang_ru_only {
-		display: none;
-	}
-}
-
-.lang_en_only {}
-
-.lang_en_US {
-	.lang_de_only,
-	.lang_ru_only {
-		display: none;
-	}
-}
-
-.lang_ru_only {}
-
-.lang_ru_RU {
-	.lang_en_only,
-	.lang_de_only {
-		display: none;
-	}
-}
-
-
 
 .loader {
 	animation-delay: .5s;

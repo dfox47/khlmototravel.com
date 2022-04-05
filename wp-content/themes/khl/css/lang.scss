@@ -1,0 +1,40 @@
+
+.lang_bg_only {}
+
+.lang_bg_BG {
+	.lang_de_only,
+	.lang_en_only,
+	.lang_ru_only {
+		display: none;
+	}
+}
+
+.lang_de_only {}
+
+.lang_de_DE {
+	.lang_bg_only,
+	.lang_en_only,
+	.lang_ru_only {
+		display: none;
+	}
+}
+
+.lang_en_only {}
+
+.lang_en_US {
+	.lang_bg_only,
+	.lang_de_only,
+	.lang_ru_only {
+		display: none;
+	}
+}
+
+.lang_ru_only {}
+
+.lang_ru_RU {
+	.lang_bg_only,
+	.lang_en_only,
+	.lang_de_only {
+		display: none;
+	}
+}
