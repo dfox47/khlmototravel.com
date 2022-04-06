@@ -278,6 +278,25 @@ get_header(); ?>
 					<div class="popup__close js-popup-close"></div>
 				</div>
 			</div>
+
+			<!-- Error -->
+			<div class="popup js-msg-fail js-popup">
+				<div class="popup__bg js-popup-close"></div>
+
+				<div class="popup__content">
+					<p>
+						<span class="lang_bg_only">Нещо се обърка, моля, презаредете страницата и изпратете поръчката отново.</span>
+						<span class="lang_en_only">Something went wront, please reload page and submit order again.</span>
+						<span class="lang_de_only">Etwas ist schief gelaufen, bitte laden Sie die Seite neu und senden Sie die Bestellung erneut ab.</span>
+					</p>
+
+					<div class="text-center">
+						<img class="popup_icon" src="<?php echo $i; ?>/icons/error.svg" alt="" />
+					</div>
+
+					<div class="popup__close js-popup-close"></div>
+				</div>
+			</div>
 		</form>
 
 		<div class="price_total">

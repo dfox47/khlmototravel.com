@@ -14,7 +14,7 @@ function submitForm() {
 	let messageDelay   = 3000;
 	let nextStep       = true;
 
-	$(document).on('input', '.js-order-value-check', function () {
+	$contactForm.on('input', '.js-order-value-check', function () {
 		$(this).removeClass('error');
 	});
 
