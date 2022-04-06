@@ -60,9 +60,12 @@ wp_footer(); ?>
 
 <?php include_once 'book.php'; ?>
 
+<script src="/wp-content/themes/khl/js/jquery-3.6.0.min.js"></script>
+<script src="/wp-content/themes/khl/js/jquery-ui.min.js"></script>
+<script src="/wp-content/themes/khl/js/priceTotal.js"></script>
+<script src="/wp-content/themes/khl/js/rentalDays.js"></script>
+<script src="/wp-content/themes/khl/js/sendmail.js"></script>
 <script src="/wp-content/themes/khl/js/custom.js?v<?php echo(date("YmdHi")); ?>"></script>
 
 </body>
 </html>
-
-

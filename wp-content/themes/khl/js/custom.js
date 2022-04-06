@@ -1,13 +1,7 @@
 
-
-
 var $ = jQuery;
 
 $(window).bind('load', function() {
-	console.log('custom.js loaded');
-
-
-
 	// popup [START]
 	$(document).on('click', '.js-popup-link', function (e) {
 		e.preventDefault();
@@ -57,10 +51,10 @@ $(window).bind('load', function() {
 
 
 
-	var feedBackForm    = $('.js-feedback-form');
-	var fieldEmail      = $('.js-field-email');
-	var fieldName       = $('.js-field-name');
-	var fieldPhone      = $('.js-field-phone');
+	let feedBackForm    = $('.js-feedback-form');
+	let fieldEmail      = $('.js-field-email');
+	let fieldName       = $('.js-field-name');
+	let fieldPhone      = $('.js-field-phone');
 
 	var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -153,6 +147,20 @@ $(window).bind('load', function() {
 			}
 		});
 	});
+
+
+
+	calcDiff();
+	priceTotal();
+
+	$(document).on('change', '.js-bike-price', function () {
+		calcDiff();
+		priceTotal();
+	});
+
+	$(document).on('click', '.js-popup-close', function (e) {
+		e.preventDefault();
+
+		$('.js-popup').removeClass('active');
+	});
 });
-
-

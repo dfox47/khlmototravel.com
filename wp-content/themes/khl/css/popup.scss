@@ -39,6 +39,7 @@
 		background-color: #fff;
 		border-radius: 10px;
 		font-size: 20px;
+		max-width: 900px;
 		padding: 30px;
 		position: relative;
 		z-index: 3;
@@ -78,6 +79,23 @@
 			transform: rotate(-45deg);
 		}
 	}
+}
+
+.popup_active {
+	overflow: hidden;
+
+	.popup {
+		display: flex;
+	}
+}
+
+.popup_desc {
+	height: 100%;
+	overflow-y: auto;
+	padding: 30px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
 }
 
 .popup_icon {
