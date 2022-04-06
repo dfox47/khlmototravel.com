@@ -1,7 +1,33 @@
 
 var $ = jQuery;
 
-let $contactForm = $('.js-order-form');
+let $contactForm        = $('.js-order-form');
+let $inputCheck         = $contactForm.find('.js-order-value-check');
+let $msgFail            = $contactForm.find('.js-msg-fail');
+let $msgIncomplete      = $contactForm.find('.js-msg-incomplete');
+let $msgSending         = $contactForm.find('.js-msg-sending');
+let $msgSuccess         = $contactForm.find('.js-msg-success');
+let messageDelay        = 3000;
+let nextStep            = true;
+
+$contactForm.on('input', '.js-order-value-check', function () {
+	let $this = $(this);
+	$this.removeClass('error').addClass('success');
+
+	if ( !$this.val() ) {
+		$this.addClass('error').removeClass('success');
+	}
+});
+
+// check for complete fields at the page loaded
+$inputCheck.each(function () {
+	let $this = $(this);
+	$this.removeClass('error');
+
+	if ( $this.val() ) {
+		$this.addClass('success');
+	}
+});
 
 $(document).on('submit', $contactForm, function (e) {
 	e.preventDefault();
@@ -11,20 +37,10 @@ $(document).on('submit', $contactForm, function (e) {
 
 // AJAX contact form
 function submitForm() {
-	let messageDelay        = 3000;
-	let nextStep            = true;
-	let $msgFail            = $contactForm.find('.js-msg-fail');
-	let $msgIncomplete      = $contactForm.find('.js-msg-incomplete');
-	let $msgSending         = $contactForm.find('.js-msg-sending');
-	let $msgSuccess         = $contactForm.find('.js-msg-success');
-
-	$contactForm.on('input', '.js-order-value-check', function () {
-		$(this).removeClass('error');
-	});
-
 	// incomplete
-	$('.js-order-value-check').removeClass('error').each(function () {
+	$inputCheck.each(function () {
 		let $this = $(this);
+		$this.removeClass('error');
 
 		if ( !$this.val() ) {
 			$this.addClass('error');
@@ -35,6 +51,8 @@ function submitForm() {
 
 			nextStep = false;
 		}
+
+		$this.addClass('success');
 	});
 
 	if (!nextStep) return;

@@ -174,6 +174,7 @@ get_header(); ?>
 						<span class="lang_de_only">Abholdatum</span>
 						<span class="lang_en_only">Pickup date</span>
 						<input class="js-datepicker js-pickup-date js-order-value-check" type="text" name="pickup_date" />
+						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
 					</label>
 				</div>
 
@@ -183,6 +184,7 @@ get_header(); ?>
 						<span class="lang_de_only">Rückflugdatum</span>
 						<span class="lang_en_only">Return date</span>
 						<input class="js-datepicker js-return-date js-order-value-check" type="text" name="return_date" />
+						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
 					</label>
 				</div>
 
@@ -198,6 +200,7 @@ get_header(); ?>
 						<span class="lang_de_only">Name</span>
 						<span class="lang_en_only">Name</span>
 						<input class="js-order-value-check" type="text" name="biker_name" />
+						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
 					</label>
 
 					<label class="order_label">
@@ -205,18 +208,21 @@ get_header(); ?>
 						<span class="lang_de_only">Telefon</span>
 						<span class="lang_en_only">Phone</span>
 						<input class="js-order-value-check" type="text" name="biker_phone" />
+						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
 					</label>
 
 					<label class="order_label">
 						<span>E-mail</span>
 						<input class="js-order-value-check" type="text" name="biker_email" />
+						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
 					</label>
 
 					<label class="order_label">
 						<span class="lang_bg_only">Промо код</span>
 						<span class="lang_de_only">Promo code</span>
 						<span class="lang_en_only">Promo code</span>
-						<input class="js-order-value-check" type="text" name="promo_code" />
+						<input class="js-order-promo" type="text" name="promo_code" />
+						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
 					</label>
 
 					<label class="order_label">

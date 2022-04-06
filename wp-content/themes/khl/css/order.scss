@@ -1,29 +1,6 @@
 
 .order_form {
 	input {
-		&[type="text"] {
-			font-size: 18px;
-			padding: .5em 1em;
-		}
-
-		&:focus {
-			outline: none;
-		}
-	}
-}
-
-.order_label {
-	align-items: center;
-	display: flex;
-	font-size: 18px;
-	justify-content: flex-end;
-	margin: 10px 0;
-
-	span {
-		padding: 0 1em 0 0;
-	}
-
-	input {
 		&[type="checkbox"] {
 			left: -9999px;
 			position: absolute;
@@ -38,15 +15,42 @@
 		}
 
 		&[type="text"] {
-			border: 1px solid $c_shadow;
 			border-radius: 6px;
+			border: 1px solid $c_shadow;
+			font-size: 18px;
 			max-width: 220px;
+			padding: .5em 1em;
+			position: relative;
 			width: 100%;
 
 			&.error {
 				border-color: red;
 			}
+
+			&.hasDatepicker,
+			&.success {
+				+ .order_label__icon {
+					display: block;
+				}
+			}
 		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.order_label {
+	align-items: center;
+	display: flex;
+	font-size: 18px;
+	justify-content: flex-end;
+	margin: 10px 0;
+	position: relative;
+
+	span {
+		padding: 0 1em 0 0;
 	}
 
 	&__checkbox {
@@ -60,6 +64,16 @@
 			vertical-align: middle;
 			width: 24px;
 		}
+	}
+
+	&__icon {
+		display: none;
+		height: 30px;
+		left: 100%;
+		margin: 0 0 0 5px;
+		position: absolute;
+		top: 6px;
+		width: 30px;
 	}
 }
 
