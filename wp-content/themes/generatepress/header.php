@@ -35,7 +35,7 @@ $favicon        = $i . '/icons/favicon'; ?>
 
 	<?php wp_head(); ?>
 
-	<link rel="stylesheet" href="<?php echo $themeFolder; ?>/style.css" />
+	<link rel="stylesheet" href="<?php echo $themeFolder; ?>/style.css?v<?php echo(date("YmdHi")); ?>" />
 
 	<!-- Facebook Pixel Code -->
 	<script>

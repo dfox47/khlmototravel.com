@@ -170,35 +170,40 @@ get_header(); ?>
 			<div id="order" class="order_user_info">
 				<div>
 					<label class="order_label pickup_date">
-						<span class="lang_en_only">Pickup date</span>
 						<span class="lang_bg_only">Дата на вземане</span>
+						<span class="lang_de_only">Abholdatum</span>
+						<span class="lang_en_only">Pickup date</span>
 						<input class="js-datepicker js-pickup-date js-order-value-check" type="text" name="pickup_date" />
 					</label>
 				</div>
 
 				<div>
 					<label class="order_label return_date">
-						<span class="lang_en_only">Return date</span>
 						<span class="lang_bg_only">Дата на връщане</span>
+						<span class="lang_de_only">Rückflugdatum</span>
+						<span class="lang_en_only">Return date</span>
 						<input class="js-datepicker js-return-date js-order-value-check" type="text" name="return_date" />
 					</label>
 				</div>
 
 				<h2>
-					<span class="lang_en_only">Contacts</span>
 					<span class="lang_bg_only">Контакти</span>
+					<span class="lang_de_only">Kontakte</span>
+					<span class="lang_en_only">Contacts</span>
 				</h2>
 
 				<div>
 					<label class="order_label">
-						<span class="lang_en_only">Name</span>
 						<span class="lang_bg_only">Име</span>
+						<span class="lang_de_only">Name</span>
+						<span class="lang_en_only">Name</span>
 						<input class="js-order-value-check" type="text" name="biker_name" />
 					</label>
 
 					<label class="order_label">
-						<span class="lang_en_only">Phone</span>
 						<span class="lang_bg_only">Телефон</span>
+						<span class="lang_de_only">Telefon</span>
+						<span class="lang_en_only">Phone</span>
 						<input class="js-order-value-check" type="text" name="biker_phone" />
 					</label>
 
@@ -208,18 +213,27 @@ get_header(); ?>
 					</label>
 
 					<label class="order_label">
+						<span class="lang_bg_only">Промо код</span>
+						<span class="lang_de_only">Promo code</span>
+						<span class="lang_en_only">Promo code</span>
+						<input class="js-order-value-check" type="text" name="promo_code" />
+					</label>
+
+					<label class="order_label">
 						<input class="js-order-value-check" type="checkbox" name="biker_email" checked />
 						<span class="order_label__checkbox">
-					<span class="lang_bg_only">Запознат с правилата на лизинга</span>
-					<span class="lang_en_only">Agreed with terms </span>
-				</span>
+							<span class="lang_bg_only">Запознат с <a href="/bg/terms/" target="_blank">правилата на лизинга</a></span>
+							<span class="lang_de_only">Bedingungen <a href="/de/terms/" target="_blank">zugestimmt</a></span>
+							<span class="lang_en_only">Agreed with <a href="/terms/" target="_blank">terms</a></span>
+						</span>
 					</label>
 				</div>
 
 				<div class="form_submit">
 					<button class="btn btn__submit" type="submit">
-						<span class="lang_en_only">Submit</span>
 						<span class="lang_bg_only">Изпращане</span>
+						<span class="lang_de_only">Senden</span>
+						<span class="lang_en_only">Submit</span>
 					</button>
 				</div>
 			</div>
