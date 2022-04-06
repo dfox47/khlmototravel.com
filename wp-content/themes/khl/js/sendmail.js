@@ -11,8 +11,12 @@ $(document).on('submit', $contactForm, function (e) {
 
 // AJAX contact form
 function submitForm() {
-	let messageDelay   = 3000;
-	let nextStep       = true;
+	let messageDelay        = 3000;
+	let nextStep            = true;
+	let $msgFail            = $contactForm.find('.js-msg-fail');
+	let $msgIncomplete      = $contactForm.find('.js-msg-incomplete');
+	let $msgSending         = $contactForm.find('.js-msg-sending');
+	let $msgSuccess         = $contactForm.find('.js-msg-success');
 
 	$contactForm.on('input', '.js-order-value-check', function () {
 		$(this).removeClass('error');
@@ -22,12 +26,10 @@ function submitForm() {
 	$('.js-order-value-check').removeClass('error').each(function () {
 		let $this = $(this);
 
-		console.log('s21');
-
 		if ( !$this.val() ) {
 			$this.addClass('error');
 
-			$('.js-msg-incomplete').addClass('active').delay(messageDelay).queue(function () {
+			$msgIncomplete.addClass('active').delay(messageDelay).queue(function () {
 				$(this).removeClass('active').dequeue();
 			});
 
@@ -38,27 +40,27 @@ function submitForm() {
 	if (!nextStep) return;
 
 	// sending
-	$contactForm.find('.js-msg-sending').addClass('active');
+	$msgSending.addClass('active');
 
 	$.ajax({
-		url:    $contactForm.attr('action') + "?ajax=true",
-		type:   $contactForm.attr('method'),
-		data:   $contactForm.serialize(),
-		success: submitFinished
+		url:        $contactForm.attr('action') + "?ajax=true",
+		type:       $contactForm.attr('method'),
+		data:       $contactForm.serialize(),
+		success:    submitFinished
 	});
 
 	function submitFinished(response) {
 		response = $.trim(response);
 
-		$('.js-msg-sending').removeClass('active');
+		$msgSending.removeClass('active');
 
 		if (response === 'success') {
-			$('.js-msg-success').addClass('active');
+			$msgSuccess.addClass('active');
 
 			return;
 		}
 
-		$('.js-msg-fail').addClass('active').delay(messageDelay).queue(function() {
+		$msgFail.addClass('active').delay(messageDelay).queue(function() {
 			$(this).removeClass('active').dequeue();
 		});
 	}
