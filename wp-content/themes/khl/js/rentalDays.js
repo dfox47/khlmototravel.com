@@ -51,5 +51,7 @@ function calcDiff() {
 		diff = Math.floor((dateToGet.getTime() - dateFromGet.getTime()) / 86400000);
 	}
 
+	$('.js-order-days-rent').val(diff);
+
 	localStorage.setItem('rentalDatesDiff', diff);
 }

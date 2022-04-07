@@ -8,6 +8,7 @@ $order_bike                 = $_POST['bike'];
 $order_biker_email          = $_POST['biker_email'];
 $order_biker_name           = $_POST['biker_name'];
 $order_biker_phone          = $_POST['biker_phone'];
+$order_days_rent            = $_POST['days_rent'];
 $order_pickup_date          = $_POST['pickup_date'];
 $order_price_total          = $_POST['price_total'];
 $order_return_date          = $_POST['return_date'];
@@ -21,6 +22,7 @@ $message = "
 			<p><strong>Name:</strong> $order_biker_name</p>
 			<p><strong>Phone:</strong> $order_biker_phone</p>
 			<p><strong>E-mail:</strong> $order_biker_email</p>
+			<p><strong>Days at rent:</strong> $order_days_rent</p>
 			<p><strong>TOTAL:</strong> $order_price_total лв</p>
 		</body>
 	</html>
