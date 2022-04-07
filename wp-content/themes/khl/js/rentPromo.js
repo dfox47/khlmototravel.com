@@ -1,6 +1,11 @@
 
+let $promoInput     = $('.js-order-promo');
+let promoVal        = $promoInput.val();
+
 // check at page load
-checkPromo();
+if (promoVal !== '') {
+	checkPromo();
+}
 
 $('.js-order-promo-submit').click(function (e) {
 	e.preventDefault();
@@ -9,8 +14,8 @@ $('.js-order-promo-submit').click(function (e) {
 });
 
 function checkPromo() {
-	let $promoInput     = $('.js-order-promo');
-	let promoVal        = $promoInput.val();
+	// get new value of input
+	promoVal = $promoInput.val();
 
 	if ( promoVal === 'moto2022') {
 		$promoInput.removeClass('error').addClass('success');

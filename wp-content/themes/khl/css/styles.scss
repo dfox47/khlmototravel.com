@@ -310,6 +310,17 @@ h3 {
 	right: .5em;
 	z-index: 9;
 
+	&__discount {
+		display: none;
+		font-size: 20px;
+		text-align: center;
+		text-decoration: line-through;
+
+		&.active {
+			display: block;
+		}
+	}
+
 	&__number {
 		color: $c_main;
 		font-size: 34px;

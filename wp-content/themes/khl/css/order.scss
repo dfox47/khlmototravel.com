@@ -52,7 +52,7 @@
 .order_label {
 	align-items: center;
 	display: flex;
-	font-size: 18px;
+	font-size: 14px;
 	justify-content: flex-end;
 	margin: 10px 0;
 	position: relative;
@@ -60,13 +60,19 @@
 	&__checkbox {
 		&::before {
 			border: 1px solid $c_shadow_dark;
+			border-radius: 4px;
 			content: "";
 			cursor: pointer;
 			display: inline-block;
 			height: 24px;
-			margin: 0 30px 0 0;
+			margin: 0 10px 0 0;
 			vertical-align: middle;
 			width: 24px;
+		}
+
+		span {
+			display: inline-block;
+			vertical-align: middle;
 		}
 	}
 
@@ -121,9 +127,24 @@
 	}
 }
 
+.order_total_days {
+	font-size: 12px;
+	opacity: .7;
+	text-align: right;
+	transition: $transition;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	&__number {
+		display: inline-block;
+		font-weight: 700;
+	}
+}
+
 .order_user_info {
 	margin: 0 auto;
 	max-width: 450px;
 	width: 100%;
 }
-

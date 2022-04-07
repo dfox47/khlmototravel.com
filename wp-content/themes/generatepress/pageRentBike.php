@@ -4,7 +4,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+    exit;
 }
 
 get_header(); ?>
@@ -176,14 +176,19 @@ get_header(); ?>
 					<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
 				</label>
 
-				<div>
-					<label class="order_label return_date">
-						<span class="lang_bg_only">Дата на връщане</span>
-						<span class="lang_de_only">Rückflugdatum</span>
-						<span class="lang_en_only">Return date</span>
-						<input class="js-datepicker js-return-date js-order-value-check" type="text" name="return_date" />
-						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
-					</label>
+				<label class="order_label return_date">
+					<span class="lang_bg_only">Дата на връщане</span>
+					<span class="lang_de_only">Rückflugdatum</span>
+					<span class="lang_en_only">Return date</span>
+					<input class="js-datepicker js-return-date js-order-value-check" type="text" name="return_date" />
+					<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
+				</label>
+
+				<div class="order_total_days">
+					<span class="lang_bg_only">Общо дни</span>
+					<span class="lang_de_only">Die Summe an Tagen</span>
+					<span class="lang_en_only">Total days</span>
+					: <span class="order_total_days__number js-order-days-rent-total">0</span>
 				</div>
 
 				<h2>
@@ -243,8 +248,8 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<input class="js-order-days-rent" type="hidden" name="days_rent" />
 			<input class="js-price-total-input" type="hidden" name="price_total" />
+			<input class="js-order-days-rent" type="hidden" name="days_rent" />
 
 			<!-- Sending -->
 			<div class="popup js-msg-sending js-popup">
@@ -320,6 +325,13 @@ get_header(); ?>
 		</form>
 
 		<div class="price_total">
+			<div class="price_total__discount js-order-discount">
+				<span class="js-order-discount-val">0</span>
+				<span class="lang_bg_only">лв</span>
+				<span class="lang_en_only">BGN</span>
+				<span class="lang_de_only">BGN</span>
+			</div>
+
 			<span class="lang_bg_only">Общо</span>
 			<span class="lang_en_only">Total</span>
 			<span class="lang_de_only">Gesamt</span>: <span class="price_total__number js-price-total">0</span>

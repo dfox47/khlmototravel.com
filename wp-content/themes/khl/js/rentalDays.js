@@ -52,6 +52,7 @@ function calcDiff() {
 	}
 
 	$('.js-order-days-rent').val(diff);
+	$('.js-order-days-rent-total').text(diff);
 
 	localStorage.setItem('rentalDatesDiff', diff);
 }
