@@ -30,7 +30,6 @@ $message = "
 ";
 
 // If all values exist, send the email
-//if ($sender_name && $sender_email && $sender_company) {
 if ($order_bike) {
     $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
     $headers = "Content-type: text/html; charset = utf-8 \r\n";

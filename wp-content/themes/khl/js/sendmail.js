@@ -1,6 +1,4 @@
 
-var $ = jQuery;
-
 let $contactForm        = $('.js-order-form');
 let $inputCheck         = $contactForm.find('.js-order-value-check');
 let $msgFail            = $contactForm.find('.js-msg-fail');
@@ -37,8 +35,12 @@ $(document).on('submit', $contactForm, function (e) {
 
 // AJAX contact form
 function submitForm() {
+	nextStep = true;
+
 	// incomplete
 	$inputCheck.each(function () {
+		if (!nextStep) return;
+
 		let $this = $(this);
 		$this.removeClass('error');
 
@@ -50,6 +52,8 @@ function submitForm() {
 			});
 
 			nextStep = false;
+
+			return;
 		}
 
 		$this.addClass('success');

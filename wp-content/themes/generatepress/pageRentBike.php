@@ -168,15 +168,13 @@ get_header(); ?>
 			</div>
 
 			<div id="order" class="order_user_info">
-				<div>
-					<label class="order_label pickup_date">
-						<span class="lang_bg_only">Дата на вземане</span>
-						<span class="lang_de_only">Abholdatum</span>
-						<span class="lang_en_only">Pickup date</span>
-						<input class="js-datepicker js-pickup-date js-order-value-check" type="text" name="pickup_date" />
-						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
-					</label>
-				</div>
+				<label class="order_label pickup_date">
+					<span class="lang_bg_only">Дата на вземане</span>
+					<span class="lang_de_only">Abholdatum</span>
+					<span class="lang_en_only">Pickup date</span>
+					<input class="js-datepicker js-pickup-date js-order-value-check" type="text" name="pickup_date" />
+					<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
+				</label>
 
 				<div>
 					<label class="order_label return_date">
@@ -227,7 +225,7 @@ get_header(); ?>
 					</label>
 
 					<label class="order_label">
-						<input class="js-order-value-check" type="checkbox" name="biker_email" checked />
+						<input class="js-order-value-check" type="checkbox" name="terms" checked />
 						<span class="order_label__checkbox">
 							<span class="lang_bg_only">Запознат с <a href="/bg/terms/" target="_blank">правилата на лизинга</a></span>
 							<span class="lang_de_only">Bedingungen <a href="/de/terms/" target="_blank">zugestimmt</a></span>
