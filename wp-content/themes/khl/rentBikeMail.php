@@ -1,7 +1,8 @@
 
 <?php // Define constants
 const RECIPIENT_NAME        = "khlmototravel.com";
-const RECIPIENT_EMAIL       = "a9942212@gmail.com";
+//const RECIPIENT_EMAIL       = "andreysergeevich200@gmail.com";
+const RECIPIENT_EMAIL       = "a9942212@gmail.com, dfox@foxartbox.com";
 const EMAIL_SUBJECT         = "[New bike rent]";
 
 $order_bike                 = $_POST['bike'];

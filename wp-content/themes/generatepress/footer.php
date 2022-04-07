@@ -66,6 +66,7 @@ wp_footer(); ?>
 <script src="/wp-content/themes/khl/js/jquery-ui.min.js"></script>
 <script src="/wp-content/themes/khl/js/popup.js"></script>
 <script src="/wp-content/themes/khl/js/priceTotal.js"></script>
+<script src="/wp-content/themes/khl/js/rentPromo.js"></script>
 <script src="/wp-content/themes/khl/js/rentalDays.js"></script>
 <script src="/wp-content/themes/khl/js/sendmail.js"></script>
 

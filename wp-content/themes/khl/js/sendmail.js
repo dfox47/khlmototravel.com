@@ -19,34 +19,14 @@ $contactForm.on('input', '.js-order-value-check', function () {
 	}
 });
 
-$('.js-order-promo-submit').click(function (e) {
-	e.preventDefault();
-
-	let $promoInput     = $('.js-order-promo');
-	let promoVal        = $promoInput.val();
-
-	if ( promoVal === 'moto2022') {
-		$promoInput.removeClass('error').addClass('success');
-
-		return;
-	}
-
-	$promoInput.addClass('error').removeClass('success');
-});
-
 // check for complete fields at the page loaded
 $inputCheck.each(function () {
 	let $this = $(this);
 	$this.removeClass('error');
-	localStorage.setItem('promo', '0');
 
 	if ( $this.val() ) {
 		$this.addClass('success');
-
-		localStorage.setItem('promo', '0.7');
 	}
-
-	priceTotal();
 });
 
 $(document).on('submit', $contactForm, function (e) {
