@@ -13,6 +13,7 @@ $order_days_rent            = $_POST['days_rent'];
 $order_pickup_date          = $_POST['pickup_date'];
 $order_price_total          = $_POST['price_total'];
 $order_return_date          = $_POST['return_date'];
+$order_promo_code           = $_POST['promo_code'];
 
 $message = "
 	<html lang='en'>
@@ -25,6 +26,7 @@ $message = "
 			<p><strong>E-mail:</strong> $order_biker_email</p>
 			<p><strong>Days at rent:</strong> $order_days_rent</p>
 			<p><strong>TOTAL:</strong> $order_price_total лв</p>
+			<p><strong>promo code:</strong> [$order_promo_code]</p>
 		</body>
 	</html>
 ";

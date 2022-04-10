@@ -292,8 +292,9 @@ get_header(); ?>
 
 				<div class="popup__content">
 					<p>
-						<span class="lang_bg_only">Моля, попълнете всички полета</span>
+						<span class="lang_de_only">Bitte alle Felder ausfüllen</span>
 						<span class="lang_en_only">Please fill all fields</span>
+						<span class="lang_bg_only">Моля, попълнете всички полета</span>
 					</p>
 
 					<div class="text-center">
