@@ -82,8 +82,6 @@ function submitForm() {
 			return;
 		}
 
-		$msgFail.addClass('active').delay(messageDelay).queue(function() {
-			$(this).removeClass('active').dequeue();
-		});
+		$msgFail.addClass('active');
 	}
 }

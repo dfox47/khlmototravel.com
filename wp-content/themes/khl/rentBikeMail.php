@@ -1,8 +1,8 @@
 
 <?php // Define constants
 const RECIPIENT_NAME        = "khlmototravel.com";
-//const RECIPIENT_EMAIL       = "andreysergeevich200@gmail.com";
-const RECIPIENT_EMAIL       = "a9942212@gmail.com";
+const RECIPIENT_EMAIL       = "andreysergeevich200@gmail.com";
+//const RECIPIENT_EMAIL       = "a9942212@gmail.com";
 const EMAIL_SUBJECT         = "[New bike rent]";
 
 $order_bike                 = $_POST['bike'];
@@ -38,6 +38,23 @@ if ($order_bike) {
     $headers .= "From: " . $order_biker_name . " <" . $order_biker_email . ">";
     $success = mail($recipient, EMAIL_SUBJECT . ' ' . $order_bike, $message, $headers);
 }
+
+// sent a message to telegram chat
+$messageT = "[New bike rent]";
+$messageT .= " Bike: ".$order_bike;
+$messageT .= " | Pickup: ".$order_pickup_date;
+$messageT .= " | Return: ".$order_return_date;
+$messageT .= " | Name: ".$order_biker_name;
+$messageT .= " | Phone: ".$order_biker_phone;
+$messageT .= " | E-mail: ".$order_biker_email;
+$messageT .= " | Days at rent: ".$order_days_rent;
+$messageT .= " | TOTAL: ".$order_price_total;
+$messageT .= " | promo code: [".$order_promo_code."]";
+
+$token      = "5165616331:AAHYP1x58p3wlV7uChH6ixqq7jLQumbRfXQ";
+$chat_id    = "-735849686";
+
+$result = file_get_contents("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$messageT}");
 
 // Return an appropriate response to the browser
 if (isset($_GET["ajax"])) {
