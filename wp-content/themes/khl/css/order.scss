@@ -21,6 +21,8 @@
 			}
 		}
 
+		&[type="email"],
+		&[type="number"],
 		&[type="text"] {
 			border-radius: 6px;
 			border: 1px solid $c_shadow;
@@ -47,6 +49,10 @@
 			outline: none;
 		}
 	}
+}
+
+.order_input_name {
+	text-transform: uppercase;
 }
 
 .order_label {

@@ -15,7 +15,7 @@ $('.js-order-promo-submit').click(function (e) {
 
 function checkPromo() {
 	// get new value of input
-	promoVal = $promoInput.val();
+	promoVal = $promoInput.val().toLowerCase();
 
 	if ( promoVal === 'moto2022') {
 		$promoInput.removeClass('error').addClass('success');

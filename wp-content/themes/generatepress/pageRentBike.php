@@ -202,7 +202,7 @@ get_header(); ?>
 						<span class="lang_bg_only">Име</span>
 						<span class="lang_de_only">Name</span>
 						<span class="lang_en_only">Name</span>
-						<input class="js-order-value-check" type="text" name="biker_name" />
+						<input class="order_input_name js-order-value-check js-order-name" type="text" name="biker_name" />
 						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
 					</label>
 
@@ -210,13 +210,13 @@ get_header(); ?>
 						<span class="lang_bg_only">Телефон</span>
 						<span class="lang_de_only">Telefon</span>
 						<span class="lang_en_only">Phone</span>
-						<input class="js-order-value-check" type="text" name="biker_phone" />
+						<input class="js-order-value-check js-order-phone" type="text" name="biker_phone" placeholder="088(12)12345678" />
 						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
 					</label>
 
 					<label class="order_label">
 						<span class="order_label__title">E-mail</span>
-						<input class="js-order-value-check" type="text" name="biker_email" />
+						<input class="js-order-value-check" type="email" name="biker_email" placeholder="example@gmail.com" />
 						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
 					</label>
 
