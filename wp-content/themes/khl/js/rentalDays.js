@@ -15,7 +15,7 @@ $(window).bind('load', function() {
 
 	$('.js-order-name').bind('keyup blur',function() {
 		let node = $(this)
-		node.val(node.val().replace(/[^a-zA-Z]/g,''))
+		node.val(node.val().replace(/[^a-zA-Z ]/g,''))
 	})
 })
 
@@ -24,7 +24,7 @@ function calcDiff() {
 	let $dateTo         = $('.js-return-date')
 	let dateFromGet     = $dateFrom.datepicker('getDate')
 	let dateToGet       = $dateTo.datepicker('getDate')
-	let diff;
+	let diff
 
 	$dateFrom.removeClass('error')
 	$dateTo.removeClass('error')
