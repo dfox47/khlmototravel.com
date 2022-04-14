@@ -30,12 +30,9 @@ get_header(); ?>
 						<span class="bike_desc__model">Honda CB 650F</span>
 						<span class="bike_desc__price">
 							<span class="bike_price">90</span>
-							<span class="lang_bg_only">лв</span>
-							<span class="lang_de_only">BGN</span>
-							<span class="lang_en_only">BGN</span>/
-							<span class="lang_bg_only">ден</span>
-							<span class="lang_en_only">day</span>
-							<span class="lang_de_only">Tag</span>
+							<span class="lang_bg_only">лв/ден</span>
+							<span class="lang_de_only">BGN/Tag</span>
+							<span class="lang_en_only">BGN/day</span>
 						</span>
 					</span>
 				</label>
@@ -48,12 +45,9 @@ get_header(); ?>
 						<span class="bike_desc__model">BMW F-850-GS</span>
 						<span class="bike_desc__price">
 							<span class="bike_price">200</span>
-							<span class="lang_bg_only">лв</span>
-							<span class="lang_de_only">BGN</span>
-							<span class="lang_en_only">BGN</span>/
-							<span class="lang_bg_only">ден</span>
-							<span class="lang_en_only">day</span>
-							<span class="lang_de_only">Tag</span>
+							<span class="lang_bg_only">лв/ден</span>
+							<span class="lang_de_only">BGN/Tag</span>
+							<span class="lang_en_only">BGN/day</span>
 						</span>
 					</span>
 				</label>
@@ -66,12 +60,9 @@ get_header(); ?>
 						<span class="bike_desc__model">BMW R-1200-GS</span>
 						<span class="bike_desc__price">
 							<span class="bike_price">210</span>
-							<span class="lang_bg_only">лв</span>
-							<span class="lang_de_only">BGN</span>
-							<span class="lang_en_only">BGN</span>/
-							<span class="lang_bg_only">ден</span>
-							<span class="lang_en_only">day</span>
-							<span class="lang_de_only">Tag</span>
+							<span class="lang_bg_only">лв/ден</span>
+							<span class="lang_de_only">BGN/Tag</span>
+							<span class="lang_en_only">BGN/day</span>
 						</span>
 					</span>
 				</label>
@@ -84,12 +75,9 @@ get_header(); ?>
 						<span class="bike_desc__model">BMW R-1200-GS Adv</span>
 						<span class="bike_desc__price">
 							<span class="bike_price">230</span>
-							<span class="lang_bg_only">лв</span>
-							<span class="lang_de_only">BGN</span>
-							<span class="lang_en_only">BGN</span>/
-							<span class="lang_bg_only">ден</span>
-							<span class="lang_en_only">day</span>
-							<span class="lang_de_only">Tag</span>
+							<span class="lang_bg_only">лв/ден</span>
+							<span class="lang_de_only">BGN/Tag</span>
+							<span class="lang_en_only">BGN/day</span>
 						</span>
 					</span>
 				</label>
@@ -102,12 +90,9 @@ get_header(); ?>
 				<span class="bike_desc__model">BMW R-1250-GS</span>
 				<span class="bike_desc__price">
 					<span class="bike_price">270</span>
-					<span class="lang_bg_only">лв</span>
-					<span class="lang_de_only">BGN</span>
-					<span class="lang_en_only">BGN</span>/
-					<span class="lang_bg_only">ден</span>
-					<span class="lang_en_only">day</span>
-					<span class="lang_de_only">Tag</span>
+					<span class="lang_bg_only">лв/ден</span>
+					<span class="lang_de_only">BGN/Tag</span>
+					<span class="lang_en_only">BGN/day</span>
 				</span>
 			</span>
 				</label>
@@ -120,12 +105,9 @@ get_header(); ?>
 				<span class="bike_desc__model">KTM 1290 Super adventure s</span>
 				<span class="bike_desc__price">
 					<span class="bike_price">270</span>
-					<span class="lang_bg_only">лв</span>
-					<span class="lang_de_only">BGN</span>
-					<span class="lang_en_only">BGN</span>/
-					<span class="lang_bg_only">ден</span>
-					<span class="lang_en_only">day</span>
-					<span class="lang_de_only">Tag</span>
+					<span class="lang_bg_only">лв/ден</span>
+					<span class="lang_de_only">BGN/Tag</span>
+					<span class="lang_en_only">BGN/day</span>
 				</span>
 			</span>
 				</label>
@@ -138,12 +120,9 @@ get_header(); ?>
 						<span class="bike_desc__model">BMW S1000 XR</span>
 						<span class="bike_desc__price">
 							<span class="bike_price">270</span>
-							<span class="lang_bg_only">лв</span>
-							<span class="lang_de_only">BGN</span>
-							<span class="lang_en_only">BGN</span>/
-							<span class="lang_bg_only">ден</span>
-							<span class="lang_en_only">day</span>
-							<span class="lang_de_only">Tag</span>
+							<span class="lang_bg_only">лв/ден</span>
+							<span class="lang_de_only">BGN/Tag</span>
+							<span class="lang_en_only">BGN/day</span>
 						</span>
 					</span>
 				</label>
@@ -157,8 +136,8 @@ get_header(); ?>
 						<span class="bike_desc__price">
 							<span class="bike_price">310</span>
 							<span class="lang_bg_only">лв/ден</span>
-							<span class="lang_de_only">BGN/day</span>
-							<span class="lang_en_only">BGNTag</span>
+							<span class="lang_de_only">BGN/Tag</span>
+							<span class="lang_en_only">BGN/day</span>
 						</span>
 					</span>
 				</label>
@@ -170,7 +149,7 @@ get_header(); ?>
 					<span class="lang_de_only">Abholdatum</span>
 					<span class="lang_en_only">Pickup date</span>
 					<input class="js-datepicker js-pickup-date" type="text" name="pickup_date" />
-					<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
+<!--					<img class="order_label__icon" src="--><?php //echo $i; ?><!--/icons/success.svg" alt="" />-->
 				</label>
 
 				<label class="order_label return_date">
@@ -178,7 +157,7 @@ get_header(); ?>
 					<span class="lang_de_only">Rückflugdatum</span>
 					<span class="lang_en_only">Return date</span>
 					<input class="js-datepicker js-return-date" type="text" name="return_date" />
-					<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
+<!--					<img class="order_label__icon" src="--><?php //echo $i; ?><!--/icons/success.svg" alt="" />-->
 				</label>
 
 				<div class="order_total_days">
