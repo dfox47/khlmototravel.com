@@ -4,7 +4,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-    exit;
+	exit;
 }
 
 get_header(); ?>
@@ -29,7 +29,7 @@ get_header(); ?>
 						<img class="bike_desc__img" src="<?php echo $i; ?>/bikes/1.jpg" alt="" />
 						<span class="bike_desc__model">Honda CB 650F</span>
 						<span class="bike_desc__price">
-							<span class="bike_price">90</span>
+							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
 							<span class="lang_bg_only">лв/ден</span>
 							<span class="lang_de_only">BGN/Tag</span>
 							<span class="lang_en_only">BGN/day</span>
@@ -44,7 +44,7 @@ get_header(); ?>
 						<img src="<?php echo $i; ?>/bikes/2.jpg" alt="" />
 						<span class="bike_desc__model">BMW F-850-GS</span>
 						<span class="bike_desc__price">
-							<span class="bike_price">200</span>
+							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
 							<span class="lang_bg_only">лв/ден</span>
 							<span class="lang_de_only">BGN/Tag</span>
 							<span class="lang_en_only">BGN/day</span>
@@ -59,7 +59,7 @@ get_header(); ?>
 						<img src="<?php echo $i; ?>/bikes/3.jpg" alt="" />
 						<span class="bike_desc__model">BMW R-1200-GS</span>
 						<span class="bike_desc__price">
-							<span class="bike_price">210</span>
+							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
 							<span class="lang_bg_only">лв/ден</span>
 							<span class="lang_de_only">BGN/Tag</span>
 							<span class="lang_en_only">BGN/day</span>
@@ -74,7 +74,7 @@ get_header(); ?>
 						<img src="<?php echo $i; ?>/bikes/4.jpg" alt="" />
 						<span class="bike_desc__model">BMW R-1200-GS Adv</span>
 						<span class="bike_desc__price">
-							<span class="bike_price">230</span>
+							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
 							<span class="lang_bg_only">лв/ден</span>
 							<span class="lang_de_only">BGN/Tag</span>
 							<span class="lang_en_only">BGN/day</span>
@@ -86,30 +86,30 @@ get_header(); ?>
 					<input class="js-bike-price" type="radio" name="bike" data-price="270" value="BMW R-1250-GS" />
 
 					<span class="bike_desc">
-				<img src="<?php echo $i; ?>/bikes/5.jpg" alt="" />
-				<span class="bike_desc__model">BMW R-1250-GS</span>
-				<span class="bike_desc__price">
-					<span class="bike_price">270</span>
-					<span class="lang_bg_only">лв/ден</span>
-					<span class="lang_de_only">BGN/Tag</span>
-					<span class="lang_en_only">BGN/day</span>
-				</span>
-			</span>
+						<img src="<?php echo $i; ?>/bikes/5.jpg" alt="" />
+						<span class="bike_desc__model">BMW R-1250-GS</span>
+						<span class="bike_desc__price">
+									<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
+							<span class="lang_bg_only">лв/ден</span>
+							<span class="lang_de_only">BGN/Tag</span>
+							<span class="lang_en_only">BGN/day</span>
+						</span>
+					</span>
 				</label>
 
 				<label class="bike_item">
 					<input class="js-bike-price" type="radio" name="bike" data-price="270" value="KTM 1290 Super adventure s" />
 
 					<span class="bike_desc">
-				<img src="<?php echo $i; ?>/bikes/7.jpg" alt="" />
-				<span class="bike_desc__model">KTM 1290 Super adventure s</span>
-				<span class="bike_desc__price">
-					<span class="bike_price">270</span>
-					<span class="lang_bg_only">лв/ден</span>
-					<span class="lang_de_only">BGN/Tag</span>
-					<span class="lang_en_only">BGN/day</span>
-				</span>
-			</span>
+						<img src="<?php echo $i; ?>/bikes/7.jpg" alt="" />
+						<span class="bike_desc__model">KTM 1290 Super adventure s</span>
+						<span class="bike_desc__price">
+							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
+							<span class="lang_bg_only">лв/ден</span>
+							<span class="lang_de_only">BGN/Tag</span>
+							<span class="lang_en_only">BGN/day</span>
+						</span>
+					</span>
 				</label>
 
 				<label class="bike_item">
@@ -119,7 +119,7 @@ get_header(); ?>
 						<img src="<?php echo $i; ?>/bikes/8.jpg" alt="" />
 						<span class="bike_desc__model">BMW S1000 XR</span>
 						<span class="bike_desc__price">
-							<span class="bike_price">270</span>
+							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
 							<span class="lang_bg_only">лв/ден</span>
 							<span class="lang_de_only">BGN/Tag</span>
 							<span class="lang_en_only">BGN/day</span>
@@ -134,7 +134,7 @@ get_header(); ?>
 						<img src="<?php echo $i; ?>/bikes/6.jpg" alt="" />
 						<span class="bike_desc__model">BMW R-1250-GS Adv</span>
 						<span class="bike_desc__price">
-							<span class="bike_price">310</span>
+							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
 							<span class="lang_bg_only">лв/ден</span>
 							<span class="lang_de_only">BGN/Tag</span>
 							<span class="lang_en_only">BGN/day</span>
@@ -158,7 +158,6 @@ get_header(); ?>
 					<span class="lang_de_only">Abholdatum</span>
 					<span class="lang_en_only">Pickup date</span>
 					<input class="js-datepicker js-pickup-date" type="text" name="pickup_date" />
-<!--					<img class="order_label__icon" src="--><?php //echo $i; ?><!--/icons/success.svg" alt="" />-->
 				</label>
 
 				<label class="order_label return_date">
@@ -166,7 +165,6 @@ get_header(); ?>
 					<span class="lang_de_only">Rückflugdatum</span>
 					<span class="lang_en_only">Return date</span>
 					<input class="js-datepicker js-return-date" type="text" name="return_date" />
-<!--					<img class="order_label__icon" src="--><?php //echo $i; ?><!--/icons/success.svg" alt="" />-->
 				</label>
 
 				<div class="order_total_days">
@@ -182,38 +180,36 @@ get_header(); ?>
 					<span class="lang_en_only">Contacts</span>
 				</h2>
 
-				<div>
-					<label class="order_label">
-						<span class="lang_bg_only">Име</span>
-						<span class="lang_de_only">Name</span>
-						<span class="lang_en_only">Name</span>
-						<input class="order_input_name js-order-value-check js-order-name" type="text" name="biker_name" />
-						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
-					</label>
+				<label class="order_label">
+					<span class="lang_bg_only">Име</span>
+					<span class="lang_de_only">Name</span>
+					<span class="lang_en_only">Name</span>
+					<input class="order_input_name js-order-value-check js-order-name" type="text" name="biker_name" />
+					<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
+				</label>
 
-					<label class="order_label">
-						<span class="lang_bg_only">Телефон</span>
-						<span class="lang_de_only">Telefon</span>
-						<span class="lang_en_only">Phone</span>
-						<input class="js-order-value-check js-order-phone" type="text" name="biker_phone" />
-						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
-					</label>
+				<label class="order_label">
+					<span class="lang_bg_only">Телефон</span>
+					<span class="lang_de_only">Telefon</span>
+					<span class="lang_en_only">Phone</span>
+					<input class="js-order-value-check js-order-phone" type="text" name="biker_phone" />
+					<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
+				</label>
 
-					<label class="order_label">
-						<span class="order_label__title">E-mail</span>
-						<input class="js-order-value-check" type="email" name="biker_email" placeholder="example@gmail.com" />
-						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
-					</label>
+				<label class="order_label">
+					<span class="order_label__title">E-mail</span>
+					<input class="js-order-value-check" type="email" name="biker_email" placeholder="example@gmail.com" />
+					<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
+				</label>
 
-					<label class="order_label">
-						<input class="js-order-value-check" type="checkbox" name="terms" checked />
-						<span class="order_label__checkbox">
+				<label class="order_label">
+					<input class="js-order-value-check" type="checkbox" name="terms" checked />
+					<span class="order_label__checkbox">
 							<span class="lang_bg_only">Запознат с <a href="/bg/terms/" target="_blank">правилата на лизинга</a></span>
 							<span class="lang_de_only">Bedingungen <a href="/de/terms/" target="_blank">zugestimmt</a></span>
 							<span class="lang_en_only">Agreed with <a href="/terms/" target="_blank">terms</a></span>
 						</span>
-					</label>
-				</div>
+				</label>
 
 				<div class="form_submit">
 					<button class="btn btn__submit" type="submit">

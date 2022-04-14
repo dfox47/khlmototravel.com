@@ -1,5 +1,5 @@
 
-function priceTotal() {
+let priceTotal = () => {
 	let priceBike       = parseInt($('.js-bike-price:checked').attr('data-price'))
 	let rentalDays      = parseInt(localStorage.getItem('rentalDatesDiff'))
 	let promo           = localStorage.getItem('promo')

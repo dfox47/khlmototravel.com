@@ -46,6 +46,45 @@
 .bike_price {
 	font-size: 18px;
 	font-weight: 700;
+
+	&__new {
+		display: none;
+	}
+
+	&__old {
+		position: relative;
+
+		&::after {
+			background-color: $c_shadow_dark;
+			content: "";
+			display: none;
+			height: 1px;
+			position: absolute;
+			left: -5%;
+			top: 50%;
+			width: 110%;
+		}
+	}
+}
+
+.bike_discount_active {
+	.bike_price {
+		&__new {
+			color: $c_main;
+			display: inline-block;
+		}
+
+		&__old {
+			color: $c_shadow_dark;
+			font-size: 12px;
+			font-weight: 400;
+			margin: 0 .5em 0 0;
+
+			&::after {
+				display: block;
+			}
+		}
+	}
 }
 
 .bikes {
