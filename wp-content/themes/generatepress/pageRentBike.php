@@ -144,6 +144,15 @@ get_header(); ?>
 			</div>
 
 			<div id="order" class="order_user_info">
+				<label class="order_label">
+					<span class="lang_bg_only">Промо код</span>
+					<span class="lang_de_only">Promo code</span>
+					<span class="lang_en_only">Promo code</span>
+					<input class="js-order-promo" type="text" name="promo_code" />
+					<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
+					<span class="order_label__promo_submit js-order-promo-submit"></span>
+				</label>
+
 				<label class="order_label pickup_date">
 					<span class="lang_bg_only">Дата на вземане</span>
 					<span class="lang_de_only">Abholdatum</span>
@@ -194,15 +203,6 @@ get_header(); ?>
 						<span class="order_label__title">E-mail</span>
 						<input class="js-order-value-check" type="email" name="biker_email" placeholder="example@gmail.com" />
 						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
-					</label>
-
-					<label class="order_label">
-						<span class="lang_bg_only">Промо код</span>
-						<span class="lang_de_only">Promo code</span>
-						<span class="lang_en_only">Promo code</span>
-						<input class="js-order-promo" type="text" name="promo_code" />
-						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
-						<span class="order_label__promo_submit js-order-promo-submit"></span>
 					</label>
 
 					<label class="order_label">
