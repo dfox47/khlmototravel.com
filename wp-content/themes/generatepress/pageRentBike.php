@@ -156,12 +156,9 @@ get_header(); ?>
 						<span class="bike_desc__model">BMW R-1250-GS Adv</span>
 						<span class="bike_desc__price">
 							<span class="bike_price">310</span>
-							<span class="lang_bg_only">лв</span>
-							<span class="lang_de_only">BGN</span>
-							<span class="lang_en_only">BGN</span>/
-							<span class="lang_bg_only">ден</span>
-							<span class="lang_en_only">day</span>
-							<span class="lang_de_only">Tag</span>
+							<span class="lang_bg_only">лв/ден</span>
+							<span class="lang_de_only">BGN/day</span>
+							<span class="lang_en_only">BGNTag</span>
 						</span>
 					</span>
 				</label>
@@ -172,7 +169,7 @@ get_header(); ?>
 					<span class="lang_bg_only">Дата на вземане</span>
 					<span class="lang_de_only">Abholdatum</span>
 					<span class="lang_en_only">Pickup date</span>
-					<input class="js-datepicker js-pickup-date js-order-value-check" type="text" name="pickup_date" />
+					<input class="js-datepicker js-pickup-date" type="text" name="pickup_date" />
 					<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
 				</label>
 
@@ -180,7 +177,7 @@ get_header(); ?>
 					<span class="lang_bg_only">Дата на връщане</span>
 					<span class="lang_de_only">Rückflugdatum</span>
 					<span class="lang_en_only">Return date</span>
-					<input class="js-datepicker js-return-date js-order-value-check" type="text" name="return_date" />
+					<input class="js-datepicker js-return-date" type="text" name="return_date" />
 					<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
 				</label>
 
@@ -210,7 +207,7 @@ get_header(); ?>
 						<span class="lang_bg_only">Телефон</span>
 						<span class="lang_de_only">Telefon</span>
 						<span class="lang_en_only">Phone</span>
-						<input class="js-order-value-check js-order-phone" type="text" name="biker_phone" placeholder="088(12)12345678" />
+						<input class="js-order-value-check js-order-phone" type="text" name="biker_phone" />
 						<img class="order_label__icon" src="<?php echo $i; ?>/icons/success.svg" alt="" />
 					</label>
 
