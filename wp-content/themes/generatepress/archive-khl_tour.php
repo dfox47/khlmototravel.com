@@ -108,8 +108,8 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 						<span class="tours_desc__title">Turkey</span>
 
 						<span class="tours_dates">
-							<span class="tours_dates__item">8 - 18 April 2022</span>
-							<span class="tours_dates__item">29 April - 9 May 2022</span>
+<!--							<span class="tours_dates__item">8 - 18 April 2022</span>-->
+<!--							<span class="tours_dates__item">29 April - 9 May 2022</span>-->
 							<span class="tours_dates__item">20 - 30 May 2022</span>
 							<span class="tours_dates__item">10 - 20 October 2022</span>
 						</span>
@@ -126,9 +126,7 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Turkey | Offroad</span>
-
 						<span class="tours_desc__duration">15 days</span>
-
 						<span class="tours_desc__more">Read more</span>
 					</span>
 				</a>
@@ -143,7 +141,7 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 						<span class="tours_desc__destinations">Sofia, Veliko Tarnovo, Velingrad</span>
 
 						<span class="tours_dates">
-							<span class="tours_dates__item">30 April - 10 May 2022</span>
+<!--							<span class="tours_dates__item">30 April - 10 May 2022</span>-->
 							<span class="tours_dates__item">18 - 28 June 2022</span>
 							<span class="tours_dates__item">23 July - 2 August 2022</span>
 							<span class="tours_dates__item">20 - 30 August 2022</span>
@@ -218,7 +216,6 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 						</span>
 
 						<span class="tours_desc__duration">9 дни</span>
-
 						<span class="tours_desc__more">Повече</span>
 					</span>
 				</a>
@@ -252,8 +249,8 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 						<span class="tours_desc__title">Турция</span>
 
 						<span class="tours_dates">
-							<span class="tours_dates__item">8 - 18 Април 2022</span>
-							<span class="tours_dates__item">29 Април - 9 Май 2022</span>
+<!--							<span class="tours_dates__item">8 - 18 Април 2022</span>-->
+<!--							<span class="tours_dates__item">29 Април - 9 Май 2022</span>-->
 							<span class="tours_dates__item">20 - 30 Май 2022</span>
 							<span class="tours_dates__item">10 - 20 Октомври 2022</span>
 						</span>
@@ -287,7 +284,7 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 						<span class="tours_desc__destinations">София, Велико Търново, Велинград</span>
 
 						<span class="tours_dates">
-							<span class="tours_dates__item">30 Април - 10 Май 2022</span>
+<!--							<span class="tours_dates__item">30 Април - 10 Май 2022</span>-->
 							<span class="tours_dates__item">18 - 28 Юни 2022</span>
 							<span class="tours_dates__item">23 Юли - 2 Август 2022</span>
 							<span class="tours_dates__item">20 - 30 Август 2022</span>
@@ -396,8 +393,8 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 						<span class="tours_desc__title">Truthahn</span>
 
 						<span class="tours_dates">
-							<span class="tours_dates__item">8 - 18 April 2022</span>
-							<span class="tours_dates__item">29 April - 9 May 2022</span>
+<!--							<span class="tours_dates__item">8 - 18 April 2022</span>-->
+<!--							<span class="tours_dates__item">29 April - 9 May 2022</span>-->
 							<span class="tours_dates__item">20 - 30 May 2022</span>
 							<span class="tours_dates__item">10 - 20 Oktober 2022</span>
 						</span>
@@ -414,9 +411,7 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Truthahn | Offroad</span>
-
 						<span class="tours_desc__duration">15 tage</span>
-
 						<span class="tours_desc__more">Weiterlesen</span>
 					</span>
 				</a>
@@ -431,7 +426,7 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 						<span class="tours_desc__destinations">Sofia, Veliko Tarnovo, Velingrad</span>
 
 						<span class="tours_dates">
-							<span class="tours_dates__item">30 April - 10 May 2022</span>
+<!--							<span class="tours_dates__item">30 April - 10 May 2022</span>-->
 							<span class="tours_dates__item">18 - 28 Juni 2022</span>
 							<span class="tours_dates__item">23 Juli - 2 August 2022</span>
 							<span class="tours_dates__item">20 - 30 August 2022</span>

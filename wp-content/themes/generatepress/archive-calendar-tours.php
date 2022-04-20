@@ -211,34 +211,34 @@ get_header(); ?>
 				<?php
 				// en
 				if (get_locale() == 'en_US') { ?>
-					<h2>April 2022</h2>
+<!--					<h2>April 2022</h2>-->
 
-					<a class="calendar_item" href="/moto-tours/turkey/">
-						<span class="calendar_item__date">8 - 18 April</span>
-						<span class="calendar_item__title">Turkey</span>
-						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
-						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price">2450 €</span>
-						<span class="calendar_item__book">More details</span>
-					</a>
+<!--					<a class="calendar_item" href="/moto-tours/turkey/">-->
+<!--						<span class="calendar_item__date">8 - 18 April</span>-->
+<!--						<span class="calendar_item__title">Turkey</span>-->
+<!--						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>-->
+<!--						<span class="calendar_item__days">11 days</span>-->
+<!--						<span class="calendar_item__price">2450 €</span>-->
+<!--						<span class="calendar_item__book">More details</span>-->
+<!--					</a>-->
 
-					<a class="calendar_item" href="/moto-tours/turkey/">
-						<span class="calendar_item__date">29 April - 9 Mai</span>
-						<span class="calendar_item__title">Turkey</span>
-						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
-						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price">2450 €</span>
-						<span class="calendar_item__book">More details</span>
-					</a>
+<!--					<a class="calendar_item" href="/moto-tours/turkey/">-->
+<!--						<span class="calendar_item__date">29 April - 9 Mai</span>-->
+<!--						<span class="calendar_item__title">Turkey</span>-->
+<!--						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>-->
+<!--						<span class="calendar_item__days">11 days</span>-->
+<!--						<span class="calendar_item__price">2450 €</span>-->
+<!--						<span class="calendar_item__book">More details</span>-->
+<!--					</a>-->
 
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
-						<span class="calendar_item__date">30 April - 10 Mai</span>
-						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>
-						<span class="calendar_item__desc">Bulgaria | Offroad</span>
-						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price">3500 €</span>
-						<span class="calendar_item__book">More details</span>
-					</a>
+<!--					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">-->
+<!--						<span class="calendar_item__date">30 April - 10 Mai</span>-->
+<!--						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>-->
+<!--						<span class="calendar_item__desc">Bulgaria | Offroad</span>-->
+<!--						<span class="calendar_item__days">11 days</span>-->
+<!--						<span class="calendar_item__price">3500 €</span>-->
+<!--						<span class="calendar_item__book">More details</span>-->
+<!--					</a>-->
 
 
 
@@ -455,25 +455,25 @@ get_header(); ?>
 				<?php }
 				// bg
 				else if (get_locale() == 'bg_BG') { ?>
-					<h2>April 2022</h2>
+<!--					<h2>April 2022</h2>-->
 
-					<a class="calendar_item" href="/moto-tours/turkey/">
-						<span class="calendar_item__date">8 - 18 April</span>
-						<span class="calendar_item__title">Turkey</span>
-						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
-						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price">2450 €</span>
-						<span class="calendar_item__book">More details</span>
-					</a>
+<!--					<a class="calendar_item" href="/moto-tours/turkey/">-->
+<!--						<span class="calendar_item__date">8 - 18 April</span>-->
+<!--						<span class="calendar_item__title">Turkey</span>-->
+<!--						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>-->
+<!--						<span class="calendar_item__days">11 days</span>-->
+<!--						<span class="calendar_item__price">2450 €</span>-->
+<!--						<span class="calendar_item__book">More details</span>-->
+<!--					</a>-->
 
-					<a class="calendar_item" href="/moto-tours/turkey/">
-						<span class="calendar_item__date">29 April - 9 Mai</span>
-						<span class="calendar_item__title">Turkey</span>
-						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
-						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price">2450 €</span>
-						<span class="calendar_item__book">More details</span>
-					</a>
+<!--					<a class="calendar_item" href="/moto-tours/turkey/">-->
+<!--						<span class="calendar_item__date">29 April - 9 Mai</span>-->
+<!--						<span class="calendar_item__title">Turkey</span>-->
+<!--						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>-->
+<!--						<span class="calendar_item__days">11 days</span>-->
+<!--						<span class="calendar_item__price">2450 €</span>-->
+<!--						<span class="calendar_item__book">More details</span>-->
+<!--					</a>-->
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
 						<span class="calendar_item__date">30 April - 10 Mai</span>
@@ -699,34 +699,34 @@ get_header(); ?>
 				<?php }
 				// de
 				else if (get_locale() == 'de_DE') { ?>
-					<h2>April 2022</h2>
+<!--					<h2>April 2022</h2>-->
 
-					<a class="calendar_item" href="/de/moto-tours/die-tuerkei/">
-						<span class="calendar_item__date">8 - 18 April</span>
-						<span class="calendar_item__title">Die Türkei</span>
-						<span class="calendar_item__desc">Istanbul, Ankara, Kappadokien, Pamukkale, Bergama, Canakkale.</span>
-						<span class="calendar_item__days">11 Tage</span>
-						<span class="calendar_item__price">2450 €</span>
-						<span class="calendar_item__book">Mehr Details</span>
-					</a>
+<!--					<a class="calendar_item" href="/de/moto-tours/die-tuerkei/">-->
+<!--						<span class="calendar_item__date">8 - 18 April</span>-->
+<!--						<span class="calendar_item__title">Die Türkei</span>-->
+<!--						<span class="calendar_item__desc">Istanbul, Ankara, Kappadokien, Pamukkale, Bergama, Canakkale.</span>-->
+<!--						<span class="calendar_item__days">11 Tage</span>-->
+<!--						<span class="calendar_item__price">2450 €</span>-->
+<!--						<span class="calendar_item__book">Mehr Details</span>-->
+<!--					</a>-->
 
-					<a class="calendar_item" href="/de/moto-tours/die-tuerkei/">
-						<span class="calendar_item__date">29 April - 9 Mai</span>
-						<span class="calendar_item__title">Die Türkei</span>
-						<span class="calendar_item__desc">Istanbul, Ankara, Kappadokien, Pamukkale, Bergama, Canakkale.</span>
-						<span class="calendar_item__days">11 Tage</span>
-						<span class="calendar_item__price">2450 €</span>
-						<span class="calendar_item__book">Mehr Details</span>
-					</a>
+<!--					<a class="calendar_item" href="/de/moto-tours/die-tuerkei/">-->
+<!--						<span class="calendar_item__date">29 April - 9 Mai</span>-->
+<!--						<span class="calendar_item__title">Die Türkei</span>-->
+<!--						<span class="calendar_item__desc">Istanbul, Ankara, Kappadokien, Pamukkale, Bergama, Canakkale.</span>-->
+<!--						<span class="calendar_item__days">11 Tage</span>-->
+<!--						<span class="calendar_item__price">2450 €</span>-->
+<!--						<span class="calendar_item__book">Mehr Details</span>-->
+<!--					</a>-->
 
-					<a class="calendar_item" href="/de/moto-tours/bulgari-offroad-11-dnej/">
-						<span class="calendar_item__date">30 April - 10 Mai</span>
-						<span class="calendar_item__title">Bulgarien | Offroad | 11 Tage</span>
-						<span class="calendar_item__desc">Bulgarien | Offroad</span>
-						<span class="calendar_item__days">11 Tage</span>
-						<span class="calendar_item__price">3500 €</span>
-						<span class="calendar_item__book">Mehr Details</span>
-					</a>
+<!--					<a class="calendar_item" href="/de/moto-tours/bulgari-offroad-11-dnej/">-->
+<!--						<span class="calendar_item__date">30 April - 10 Mai</span>-->
+<!--						<span class="calendar_item__title">Bulgarien | Offroad | 11 Tage</span>-->
+<!--						<span class="calendar_item__desc">Bulgarien | Offroad</span>-->
+<!--						<span class="calendar_item__days">11 Tage</span>-->
+<!--						<span class="calendar_item__price">3500 €</span>-->
+<!--						<span class="calendar_item__book">Mehr Details</span>-->
+<!--					</a>-->
 
 
 
@@ -943,34 +943,34 @@ get_header(); ?>
 				<?php }
 				// ru
 				else if (get_locale() == 'ru_RU') { ?>
-					<h2>Апрель 2022</h2>
+<!--					<h2>Апрель 2022</h2>-->
 
-					<a class="calendar_item" href="/ru/moto-tours/turcziya/">
-						<span class="calendar_item__date">8 - 18 апреля</span>
-						<span class="calendar_item__title">Турция</span>
-						<span class="calendar_item__desc">Стамбул, Анкара, Каппадокия, Памуккале, Бергама, Чанаккале</span>
-						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price">2450 €</span>
-						<span class="calendar_item__book">Подробнее</span>
-					</a>
+<!--					<a class="calendar_item" href="/ru/moto-tours/turcziya/">-->
+<!--						<span class="calendar_item__date">8 - 18 апреля</span>-->
+<!--						<span class="calendar_item__title">Турция</span>-->
+<!--						<span class="calendar_item__desc">Стамбул, Анкара, Каппадокия, Памуккале, Бергама, Чанаккале</span>-->
+<!--						<span class="calendar_item__days">11 дней</span>-->
+<!--						<span class="calendar_item__price">2450 €</span>-->
+<!--						<span class="calendar_item__book">Подробнее</span>-->
+<!--					</a>-->
 
-					<a class="calendar_item" href="/ru/moto-tours/turcziya/">
-						<span class="calendar_item__date">29 апреля - 9 мая</span>
-						<span class="calendar_item__title">Турция</span>
-						<span class="calendar_item__desc">Стамбул, Анкара, Каппадокия, Памуккале, Бергама, Чанаккале</span>
-						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price">2450 €</span>
-						<span class="calendar_item__book">Подробнее</span>
-					</a>
+<!--					<a class="calendar_item" href="/ru/moto-tours/turcziya/">-->
+<!--						<span class="calendar_item__date">29 апреля - 9 мая</span>-->
+<!--						<span class="calendar_item__title">Турция</span>-->
+<!--						<span class="calendar_item__desc">Стамбул, Анкара, Каппадокия, Памуккале, Бергама, Чанаккале</span>-->
+<!--						<span class="calendar_item__days">11 дней</span>-->
+<!--						<span class="calendar_item__price">2450 €</span>-->
+<!--						<span class="calendar_item__book">Подробнее</span>-->
+<!--					</a>-->
 
-					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad/">
-						<span class="calendar_item__date">30 апреля - 10 мая</span>
-						<span class="calendar_item__title">Болгария | Offroad | 11 дней</span>
-						<span class="calendar_item__desc">Болгария | Offroad</span>
-						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price">3500 €</span>
-						<span class="calendar_item__book">Подробнее</span>
-					</a>
+<!--					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad/">-->
+<!--						<span class="calendar_item__date">30 апреля - 10 мая</span>-->
+<!--						<span class="calendar_item__title">Болгария | Offroad | 11 дней</span>-->
+<!--						<span class="calendar_item__desc">Болгария | Offroad</span>-->
+<!--						<span class="calendar_item__days">11 дней</span>-->
+<!--						<span class="calendar_item__price">3500 €</span>-->
+<!--						<span class="calendar_item__book">Подробнее</span>-->
+<!--					</a>-->
 
 
 
