@@ -66,37 +66,37 @@ $(window).bind('load', function() {
 	}
 
 	$('.js-btn-submit').on('click', function (e) {
-		e.preventDefault();
+		e.preventDefault()
 
-		let $this = $(this);
+		let $this = $(this)
 
-		$this.addClass('loading');
+		$this.addClass('loading')
 
 		// name
 		if (fieldName.val().length < 3 || !isNaN(fieldName.val())) {
-			fieldName.addClass('not-valid');
+			fieldName.addClass('not-valid')
 
-			showError();
+			showError()
 
-			return;
+			return
 		}
 
 		// email
 		if (re.test(String(fieldEmail.val()).toLowerCase()) !== true) {
-			fieldEmail.addClass('not-valid');
+			fieldEmail.addClass('not-valid')
 
-			showError();
+			showError()
 
-			return;
+			return
 		}
 
 		// phone
 		if (fieldPhone.val().length < 3 || isNaN(fieldPhone.val())) {
-			fieldPhone.addClass('not-valid');
+			fieldPhone.addClass('not-valid')
 
-			showError();
+			showError()
 
-			return;
+			return
 		}
 
 		// send form
@@ -105,18 +105,18 @@ $(window).bind('load', function() {
 			type: feedBackForm.attr('method'),
 			data: feedBackForm.serialize(),
 			success: function () {
-				$('.js-form-success').addClass('active');
+				$('.js-form-success').addClass('active')
 
-				$this.removeClass('loading');
+				$this.removeClass('loading')
 
 				setTimeout(function () {
-					$('.js-form-success').removeClass('active');
-					$('.js-book-popup ').removeClass('active');
-				}, 2000);
+					$('.js-form-success').removeClass('active')
+					$('.js-book-popup ').removeClass('active')
+				}, 2000)
 
-				fieldName.removeClass('not-valid').val('');
-				fieldPhone.removeClass('not-valid').val('');
-				fieldEmail.removeClass('not-valid').val('');
+				fieldName.removeClass('not-valid').val('')
+				fieldPhone.removeClass('not-valid').val('')
+				fieldEmail.removeClass('not-valid').val('')
 			}
 		});
 	})

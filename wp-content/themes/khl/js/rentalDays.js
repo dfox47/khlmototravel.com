@@ -1,6 +1,8 @@
 
 $(window).bind('load', function() {
 	$('.js-datepicker').datepicker({
+		yearRange: '2022:2023',
+		defaultDate: +1,
 		minDate: 0,
 		onSelect: function() {
 			calcDiff()
@@ -32,6 +34,7 @@ function calcDiff() {
 	// when date FROM empty
 	if (!dateFromGet) {
 		let dateFromInputVal = $dateFrom.val()
+
 		$dateFrom.datepicker({
 			minDate: 0,
 			onSelect: function() {
