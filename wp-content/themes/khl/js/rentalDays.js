@@ -10,11 +10,13 @@ $(window).bind('load', function() {
 		}
 	})
 
+	// check phone | allow only numbers
 	$('.js-order-phone').keypress(function (e) {
 		let charCode = (e.which) ? e.which : e.keyCode
 		if (String.fromCharCode(charCode).match(/[^0-9()\-+]/g)) return false
 	})
 
+	// check name | allow only letters
 	$('.js-order-name').bind('keyup blur',function() {
 		let node = $(this)
 		node.val(node.val().replace(/[^a-zA-Z ]/g,''))
@@ -31,7 +33,7 @@ function calcDiff() {
 	$dateFrom.removeClass('error')
 	$dateTo.removeClass('error')
 
-	// when date FROM empty
+	// date FROM not empty
 	if (!dateFromGet) {
 		let dateFromInputVal = $dateFrom.val()
 
@@ -42,11 +44,12 @@ function calcDiff() {
 				priceTotal()
 			}
 		});
+
 		$dateFrom.datepicker('setDate', dateFromInputVal)
 		dateFromGet = $dateFrom.datepicker('getDate')
 	}
 
-	// when date TO empty
+	// date TO not empty
 	if (!dateToGet) {
 		let dateToInputVal = $dateTo.val()
 		$dateTo.datepicker({

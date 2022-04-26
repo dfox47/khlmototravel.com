@@ -35,6 +35,49 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 		<h3 class="text-center"><?php echo __('Calendar for 2022', 'khl_template'); ?></h3>
 
 		<div class="tours_list">
+			<?php // lang
+			$langUrl = '';
+			if (get_locale() == 'bg_BG') {
+				$langUrl= '/bg';
+			}
+			else if (get_locale() == 'de_DE') {
+				$langUrl= '/de';
+			}
+			else if (get_locale() == 'ru_RU') {
+				$langUrl= '/ru';
+			} ?>
+
+			<!-- Individual -->
+			<a class="tours_list__item" href="<?php echo $langUrl; ?>/contact-us/">
+				<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_636336056-e1615801862207.jpg);"></span>
+
+				<span class="tours_desc">
+						<span class="tours_desc__title"><?php echo __('Individual Moto Tour', 'khl_template'); ?></span>
+
+						<span class="tours_desc__destinations">
+							<?php echo __('We offer individual motorcycle tours drawn up for your liking and desire! Tell us what you need for your trip and we will bring it to live.It is also possible to offer a motorcycle tour of your choice, on dates convenient for you. The group must be at least 4 people.', 'khl_template');  ?>
+						</span>
+
+						<span class="tours_desc__destinations">
+							<strong><?php echo __('Destinations: ', 'khl_template'); ?></strong> <?php echo __('Of your choice', 'khl_template'); ?>
+						</span>
+
+						<span class="tours_desc__destinations">
+							<strong><?php echo __('Duration: ', 'khl_template')?></strong> <?php echo __('Of your choice', 'khl_template'); ?>
+						</span>
+
+						<span class="tours_desc__destinations">
+							<strong><?php echo __('Dates: ', 'khl_template')?></strong> <?php echo __('Of your choice', 'khl_template'); ?>
+						</span>
+
+						<span class="tours_desc__destinations">
+							<strong><?php echo __('Prices from: ', 'khl_template')?></strong> 150 EUR
+						</span>
+
+						<span class="tours_desc__more">Повече</span>
+					</span>
+			</a>
+
 			<?php
 			// en
 			if (get_locale() == 'en_US') { ?>
@@ -109,7 +152,7 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 
 						<span class="tours_dates">
 <!--							<span class="tours_dates__item">8 - 18 April 2022</span>-->
-<!--							<span class="tours_dates__item">29 April - 9 May 2022</span>-->
+							<!--							<span class="tours_dates__item">29 April - 9 May 2022</span>-->
 							<span class="tours_dates__item">20 - 30 May 2022</span>
 							<span class="tours_dates__item">10 - 20 October 2022</span>
 						</span>
@@ -250,7 +293,7 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 
 						<span class="tours_dates">
 <!--							<span class="tours_dates__item">8 - 18 Април 2022</span>-->
-<!--							<span class="tours_dates__item">29 Април - 9 Май 2022</span>-->
+							<!--							<span class="tours_dates__item">29 Април - 9 Май 2022</span>-->
 							<span class="tours_dates__item">20 - 30 Май 2022</span>
 							<span class="tours_dates__item">10 - 20 Октомври 2022</span>
 						</span>
@@ -394,7 +437,7 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 
 						<span class="tours_dates">
 <!--							<span class="tours_dates__item">8 - 18 April 2022</span>-->
-<!--							<span class="tours_dates__item">29 April - 9 May 2022</span>-->
+							<!--							<span class="tours_dates__item">29 April - 9 May 2022</span>-->
 							<span class="tours_dates__item">20 - 30 May 2022</span>
 							<span class="tours_dates__item">10 - 20 Oktober 2022</span>
 						</span>

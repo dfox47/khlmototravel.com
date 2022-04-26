@@ -198,6 +198,23 @@ h3 {
 	text-align: center;
 }
 
+html {
+	.ui-datepicker {
+		td {
+			a,
+			span {
+				height: 34px;
+				line-height: 34px;
+				width: 34px;
+			}
+		}
+	}
+}
+
+.ui-datepicker {
+	width: 18em !important;
+}
+
 .hidden {
 	display: none;
 }
