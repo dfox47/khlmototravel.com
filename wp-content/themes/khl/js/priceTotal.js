@@ -1,12 +1,18 @@
 
-function priceTotal() {
+function priceTotal(discount) {
 	let $priceTotalOld      = $('.js-order-discount')
 	let $priceTotalOldVal   = $('.js-order-discount-val')
 	let priceBike           = parseInt($('.js-bike-price:checked').attr('data-price'))
 	let rentalDays          = parseInt(localStorage.getItem('rentalDatesDiff'))
 
+	let discountVal = discount ? discount : '1'
+
+	if (rentalDays < 1) {
+		rentalDays = 1
+	}
+
 	let priceOld            = (priceBike * rentalDays).toFixed(0)
-	let priceTotal          = (0.7 * priceBike * rentalDays).toFixed(0)
+	let priceTotal          = (discountVal * priceBike * rentalDays).toFixed(0)
 
 	if (priceBike && rentalDays) {
 		$('.js-price-total').text(priceTotal)

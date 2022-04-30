@@ -5,8 +5,8 @@ let discount        = 0.7
 let $html           = $('html')
 
 let getUrlParameter = function getUrlParameter(sParam) {
-	let sPageURL = window.location.search.substring(1)
-	let sURLVariables = sPageURL.split('&')
+	let sPageURL        = window.location.search.substring(1)
+	let sURLVariables   = sPageURL.split('&')
 	let sParameterName
 	let i
 
@@ -38,7 +38,7 @@ function checkPromo() {
 		localStorage.setItem('promo', discount)
 		$html.addClass('bike_discount_active')
 
-		priceTotal()
+		priceTotal(discount)
 
 		return
 	}
