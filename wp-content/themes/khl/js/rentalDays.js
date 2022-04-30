@@ -54,7 +54,7 @@ function calcDiff() {
 		let dateToInputVal = $dateTo.val()
 		$dateTo.datepicker({
 			defaultDate: +1,
-			minDate: 0,
+			minDate: +1,
 			onSelect: function() {
 				calcDiff()
 				priceTotal()
@@ -67,6 +67,11 @@ function calcDiff() {
 
 	if (dateFromGet && dateToGet) {
 		diff = Math.floor((dateToGet.getTime() - dateFromGet.getTime()) / 86400000)
+	}
+
+	// set minimum days to 1
+	if (diff < 1) {
+		diff = 1
 	}
 
 	$('.js-order-days-rent').val(diff)
