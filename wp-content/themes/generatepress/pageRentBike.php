@@ -157,14 +157,14 @@ get_header(); ?>
 					<span class="lang_bg_only">Дата на вземане</span>
 					<span class="lang_de_only">Abholdatum</span>
 					<span class="lang_en_only">Pickup date</span>
-					<input class="js-datepicker js-pickup-date" type="text" name="pickup_date" />
+					<input class="js-datepicker js-pickup-date" type="text" name="pickup_date" value="<?php echo(date('m/d/Y')); ?>" />
 				</label>
 
 				<label class="order_label return_date">
 					<span class="lang_bg_only">Дата на връщане</span>
 					<span class="lang_de_only">Rückflugdatum</span>
 					<span class="lang_en_only">Return date</span>
-					<input class="js-datepicker js-return-date" type="text" name="return_date" />
+					<input class="js-datepicker js-return-date" type="text" name="return_date" value="<?php echo(date('m/d/Y', strtotime('+1 day'))); ?>" />
 				</label>
 
 				<div class="order_total_days">
