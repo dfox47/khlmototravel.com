@@ -60,18 +60,21 @@ wp_footer(); ?>
 
 <?php include_once 'book.php'; ?>
 
-<?php // should be 1st ?>
-<script src="/wp-content/themes/khl/js/jquery-3.6.0.min.js"></script>
+<?php // vars
+$themeFolderJs = '/wp-content/themes/khl/js'; ?>
 
-<script src="/wp-content/themes/khl/js/jquery-ui.min.js"></script>
-<script src="/wp-content/themes/khl/js/popup.js"></script>
-<script src="/wp-content/themes/khl/js/priceTotal.js"></script>
-<script src="/wp-content/themes/khl/js/rentPromo.js"></script>
-<script src="/wp-content/themes/khl/js/rentalDays.js"></script>
-<script src="/wp-content/themes/khl/js/sendmail.js"></script>
+<?php // should be 1st ?>
+<script src="<?php echo $themeFolderJs; ?>/jquery-3.6.0.min.js"></script>
+
+<script src="<?php echo $themeFolderJs; ?>/jquery-ui.min.js"></script>
+<script src="<?php echo $themeFolderJs; ?>/popup.js"></script>
+<script src="<?php echo $themeFolderJs; ?>/priceTotal.js"></script>
+<script src="<?php echo $themeFolderJs; ?>/rentPromo.js"></script>
+<script src="<?php echo $themeFolderJs; ?>/rentalDays.js"></script>
+<script src="<?php echo $themeFolderJs; ?>/sendmail.js"></script>
 
 <?php // should be last ?>
-<script src="/wp-content/themes/khl/js/custom.js?v<?php echo(date("YmdHi")); ?>"></script>
+<script src="<?php echo $themeFolderJs; ?>/custom.js?v<?php echo(date("YmdHi")); ?>"></script>
 
 </body>
 </html>

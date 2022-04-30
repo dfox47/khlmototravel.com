@@ -1,6 +1,4 @@
 
-
-
 <div class="book-popup js-book-popup">
 	<div class="book-popup__bg js-book-popup-close"></div>
 
@@ -44,17 +42,17 @@
 				</label>
 
 				<label>
-								<span>
-									<?php if (get_locale() == 'en_US') { ?>
-										Phone
-									<?php }
-									elseif (get_locale() == 'ru_RU') { ?>
-										Телефон
-									<?php }
-									elseif (get_locale() == 'de_DE') { ?>
-										Telefon
-									<?php } ?>
-								</span>
+					<span>
+						<?php if (get_locale() == 'en_US') { ?>
+							Phone
+						<?php }
+						elseif (get_locale() == 'ru_RU') { ?>
+							Телефон
+						<?php }
+						elseif (get_locale() == 'de_DE') { ?>
+							Telefon
+						<?php } ?>
+					</span>
 
 					<input class="js-field-phone" type="text" name="phone"/>
 				</label>
@@ -108,5 +106,3 @@
 		</div>
 	</div>
 </div>
-
-
