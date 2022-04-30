@@ -2,9 +2,7 @@
 var $ = jQuery
 
 // menu toggle [START]
-let $menuToggle = document.querySelectorAll('.menu-toggle')
-
-$menuToggle.forEach((button) => {
+document.querySelectorAll('.menu-toggle').forEach((button) => {
 	button.addEventListener('click', () => {
 		document.querySelector('html').classList.toggle('topmenu_active')
 	})
