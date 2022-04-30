@@ -1,15 +1,17 @@
 
 var $ = jQuery
 
-$(window).bind('load', function() {
-	$(document).on('click', '.menu-toggle', function (e) {
-		e.preventDefault()
+// menu toggle [START]
+let $menuToggle = document.querySelectorAll('.menu-toggle')
 
-		$('html').toggleClass('topmenu_active')
+$menuToggle.forEach((button) => {
+	button.addEventListener('click', () => {
+		document.querySelector('html').classList.toggle('topmenu_active')
 	})
+})
+// menu toggle [END]
 
-
-
+$(window).bind('load', function() {
 	$('.js-feedback-btn').on('click', function () {
 		$('.js-book-popup').addClass('active')
 	})
