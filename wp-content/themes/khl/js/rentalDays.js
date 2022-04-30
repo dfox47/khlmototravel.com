@@ -1,13 +1,13 @@
 
 $(window).bind('load', function() {
 	$('.js-datepicker').datepicker({
-		yearRange: '2022:2023',
 		defaultDate: +1,
 		minDate: 0,
 		onSelect: function() {
 			calcDiff()
 			priceTotal()
-		}
+		},
+		yearRange: '2022:2023'
 	})
 
 	// check phone | allow only numbers
@@ -53,6 +53,7 @@ function calcDiff() {
 	if (!dateToGet) {
 		let dateToInputVal = $dateTo.val()
 		$dateTo.datepicker({
+			defaultDate: +1,
 			minDate: 0,
 			onSelect: function() {
 				calcDiff()
