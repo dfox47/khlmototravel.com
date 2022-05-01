@@ -1,6 +1,6 @@
 
 let $promoInput     = $('.js-order-promo')
-let promoVal        = $promoInput.val()
+let promoVal        = $promoInput ? $promoInput.val() : ''
 let discount        = 0.7
 let $html           = $('html')
 
@@ -23,13 +23,15 @@ let getUrlParameter = function getUrlParameter(sParam) {
 
 let promoCodeUrl = getUrlParameter('promo')
 
-if (promoCodeUrl) {
+if (promoCodeUrl && $promoInput) {
 	$promoInput.val(promoCodeUrl.toLowerCase())
 
 	checkPromo()
 }
 
 function checkPromo() {
+	if ($promoInput.val() == null) return
+
 	// get new value of input
 	promoVal = $promoInput.val().toLowerCase()
 

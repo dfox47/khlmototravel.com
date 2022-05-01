@@ -7,6 +7,8 @@ function priceTotal(discount) {
 
 	let discountVal = discount ? discount : '1'
 
+	if (!$priceTotalOld) return
+
 	if (rentalDays < 1) {
 		rentalDays = 1
 	}

@@ -1,14 +1,18 @@
 
 $(window).bind('load', function() {
-	$('.js-datepicker').datepicker({
-		defaultDate: +1,
-		minDate: 0,
-		onSelect: function() {
-			calcDiff()
-			priceTotal()
-		},
-		yearRange: '2022:2023'
-	})
+	let datePicker = $('.js-datepicker')
+
+	if (datePicker) {
+		datePicker.datepicker({
+			defaultDate: +1,
+			minDate: 0,
+			onSelect: function() {
+				calcDiff()
+				priceTotal()
+			},
+			yearRange: '2022:2023'
+		})
+	}
 
 	// check phone | allow only numbers
 	$('.js-order-phone').keypress(function (e) {
@@ -26,6 +30,9 @@ $(window).bind('load', function() {
 function calcDiff() {
 	let $dateFrom       = $('.js-pickup-date')
 	let $dateTo         = $('.js-return-date')
+
+	if (!$dateFrom.length) return
+
 	let dateFromGet     = $dateFrom.datepicker('getDate')
 	let dateToGet       = $dateTo.datepicker('getDate')
 	let diff
