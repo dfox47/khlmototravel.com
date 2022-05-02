@@ -5,7 +5,8 @@ function priceTotal(discount) {
 	let priceBike           = parseInt($('.js-bike-price:checked').attr('data-price'))
 	let rentalDays          = parseInt(localStorage.getItem('rentalDatesDiff'))
 
-	let discountVal = discount ? discount : '1'
+	// let discountVal = discount ? discount : '1'
+	let discountVal = discount ? discount : '0.7'
 
 	if (!$priceTotalOld) return
 

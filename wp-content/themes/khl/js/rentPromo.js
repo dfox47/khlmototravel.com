@@ -3,25 +3,7 @@ let $promoInput     = $('.js-order-promo')
 let promoVal        = $promoInput ? $promoInput.val() : ''
 let discount        = 0.7
 let $html           = $('html')
-
-let getUrlParameter = function getUrlParameter(sParam) {
-	let sPageURL        = window.location.search.substring(1)
-	let sURLVariables   = sPageURL.split('&')
-	let sParameterName
-	let i
-
-	for (i = 0; i < sURLVariables.length; i++) {
-		sParameterName = sURLVariables[i].split('=')
-
-		if (sParameterName[0] === sParam) {
-			return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1])
-		}
-	}
-
-	return false
-}
-
-let promoCodeUrl = getUrlParameter('promo')
+let promoCodeUrl    = getUrlParameter('promo')
 
 if (promoCodeUrl && $promoInput) {
 	$promoInput.val(promoCodeUrl.toLowerCase())
@@ -30,6 +12,8 @@ if (promoCodeUrl && $promoInput) {
 }
 
 function checkPromo() {
+	console.log('s33')
+
 	if ($promoInput.val() == null) return
 
 	// get new value of input
