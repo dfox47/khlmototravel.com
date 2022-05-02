@@ -8,7 +8,7 @@ $(window).bind('load', function() {
 			minDate: 0,
 			onSelect: function() {
 				calcDiff()
-				priceTotal()
+				checkPromo()
 			},
 			yearRange: '2022:2023'
 		})
@@ -48,7 +48,7 @@ function calcDiff() {
 			minDate: 0,
 			onSelect: function() {
 				calcDiff()
-				priceTotal()
+				checkPromo()
 			}
 		});
 
@@ -64,7 +64,7 @@ function calcDiff() {
 			minDate: +1,
 			onSelect: function() {
 				calcDiff()
-				priceTotal()
+				checkPromo()
 			}
 		})
 

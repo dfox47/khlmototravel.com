@@ -124,11 +124,11 @@ $(window).bind('load', function() {
 
 
 	calcDiff()
-	priceTotal()
+	checkPromo()
 
 	$(document).on('change', '.js-bike-price', function () {
 		calcDiff()
-		priceTotal()
+		checkPromo()
 	})
 
 	$(document).on('click', '.js-popup-close', function (e) {
