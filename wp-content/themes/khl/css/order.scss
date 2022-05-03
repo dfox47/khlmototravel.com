@@ -49,6 +49,10 @@
 			outline: none;
 		}
 	}
+
+	@media #{$tablet} {
+		padding: 50px 10px;
+	}
 }
 
 .order_input_name {
