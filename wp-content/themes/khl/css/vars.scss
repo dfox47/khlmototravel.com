@@ -14,8 +14,21 @@ $tablet:            'only screen and (max-width: 1023px)';
 
 $transition:        all .3s ease-in-out;
 
+@font-face {
+	font-family: 'icomoon';
+	src:  url('fonts/icomoon.eot?g5ocey');
+	src:  url('fonts/icomoon.eot?g5ocey#iefix') format('embedded-opentype'),
+	url('fonts/icomoon.ttf?g5ocey') format('truetype'),
+	url('fonts/icomoon.woff?g5ocey') format('woff'),
+	url('fonts/icomoon.svg?g5ocey#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
 // fonts
 $font_josefin:      'Josefin Sans',         Helvetica, Arial, sans-serif;
 $font_main:         'Playfair Display',     Helvetica, Arial, sans-serif;
 $font_playfair:     'Playfair Display',     Helvetica, Arial, sans-serif;
 $font_rubik:        'Rubik',                Helvetica, Arial, sans-serif;
+$font_icomoon:      'Rubik',                Helvetica, Arial, sans-serif;
