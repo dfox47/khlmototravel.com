@@ -21,9 +21,9 @@ get_header(); ?>
 
 		<form class="order_form js-order-form" action="/wp-content/themes/khl/rentBikeMail.php" method="post">
 			<div id="bikes" class="bikes">
-				<!-- should be 800x600 or equal -->
+				<?php // should be 800x600 or equal ?>
 				<label class="bike_item">
-					<input class="js-bike-price" type="radio" name="bike" data-price="90" value="Honda CB 650F" />
+					<input class="js-bike-price" type="radio" name="bike" data-price="90" value="Honda CB 650F" checked />
 
 					<span class="bike_desc">
 						<img class="bike_desc__img" src="<?php echo $i; ?>/bikes/1.jpg" alt="" />
@@ -33,6 +33,28 @@ get_header(); ?>
 							<span class="lang_bg_only">лв/ден</span>
 							<span class="lang_de_only">BGN/Tag</span>
 							<span class="lang_en_only">BGN/day</span>
+						</span>
+
+						<span class="bike_info">
+							<span class="bike_info__item">
+								<span class="icon-moto"></span> 650cc
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-horse2"></span> 87hp
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-weight"></span> 208kg
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-speed"></span> 220km/h
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-calendar"></span> 2014
+							</span>
 						</span>
 					</span>
 				</label>
@@ -49,6 +71,28 @@ get_header(); ?>
 							<span class="lang_de_only">BGN/Tag</span>
 							<span class="lang_en_only">BGN/day</span>
 						</span>
+
+						<span class="bike_info">
+							<span class="bike_info__item">
+								<span class="icon-moto"></span> 850cc
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-horse2"></span> 95hp
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-weight"></span> 248kg
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-speed"></span> 220km/h
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-calendar"></span> 2020
+							</span>
+						</span>
 					</span>
 				</label>
 
@@ -63,6 +107,28 @@ get_header(); ?>
 							<span class="lang_bg_only">лв/ден</span>
 							<span class="lang_de_only">BGN/Tag</span>
 							<span class="lang_en_only">BGN/day</span>
+						</span>
+
+						<span class="bike_info">
+							<span class="bike_info__item">
+								<span class="icon-moto"></span> 1170cc
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-horse2"></span> 122hp
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-weight"></span> 256kg
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-speed"></span> 220km/h
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-calendar"></span> 2014
+							</span>
 						</span>
 					</span>
 				</label>
@@ -79,6 +145,28 @@ get_header(); ?>
 							<span class="lang_de_only">BGN/Tag</span>
 							<span class="lang_en_only">BGN/day</span>
 						</span>
+
+						<span class="bike_info">
+							<span class="bike_info__item">
+								<span class="icon-moto"></span> 1170cc
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-horse2"></span> 110hp
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-weight"></span> 238kg
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-speed"></span> 220km/h
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-calendar"></span> 2019
+							</span>
+						</span>
 					</span>
 				</label>
 
@@ -89,10 +177,32 @@ get_header(); ?>
 						<img src="<?php echo $i; ?>/bikes/5.jpg" alt="" />
 						<span class="bike_desc__model">BMW R-1250-GS</span>
 						<span class="bike_desc__price">
-									<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
+							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
 							<span class="lang_bg_only">лв/ден</span>
 							<span class="lang_de_only">BGN/Tag</span>
 							<span class="lang_en_only">BGN/day</span>
+						</span>
+
+						<span class="bike_info">
+							<span class="bike_info__item">
+								<span class="icon-moto"></span> 1250cc
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-horse2"></span> 136hp
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-weight"></span> 249kg
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-speed"></span> 220km/h
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-calendar"></span> 2020
+							</span>
 						</span>
 					</span>
 				</label>
@@ -109,6 +219,28 @@ get_header(); ?>
 							<span class="lang_de_only">BGN/Tag</span>
 							<span class="lang_en_only">BGN/day</span>
 						</span>
+
+						<span class="bike_info">
+							<span class="bike_info__item">
+								<span class="icon-moto"></span> 1300cc
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-horse2"></span> 160hp
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-weight"></span> 215kg
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-speed"></span> 220km/h
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-calendar"></span> 2022
+							</span>
+						</span>
 					</span>
 				</label>
 
@@ -124,6 +256,28 @@ get_header(); ?>
 							<span class="lang_de_only">BGN/Tag</span>
 							<span class="lang_en_only">BGN/day</span>
 						</span>
+
+						<span class="bike_info">
+							<span class="bike_info__item">
+								<span class="icon-moto"></span> 999cc
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-horse2"></span> 165hp
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-weight"></span> 224kg
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-speed"></span> 220km/h
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-calendar"></span> 2022
+							</span>
+						</span>
 					</span>
 				</label>
 
@@ -138,6 +292,28 @@ get_header(); ?>
 							<span class="lang_bg_only">лв/ден</span>
 							<span class="lang_de_only">BGN/Tag</span>
 							<span class="lang_en_only">BGN/day</span>
+						</span>
+
+						<span class="bike_info">
+							<span class="bike_info__item">
+								<span class="icon-moto"></span> 1250cc
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-horse2"></span> 136hp
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-weight"></span> 249kg
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-speed"></span> 220km/h
+							</span>
+
+							<span class="bike_info__item">
+								<span class="icon-calendar"></span> 2020
+							</span>
 						</span>
 					</span>
 				</label>
