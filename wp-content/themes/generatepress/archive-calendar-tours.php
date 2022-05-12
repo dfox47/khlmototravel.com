@@ -486,25 +486,25 @@ get_header(); ?>
 
 
 
-					<h2>May 2022</h2>
-
-					<a class="calendar_item" href="/moto-tours/turkey/">
-						<span class="calendar_item__date">20 - 30 May</span>
-						<span class="calendar_item__title">Turkey</span>
-						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
-						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price">2450 €</span>
-						<span class="calendar_item__book">More details</span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">21 - 27 May</span>
-						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
-						<span class="calendar_item__desc">Bulgaria | Offroad</span>
-						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price">2400 €</span>
-						<span class="calendar_item__book">More details</span>
-					</a>
+<!--					<h2>May 2022</h2>-->
+<!---->
+<!--					<a class="calendar_item" href="/moto-tours/turkey/">-->
+<!--						<span class="calendar_item__date">20 - 30 May</span>-->
+<!--						<span class="calendar_item__title">Turkey</span>-->
+<!--						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>-->
+<!--						<span class="calendar_item__days">11 days</span>-->
+<!--						<span class="calendar_item__price">2450 €</span>-->
+<!--						<span class="calendar_item__book">More details</span>-->
+<!--					</a>-->
+<!---->
+<!--					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">-->
+<!--						<span class="calendar_item__date">21 - 27 May</span>-->
+<!--						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>-->
+<!--						<span class="calendar_item__desc">Bulgaria | Offroad</span>-->
+<!--						<span class="calendar_item__days">7 days</span>-->
+<!--						<span class="calendar_item__price">2400 €</span>-->
+<!--						<span class="calendar_item__book">More details</span>-->
+<!--					</a>-->
 
 
 
@@ -730,25 +730,25 @@ get_header(); ?>
 
 
 
-					<h2>Mai 2022</h2>
-
-					<a class="calendar_item" href="/de/moto-tours/die-tuerkei/">
-						<span class="calendar_item__date">20 - 30 Mai</span>
-						<span class="calendar_item__title">Die Türkei</span>
-						<span class="calendar_item__desc">Istanbul, Ankara, Kappadokien, Pamukkale, Bergama, Canakkale.</span>
-						<span class="calendar_item__days">11 Tage</span>
-						<span class="calendar_item__price">2450 €</span>
-						<span class="calendar_item__book">Mehr Details</span>
-					</a>
-
-					<a class="calendar_item" href="/de/moto-tours/bulgaria-offroad-7-day/">
-						<span class="calendar_item__date">21 - 27 Mai</span>
-						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>
-						<span class="calendar_item__desc">Bulgarien | Offroad</span>
-						<span class="calendar_item__days">7 Tage</span>
-						<span class="calendar_item__price">2400 €</span>
-						<span class="calendar_item__book">Mehr Details</span>
-					</a>
+<!--					<h2>Mai 2022</h2>-->
+<!---->
+<!--					<a class="calendar_item" href="/de/moto-tours/die-tuerkei/">-->
+<!--						<span class="calendar_item__date">20 - 30 Mai</span>-->
+<!--						<span class="calendar_item__title">Die Türkei</span>-->
+<!--						<span class="calendar_item__desc">Istanbul, Ankara, Kappadokien, Pamukkale, Bergama, Canakkale.</span>-->
+<!--						<span class="calendar_item__days">11 Tage</span>-->
+<!--						<span class="calendar_item__price">2450 €</span>-->
+<!--						<span class="calendar_item__book">Mehr Details</span>-->
+<!--					</a>-->
+<!---->
+<!--					<a class="calendar_item" href="/de/moto-tours/bulgaria-offroad-7-day/">-->
+<!--						<span class="calendar_item__date">21 - 27 Mai</span>-->
+<!--						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>-->
+<!--						<span class="calendar_item__desc">Bulgarien | Offroad</span>-->
+<!--						<span class="calendar_item__days">7 Tage</span>-->
+<!--						<span class="calendar_item__price">2400 €</span>-->
+<!--						<span class="calendar_item__book">Mehr Details</span>-->
+<!--					</a>-->
 
 
 
@@ -974,25 +974,25 @@ get_header(); ?>
 
 
 
-					<h2>Май 2022</h2>
-
-					<a class="calendar_item" href="/ru/moto-tours/turcziya/">
-						<span class="calendar_item__date">20 - 30 мая</span>
-						<span class="calendar_item__title">Турция</span>
-						<span class="calendar_item__desc">Стамбул, Анкара, Каппадокия, Памуккале, Бергама, Чанаккале</span>
-						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price">2450 €</span>
-						<span class="calendar_item__book">Подробнее</span>
-					</a>
-
-					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad-7-dnej/">
-						<span class="calendar_item__date">21 - 27 мая</span>
-						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>
-						<span class="calendar_item__desc">Болгария | Offroad</span>
-						<span class="calendar_item__days">7 дней</span>
-						<span class="calendar_item__price">2400 €</span>
-						<span class="calendar_item__book">Mehr Details</span>
-					</a>
+<!--					<h2>Май 2022</h2>-->
+<!---->
+<!--					<a class="calendar_item" href="/ru/moto-tours/turcziya/">-->
+<!--						<span class="calendar_item__date">20 - 30 мая</span>-->
+<!--						<span class="calendar_item__title">Турция</span>-->
+<!--						<span class="calendar_item__desc">Стамбул, Анкара, Каппадокия, Памуккале, Бергама, Чанаккале</span>-->
+<!--						<span class="calendar_item__days">11 дней</span>-->
+<!--						<span class="calendar_item__price">2450 €</span>-->
+<!--						<span class="calendar_item__book">Подробнее</span>-->
+<!--					</a>-->
+<!---->
+<!--					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad-7-dnej/">-->
+<!--						<span class="calendar_item__date">21 - 27 мая</span>-->
+<!--						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>-->
+<!--						<span class="calendar_item__desc">Болгария | Offroad</span>-->
+<!--						<span class="calendar_item__days">7 дней</span>-->
+<!--						<span class="calendar_item__price">2400 €</span>-->
+<!--						<span class="calendar_item__book">Mehr Details</span>-->
+<!--					</a>-->
 
 
 
