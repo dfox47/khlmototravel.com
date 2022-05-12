@@ -242,25 +242,25 @@ get_header(); ?>
 
 
 
-					<h2>May 2022</h2>
-
-					<a class="calendar_item" href="/moto-tours/turkey/">
-						<span class="calendar_item__date">20 - 30 May</span>
-						<span class="calendar_item__title">Turkey</span>
-						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
-						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price">2450 €</span>
-						<span class="calendar_item__book">More details</span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">21 - 27 May</span>
-						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
-						<span class="calendar_item__desc">Bulgaria | Offroad</span>
-						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price">2400 €</span>
-						<span class="calendar_item__book">More details</span>
-					</a>
+<!--					<h2>May 2022</h2>-->
+<!---->
+<!--					<a class="calendar_item" href="/moto-tours/turkey/">-->
+<!--						<span class="calendar_item__date">20 - 30 May</span>-->
+<!--						<span class="calendar_item__title">Turkey</span>-->
+<!--						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>-->
+<!--						<span class="calendar_item__days">11 days</span>-->
+<!--						<span class="calendar_item__price">2450 €</span>-->
+<!--						<span class="calendar_item__book">More details</span>-->
+<!--					</a>-->
+<!---->
+<!--					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">-->
+<!--						<span class="calendar_item__date">21 - 27 May</span>-->
+<!--						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>-->
+<!--						<span class="calendar_item__desc">Bulgaria | Offroad</span>-->
+<!--						<span class="calendar_item__days">7 days</span>-->
+<!--						<span class="calendar_item__price">2400 €</span>-->
+<!--						<span class="calendar_item__book">More details</span>-->
+<!--					</a>-->
 
 
 
@@ -1237,18 +1237,18 @@ get_header(); ?>
 
 
 
-					<h2><?php echo __('May', 'khl_template'); ?> 2022</h2>
-
-					<?php foreach ($tours_array as $tour_arr) {
-						if ($tour_arr && strpos($tour_arr["tour_fsdate"], 'May') !== false) {
-							echo '<ul class="calendar-list"><li class="calendar-19">' . date_i18n("d F", strtotime($tour_arr["tour_fsdate"])) . ' - ' .  date_i18n("d F", strtotime($tour_arr["tour_fedate"])) . '</li>
-                            <li class="calendar-19"><h3>' . $tour_arr["tour_title"] . '</h3></li>
-                            <li class="calendar-19">' . $tour_arr["tour_destinations"] . '</li>
-                            <li class="calendar-19 cal-center">' . $tour_arr["tour_duration"] . ' ' . __('days', 'khl_template') . '</li>
-                            <li class="calendar-10">' . $tour_arr["tour_price"] . ' EUR</li>
-                            <li class="calendar-14">' . __('Book Now', 'khl_template') . '</a></li></ul>';
-						}
-					} ?>
+<!--					<h2>--><?php //echo __('May', 'khl_template'); ?><!-- 2022</h2>-->
+<!---->
+<!--					--><?php //foreach ($tours_array as $tour_arr) {
+//						if ($tour_arr && strpos($tour_arr["tour_fsdate"], 'May') !== false) {
+//							echo '<ul class="calendar-list"><li class="calendar-19">' . date_i18n("d F", strtotime($tour_arr["tour_fsdate"])) . ' - ' .  date_i18n("d F", strtotime($tour_arr["tour_fedate"])) . '</li>
+//                            <li class="calendar-19"><h3>' . $tour_arr["tour_title"] . '</h3></li>
+//                            <li class="calendar-19">' . $tour_arr["tour_destinations"] . '</li>
+//                            <li class="calendar-19 cal-center">' . $tour_arr["tour_duration"] . ' ' . __('days', 'khl_template') . '</li>
+//                            <li class="calendar-10">' . $tour_arr["tour_price"] . ' EUR</li>
+//                            <li class="calendar-14">' . __('Book Now', 'khl_template') . '</a></li></ul>';
+//						}
+//					} ?>
 
 
 
