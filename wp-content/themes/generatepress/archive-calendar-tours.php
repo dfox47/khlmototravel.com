@@ -857,15 +857,6 @@ get_header(); ?>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
-					<a class="calendar_item" href="/ru/moto-tours/highlights-of-bulgaria/">
-						<span class="calendar_item__date">7 - 18 июня</span>
-						<span class="calendar_item__title">Балканы</span>
-						<span class="calendar_item__desc">Белоградчик, Велико Тырново, Царево, Девин, Тасос, Сандански, Велинград</span>
-						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price">2200 €</span>
-						<span class="calendar_item__book">Подробнее</span>
-					</a>
-
 					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad/">
 						<span class="calendar_item__date">18 - 28 июня</span>
 						<span class="calendar_item__title">Болгария | Offroad | 11 дней</span>
@@ -881,15 +872,6 @@ get_header(); ?>
 						<span class="calendar_item__desc">Страны: Сербия, Черногория, Албания, Северная Македония.<br /><br />Города: София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дней</span>
 						<span class="calendar_item__price">3000 €</span>
-						<span class="calendar_item__book">Подробнее</span>
-					</a>
-
-					<a class="calendar_item" href="/ru/moto-tours/highlights-of-bulgaria/">
-						<span class="calendar_item__date">25 июня - 6 июля</span>
-						<span class="calendar_item__title">Балканы</span>
-						<span class="calendar_item__desc">Белоградчик, Велико Тырново, Царево, Девин, Тасос, Сандански, Велинград</span>
-						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price">2200 €</span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -936,15 +918,6 @@ get_header(); ?>
 
 
 					<h2>Август 2022</h2>
-
-					<a class="calendar_item" href="/ru/moto-tours/highlights-of-bulgaria/">
-						<span class="calendar_item__date">1 - 12 августа</span>
-						<span class="calendar_item__title">Балканы</span>
-						<span class="calendar_item__desc">Белоградчик, Велико Тырново, Царево, Девин, Тасос, Сандански, Велинград</span>
-						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price">2200 €</span>
-						<span class="calendar_item__book">Подробнее</span>
-					</a>
 
 					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad-7-dnej/">
 						<span class="calendar_item__date">8 - 14 августа</span>
@@ -1001,15 +974,6 @@ get_header(); ?>
 						<span class="calendar_item__desc">Страны: Сербия, Черногория, Албания, Северная Македония.<br /><br />Города: София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дней</span>
 						<span class="calendar_item__price">3000 €</span>
-						<span class="calendar_item__book">Подробнее</span>
-					</a>
-
-					<a class="calendar_item" href="javascript:void(0);">
-						<span class="calendar_item__date">17 - 28 сентября</span>
-						<span class="calendar_item__title">Балканы</span>
-						<span class="calendar_item__desc">Белоградчик, Велико Тырново, Царево, Девин, Тасос, Сандански, Велинград</span>
-						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price">2200 €</span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
