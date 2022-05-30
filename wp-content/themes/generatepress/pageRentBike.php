@@ -23,45 +23,7 @@ get_header(); ?>
 			<div id="bikes" class="bikes">
 				<?php // should be 800x600 or equal ?>
 				<label class="bike_item">
-					<input class="js-bike-price" type="radio" name="bike" data-price="45" value="Honda CB 650F" checked />
-
-					<span class="bike_desc">
-						<img class="bike_desc__img" src="<?php echo $i; ?>/bikes/1.jpg" alt="" />
-						<span class="bike_desc__model">Honda CB 650F</span>
-						<span class="bike_desc__price">
-							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
-							<span class="lang_bg_only">€/ден</span>
-							<span class="lang_de_only">€/Tag</span>
-							<span class="lang_en_only">€/day</span>
-							<span class="lang_ru_only">€/день</span>
-						</span>
-
-						<span class="bike_info">
-							<span class="bike_info__item">
-								<span class="icon-moto"></span> 650cc
-							</span>
-
-							<span class="bike_info__item">
-								<span class="icon-horse2"></span> 87hp
-							</span>
-
-							<span class="bike_info__item">
-								<span class="icon-weight"></span> 208kg
-							</span>
-
-							<span class="bike_info__item">
-								<span class="icon-speed"></span> 220km/h
-							</span>
-
-<!--							<span class="bike_info__item">-->
-<!--								<span class="icon-calendar"></span> 2014-->
-<!--							</span>-->
-						</span>
-					</span>
-				</label>
-
-				<label class="bike_item">
-					<input class="js-bike-price" type="radio" name="bike" data-price="100" value="BMW F-850-GS" />
+					<input class="js-bike-price" type="radio" name="bike" data-price="100" value="BMW F-850-GS" checked />
 
 					<span class="bike_desc">
 						<img src="<?php echo $i; ?>/bikes/2.jpg" alt="" />
