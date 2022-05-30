@@ -23,16 +23,17 @@ get_header(); ?>
 			<div id="bikes" class="bikes">
 				<?php // should be 800x600 or equal ?>
 				<label class="bike_item">
-					<input class="js-bike-price" type="radio" name="bike" data-price="90" value="Honda CB 650F" checked />
+					<input class="js-bike-price" type="radio" name="bike" data-price="45" value="Honda CB 650F" checked />
 
 					<span class="bike_desc">
 						<img class="bike_desc__img" src="<?php echo $i; ?>/bikes/1.jpg" alt="" />
 						<span class="bike_desc__model">Honda CB 650F</span>
 						<span class="bike_desc__price">
 							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
-							<span class="lang_bg_only">лв/ден</span>
-							<span class="lang_de_only">BGN/Tag</span>
-							<span class="lang_en_only">BGN/day</span>
+							<span class="lang_bg_only">€/ден</span>
+							<span class="lang_de_only">€/Tag</span>
+							<span class="lang_en_only">€/day</span>
+							<span class="lang_ru_only">€/день</span>
 						</span>
 
 						<span class="bike_info">
@@ -52,24 +53,25 @@ get_header(); ?>
 								<span class="icon-speed"></span> 220km/h
 							</span>
 
-							<span class="bike_info__item">
-								<span class="icon-calendar"></span> 2014
-							</span>
+<!--							<span class="bike_info__item">-->
+<!--								<span class="icon-calendar"></span> 2014-->
+<!--							</span>-->
 						</span>
 					</span>
 				</label>
 
 				<label class="bike_item">
-					<input class="js-bike-price" type="radio" name="bike" data-price="200" value="BMW F-850-GS" />
+					<input class="js-bike-price" type="radio" name="bike" data-price="100" value="BMW F-850-GS" />
 
 					<span class="bike_desc">
 						<img src="<?php echo $i; ?>/bikes/2.jpg" alt="" />
 						<span class="bike_desc__model">BMW F-850-GS</span>
 						<span class="bike_desc__price">
 							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
-							<span class="lang_bg_only">лв/ден</span>
-							<span class="lang_de_only">BGN/Tag</span>
-							<span class="lang_en_only">BGN/day</span>
+							<span class="lang_bg_only">€/ден</span>
+							<span class="lang_de_only">€/Tag</span>
+							<span class="lang_en_only">€/day</span>
+							<span class="lang_ru_only">€/день</span>
 						</span>
 
 						<span class="bike_info">
@@ -89,24 +91,25 @@ get_header(); ?>
 								<span class="icon-speed"></span> 220km/h
 							</span>
 
-							<span class="bike_info__item">
-								<span class="icon-calendar"></span> 2020
-							</span>
+<!--							<span class="bike_info__item">-->
+<!--								<span class="icon-calendar"></span> 2020-->
+<!--							</span>-->
 						</span>
 					</span>
 				</label>
 
 				<label class="bike_item">
-					<input class="js-bike-price" type="radio" name="bike" data-price="210" value="BMW R-1200-GS" />
+					<input class="js-bike-price" type="radio" name="bike" data-price="105" value="BMW R-1200-GS" />
 
 					<span class="bike_desc">
 						<img src="<?php echo $i; ?>/bikes/3.jpg" alt="" />
 						<span class="bike_desc__model">BMW R-1200-GS</span>
 						<span class="bike_desc__price">
 							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
-							<span class="lang_bg_only">лв/ден</span>
-							<span class="lang_de_only">BGN/Tag</span>
-							<span class="lang_en_only">BGN/day</span>
+							<span class="lang_bg_only">€/ден</span>
+							<span class="lang_de_only">€/Tag</span>
+							<span class="lang_en_only">€/day</span>
+							<span class="lang_ru_only">€/день</span>
 						</span>
 
 						<span class="bike_info">
@@ -126,24 +129,25 @@ get_header(); ?>
 								<span class="icon-speed"></span> 220km/h
 							</span>
 
-							<span class="bike_info__item">
-								<span class="icon-calendar"></span> 2014
-							</span>
+<!--							<span class="bike_info__item">-->
+<!--								<span class="icon-calendar"></span> 2014-->
+<!--							</span>-->
 						</span>
 					</span>
 				</label>
 
 				<label class="bike_item">
-					<input class="js-bike-price" type="radio" name="bike" data-price="230" value="BMW R-1200-GS Adv" />
+					<input class="js-bike-price" type="radio" name="bike" data-price="115" value="BMW R-1200-GS Adv" />
 
 					<span class="bike_desc">
 						<img src="<?php echo $i; ?>/bikes/4.jpg" alt="" />
 						<span class="bike_desc__model">BMW R-1200-GS Adv</span>
 						<span class="bike_desc__price">
 							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
-							<span class="lang_bg_only">лв/ден</span>
-							<span class="lang_de_only">BGN/Tag</span>
-							<span class="lang_en_only">BGN/day</span>
+							<span class="lang_bg_only">€/ден</span>
+							<span class="lang_de_only">€/Tag</span>
+							<span class="lang_en_only">€/day</span>
+							<span class="lang_ru_only">€/день</span>
 						</span>
 
 						<span class="bike_info">
@@ -163,24 +167,25 @@ get_header(); ?>
 								<span class="icon-speed"></span> 220km/h
 							</span>
 
-							<span class="bike_info__item">
-								<span class="icon-calendar"></span> 2019
-							</span>
+<!--							<span class="bike_info__item">-->
+<!--								<span class="icon-calendar"></span> 2019-->
+<!--							</span>-->
 						</span>
 					</span>
 				</label>
 
 				<label class="bike_item">
-					<input class="js-bike-price" type="radio" name="bike" data-price="270" value="BMW R-1250-GS" />
+					<input class="js-bike-price" type="radio" name="bike" data-price="135" value="BMW R-1250-GS" />
 
 					<span class="bike_desc">
 						<img src="<?php echo $i; ?>/bikes/5.jpg" alt="" />
 						<span class="bike_desc__model">BMW R-1250-GS</span>
 						<span class="bike_desc__price">
 							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
-							<span class="lang_bg_only">лв/ден</span>
-							<span class="lang_de_only">BGN/Tag</span>
-							<span class="lang_en_only">BGN/day</span>
+							<span class="lang_bg_only">€/ден</span>
+							<span class="lang_de_only">€/Tag</span>
+							<span class="lang_en_only">€/day</span>
+							<span class="lang_ru_only">€/день</span>
 						</span>
 
 						<span class="bike_info">
@@ -200,24 +205,25 @@ get_header(); ?>
 								<span class="icon-speed"></span> 220km/h
 							</span>
 
-							<span class="bike_info__item">
-								<span class="icon-calendar"></span> 2020
-							</span>
+<!--							<span class="bike_info__item">-->
+<!--								<span class="icon-calendar"></span> 2020-->
+<!--							</span>-->
 						</span>
 					</span>
 				</label>
 
 				<label class="bike_item">
-					<input class="js-bike-price" type="radio" name="bike" data-price="270" value="KTM 1290 Super adventure s" />
+					<input class="js-bike-price" type="radio" name="bike" data-price="135" value="KTM 1290 Super adventure s" />
 
 					<span class="bike_desc">
 						<img src="<?php echo $i; ?>/bikes/7.jpg" alt="" />
 						<span class="bike_desc__model">KTM 1290 Super adventure s</span>
 						<span class="bike_desc__price">
 							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
-							<span class="lang_bg_only">лв/ден</span>
-							<span class="lang_de_only">BGN/Tag</span>
-							<span class="lang_en_only">BGN/day</span>
+							<span class="lang_bg_only">€/ден</span>
+							<span class="lang_de_only">€/Tag</span>
+							<span class="lang_en_only">€/day</span>
+							<span class="lang_ru_only">€/день</span>
 						</span>
 
 						<span class="bike_info">
@@ -237,24 +243,25 @@ get_header(); ?>
 								<span class="icon-speed"></span> 220km/h
 							</span>
 
-							<span class="bike_info__item">
-								<span class="icon-calendar"></span> 2022
-							</span>
+<!--							<span class="bike_info__item">-->
+<!--								<span class="icon-calendar"></span> 2022-->
+<!--							</span>-->
 						</span>
 					</span>
 				</label>
 
 				<label class="bike_item">
-					<input class="js-bike-price" type="radio" name="bike" data-price="270" value="BMW S1000 XR" />
+					<input class="js-bike-price" type="radio" name="bike" data-price="135" value="BMW S1000 XR" />
 
 					<span class="bike_desc">
 						<img src="<?php echo $i; ?>/bikes/8.jpg" alt="" />
 						<span class="bike_desc__model">BMW S1000 XR</span>
 						<span class="bike_desc__price">
 							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
-							<span class="lang_bg_only">лв/ден</span>
-							<span class="lang_de_only">BGN/Tag</span>
-							<span class="lang_en_only">BGN/day</span>
+							<span class="lang_bg_only">€/ден</span>
+							<span class="lang_de_only">€/Tag</span>
+							<span class="lang_en_only">€/day</span>
+							<span class="lang_ru_only">€/день</span>
 						</span>
 
 						<span class="bike_info">
@@ -274,24 +281,25 @@ get_header(); ?>
 								<span class="icon-speed"></span> 220km/h
 							</span>
 
-							<span class="bike_info__item">
-								<span class="icon-calendar"></span> 2022
-							</span>
+<!--							<span class="bike_info__item">-->
+<!--								<span class="icon-calendar"></span> 2022-->
+<!--							</span>-->
 						</span>
 					</span>
 				</label>
 
 				<label class="bike_item">
-					<input class="js-bike-price" type="radio" name="bike" data-price="310" value="BMW R-1250-GS Adv" />
+					<input class="js-bike-price" type="radio" name="bike" data-price="155" value="BMW R-1250-GS Adv" />
 
 					<span class="bike_desc">
 						<img src="<?php echo $i; ?>/bikes/6.jpg" alt="" />
 						<span class="bike_desc__model">BMW R-1250-GS Adv</span>
 						<span class="bike_desc__price">
 							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
-							<span class="lang_bg_only">лв/ден</span>
-							<span class="lang_de_only">BGN/Tag</span>
-							<span class="lang_en_only">BGN/day</span>
+							<span class="lang_bg_only">€/ден</span>
+							<span class="lang_de_only">€/Tag</span>
+							<span class="lang_en_only">€/day</span>
+							<span class="lang_ru_only">€/день</span>
 						</span>
 
 						<span class="bike_info">
@@ -311,9 +319,9 @@ get_header(); ?>
 								<span class="icon-speed"></span> 220km/h
 							</span>
 
-							<span class="bike_info__item">
-								<span class="icon-calendar"></span> 2020
-							</span>
+<!--							<span class="bike_info__item">-->
+<!--								<span class="icon-calendar"></span> 2020-->
+<!--							</span>-->
 						</span>
 					</span>
 				</label>
@@ -476,17 +484,19 @@ get_header(); ?>
 		<div class="price_total">
 			<div class="price_total__discount js-order-discount">
 				<span class="js-order-discount-val">0</span>
-				<span class="lang_bg_only">лв</span>
-				<span class="lang_en_only">BGN</span>
-				<span class="lang_de_only">BGN</span>
+				<span>€</span>
+<!--				<span class="lang_bg_only">лв</span>-->
+<!--				<span class="lang_en_only">BGN</span>-->
+<!--				<span class="lang_de_only">BGN</span>-->
 			</div>
 
 			<span class="lang_bg_only">Общо</span>
 			<span class="lang_en_only">Total</span>
 			<span class="lang_de_only">Gesamt</span>: <span class="price_total__number js-price-total">0</span>
-			<span class="lang_bg_only">лв</span>
-			<span class="lang_en_only">BGN</span>
-			<span class="lang_de_only">BGN</span>
+			<span>€</span>
+<!--			<span class="lang_bg_only">лв</span>-->
+<!--			<span class="lang_en_only">BGN</span>-->
+<!--			<span class="lang_de_only">BGN</span>-->
 		</div>
 	</div>
 </main>

@@ -74,7 +74,7 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 							<strong><?php echo __('Prices from: ', 'khl_template')?></strong> 150 EUR
 						</span>
 
-						<span class="tours_desc__more">Повече</span>
+						<span class="tours_desc__more">Read more</span>
 					</span>
 			</a>
 
