@@ -546,7 +546,7 @@ get_header(); ?>
 
 			<span class="lang_bg_only">Общо</span>
 			<span class="lang_en_only">Total</span>
-			<span class="lang_ru_only">Всего</span>
+			<span class="lang_ru_only">Итого</span>
 			<span class="lang_de_only">Gesamt</span>: <span class="price_total__number js-price-total">0</span>
 			<span>€</span>
 <!--			<span class="lang_bg_only">лв</span>-->
