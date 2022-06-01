@@ -429,7 +429,7 @@ get_header(); ?>
 							<span class="lang_bg_only">Запознат с <a href="/bg/terms/" target="_blank">правилата на лизинга</a></span>
 							<span class="lang_de_only">Bedingungen <a href="/de/terms/" target="_blank">zugestimmt</a></span>
 							<span class="lang_en_only">Agreed with <a href="/terms/" target="_blank">terms</a></span>
-							<span class="lang_ru_only">Согласие с <a href="/terms/" target="_blank">общими правилами</a></span>
+							<span class="lang_ru_only">Согласие с <a href="/ru/terms/" target="_blank">общими правилами</a></span>
 						</span>
 				</label>
 
