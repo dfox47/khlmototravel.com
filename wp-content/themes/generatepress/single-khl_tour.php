@@ -328,17 +328,37 @@ $deposit = get_post_meta($post->ID, 'khl_tour_prices_deposit_motorcycle', true);
 				<div class="flex-cont-row">
 					<ul class="included-list">
 						<h3><?php echo __('Price per rider: ', 'khl_template'); ?></h3>
-						<li><?php echo "BMW F 850 GS: " . $price_bmw850; ?> EUR</li>
-						<li><?php echo "BMW R 1250 GS:" . $price_bmw1250; ?> EUR</li>
-						<li><?php echo "BMW R 1250 GS Adventure: " . $price_bmw1250gs; ?> EUR</li>
-						<li><?php echo __('Own motorcycle: ', 'khl_template'); echo $starting_price; ?> EUR</li>
+
+						<?php if ($price_bmw850 > 0) { ?>
+							<li>BMW F 850 GS: <?php echo $price_bmw850; ?> €</li>
+						<?php } ?>
+
+						<?php if ($price_bmw1250 > 0) { ?>
+							<li>BMW R 1250 GS: <?php echo $price_bmw1250; ?> €</li>
+						<?php } ?>
+
+						<?php if ($price_bmw1250gs > 0) { ?>
+							<li>BMW R 1250 GS Adventure: <?php echo $price_bmw1250gs; ?> €</li>
+						<?php } ?>
+
+						<li><?php echo __('Own motorcycle: ', 'khl_template'); echo $starting_price; ?> €</li>
 					</ul>
 
 					<ul class="included-list">
 						<h3><?php echo __('Additional', 'khl_template'); ?></h3>
-						<li><?php echo __('Passenger: ', 'khl_template'); echo $price_passenger; ?> EUR</li>
-						<li><?php echo __('Single room: ', 'khl_template'); echo $price_single_room; ?> EUR</li>
-						<li><?php echo __('Deposit motorcycle: ', 'khl_template'); echo $deposit; ?> EUR</li>
+
+						<?php if ($price_passenger > 0) { ?>
+							<li><?php echo __('Passenger: ', 'khl_template'); echo $price_passenger; ?> €</li>
+						<?php } ?>
+
+						<?php if ($price_single_room > 0) { ?>
+							<li><?php echo __('Single room: ', 'khl_template'); echo $price_single_room; ?> €</li>
+						<?php } ?>
+
+						<?php if ($deposit > 0) { ?>
+							<li><?php echo __('Deposit motorcycle: ', 'khl_template'); echo $deposit; ?> €</li>
+						<?php } ?>
+
 						<li class="text-red"><?php echo __('(The deposit is refundable at 100% upon return of the bike without damage after the end of the tour)', 'khl_template'); ?></li>
 					</ul>
 				</div>
