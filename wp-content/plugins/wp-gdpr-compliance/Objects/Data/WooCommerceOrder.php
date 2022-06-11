@@ -122,7 +122,7 @@ class WooCommerceOrder {
 		}
 
 		global $wpdb;
-		$query   = "SELECT * FROM " . $wpdb->postmeta . " WHERE `meta_key` = '_billing_email' AND `meta_value` = %s";
+		$query   = 'SELECT * FROM ' . $wpdb->postmeta . " WHERE `meta_key` = '_billing_email' AND `meta_value` = %s";
 		$results = $wpdb->get_results( $wpdb->prepare( $query, $email ) );
 		if ( empty( $results ) ) {
 			return $output;
@@ -140,7 +140,7 @@ class WooCommerceOrder {
 	 */
 	public static function anonymize( int $order_id = 0 ) {
 		$user_id = get_post_meta( $order_id, '_customer_user', true );
-		if ( empty( $user_id ) || get_user_by( 'id', $user_id ) == false ) {
+		if ( empty( $user_id ) || get_user_by( 'id', $user_id ) === false ) {
 			$user_id = false;
 		}
 

@@ -39,12 +39,16 @@ class RequestAccessForm extends AbstractShortcode {
 			if ( AdminHelper::userIsAdmin() ) {
 				return $this->wrapOutput(
 					sprintf(
-						__( 'The request form has been disabled, you can enable it <a href="%s">here</a>.', 'wp-gdpr-compliance' ),
-						add_query_arg( [
-							'page'    => Plugin::PLUGIN_SLUG,
-							'tab'     => PageDashboard::TAB_SETTINGS,
-							'section' => PageSettings::SECTION_REQUEST
-						], admin_url() )
+						/* translators: %s: URL to the settings page */
+						wp_kses( __( 'The request form has been disabled, you can enable it <a href="%s">here</a>.', 'wp-gdpr-compliance' ), [ 'a' => [ 'href' => [] ] ] ),
+						add_query_arg(
+							[
+								'page'    => Plugin::PLUGIN_SLUG,
+								'tab'     => PageDashboard::TAB_SETTINGS,
+								'section' => PageSettings::SECTION_REQUEST,
+							],
+							admin_url()
+						)
 					)
 				);
 			}
@@ -52,11 +56,17 @@ class RequestAccessForm extends AbstractShortcode {
 			return '';
 		}
 
-		$output = apply_filters( Plugin::PREFIX . '_request_form', Template::get( 'Front/Form/AccessRequest/main', [
-			'email'   => esc_attr__( 'Your Email Address', 'wp-gdpr-compliance' ),
-			'consent' => Settings::getAccessRequestFormCheckboxText(),
-			'submit'  => esc_attr__( 'Send', 'wp-gdpr-compliance' ),
-		] ) );
+		$output = apply_filters(
+			Plugin::PREFIX . '_request_form',
+			Template::get(
+				'Front/Form/AccessRequest/main',
+				[
+					'email'   => esc_attr__( 'Your Email Address', 'wp-gdpr-compliance' ),
+					'consent' => Settings::getAccessRequestFormCheckboxText(),
+					'submit'  => esc_attr__( 'Send', 'wp-gdpr-compliance' ),
+				]
+			)
+		);
 
 		return $this->wrapOutput( $output );
 	}
@@ -74,7 +84,7 @@ class RequestAccessForm extends AbstractShortcode {
 	 * @return string
 	 */
 	private static function getData(): string {
-		$token   = isset( $_REQUEST[ Plugin::PREFIX ] ) ? urldecode( $_REQUEST[ Plugin::PREFIX ] ) : false;
+		$token   = isset( $_REQUEST[ Plugin::PREFIX ] ) ? sanitize_title_with_dashes( urldecode( wp_unslash( $_REQUEST[ Plugin::PREFIX ] ) ) ) : false; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 		$request = $token !== false ? RequestAccess::getByToken( $token ) : false;
 		if ( empty( $request ) ) {
 			return self::getNoneText();
@@ -87,26 +97,32 @@ class RequestAccessForm extends AbstractShortcode {
 		$email        = $request->getEmailAddress();
 		$integrations = Request::getData( $request, true );
 		$chapters     = [
-			                'intro' => [
-				                'title'   => '',
-				                'content' => '',
-				                'notice'  => apply_filters( Plugin::PREFIX . '_the_content', Settings::getDeleteRequestFormExplanationText() ),
-			                ],
-		                ] + $integrations;
+			'intro' => [
+				'title'   => '',
+				'content' => '',
+				'notice'  => apply_filters( Plugin::PREFIX . '_the_content', Settings::getDeleteRequestFormExplanationText() ),
+			],
+		] + $integrations;
 
 		if ( empty( $integrations ) ) {
-			$chapters = array_merge( $chapters, [
-				'no-integrations' => [
-					'title'   => '',
-					'content' => '',
-					'notice'  => __( "No data is stored in relation to this email address", 'wp-gdpr-compliance' )
+			$chapters = array_merge(
+				$chapters,
+				[
+					'no-integrations' => [
+						'title'   => '',
+						'content' => '',
+						'notice'  => __( 'No data is stored in relation to this email address', 'wp-gdpr-compliance' ),
+					],
 				]
-			] );
+			);
 		}
 
-		$output = Template::get( 'Front/Form/AccessRequest/Submit/success', [
-			'chapters' => $chapters,
-		] );
+		$output = Template::get(
+			'Front/Form/AccessRequest/Submit/success',
+			[
+				'chapters' => $chapters,
+			]
+		);
 
 		return apply_filters( Plugin::PREFIX . '_request_data', $output, new Data( $email ), $request );
 	}
@@ -123,6 +139,7 @@ class RequestAccessForm extends AbstractShortcode {
 			return Template::get( $template, [ 'message' => $message ] );
 		}
 
+		/* translators: %1s: The link element */
 		$append  = sprintf( __( 'If needed, you can put in a new request here: %1s', 'wp-gdpr-compliance' ), $link_el );
 		$message = implode( '<br /><br />', [ $message, $append ] );
 
@@ -141,6 +158,7 @@ class RequestAccessForm extends AbstractShortcode {
 			return Template::get( $template, [ 'message' => $message ] );
 		}
 
+		/* translators: %1s: The link element */
 		$append  = sprintf( __( 'If needed, you can put in a new request after 24 hours here: %1s', 'wp-gdpr-compliance' ), $link_el );
 		$message = implode( '<br /><br />', [ $message, $append ] );
 

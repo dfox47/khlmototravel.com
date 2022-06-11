@@ -9,5 +9,10 @@ use WPGDPRC\WordPress\Plugin;
 ?>
 
 <div class="wpgdprc-message wpgdprc-message--error">
-	<p><?php printf(__('<strong>ERROR</strong>: %1s', 'wp-gdpr-compliance'), $message); ?></p>
+	<p>
+		<?php
+			/* translators: %1s: error message */
+			echo wp_kses(sprintf( __( '<strong>ERROR</strong>: %1s', 'wp-gdpr-compliance' ), $message ), \WPGDPRC\Utils\AdminHelper::getAllAllowedSvgTags() );
+		?>
+	</p>
 </div>

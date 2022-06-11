@@ -65,7 +65,7 @@ class ContactForm extends AbstractPlugin {
 	 *
 	 * @return array
 	 */
-	public function getResults(bool $front, string $search ): array {
+	public function getResults( bool $front, string $search ): array {
 		return [];
 	}
 
@@ -169,17 +169,19 @@ class ContactForm extends AbstractPlugin {
 	 */
 	public function getList(): array {
 		$list  = [];
-		$posts = get_posts( [
-			'post_type'   => 'wpcf7_contact_form',
-			'numberposts' => - 1,
-			'post_status' => [ 'publish', 'draft' ]
-		] );
+		$posts = get_posts(
+			[
+				'post_type'   => 'wpcf7_contact_form',
+				'numberposts' => - 1,
+				'post_status' => [ 'publish', 'draft' ],
+			]
+		);
 		if ( empty( $posts ) ) {
 			return $list;
 		}
 
 		foreach ( $posts as $form ) {
-			$status_text = $form->post_status != 'publish' ? _x( 'draft', 'admin', 'wp-gdpr-compliance' ) : _x( 'published', 'admin', 'wp-gdpr-compliance' );
+			$status_text = $form->post_status !== 'publish' ? _x( 'draft', 'admin', 'wp-gdpr-compliance' ) : _x( 'published', 'admin', 'wp-gdpr-compliance' );
 
 			$list[ $form->ID ] = sprintf( '%1s (%2s)', $form->post_title, $status_text );
 		}
@@ -420,8 +422,9 @@ class ContactForm extends AbstractPlugin {
 			return $form;
 		}
 
-		$data   = $entry->get_posted_data();
-		$value  = $this->getAcceptedDate( isset( $data[ $this->getFieldTag() ] ) && $data[ $this->getFieldTag() ] == 1 );
+		$data  = $entry->get_posted_data();
+		$value = $this->getAcceptedDate( isset( $data[ $this->getFieldTag() ] ) && $data[ $this->getFieldTag() ] === 1 );
+		/* translators: %1s: Date */
 		$text   = sprintf( __( "GDPR accepted on:\n%1s", 'wp-gdpr-compliance' ), $value );
 		$output = apply_filters( Plugin::PREFIX . '_cf7_mail_body_output', $text, $data, $entry );
 
@@ -452,7 +455,7 @@ class ContactForm extends AbstractPlugin {
 
 		$value = false;
 		if ( ! empty( $_POST[ $this->getFieldTag() ] ) ) {
-			$value = filter_var( $_POST[ $this->getFieldTag() ], FILTER_VALIDATE_BOOLEAN );
+			$value = filter_var( wp_unslash( $_POST[ $this->getFieldTag() ] ), FILTER_VALIDATE_BOOLEAN );
 		}
 		if ( ! empty( $value ) ) {
 			return $result;
@@ -483,7 +486,7 @@ class ContactForm extends AbstractPlugin {
 		}
 
 		$tag = is_array( $tag ) ? new \WPCF7_FormTag( $tag ) : $tag;
-		if ( $tag->type != $this->getFieldTag() ) {
+		if ( $tag->type !== $this->getFieldTag() ) {
 			return false;
 		}
 
@@ -517,12 +520,15 @@ class ContactForm extends AbstractPlugin {
 			return;
 		}
 
-		add_action( 'shutdown', function () use ( $id ) {
-			$present = preg_match( '/\[wpgdprc .*]/', get_post_meta( $id, '_form', true ) );
-			if ( $present ) {
-				return;
+		add_action(
+			'shutdown',
+			function () use ( $id ) {
+				$present = preg_match( '/\[wpgdprc .*]/', get_post_meta( $id, '_form', true ) );
+				if ( $present ) {
+					return;
+				}
+				$this->addFormTag( $id );
 			}
-			$this->addFormTag( $id );
-		} );
+		);
 	}
 }

@@ -60,7 +60,7 @@ class Comment {
 	 */
 	public function load() {
 		global $wpdb;
-		$query = "SELECT * FROM `" . $wpdb->users . "` WHERE `ID` = %d";
+		$query = 'SELECT * FROM `' . $wpdb->users . '` WHERE `ID` = %d';
 		$row   = $wpdb->get_row( $wpdb->prepare( $query, $this->getId() ) );
 		if ( empty( $row ) ) {
 			return;
@@ -98,7 +98,7 @@ class Comment {
 		}
 
 		global $wpdb;
-		$query   = "SELECT * FROM " . $wpdb->comments . " WHERE `comment_author_email` = %s";
+		$query   = 'SELECT * FROM ' . $wpdb->comments . ' WHERE `comment_author_email` = %s';
 		$results = $wpdb->get_results( $wpdb->prepare( $query, $email ) );
 		if ( empty( $results ) ) {
 			return $output;
@@ -126,7 +126,7 @@ class Comment {
 			'comment_author_IP'    => Anonymous::getIpAddress(),
 			'comment_author_url'   => Anonymous::getSiteUrl(),
 			'user_id'              => 0,
-			'comment_agent'        => ''
+			'comment_agent'        => '',
 		];
 
 		return wp_update_comment( $data );

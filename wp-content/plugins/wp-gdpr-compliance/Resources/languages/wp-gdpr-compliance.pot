@@ -1,16 +1,16 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: WP GDPR Compliance v2\n"
-"POT-Creation-Date: 2021-11-29 10:10+0100\n"
+"POT-Creation-Date: 2022-05-06 10:52+0200\n"
 "PO-Revision-Date: 2020-06-24 17:01+0200\n"
 "Last-Translator: Saskia Bouten <saskia@van-ons.nl>\n"
 "Language-Team: Saskia Bouten <saskia@van-ons.nl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: wp-gdpr-compliance.php\n"
@@ -26,15 +26,17 @@ msgstr ""
 msgid "Not accepted."
 msgstr ""
 
-#: Integrations/AbstractIntegration.php:237
+#. translators: %s: date
+#: Integrations/AbstractIntegration.php:238
 #, php-format
 msgid "Accepted on %s."
 msgstr ""
 
-#: Integrations/AbstractIntegration.php:252 WordPress/Settings.php:58
+#: Integrations/AbstractIntegration.php:253 WordPress/Settings.php:61
 msgid "Privacy Policy"
 msgstr ""
 
+#. translators: %1s: plugin name
 #: Integrations/Plugins/AbstractPlugin.php:131
 #, php-format
 msgctxt "admin"
@@ -46,26 +48,29 @@ msgctxt "admin"
 msgid "not activated"
 msgstr ""
 
-#: Integrations/Plugins/AbstractPlugin.php:142
+#. translators: %1$1s: plugin name %2$2s: activation link element with text "Not activated"
+#: Integrations/Plugins/AbstractPlugin.php:143
 #, php-format
 msgctxt "admin"
-msgid "Currently the %1s plugin is installed, but %2s."
+msgid "Currently the %1$1s plugin is installed, but %2$2s."
 msgstr ""
 
-#: Integrations/Plugins/AbstractPlugin.php:151
+#: Integrations/Plugins/AbstractPlugin.php:152
 msgctxt "admin"
 msgid "this version is not supported"
 msgstr ""
 
-#: Integrations/Plugins/AbstractPlugin.php:153
+#. translators: %1$1s: plugin name %2$2s: link %3$3s: Version
+#: Integrations/Plugins/AbstractPlugin.php:155
 #, php-format
 msgctxt "admin"
 msgid ""
-"Currently the %1s plugin is installed, but %2s. The plugin will be supported "
-"from version %3s and up."
+"Currently the %1$1s plugin is installed, but %2$2s. The plugin will be "
+"supported from version %3$3s and up."
 msgstr ""
 
-#: Integrations/Plugins/AbstractPlugin.php:161
+#. translators: %1$1s: plugin name
+#: Integrations/Plugins/AbstractPlugin.php:164
 #, php-format
 msgctxt "admin"
 msgid ""
@@ -74,7 +79,7 @@ msgid ""
 msgstr ""
 
 #: Integrations/Plugins/ContactForm.php:125
-#: Integrations/Plugins/GravityForms.php:148
+#: Integrations/Plugins/GravityForms.php:149
 msgid "Forms Entries"
 msgstr ""
 
@@ -84,7 +89,7 @@ msgid "Contact Form 7"
 msgstr ""
 
 #: Integrations/Plugins/ContactForm.php:151
-#: Integrations/Plugins/GravityForms.php:174
+#: Integrations/Plugins/GravityForms.php:175
 msgctxt "admin"
 msgid ""
 "When activated the GDPR checkbox will be added at the end of each "
@@ -92,164 +97,171 @@ msgid ""
 msgstr ""
 
 #: Integrations/Plugins/ContactForm.php:162
-#: Integrations/Plugins/GravityForms.php:185
+#: Integrations/Plugins/GravityForms.php:186
 msgctxt "amount of entries"
 msgid "Anonymize selected entry"
 msgid_plural "Anonymize selected entry/entries"
 msgstr[0] ""
 msgstr[1] ""
 
-#: Integrations/Plugins/ContactForm.php:182
+#: Integrations/Plugins/ContactForm.php:184
 msgctxt "admin"
 msgid "draft"
 msgstr ""
 
-#: Integrations/Plugins/ContactForm.php:182
+#: Integrations/Plugins/ContactForm.php:184
 msgctxt "admin"
 msgid "published"
 msgstr ""
 
-#: Integrations/Plugins/ContactForm.php:425
+#. translators: %1s: Date
+#: Integrations/Plugins/ContactForm.php:428
 #, php-format
 msgid ""
 "GDPR accepted on:\n"
 "%1s"
 msgstr ""
 
-#: Integrations/Plugins/GravityForms.php:92
+#. translators: %1s: search query
+#: Integrations/Plugins/GravityForms.php:93
 #, php-format
 msgid "No form entries found with email address%1s."
 msgstr ""
 
-#: Integrations/Plugins/GravityForms.php:151
+#: Integrations/Plugins/GravityForms.php:152
 msgctxt "admin"
 msgid "Gravity Forms"
 msgstr ""
 
-#: Integrations/Plugins/GravityForms.php:204
+#: Integrations/Plugins/GravityForms.php:205
 msgctxt "admin"
 msgid "disabled"
 msgstr ""
 
-#: Integrations/Plugins/GravityForms.php:204
+#: Integrations/Plugins/GravityForms.php:205
 msgctxt "admin"
 msgid "enabled"
 msgstr ""
 
-#: Integrations/Plugins/WooCommerce.php:87
+#. translators: %1s: search query
+#: Integrations/Plugins/WooCommerce.php:88
 #, php-format
 msgid "No orders found with email address%1s."
 msgstr ""
 
-#: Integrations/Plugins/WooCommerce.php:105
+#: Integrations/Plugins/WooCommerce.php:106
 msgid "Orders"
 msgstr ""
 
-#: Integrations/Plugins/WooCommerce.php:108
+#: Integrations/Plugins/WooCommerce.php:109
 msgctxt "admin"
 msgid "WooCommerce"
 msgstr ""
 
-#: Integrations/Plugins/WooCommerce.php:125
+#: Integrations/Plugins/WooCommerce.php:126
 msgctxt "admin"
 msgid ""
 "When activated the GDPR checkbox will be added at the end of the WooCommerce "
 "checkout form."
 msgstr ""
 
-#: Integrations/Plugins/WooCommerce.php:136
+#: Integrations/Plugins/WooCommerce.php:137
 msgctxt "amount of shop orders"
 msgid "Anonymize selected shop order"
 msgid_plural "Anonymize selected shop order(s)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: Integrations/Plugins/WooCommerce.php:199
+#: Integrations/Plugins/WooCommerce.php:203
 msgid "GDPR accepted on:"
 msgstr ""
 
-#: Integrations/WPComments.php:96
+#. translators: %1s: search query
+#: Integrations/WPComments.php:97
 #, php-format
 msgid "No comments found with email address%1s."
 msgstr ""
 
-#: Integrations/WPComments.php:109
+#: Integrations/WPComments.php:110
 msgid "Comments"
 msgstr ""
 
-#: Integrations/WPComments.php:112
+#: Integrations/WPComments.php:113
 msgctxt "admin"
 msgid "WordPress Comments"
 msgstr ""
 
-#: Integrations/WPComments.php:119
+#: Integrations/WPComments.php:120
 msgctxt "admin"
 msgid ""
 "When activated the GDPR checkbox will be added automatically, just above the "
 "submit button."
 msgstr ""
 
-#: Integrations/WPComments.php:130
+#: Integrations/WPComments.php:131
 msgctxt "amount of comments"
 msgid "Anonymize selected comment"
 msgid_plural "Anonymize selected comment(s)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: Integrations/WPComments.php:148
+#: Integrations/WPComments.php:149
 msgctxt "admin"
 msgid ""
 "Please disable the custom comments form in Jetpack to make your WordPress "
 "Comments GDPR compliant."
 msgstr ""
 
-#: Integrations/WPComments.php:170
+#: Integrations/WPComments.php:171
 msgid "This checkbox is checked because you are an admin"
 msgstr ""
 
-#: Integrations/WPComments.php:198
+#: Integrations/WPComments.php:202
 msgid "Comment Submission Failure"
 msgstr ""
 
-#: Integrations/WPComments.php:221
+#: Integrations/WPComments.php:225
 msgctxt "admin"
 msgid "GDPR accepted on"
 msgstr ""
 
-#: Integrations/WPRegistration.php:96
+#. translators: %1s: search query
+#: Integrations/WPRegistration.php:97
 #, php-format
 msgid "No users found with email address%1s."
 msgstr ""
 
-#: Integrations/WPRegistration.php:109
+#: Integrations/WPRegistration.php:110
 msgid "Users"
 msgstr ""
 
-#: Integrations/WPRegistration.php:112
+#: Integrations/WPRegistration.php:113
 msgctxt "admin"
 msgid "WordPress Registration"
 msgstr ""
 
-#: Integrations/WPRegistration.php:119
+#: Integrations/WPRegistration.php:120
 msgctxt "admin"
 msgid ""
 "When activated the GDPR checkbox will be added automatically, just above the "
 "register button."
 msgstr ""
 
-#: Integrations/WPRegistration.php:130
+#: Integrations/WPRegistration.php:131
 msgctxt "amount of users"
 msgid "Anonymize selected user"
 msgid_plural "Anonymize selected user(s)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: Integrations/WPRegistration.php:167 Templates/Front/Elements/error.php:12
+#. translators: %s: error message
+#. translators: %1s: error message
+#: Integrations/WPRegistration.php:175 Templates/Front/Elements/error.php:15
 #, php-format
 msgid "<strong>ERROR</strong>: %1s"
 msgstr ""
 
-#: Integrations/WPRegistration.php:220
+#: Integrations/WPRegistration.php:231
 msgid "User has given consent when registering"
 msgstr ""
 
@@ -322,7 +334,7 @@ msgstr ""
 msgid "Form"
 msgstr ""
 
-#: Objects/Data/Data.php:250
+#: Objects/Data/Data.php:258
 msgid "Anonymize selected data"
 msgstr ""
 
@@ -330,122 +342,127 @@ msgstr ""
 msgid "Registration"
 msgstr ""
 
-#: Objects/DataProcessor.php:310
+#: Objects/DataProcessor.php:326
 msgctxt "admin"
 msgid "Wrap my code in <script> tags"
 msgstr ""
 
-#: Objects/DataProcessor.php:311
+#: Objects/DataProcessor.php:327
 msgctxt "admin"
 msgid "Do not wrap my code"
 msgstr ""
 
-#: Objects/DataProcessor.php:321
+#: Objects/DataProcessor.php:337
 msgctxt "admin"
 msgid "Head (in the <head> tag)"
 msgstr ""
 
-#: Objects/DataProcessor.php:322
+#: Objects/DataProcessor.php:338
 msgctxt "admin"
 msgid "Body (direct after the <body> tag)"
 msgstr ""
 
-#: Objects/DataProcessor.php:323
+#: Objects/DataProcessor.php:339
 msgctxt "admin"
 msgid "Footer (at the end of the <body> tag)"
 msgstr ""
 
-#: Objects/RequestDelete.php:368 Objects/RequestDelete.php:374
+#: Objects/RequestDelete.php:401 Objects/RequestDelete.php:407
 msgid "Unable to locate request."
 msgstr ""
 
-#: Objects/RequestDelete.php:381 WordPress/Ajax/ProcessRequest.php:83
+#: Objects/RequestDelete.php:414 WordPress/Ajax/ProcessRequest.php:90
 msgid "No requests to process."
 msgstr ""
 
-#: Objects/RequestDelete.php:390
+#: Objects/RequestDelete.php:423
 msgctxt "admin"
 msgid "This request has already been processed."
 msgstr ""
 
-#: Objects/RequestDelete.php:397
+#: Objects/RequestDelete.php:430
 msgctxt "admin"
 msgid "You're not allowed to edit users."
 msgstr ""
 
-#: Objects/RequestDelete.php:403
+#: Objects/RequestDelete.php:436
 msgctxt "admin"
 msgid "This user doesn't exist."
 msgstr ""
 
-#: Objects/RequestDelete.php:416
+#: Objects/RequestDelete.php:449
 msgctxt "admin"
 msgid "You're not allowed to edit comments."
 msgstr ""
 
-#: Objects/RequestDelete.php:422
+#: Objects/RequestDelete.php:455
 msgctxt "admin"
 msgid "This comment doesn't exist."
 msgstr ""
 
-#: Objects/RequestDelete.php:431
+#: Objects/RequestDelete.php:464
 msgctxt "admin"
 msgid "You're not allowed to edit WooCommerce orders."
 msgstr ""
 
-#: Objects/RequestDelete.php:440
+#: Objects/RequestDelete.php:473
 msgctxt "admin"
 msgid "You're not allowed to edit form entries."
 msgstr ""
 
-#: Objects/RequestDelete.php:454
+#. translators: %1$1s: Nice label %2$2s: id %3$3s: email
+#: Objects/RequestDelete.php:490
 #, php-format
-msgid "%1s #%2s with email address %3s."
+msgid "%1$1s #%2$2s with email address %3$3s."
 msgstr ""
 
-#: Objects/RequestDelete.php:474
+#. translators: %s Email subject - site name
+#: Objects/RequestDelete.php:517
 #, php-format
 msgid "%s - Your request"
 msgstr ""
 
-#: Objects/RequestDelete.php:478
+#. translators: %s Site home link element
+#: Objects/RequestDelete.php:522
 #, php-format
 msgid ""
 "We have successfully processed your request and your data has been "
 "anonymized on %s."
 msgstr ""
 
-#: Objects/RequestDelete.php:479
+#: Objects/RequestDelete.php:523
 msgid "The following has been processed:"
 msgstr ""
 
-#: Objects/RequestDelete.php:491
+#: Objects/RequestDelete.php:537
 msgctxt "admin"
 msgid "Successfully sent a confirmation mail to the user."
 msgstr ""
 
-#: Templates/Admin/Elements/updatecount.php:10
+#: Templates/Admin/Elements/updatecount.php:13
 msgctxt "admin"
 msgid "Update available"
 msgstr ""
 
-#: Templates/Admin/Form/field-pageselect.php:22
+#: Templates/Admin/Form/field-pageselect.php:26
 msgctxt "admin"
 msgid "Select a page"
 msgstr ""
 
-#: Templates/Admin/Form/field-pageselect.php:28
+#: Templates/Admin/Form/field-pageselect.php:41
 msgctxt "admin"
 msgid "Edit page"
 msgstr ""
 
-#: Templates/Admin/Form/field-todo.php:8
+#. translators: %1s: class
+#: Templates/Admin/Form/field-todo.php:10
 #, php-format
 msgctxt "admin"
 msgid "No render method yet, please add one in %1s"
 msgstr ""
 
-#: Templates/Admin/Pages/Dashboard/main.php:25
+#. translators: %1s: number of checkboxes
+#: Templates/Admin/Pages/Dashboard/main.php:26
 #, php-format
 msgctxt "admin"
 msgid "%1s Active checkbox"
@@ -453,7 +470,8 @@ msgid_plural "%1s Active checkboxes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: Templates/Admin/Pages/Dashboard/main.php:26
+#. translators: %1s: number of forms
+#: Templates/Admin/Pages/Dashboard/main.php:28
 #, php-format
 msgctxt "admin"
 msgid "%1s form doesn’t seem to have a checkbox enabled"
@@ -461,12 +479,13 @@ msgid_plural "%1s forms don’t seem to have a checkbox enabled"
 msgstr[0] ""
 msgstr[1] ""
 
-#: Templates/Admin/Pages/Dashboard/main.php:28
+#: Templates/Admin/Pages/Dashboard/main.php:30
 msgctxt "admin"
 msgid "Manage checkboxes"
 msgstr ""
 
-#: Templates/Admin/Pages/Dashboard/main.php:35
+#. translators: %1s: number of active data processor
+#: Templates/Admin/Pages/Dashboard/main.php:38
 #, php-format
 msgctxt "admin"
 msgid "%1s Active data processor"
@@ -474,29 +493,32 @@ msgid_plural "%1s Active data processors"
 msgstr[0] ""
 msgstr[1] ""
 
-#: Templates/Admin/Pages/Dashboard/main.php:36
-#: Templates/Admin/Pages/Processors/footer.php:27
+#. translators: %1s: consent bar status
+#. translators: %1s: Consent bar status
+#: Templates/Admin/Pages/Dashboard/main.php:40
+#: Templates/Admin/Pages/Processors/footer.php:28
 #, php-format
 msgctxt "admin"
 msgid "The consent bar is %1s"
 msgstr ""
 
-#: Templates/Admin/Pages/Dashboard/main.php:36
+#: Templates/Admin/Pages/Dashboard/main.php:40
 msgctxt "admin"
 msgid "showing"
 msgstr ""
 
-#: Templates/Admin/Pages/Dashboard/main.php:36
+#: Templates/Admin/Pages/Dashboard/main.php:40
 msgctxt "admin"
 msgid "not showing"
 msgstr ""
 
-#: Templates/Admin/Pages/Dashboard/main.php:38
+#: Templates/Admin/Pages/Dashboard/main.php:42
 msgctxt "admin"
 msgid "Manage data processors"
 msgstr ""
 
-#: Templates/Admin/Pages/Dashboard/main.php:45
+#. translators: %1s: number of requests
+#: Templates/Admin/Pages/Dashboard/main.php:50
 #, php-format
 msgctxt "admin"
 msgid "%1s Data request"
@@ -504,37 +526,38 @@ msgid_plural "%1s Data requests"
 msgstr[0] ""
 msgstr[1] ""
 
-#: Templates/Admin/Pages/Dashboard/main.php:46
+#. translators: %1s: last request
+#: Templates/Admin/Pages/Dashboard/main.php:52
 #, php-format
 msgctxt "admin"
 msgid "Last request is from %1s"
 msgstr ""
 
-#: Templates/Admin/Pages/Dashboard/main.php:48
+#: Templates/Admin/Pages/Dashboard/main.php:54
 msgctxt "admin"
 msgid "Manage data requests"
 msgstr ""
 
-#: Templates/Admin/Pages/Dashboard/main.php:58
+#: Templates/Admin/Pages/Dashboard/main.php:64
 msgctxt "admin"
 msgid "Own a business website?"
 msgstr ""
 
-#: Templates/Admin/Pages/Dashboard/main.php:59
+#: Templates/Admin/Pages/Dashboard/main.php:65
 msgctxt "admin"
 msgid ""
 "Try our premium plan for free for 30 days, and make sure your website is "
 "globally compliant."
 msgstr ""
 
-#: Templates/Admin/Pages/Dashboard/main.php:61
+#: Templates/Admin/Pages/Dashboard/main.php:67
 msgctxt "admin"
 msgid "Try it out now"
 msgstr ""
 
-#: Templates/Admin/Pages/Dashboard/main.php:72
-#: WordPress/Admin/Pages/PageDashboard.php:48
-#: WordPress/Admin/Pages/PageDashboard.php:75
+#: Templates/Admin/Pages/Dashboard/main.php:81
+#: WordPress/Admin/Pages/PageDashboard.php:40
+#: WordPress/Admin/Pages/PageDashboard.php:69
 msgctxt "admin"
 msgid "Dashboard"
 msgstr ""
@@ -554,12 +577,12 @@ msgid ""
 "consent solutions (and steer clear of huge fines!)."
 msgstr ""
 
-#: Templates/Admin/Pages/Dashboard/welcome.php:17 Templates/Admin/header.php:16
+#: Templates/Admin/Pages/Dashboard/welcome.php:20 Templates/Admin/header.php:19
 msgctxt "admin"
 msgid "Sign up for a 30-day free trial"
 msgstr ""
 
-#: Templates/Admin/Pages/Dashboard/welcome.php:24
+#: Templates/Admin/Pages/Dashboard/welcome.php:30
 msgctxt "admin"
 msgid ""
 "You’re currently using our the fully featured consent solution, so we’ve got "
@@ -577,20 +600,20 @@ msgid "Business websites often have to comply with more than just GDPR"
 msgstr ""
 
 #: Templates/Admin/Pages/Premium/main.php:31
-#: Templates/Admin/Pages/Wizard/Steps/ci.php:41
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:55
 msgctxt "admin"
 msgid "Is that you?"
 msgstr ""
 
 #: Templates/Admin/Pages/Premium/main.php:32
-#: Templates/Admin/Pages/Wizard/Steps/ci.php:45
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:59
 msgctxt "admin"
 msgid "If so, we recommend trying our free 30-day trial so you can:"
 msgstr ""
 
 #: Templates/Admin/Pages/Premium/main.php:35
-#: Templates/Admin/Pages/Wizard/Steps/ci.php:49
-#: Templates/Admin/Pages/Wizard/Steps/ci.php:68
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:63
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:82
 msgctxt "admin"
 msgid ""
 "<strong>Remove all risk</strong> by complying with all global privacy "
@@ -605,24 +628,25 @@ msgid ""
 msgstr ""
 
 #: Templates/Admin/Pages/Premium/main.php:37
-#: Templates/Admin/Pages/Wizard/Steps/ci.php:51
-#: Templates/Admin/Pages/Wizard/Steps/ci.php:70
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:65
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:84
 msgctxt "admin"
 msgid "<strong>Customize your content</strong> and so much more!"
 msgstr ""
 
-#: Templates/Admin/Pages/Premium/main.php:41
-#: Templates/Admin/Pages/Wizard/Steps/ci.php:73 Templates/Admin/modal.php:15
+#: Templates/Admin/Pages/Premium/main.php:44
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:90
+#: Templates/Admin/solution-modal.php:16
 msgctxt "admin"
 msgid "Start your 30-day free trial"
 msgstr ""
 
-#: Templates/Admin/Pages/Premium/main.php:50
+#: Templates/Admin/Pages/Premium/main.php:56
 msgctxt "admin"
 msgid "Replace your free pop-up with the upgraded one"
 msgstr ""
 
-#: Templates/Admin/Pages/Premium/main.php:53
+#: Templates/Admin/Pages/Premium/main.php:59
 msgctxt "admin"
 msgid ""
 "Already have a Cookie Information account and added your domain? Great! Hit "
@@ -630,7 +654,7 @@ msgid ""
 "global one."
 msgstr ""
 
-#: Templates/Admin/Pages/Premium/main.php:58
+#: Templates/Admin/Pages/Premium/main.php:66
 msgctxt "admin"
 msgid "Turn on"
 msgstr ""
@@ -661,18 +685,18 @@ msgctxt "admin"
 msgid "ID"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/Edit/main.php:42
+#: Templates/Admin/Pages/Processors/Edit/main.php:45
 msgctxt "admin"
 msgid "Title of processor"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/Edit/main.php:45
-#: WordPress/Admin/Pages/PageSettings.php:297
+#: Templates/Admin/Pages/Processors/Edit/main.php:51
+#: WordPress/Admin/Pages/PageSettings.php:298
 msgctxt "admin"
 msgid "Title"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/Edit/main.php:46
+#: Templates/Admin/Pages/Processors/Edit/main.php:52
 msgctxt "admin"
 msgid ""
 "Name your processor wisely, the name of the processor is shown in the popup "
@@ -680,17 +704,18 @@ msgid ""
 "\"Advertisement\""
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/Edit/main.php:51
+#: Templates/Admin/Pages/Processors/Edit/main.php:63
 msgctxt "admin"
 msgid "Description"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/Edit/main.php:53
+#: Templates/Admin/Pages/Processors/Edit/main.php:68
 msgctxt "admin"
 msgid "A short description of the processor"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/Edit/main.php:54
+#. translators: %1s: placeholder value
+#: Templates/Admin/Pages/Processors/Edit/main.php:70
 #, php-format
 msgctxt "admin"
 msgid ""
@@ -698,22 +723,22 @@ msgid ""
 "here."
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/Edit/main.php:59
+#: Templates/Admin/Pages/Processors/Edit/main.php:81
 msgctxt "admin"
 msgid "Code wrap"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/Edit/main.php:67
+#: Templates/Admin/Pages/Processors/Edit/main.php:98
 msgctxt "admin"
 msgid "Placement"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/Edit/main.php:76
+#: Templates/Admin/Pages/Processors/Edit/main.php:116
 msgctxt "admin"
 msgid "Code snippet"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/Edit/main.php:84
+#: Templates/Admin/Pages/Processors/Edit/main.php:130
 msgctxt "admin"
 msgid "Save processor"
 msgstr ""
@@ -729,62 +754,63 @@ msgid "not active"
 msgstr ""
 
 #: Templates/Admin/Pages/Processors/footer.php:26
-#: WordPress/Admin/Pages/PageDashboard.php:80
+#: WordPress/Admin/Pages/PageDashboard.php:74
 msgctxt "admin"
 msgid "Cookie pop-up"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/footer.php:28
+#: Templates/Admin/Pages/Processors/footer.php:33
 msgctxt "admin"
 msgid "Toggle consent bar"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/footer.php:29
+#: Templates/Admin/Pages/Processors/footer.php:44
 msgctxt "admin"
 msgid ""
 "<strong>(!)</strong> By deactivating the pop-up, you’ll no longer be asking "
 "people for consent, and you’re at risk of being non-compliant."
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/footer.php:29
+#: Templates/Admin/Pages/Processors/footer.php:44
 msgctxt "admin"
 msgid "To enable the Cookie pop-up, activate one (or more) data processors."
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/footer.php:32
+#: Templates/Admin/Pages/Processors/footer.php:47
 msgctxt "admin"
 msgid "Reset Cookie pop-up"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/footer.php:33
+#: Templates/Admin/Pages/Processors/footer.php:48
 msgctxt "admin"
 msgid ""
 "Want to reset the Cookie pop-up? This means that the consent bar will appear "
 "again for all users."
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/footer.php:35
+#: Templates/Admin/Pages/Processors/footer.php:51
 msgctxt "admin"
 msgid "Reset"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/footer.php:40
+#: Templates/Admin/Pages/Processors/footer.php:60
 msgctxt "admin"
 msgid "Change the look"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/footer.php:41
+#: Templates/Admin/Pages/Processors/footer.php:61
 msgctxt "admin"
 msgid "Change the colors of the consent bar and the settings."
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/footer.php:44
+#: Templates/Admin/Pages/Processors/footer.php:64
 msgctxt "admin"
 msgid "Change settings"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/footer.php:54 WordPress/Admin.php:117
-#: WordPress/Admin.php:131 WordPress/Admin/Pages/PageDashboard.php:89
+#. translators: %1s: The plugin name
+#: Templates/Admin/Pages/Processors/footer.php:75 WordPress/Admin.php:120
+#: WordPress/Admin.php:136 WordPress/Admin/Pages/PageDashboard.php:91
 #: WordPress/Admin/Pages/PageSettings.php:46
 msgctxt "admin"
 msgid "Settings"
@@ -800,81 +826,86 @@ msgctxt "admin"
 msgid "never"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/item.php:29
+#. translators: %1s: date
+#: Templates/Admin/Pages/Processors/item.php:32
 #, php-format
 msgctxt "admin"
 msgid "(Last edited on %1s)"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/item.php:42
+#: Templates/Admin/Pages/Processors/item.php:53
 msgctxt "admin"
 msgid "Edit"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/item.php:48
-#: Templates/Admin/Pages/Requests/main.php:116
+#: Templates/Admin/Pages/Processors/item.php:60
+#: Templates/Admin/Pages/Requests/main.php:109
 msgctxt "admin"
 msgid "Delete"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/item.php:53
+#: Templates/Admin/Pages/Processors/item.php:65
 msgctxt "admin"
 msgid "Are you sure you want to delete this processor?"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/item.php:58
-#: Templates/Admin/Pages/Requests/main.php:136 Utils/AdminForm.php:107
+#: Templates/Admin/Pages/Processors/item.php:71
+#: Templates/Admin/Pages/Requests/main.php:126 Utils/AdminForm.php:107
 msgctxt "admin"
 msgid "Yes"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/item.php:64
-#: Templates/Admin/Pages/Requests/main.php:142
+#: Templates/Admin/Pages/Processors/item.php:78
+#: Templates/Admin/Pages/Requests/main.php:131
 msgctxt "admin"
 msgid "Cancel"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/main.php:30
+#. translators: %1s: number of active data processor
+#: Templates/Admin/Pages/Processors/main.php:34
 #, php-format
 msgctxt "admin"
 msgid "Active data processors (%1$s)"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/main.php:36
+#. translators: %1s: number of disabled data processor
+#: Templates/Admin/Pages/Processors/main.php:41
 #, php-format
 msgctxt "admin"
 msgid "Disabled data processors (%1$s)"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/main.php:60
+#: Templates/Admin/Pages/Processors/main.php:65
 msgctxt "admin"
 msgid "Data processors"
 msgstr ""
 
-#: Templates/Admin/Pages/Processors/main.php:63
+#: Templates/Admin/Pages/Processors/main.php:69
 msgctxt "admin"
 msgid "Add data processor"
 msgstr ""
 
-#: Templates/Admin/Pages/Requests/Edit/main.php:19
+#. translators: %1$1s: email %2$2s: date
+#: Templates/Admin/Pages/Requests/Edit/main.php:21
 #, php-format
 msgctxt "admin"
-msgid "This request was submitted by %1s on %2s."
+msgid "This request was submitted by %1$1s on %2$2s."
 msgstr ""
 
-#: Templates/Admin/Pages/Requests/Edit/main.php:29
+#. translators: %1s: date offset
+#: Templates/Admin/Pages/Requests/Edit/main.php:32
 #, php-format
 msgctxt "admin"
 msgid "The data wil be anonymized in %1s when no action is taken."
 msgstr ""
 
-#: Templates/Admin/Pages/Requests/Edit/main.php:33
-#: Templates/Admin/Pages/Requests/Edit/main.php:37
+#: Templates/Admin/Pages/Requests/Edit/main.php:36
+#: Templates/Admin/Pages/Requests/Edit/main.php:41
 msgctxt "admin"
 msgid "Cancel request"
 msgstr ""
 
-#: Templates/Admin/Pages/Requests/Edit/main.php:34
+#: Templates/Admin/Pages/Requests/Edit/main.php:37
 msgctxt "admin"
 msgid ""
 "If you cancel this request, the user can not choose anymore which data he/"
@@ -882,40 +913,42 @@ msgid ""
 "though."
 msgstr ""
 
-#: Templates/Admin/Pages/Requests/Edit/main.php:36
-#: Templates/Admin/Pages/Requests/Edit/main.php:43
+#: Templates/Admin/Pages/Requests/Edit/main.php:39
+#: Templates/Admin/Pages/Requests/Edit/main.php:53
 msgid "All requests have been processed."
 msgstr ""
 
-#: Templates/Admin/Pages/Requests/Edit/main.php:40
-#: Templates/Admin/Pages/Requests/Edit/main.php:44
+#: Templates/Admin/Pages/Requests/Edit/main.php:50
+#: Templates/Admin/Pages/Requests/Edit/main.php:55
 msgctxt "admin"
 msgid "Anonymize all"
 msgstr ""
 
-#: Templates/Admin/Pages/Requests/Edit/main.php:41
+#: Templates/Admin/Pages/Requests/Edit/main.php:51
 msgctxt "admin"
 msgid "Anonymize all data that is found for this request."
 msgstr ""
 
-#: Templates/Admin/Pages/Requests/Edit/main.php:61
+#. translators: %1s: email
+#: Templates/Admin/Pages/Requests/Edit/main.php:80
 #, php-format
 msgctxt "admin"
 msgid "Request by %1s"
 msgstr ""
 
-#: Templates/Admin/Pages/Requests/Edit/main.php:74
+#: Templates/Admin/Pages/Requests/Edit/main.php:94
 msgctxt "admin"
 msgid "Found data"
 msgstr ""
 
-#: Templates/Admin/Pages/Requests/Edit/main.php:84
+#. translators: %1$1s: number of items requested %2$2s: number of items processed
+#: Templates/Admin/Pages/Requests/Edit/main.php:107
 #, php-format
 msgctxt "admin"
-msgid "%1s entries requested, %2s anonymized"
+msgid "%1$1s entries requested, %2$2s anonymized"
 msgstr ""
 
-#: Templates/Admin/Pages/Requests/Edit/main.php:99
+#: Templates/Admin/Pages/Requests/Edit/main.php:124
 msgctxt "admin"
 msgid "Actions"
 msgstr ""
@@ -942,7 +975,7 @@ msgid "No expired requests here."
 msgstr ""
 
 #: Templates/Admin/Pages/Requests/main.php:32
-#: Templates/Admin/Pages/Requests/main.php:98
+#: Templates/Admin/Pages/Requests/main.php:93
 #: WordPress/Admin/Pages/PageRequests.php:39
 msgctxt "admin"
 msgid "Requests"
@@ -955,23 +988,23 @@ msgid ""
 "anonymized automatically after 30 days when no action is taken."
 msgstr ""
 
-#: Templates/Admin/Pages/Requests/main.php:90
+#: Templates/Admin/Pages/Requests/main.php:85
 msgctxt "admin"
 msgid "Date of request"
 msgstr ""
 
-#: Templates/Admin/Pages/Requests/main.php:94
+#: Templates/Admin/Pages/Requests/main.php:89
 msgctxt "admin"
 msgid "IP Address"
 msgstr ""
 
-#: Templates/Admin/Pages/Requests/main.php:109
-#: Templates/Admin/Pages/Settings/Integrations/item-manage.php:25
+#: Templates/Admin/Pages/Requests/main.php:103
+#: Templates/Admin/Pages/Settings/Integrations/item-manage.php:38
 msgctxt "admin"
 msgid "Manage"
 msgstr ""
 
-#: Templates/Admin/Pages/Requests/main.php:131
+#: Templates/Admin/Pages/Requests/main.php:122
 msgctxt "admin"
 msgid "Are you sure you want to delete this request?"
 msgstr ""
@@ -981,84 +1014,88 @@ msgctxt "admin"
 msgid "Active"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/Integrations/item-content.php:51
+#: Templates/Admin/Pages/Settings/Integrations/item-content.php:59
 msgctxt "admin"
 msgid "Disable integration"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/Integrations/item-form.php:28
+#. translators: %s: title
+#: Templates/Admin/Pages/Settings/Integrations/item-form.php:30
 #, php-format
 msgctxt "admin"
 msgid "Form: %1s"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/Integrations/item-form.php:31
+#: Templates/Admin/Pages/Settings/Integrations/item-form.php:34
 msgctxt "admin"
 msgid "Activate for this form"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/Integrations/item-form.php:39
+#: Templates/Admin/Pages/Settings/Integrations/item-form.php:41
 msgctxt "admin"
 msgid "Change the text and messages of the checkbox"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/Integrations/item-form.php:43
+#: Templates/Admin/Pages/Settings/Integrations/item-form.php:48
 msgctxt "admin"
 msgid "Change the text of the checkbox"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/Integrations/item-form.php:51
+#: Templates/Admin/Pages/Settings/Integrations/item-form.php:68
 msgctxt "admin"
 msgid "Error message"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/Integrations/item-form.php:58
+#: Templates/Admin/Pages/Settings/Integrations/item-form.php:87
 msgctxt "admin"
 msgid "Required message"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/Integrations/item-form.php:58
+#: Templates/Admin/Pages/Settings/Integrations/item-form.php:95
 msgctxt "admin"
 msgid "HTML is not allowed because of technical limitations with tooltips."
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/Integrations/item-manage.php:23
+#: Templates/Admin/Pages/Settings/Integrations/item-manage.php:27
 msgctxt "admin"
 msgid "Activate"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/consent.php:16
+#: Templates/Admin/Pages/Settings/consent.php:18
 msgctxt "admin"
 msgid "Consent bar"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/consent.php:25
+#: Templates/Admin/Pages/Settings/consent.php:27
 msgctxt "admin"
 msgid "Consent bar & pop-up settings"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/consent.php:32
+#. translators: %1s: URL to the premium dashboard
+#: Templates/Admin/Pages/Settings/consent.php:48
 #, php-format
 msgctxt "admin"
-msgid "Style your Consent Bar and Consent Pop-up at %1s."
+msgid ""
+"Style your Consent Bar and Consent Pop-up via the Cookie Information "
+"dashboard %1s."
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/consent.php:32
+#: Templates/Admin/Pages/Settings/consent.php:48
 msgctxt "admin"
-msgid "your Cookie Information account"
+msgid "here"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/consent.php:51
+#: Templates/Admin/Pages/Settings/consent.php:73
 msgctxt "admin"
 msgid "Consent bar settings"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/consent.php:53
+#: Templates/Admin/Pages/Settings/consent.php:75
 msgctxt "admin"
 msgid "Preview"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/consent.php:136
+#: Templates/Admin/Pages/Settings/consent.php:163
 msgctxt "admin"
 msgid "Consent pop-up settings"
 msgstr ""
@@ -1077,21 +1114,42 @@ msgid ""
 "text to display per integration."
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/main.php:81
+#: Templates/Admin/Pages/Settings/main.php:99
+msgctxt "admin"
+msgid "Need some help?"
+msgstr ""
+
+#: Templates/Admin/Pages/Settings/main.php:109
 msgctxt "admin"
 msgid "Skipped the tour?"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/main.php:82
+#: Templates/Admin/Pages/Settings/main.php:111
 msgctxt "admin"
 msgid ""
 "We recommend taking Cookie Information’s tour to find out if you’re set up "
 "correctly and to learn more about the features of this free plugin. "
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/main.php:85
+#: Templates/Admin/Pages/Settings/main.php:117
 msgctxt "admin"
 msgid "Take the tour"
+msgstr ""
+
+#: Templates/Admin/Pages/Settings/main.php:130
+msgctxt "admin"
+msgid "Dont know exactly what text to use?"
+msgstr ""
+
+#: Templates/Admin/Pages/Settings/main.php:132
+msgctxt "admin"
+msgid ""
+"Having trouble coming up with awesome and understandable texts? Let us help!"
+msgstr ""
+
+#: Templates/Admin/Pages/Settings/main.php:138
+msgctxt "admin"
+msgid "Use Cookie Information Recommended text"
 msgstr ""
 
 #: Templates/Admin/Pages/Settings/policy.php:16
@@ -1109,18 +1167,18 @@ msgctxt "admin"
 msgid "What do you call your Privacy Policy (the link text)?"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/policy.php:35
-#: WordPress/Admin/Pages/PageSettings.php:171
+#: Templates/Admin/Pages/Settings/policy.php:40
+#: WordPress/Admin/Pages/PageSettings.php:172
 msgctxt "admin"
 msgid "Privacy policy page"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/policy.php:41
+#: Templates/Admin/Pages/Settings/policy.php:51
 msgctxt "admin"
 msgid "Where can people find your Privacy Policy? (URL)"
 msgstr ""
 
-#: Templates/Admin/Pages/Settings/policy.php:49
+#: Templates/Admin/Pages/Settings/policy.php:59
 msgctxt "admin"
 msgid "External privacy policy?"
 msgstr ""
@@ -1161,37 +1219,37 @@ msgctxt "admin"
 msgid "What kind of website do you need a cookie pop-up for?"
 msgstr ""
 
-#: Templates/Admin/Pages/Wizard/Steps/ci.php:18
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:20
 msgctxt "admin"
 msgid "A business website"
 msgstr ""
 
-#: Templates/Admin/Pages/Wizard/Steps/ci.php:26
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:35
 msgctxt "admin"
 msgid "A personal website"
 msgstr ""
 
-#: Templates/Admin/Pages/Wizard/Steps/ci.php:37
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:51
 msgctxt "admin"
 msgid ""
 "Business websites often have to comply <strong>with more</strong> than just "
 "GDPR."
 msgstr ""
 
-#: Templates/Admin/Pages/Wizard/Steps/ci.php:50
-#: Templates/Admin/Pages/Wizard/Steps/ci.php:69
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:64
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:83
 msgctxt "admin"
 msgid ""
 "<strong>Unlock our powerful</strong> scanner that notifies you whenever one "
 "of your webpages is illegally tracking and saving private data."
 msgstr ""
 
-#: Templates/Admin/Pages/Wizard/Steps/ci.php:56
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:70
 msgctxt "admin"
 msgid "For personal websites in the EU, this plugin’s got you covered. "
 msgstr ""
 
-#: Templates/Admin/Pages/Wizard/Steps/ci.php:60
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:74
 #, php-format
 msgctxt "admin"
 msgid ""
@@ -1199,7 +1257,7 @@ msgid ""
 "turning your compliance up a notch. "
 msgstr ""
 
-#: Templates/Admin/Pages/Wizard/Steps/ci.php:64
+#: Templates/Admin/Pages/Wizard/Steps/ci.php:78
 msgctxt "admin"
 msgid "Try our free 30-day trial so you can: "
 msgstr ""
@@ -1224,7 +1282,7 @@ msgstr ""
 
 #: Templates/Admin/Pages/Wizard/Steps/done.php:12
 #: Templates/Admin/Pages/Wizard/Steps/done.php:14
-#: Templates/Admin/Pages/Wizard/main.php:61
+#: Templates/Admin/Pages/Wizard/main.php:60
 msgctxt "admin"
 msgid "Finish"
 msgstr ""
@@ -1319,6 +1377,7 @@ msgid ""
 msgstr ""
 
 #: Templates/Admin/Pages/Wizard/main.php:47
+#: Templates/Admin/solution-modal.php:27
 msgctxt "admin"
 msgid "Back"
 msgstr ""
@@ -1328,17 +1387,17 @@ msgctxt "admin"
 msgid "Next"
 msgstr ""
 
-#: Templates/Admin/Pages/Wizard/main.php:82
+#: Templates/Admin/Pages/Wizard/main.php:81
 msgctxt "admin"
 msgid "Skip for now"
 msgstr ""
 
-#: Templates/Admin/Pages/dashboard.php:57
+#: Templates/Admin/Pages/dashboard.php:68
 msgctxt "admin"
 msgid "F jS, Y"
 msgstr ""
 
-#: Templates/Admin/Pages/dashboard.php:66
+#: Templates/Admin/Pages/dashboard.php:80
 msgctxt "admin"
 msgid "Dashboard navigation"
 msgstr ""
@@ -1380,137 +1439,158 @@ msgctxt "admin"
 msgid "Let's get you all set up!"
 msgstr ""
 
-#: Templates/Admin/header.php:25
+#: Templates/Admin/form-modal.php:13
+msgctxt "admin"
+msgid "Sign up and we will help you on your journey to compliance"
+msgstr ""
+
+#: Templates/Admin/form-modal.php:15 Templates/Front/Consent/modal.php:19
+msgid "Close popup"
+msgstr ""
+
+#: Templates/Admin/header.php:31
 msgctxt "admin"
 msgid "Plugin help"
 msgstr ""
 
-#: Templates/Admin/header.php:28
+#: Templates/Admin/header.php:34
 msgctxt "admin"
 msgid "About"
 msgstr ""
 
-#: Templates/Admin/header.php:34
+#: Templates/Admin/header.php:37
 msgctxt "admin"
 msgid "Support"
 msgstr ""
 
-#: Templates/Admin/modal.php:12
+#. translators: %1s: svg logo as inline text
+#: Templates/Admin/page-after.php:9
+#, php-format
+msgctxt "admin"
+msgid "Powered by %1s"
+msgstr ""
+
+#: Templates/Admin/page-after.php:9
+msgctxt "admin"
+msgid "Cookie Information, Consent Management Platform"
+msgstr ""
+
+#: Templates/Admin/solution-modal.php:13
 msgctxt "admin"
 msgid "Choose your consent solution"
 msgstr ""
 
-#: Templates/Admin/modal.php:18 Templates/Front/Consent/modal.php:17
+#: Templates/Admin/solution-modal.php:20
+msgctxt "admin"
 msgid "Close popup"
 msgstr ""
 
-#: Templates/Admin/modal.php:23
-msgid "Back"
-msgstr ""
-
-#: Templates/Admin/modal.php:34
+#: Templates/Admin/solution-modal.php:39
 msgctxt "admin"
-msgid "GDPR-only (personal websites)"
+msgid "Non-business mode (personal websites)"
 msgstr ""
 
-#: Templates/Admin/modal.php:37
+#: Templates/Admin/solution-modal.php:42
 msgctxt "admin"
-msgid "Recommended if your website is used by people in the EU."
+msgid "Recommended to all non-business or commercial websites."
 msgstr ""
 
-#: Templates/Admin/modal.php:42
+#: Templates/Admin/solution-modal.php:48
 msgctxt "admin"
-msgid "Continue with the GDPR-only plugin"
+msgid "Continue with the non-business mode"
 msgstr ""
 
-#: Templates/Admin/modal.php:52
+#: Templates/Admin/solution-modal.php:59
 msgctxt "admin"
 msgid "Global compliance (business websites)"
 msgstr ""
 
-#: Templates/Admin/modal.php:55
+#: Templates/Admin/solution-modal.php:62
 msgctxt "admin"
 msgid ""
 "Recommended for companies that want to remove all risk and stay fully "
 "compliant with all global privacy regulations (GDPR, ePrivacy, and CCPA)."
 msgstr ""
 
-#: Templates/Admin/modal.php:60
+#: Templates/Admin/solution-modal.php:68
 msgctxt "admin"
 msgid "Try 30 days for free"
 msgstr ""
 
-#: Templates/Admin/modal.php:72
+#: Templates/Admin/solution-modal.php:81
 msgctxt "admin"
 msgid "Signup for Cookie Information"
 msgstr ""
 
-#: Templates/Admin/page-after.php:8
-#, php-format
-msgctxt "admin"
-msgid "Powered by %1s"
-msgstr ""
-
-#: Templates/Admin/page-after.php:8
-msgctxt "admin"
-msgid "Cookie Information, Consent Management Platform"
-msgstr ""
-
-#: Templates/Email/access_request.php:14
+#. translators: %1s: site link
+#: Templates/Email/access_request.php:16
 #, php-format
 msgid "You have requested to access your data on %1s."
 msgstr ""
 
-#: Templates/Email/access_request.php:16
+#. translators: %1$1s: delete link %2$2s: email
+#: Templates/Email/access_request.php:21
 #, php-format
-msgid "Please visit this %1s to view the data linked to the email address %2s."
+msgid ""
+"Please visit this %1$1s to view the data linked to the email address %2$2s."
 msgstr ""
 
-#: Templates/Email/access_request.php:18
+#: Templates/Email/access_request.php:24
 msgid ""
 "This page is available for 24 hours and can only be reached from the same "
 "device, IP address and browser session you requested from."
 msgstr ""
 
-#: Templates/Email/access_request.php:20
+#. translators: %1s: request link
+#: Templates/Email/access_request.php:28
 #, php-format
 msgid ""
 "If your link is invalid you can fill in a new request after 24 hours: %1s."
 msgstr ""
 
-#: Templates/Email/delete_request.php:12
+#. translators: %1s: site link
+#: Templates/Email/delete_request.php:14
 #, php-format
 msgid "You have received a new anonymize request on %1s."
 msgstr ""
 
-#: Templates/Email/delete_request.php:14
+#. translators: %1s: admin link
+#: Templates/Email/delete_request.php:19
 #, php-format
 msgid "You can manage this request in the admin panel: %1s"
+msgstr ""
+
+#: Templates/Front/Consent/adminBarContent.php:1
+msgid "Hey Administrator, The Cookie bar has been disabled. Activate the bar "
+msgstr ""
+
+#: Templates/Front/Consent/adminBarContent.php:3
+msgid "here"
 msgstr ""
 
 #: Templates/Front/Consent/modal-content-option.php:19
 msgid "Enable?"
 msgstr ""
 
-#: Templates/Front/Consent/modal-content.php:27
+#: Templates/Front/Consent/modal-content.php:28
 msgid "(no title)"
 msgstr ""
 
-#: Templates/Front/Consent/modal-content.php:63
+#: Templates/Front/Consent/modal-content.php:69
 msgid "Powered by Cookie Information"
 msgstr ""
 
-#: Templates/Front/Consent/modal.php:16
+#: Templates/Front/Consent/modal.php:18
 msgid "Privacy settings"
 msgstr ""
 
-#: Templates/Front/Form/AccessRequest/main.php:7
-#: WordPress/Shortcodes/RequestAccessForm.php:56
+#: Templates/Front/Form/AccessRequest/main.php:8
+#: WordPress/Shortcodes/RequestAccessForm.php:64
 msgid "Your Email Address"
 msgstr ""
 
-#: Templates/Front/Form/AccessRequest/main.php:9
-#: WordPress/Shortcodes/RequestAccessForm.php:58
+#: Templates/Front/Form/AccessRequest/main.php:14
+#: WordPress/Shortcodes/RequestAccessForm.php:66
 msgid "Send"
 msgstr ""
 
@@ -1519,32 +1599,33 @@ msgctxt "admin"
 msgid "No"
 msgstr ""
 
-#: Utils/AdminForm.php:116
+#: Utils/AdminForm.php:119
 msgctxt "admin"
 msgid "Disable"
 msgstr ""
 
-#: Utils/AdminForm.php:117
+#: Utils/AdminForm.php:120
 msgctxt "admin"
 msgid "Enable"
 msgstr ""
 
-#: Utils/AdminForm.php:463
+#: Utils/AdminForm.php:470
 msgctxt "admin"
 msgid "Save settings"
 msgstr ""
 
-#: Utils/AdminHelper.php:265
+#: Utils/AdminHelper.php:258
 msgctxt "admin"
 msgid "Note"
 msgstr ""
 
-#: Utils/AdminHelper.php:266
+#: Utils/AdminHelper.php:259
 msgctxt "admin"
 msgid "No HTML allowed due to plugin limitations."
 msgstr ""
 
-#: Utils/AdminHelper.php:289
+#. translators: %1s: The allowed html tags as a list.
+#: Utils/AdminHelper.php:282
 #, php-format
 msgid "You can use: %1s"
 msgstr ""
@@ -1554,33 +1635,35 @@ msgctxt "admin"
 msgid "Anonymous"
 msgstr ""
 
-#: Utils/Banner.php:106
+#: Utils/Banner.php:103
 msgctxt "admin"
 msgid "Cookie pop-up is not live"
 msgstr ""
 
-#: Utils/Banner.php:107
+#: Utils/Banner.php:104
 msgctxt "admin"
 msgid "Cookie pop-up is live"
 msgstr ""
 
-#: Utils/Banner.php:118
+#: Utils/Banner.php:114
 msgctxt "admin"
-msgid "Currently in GDPR-only mode"
+msgid "Currently in non-business mode"
 msgstr ""
 
-#: Utils/Banner.php:119
+#: Utils/Banner.php:115
 msgctxt "admin"
 msgid "Currently in full compliant mode"
 msgstr ""
 
-#: Utils/Elements.php:47
+#. translators: %s: error message
+#: Utils/Elements.php:60
 #, php-format
 msgctxt "admin"
 msgid "<strong>ERROR</strong>: %1$s"
 msgstr ""
 
-#: Utils/Elements.php:148
+#. translators: %s: warning message
+#: Utils/Elements.php:157
 #, php-format
 msgctxt "admin"
 msgid "<strong>NOTE:</strong> %1$s"
@@ -1601,102 +1684,112 @@ msgctxt "admin"
 msgid "Consent deleted."
 msgstr ""
 
-#: Utils/Integration.php:75
+#: Utils/Integration.php:81
 msgid "Please accept the privacy policy"
 msgstr ""
 
-#: Utils/Integration.php:76
+#: Utils/Integration.php:82
 msgid "You need to accept this checkbox"
 msgstr ""
 
-#: Utils/Redirect.php:18
+#. translators: %s: URL
+#: Utils/Redirect.php:20
 #, php-format
 msgid "Redirecting to %s"
 msgstr ""
 
-#: Utils/Request.php:107
+#. translators: %s: email address (Beginning with a space!)
+#: Utils/Request.php:108
 #, php-format
 msgid "No data found with email address%1s."
 msgstr ""
 
-#: Utils/Request.php:196
+#: Utils/Request.php:198
 msgctxt "admin"
 msgid "0 seconds"
 msgstr ""
 
-#: Utils/Request.php:233
+#. translators: %1s: number of years
+#: Utils/Request.php:236
 #, php-format
 msgctxt "admin"
-msgid "1 year"
+msgid "%1s year"
 msgid_plural "%1s years"
 msgstr[0] ""
 msgstr[1] ""
 
-#: Utils/Request.php:237
+#. translators: %1s: number of months
+#: Utils/Request.php:241
 #, php-format
 msgctxt "admin"
-msgid "1 month"
+msgid "%1s month"
 msgid_plural "%1s months"
 msgstr[0] ""
 msgstr[1] ""
 
-#: Utils/Request.php:241
+#. translators: %1s: number of days
+#: Utils/Request.php:246
 #, php-format
 msgctxt "admin"
-msgid "1 day"
+msgid "%1s day"
 msgid_plural "%1s days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: Utils/Request.php:245
+#. translators: %1s: number of hours
+#: Utils/Request.php:251
 #, php-format
 msgctxt "admin"
-msgid "1 hour"
+msgid "%1s hour"
 msgid_plural "%1s hours"
 msgstr[0] ""
 msgstr[1] ""
 
-#: Utils/Request.php:258
+#. translators: %1$1s: results %2$2s: last
+#: Utils/Request.php:265
 #, php-format
 msgctxt "admin"
-msgid "%1s and %2s"
+msgid "%1$1s and %2$2s"
 msgstr ""
 
-#: Utils/Wizard.php:129
+#: Utils/Wizard.php:131
 msgctxt "admin"
 msgid "First time setup Wizard"
 msgstr ""
 
-#: Utils/Wizard.php:130
+#. translators: %s: Plugin name
+#: Utils/Wizard.php:136
 #, php-format
 msgctxt "admin"
 msgid "<strong>Hey!</strong> Thank you for installing %s!"
 msgstr ""
 
-#: Utils/Wizard.php:130
+#. translators: %1s: Site link element
+#: Utils/Wizard.php:140
 #, php-format
 msgctxt "admin"
 msgid "To setup the plugin and see what this plugin can do, go to our %1s."
 msgstr ""
 
-#: Utils/Wizard.php:137
+#: Utils/Wizard.php:150
 msgctxt "admin"
 msgid "WP GDPR Compliance will become even better!"
 msgstr ""
 
-#: WordPress/Admin.php:117
+#: WordPress/Admin.php:120
 #, php-format
 msgctxt "admin"
 msgid "%1s Settings"
 msgstr ""
 
-#: WordPress/Admin.php:133
+#. translators: %1s: Plugin name %1s: Link
+#: WordPress/Admin.php:139
 #, php-format
 msgctxt "admin"
 msgid "<strong>Awesome!</strong> You have activated the %1s plugin."
 msgstr ""
 
-#: WordPress/Admin.php:133
+#: WordPress/Admin.php:139
 #, php-format
 msgctxt "admin"
 msgid ""
@@ -1714,7 +1807,8 @@ msgctxt "admin"
 msgid "Cookie Information"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageDashboard.php:82
+#. translators: %s: Link to premium
+#: WordPress/Admin/Pages/PageDashboard.php:78
 #, php-format
 msgctxt "admin"
 msgid ""
@@ -1722,39 +1816,40 @@ msgid ""
 "<strong>Want to automate this process? <br>%s</strong>"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageDashboard.php:82
+#: WordPress/Admin/Pages/PageDashboard.php:81
 msgctxt "admin"
 msgid "Try out our premium plan for free for 30 days"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageDashboard.php:91
+#: WordPress/Admin/Pages/PageDashboard.php:93
 msgctxt "admin"
 msgid ""
 "Change settings of the Privacy Policy, Consent bar and pop-up, Request user "
 "data form and Integrations."
 msgstr ""
 
-#: WordPress/Admin/Pages/PageDashboard.php:95
+#: WordPress/Admin/Pages/PageDashboard.php:97
 msgctxt "admin"
 msgid "Upgrade"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageRequests.php:51
+#. translators: %1s: Number of requests
+#: WordPress/Admin/Pages/PageRequests.php:56
 #, php-format
 msgctxt "admin"
-msgid "1 request to process"
+msgid "%1s request to process"
 msgid_plural "%1s requests to process"
 msgstr[0] ""
 msgstr[1] ""
 
-#: WordPress/Admin/Pages/PageRequests.php:126
+#: WordPress/Admin/Pages/PageRequests.php:143
 msgctxt "admin"
 msgid "Request cancelled."
 msgstr ""
 
-#: WordPress/Admin/Pages/PageRequests.php:153
-#: WordPress/Admin/Pages/PageRequests.php:160
-#: WordPress/Ajax/DeleteRequest.php:44 WordPress/Ajax/ProcessRequest.php:58
+#: WordPress/Admin/Pages/PageRequests.php:170
+#: WordPress/Admin/Pages/PageRequests.php:177
+#: WordPress/Ajax/DeleteRequest.php:49 WordPress/Ajax/ProcessRequest.php:63
 msgctxt "admin"
 msgid "Unable to locate request."
 msgstr ""
@@ -1779,7 +1874,8 @@ msgctxt "admin"
 msgid "Our Privacy Policy"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:153
+#. translators: %s: The privacy policy page placeholder
+#: WordPress/Admin/Pages/PageSettings.php:154
 #, php-format
 msgctxt "admin"
 msgid ""
@@ -1787,98 +1883,99 @@ msgid ""
 "page.”"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:159
+#: WordPress/Admin/Pages/PageSettings.php:160
 msgctxt "admin"
 msgid "Use external privacy policy"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:164
+#: WordPress/Admin/Pages/PageSettings.php:165
 msgctxt "admin"
 msgid "Enabling this will allow you to use an external Privacy Policy instance"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:174
+#: WordPress/Admin/Pages/PageSettings.php:175
 msgctxt "admin"
 msgid "Select the page where the Privacy Policy is written."
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:180
+#: WordPress/Admin/Pages/PageSettings.php:181
 msgctxt "admin"
 msgid "Privacy policy url"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:184
+#: WordPress/Admin/Pages/PageSettings.php:185
 msgctxt "admin"
 msgid "Enter the webpage link where people can read your Privacy Policy. "
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:194
-#: WordPress/Admin/Pages/PageSettings.php:306
+#: WordPress/Admin/Pages/PageSettings.php:195
+#: WordPress/Admin/Pages/PageSettings.php:307
 msgctxt "admin"
 msgid "Explanation"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:203
+#: WordPress/Admin/Pages/PageSettings.php:204
 msgctxt "admin"
 msgid "Font family for bar and pop-up"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:213
+#: WordPress/Admin/Pages/PageSettings.php:214
 msgctxt "admin"
 msgid "Google Fonts API key"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:217
+#: WordPress/Admin/Pages/PageSettings.php:218
 msgctxt "admin"
 msgid "Google fonts API key"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:223
+#: WordPress/Admin/Pages/PageSettings.php:224
 msgctxt "admin"
 msgid "Position"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:233
+#: WordPress/Admin/Pages/PageSettings.php:234
 msgctxt "admin"
 msgid "Animation"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:243
+#: WordPress/Admin/Pages/PageSettings.php:244
 msgctxt "admin"
 msgid "Accept button text"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:252
+#: WordPress/Admin/Pages/PageSettings.php:253
 msgctxt "admin"
 msgid "Settings button text"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:261
+#: WordPress/Admin/Pages/PageSettings.php:262
 msgctxt "admin"
 msgid "Bar color"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:270
+#: WordPress/Admin/Pages/PageSettings.php:271
 msgctxt "admin"
 msgid "Text color"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:279
+#: WordPress/Admin/Pages/PageSettings.php:280
 msgctxt "admin"
 msgid "Button background"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:288
+#: WordPress/Admin/Pages/PageSettings.php:289
 msgctxt "admin"
 msgid "Button text color"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:320
+#: WordPress/Admin/Pages/PageSettings.php:321
 msgctxt "admin"
 msgid "Activate request form"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:325
+#. translators: %s: The shortcode
+#: WordPress/Admin/Pages/PageSettings.php:327
 #, php-format
 msgctxt "admin"
 msgid ""
@@ -1886,24 +1983,25 @@ msgid ""
 "shortcode: %1s. You can determine when and how to publish this page yourself."
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:331
+#: WordPress/Admin/Pages/PageSettings.php:333
 msgctxt "admin"
 msgid "Checkbox text"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:340
+#: WordPress/Admin/Pages/PageSettings.php:342
 msgctxt "admin"
 msgid "Request access page"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:345
+#: WordPress/Admin/Pages/PageSettings.php:349
 msgctxt "admin"
 msgid ""
 "Visitors will receive a link to this page on which the visitor can view all "
 "the data stored which is associated with their email address."
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:347
+#. translators: %s: The shortocde
+#: WordPress/Admin/Pages/PageSettings.php:352
 #, php-format
 msgctxt "admin"
 msgid ""
@@ -1911,105 +2009,111 @@ msgid ""
 "selected page"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageSettings.php:354
+#: WordPress/Admin/Pages/PageSettings.php:360
 msgctxt "admin"
 msgid "Anonymize request explanation"
 msgstr ""
 
-#: WordPress/Admin/Pages/PageWizard.php:53
+#: WordPress/Admin/Pages/PageWizard.php:57
 msgctxt "admin"
 msgid "Wizard"
 msgstr ""
 
-#: WordPress/Ajax/AbstractAjax.php:77
+#: WordPress/Ajax/AbstractAjax.php:99
 msgid "Missing data."
 msgstr ""
 
-#: WordPress/Ajax/DeleteRequest.php:48
+#: WordPress/Ajax/DeleteRequest.php:53
 msgctxt "admin"
 msgid "Request deleted."
 msgstr ""
 
-#: WordPress/Ajax/DeleteRequest.php:48
+#: WordPress/Ajax/DeleteRequest.php:53
 msgctxt "admin"
 msgid "Unable to delete request."
 msgstr ""
 
-#: WordPress/Ajax/ProcessAction.php:67
+#: WordPress/Ajax/PostEditLink.php:51
+msgid "No post ID provided"
+msgstr ""
+
+#: WordPress/Ajax/ProcessAction.php:72
 msgid "Missing type."
 msgstr ""
 
-#: WordPress/Ajax/ProcessAction.php:77
+#: WordPress/Ajax/ProcessAction.php:82
 msgid "Missing or incorrect email address."
 msgstr ""
 
-#: WordPress/Ajax/ProcessAction.php:82
+#: WordPress/Ajax/ProcessAction.php:87
 msgid "You need to accept the privacy checkbox."
 msgstr ""
 
-#: WordPress/Ajax/ProcessAction.php:87
+#: WordPress/Ajax/ProcessAction.php:92
 msgid ""
 "You have already requested your data. Please check your mailbox. After 24 "
 "hours you can put in a new request."
 msgstr ""
 
-#: WordPress/Ajax/ProcessAction.php:101 WordPress/Ajax/ProcessAction.php:167
+#: WordPress/Ajax/ProcessAction.php:106 WordPress/Ajax/ProcessAction.php:176
 msgid "Something went wrong while saving the request. Please try again."
 msgstr ""
 
-#: WordPress/Ajax/ProcessAction.php:112
+#. translators: %1s: Email subject site name.
+#: WordPress/Ajax/ProcessAction.php:118
 #, php-format
 msgid "%1s - Your data request"
 msgstr ""
 
-#: WordPress/Ajax/ProcessAction.php:116
+#: WordPress/Ajax/ProcessAction.php:122
 msgid "page"
 msgstr ""
 
-#: WordPress/Ajax/ProcessAction.php:134
+#: WordPress/Ajax/ProcessAction.php:143
 msgid "Missing token."
 msgstr ""
 
-#: WordPress/Ajax/ProcessAction.php:139
+#: WordPress/Ajax/ProcessAction.php:148
 msgid "No value selected."
 msgstr ""
 
-#: WordPress/Ajax/ProcessAction.php:145
+#: WordPress/Ajax/ProcessAction.php:154
 msgid "Missing or invalid type."
 msgstr ""
 
-#: WordPress/Ajax/ProcessAction.php:150
+#: WordPress/Ajax/ProcessAction.php:159
 msgid "No session found."
 msgstr ""
 
-#: WordPress/Ajax/ProcessAction.php:154
+#: WordPress/Ajax/ProcessAction.php:163
 msgid "Session doesn't match."
 msgstr ""
 
-#: WordPress/Ajax/ProcessAction.php:172
+#. translators: %1s: Email subject site name.
+#: WordPress/Ajax/ProcessAction.php:182
 #, php-format
 msgid "%1s - New anonymize request"
 msgstr ""
 
-#: WordPress/Ajax/ProcessAction.php:175
+#: WordPress/Ajax/ProcessAction.php:185
 msgid "Requests"
 msgstr ""
 
-#: WordPress/Ajax/ProcessAction.php:216
+#: WordPress/Ajax/ProcessAction.php:229
 msgid "Success. You will receive an email with your data shortly."
 msgstr ""
 
-#: WordPress/Ajax/ProcessRequest.php:53
+#: WordPress/Ajax/ProcessRequest.php:58
 msgctxt "admin"
 msgid "The access request functionality is not enabled."
 msgstr ""
 
-#: WordPress/Ajax/ProcessRequest.php:62
+#: WordPress/Ajax/ProcessRequest.php:67
 msgctxt "admin"
 msgid "Data anonymized."
 msgstr ""
 
-#: WordPress/Ajax/ProcessRequest.php:62
+#: WordPress/Ajax/ProcessRequest.php:67
 msgctxt "admin"
 msgid "Unable to (fully) anonymize all data."
 msgstr ""
@@ -2019,47 +2123,48 @@ msgctxt "admin"
 msgid "Unable to reset consent"
 msgstr ""
 
-#: WordPress/Ajax/ResetConsent.php:48
+#: WordPress/Ajax/ResetConsent.php:50
 msgctxt "admin"
 msgid "Consent has been reset"
 msgstr ""
 
-#: WordPress/Ajax/UpdateProcessorMode.php:59
+#: WordPress/Ajax/UpdateProcessorMode.php:63
 msgctxt "admin"
 msgid "No active data processors."
 msgstr ""
 
-#: WordPress/Ajax/UpdateProcessorMode.php:69
+#: WordPress/Ajax/UpdateProcessorMode.php:73
 msgctxt "admin"
 msgid "To enable the consent bar, activate one (or more) data processor(s)."
 msgstr ""
 
-#: WordPress/Config.php:89
+#: WordPress/Config.php:95
 msgid ""
 "By using this form you agree with the storage and handling of your data by "
 "this website."
 msgstr ""
 
-#: WordPress/Config.php:97
+#: WordPress/Config.php:103
 #, php-format
 msgid ""
-"Below we show you all of the data stored by %1s on %1s. Select the data you "
-"wish the site owner to anonymize so it cannot be linked to your email "
+"Below we show you all of the data stored by %1$1s on %2$1s. Select the data "
+"you wish the site owner to anonymize so it cannot be linked to your email "
 "address any longer. It is the site's owner responsibility to act upon your "
 "request. When your data is anonymized you will receive an email confirmation."
 msgstr ""
 
-#: WordPress/Config.php:107
+#: WordPress/Config.php:113
 msgctxt "admin"
 msgid "Welcome to Cookie Information | Free WP GDPR Consent Plugin"
 msgstr ""
 
-#: WordPress/Config.php:114
+#: WordPress/Config.php:122
 msgctxt "admin"
 msgid "try it out here"
 msgstr ""
 
-#: WordPress/Config.php:116
+#. translators: %s: Link
+#: WordPress/Config.php:130
 #, php-format
 msgctxt "admin"
 msgid ""
@@ -2074,44 +2179,44 @@ msgctxt "admin"
 msgid "Once a month"
 msgstr ""
 
-#: WordPress/Front/Consent/Modal.php:67
+#: WordPress/Front/Consent/Modal.php:51
 msgid ""
 "These settings will only apply to the browser and device you are currently "
 "using."
 msgstr ""
 
-#: WordPress/Front/Consent/Modal.php:76
+#: WordPress/Front/Consent/Modal.php:60
 msgid "Save my settings"
 msgstr ""
 
-#: WordPress/Settings.php:61
+#: WordPress/Settings.php:64
 msgid "https://www.example.com/privacypolicy"
 msgstr ""
 
-#: WordPress/Settings.php:70
+#: WordPress/Settings.php:73
 msgid "More information"
 msgstr ""
 
-#: WordPress/Settings.php:70 WordPress/Shortcodes/ProcessorSettingsLink.php:50
-#: WordPress/Shortcodes/ProcessorSettingsLink.php:64
+#: WordPress/Settings.php:73 WordPress/Shortcodes/ProcessorSettingsLink.php:55
+#: WordPress/Shortcodes/ProcessorSettingsLink.php:72
 msgid "My settings"
 msgstr ""
 
-#: WordPress/Settings.php:72
+#: WordPress/Settings.php:80
 msgid ""
 "This site uses functional cookies and external scripts to improve your "
 "experience."
 msgstr ""
 
-#: WordPress/Settings.php:73
+#: WordPress/Settings.php:85
 msgid "Accept"
 msgstr ""
 
-#: WordPress/Settings.php:83
+#: WordPress/Settings.php:95
 msgid "Privacy Settings"
 msgstr ""
 
-#: WordPress/Settings.php:85
+#: WordPress/Settings.php:101
 msgid ""
 "This site uses functional cookies and external scripts to improve your "
 "experience. Which cookies and scripts are used and how they impact your "
@@ -2119,75 +2224,78 @@ msgid ""
 "Your choices will not impact your visit."
 msgstr ""
 
-#: WordPress/Settings.php:280
+#: WordPress/Settings.php:347
 msgctxt "admin"
 msgid "Use the font of my website"
 msgstr ""
 
-#: WordPress/Settings.php:292
+#: WordPress/Settings.php:359
 msgctxt "admin"
 msgid "Bottom"
 msgstr ""
 
-#: WordPress/Settings.php:293
+#: WordPress/Settings.php:360
 msgctxt "admin"
 msgid "Top"
 msgstr ""
 
-#: WordPress/Settings.php:303
+#: WordPress/Settings.php:370
 msgctxt "admin"
 msgid "Fade out"
 msgstr ""
 
-#: WordPress/Settings.php:304
+#: WordPress/Settings.php:371
 msgctxt "admin"
 msgid "Bounce out"
 msgstr ""
 
-#: WordPress/Settings.php:305
+#: WordPress/Settings.php:372
 msgctxt "admin"
 msgid "Zoom out"
 msgstr ""
 
-#: WordPress/Settings.php:306
+#: WordPress/Settings.php:373
 msgctxt "admin"
 msgid "Instant (no animation)"
 msgstr ""
 
-#: WordPress/Shortcodes/ProcessorSettingsLink.php:46
+#: WordPress/Shortcodes/ProcessorSettingsLink.php:49
 msgctxt "admin"
 msgid ""
 "You need to make sure you have added at least one (1) active data processor."
 msgstr ""
 
-#: WordPress/Shortcodes/ProcessorSettingsLink.php:67
+#. translators: %1$1s: The shortcode %2$2s: The element class
+#: WordPress/Shortcodes/ProcessorSettingsLink.php:76
 #, php-format
 msgid ""
 "Let your visitors re-access their settings by placing a link to the modal "
-"with the shortcode %1s or add the \"%2s\" class to a menu item."
+"with the shortcode %1$1s or add the \"%2$2s\" class to a menu item."
 msgstr ""
 
-#: WordPress/Shortcodes/RequestAccessForm.php:42
+#. translators: %s: URL to the settings page
+#: WordPress/Shortcodes/RequestAccessForm.php:43
 #, php-format
 msgid ""
 "The request form has been disabled, you can enable it <a href=\"%s\">here</"
 "a>."
 msgstr ""
 
-#: WordPress/Shortcodes/RequestAccessForm.php:102
+#: WordPress/Shortcodes/RequestAccessForm.php:114
 msgid "No data is stored in relation to this email address"
 msgstr ""
 
-#: WordPress/Shortcodes/RequestAccessForm.php:120
+#: WordPress/Shortcodes/RequestAccessForm.php:136
 msgid "This request is expired or doesn't exist."
 msgstr ""
 
-#: WordPress/Shortcodes/RequestAccessForm.php:126
+#. translators: %1s: The link element
+#: WordPress/Shortcodes/RequestAccessForm.php:143
 #, php-format
 msgid "If needed, you can put in a new request here: %1s"
 msgstr ""
 
-#: WordPress/Shortcodes/RequestAccessForm.php:138
+#: WordPress/Shortcodes/RequestAccessForm.php:155
 msgid ""
 "You are only able to view your data when visiting this page on the same "
 "device with the same IP and in the same browser session as when you "
@@ -2195,7 +2303,8 @@ msgid ""
 "safe."
 msgstr ""
 
-#: WordPress/Shortcodes/RequestAccessForm.php:144
+#. translators: %1s: The link element
+#: WordPress/Shortcodes/RequestAccessForm.php:162
 #, php-format
 msgid "If needed, you can put in a new request after 24 hours here: %1s"
 msgstr ""

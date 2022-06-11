@@ -5,7 +5,7 @@
  * Description:       This plugin helps your website stay compliant with GDPR using a free cookie pop-up.
  * Author:            Cookie Information
  * Author URI:        https://cookieinformation.com/
- * Version:           2.0.8
+ * Version:           2.0.15
  * Text Domain:       wp-gdpr-compliance
  * Domain Path:       /Resources/languages
  * Requires at least: 5.3
@@ -20,26 +20,26 @@ use Exception;
 use WPGDPRC\WordPress\Plugin;
 
 // check if this is a valid setup
-if( !defined('ABSPATH') || !function_exists('add_filter') ) {
-    header('Status: 403 Forbidden');
-    header('HTTP/1.1 403 Forbidden');
-    exit();
+if ( ! defined( 'ABSPATH' ) || ! function_exists( 'add_filter' ) ) {
+	header( 'Status: 403 Forbidden' );
+	header( 'HTTP/1.1 403 Forbidden' );
+	exit();
 }
 
 // init autoloader
-spl_autoload_register(__NAMESPACE__ . '\\autoload');
+spl_autoload_register( __NAMESPACE__ . '\\autoload' );
 
 // define plugin constants
-define('WPGDPRC_ROOT', dirname(__FILE__) . '/');
-define('WPGDPRC_ROOT_FILE', __FILE__);
-define('WPGDPRC_FILE', plugin_basename(__FILE__));
-define('WPGDPRC_VERSION', '2.0.8');
-define('WPGDPRC_PREFIX', strtolower(__NAMESPACE__));
+define( 'WPGDPRC_ROOT', dirname( __FILE__ ) . '/' );
+define( 'WPGDPRC_ROOT_FILE', __FILE__ );
+define( 'WPGDPRC_FILE', plugin_basename( __FILE__ ) );
+define( 'WPGDPRC_VERSION', '2.0.15' );
+define( 'WPGDPRC_PREFIX', strtolower( __NAMESPACE__ ) );
 
 // register activation & deactivation hook to add/remove plugin specific database options
-register_activation_hook(__FILE__, [ Plugin::class, 'activate' ]);
-register_deactivation_hook(__FILE__, [ Plugin::class, 'deactivate' ]);
-register_uninstall_hook(__FILE__, [ Plugin::class, 'uninstall' ]);
+register_activation_hook( __FILE__, [ Plugin::class, 'activate' ] );
+register_deactivation_hook( __FILE__, [ Plugin::class, 'deactivate' ] );
+register_uninstall_hook( __FILE__, [ Plugin::class, 'uninstall' ] );
 
 // load plugin functionality
 Plugin::init();
@@ -51,15 +51,17 @@ Plugin::init();
  * @throws Exception
  */
 function autoload( $class ) {
-    if( !strstr($class, __NAMESPACE__) ) return;
+	if ( ! strstr( $class, __NAMESPACE__ ) ) {
+		return;
+	}
 
-    $result = str_replace(__NAMESPACE__ . '\\', '', $class);
-    $result = str_replace('\\', '/', $result);
+	$result  = str_replace( __NAMESPACE__ . '\\', '', $class );
+	$result  = str_replace( '\\', '/', $result );
 	$result .= '.php';
 
-    if (!file_exists( WPGDPRC_ROOT . $result)) {
-    	return;
-    }
+	if ( ! file_exists( WPGDPRC_ROOT . $result ) ) {
+		return;
+	}
 
-    require $result;
+	require $result;
 }

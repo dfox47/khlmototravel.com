@@ -10,11 +10,18 @@
 }
 
 .wpgdprc .wpgdprc-form__label,
-.wpgdprc .wpgdprc-form__legend {
+.wpgdprc .wpgdprc-form__legend,
+.hbspt-form label {
     @include font-weight-bold();
     display: block;
     color: $color-black;
     margin-bottom: rem-calc(16);
+}
+
+.hbspt-form {
+    label ~ legend {
+        margin-top: -1rem;
+    }
 }
 
 .wpgdprc .wpgdprc-form__fields {
@@ -23,7 +30,8 @@
     list-style: none;
 }
 
-.wpgdprc-form__field {
+.wpgdprc-form__field,
+.hbspt-form .hs-form-field {
     margin-bottom: rem-calc(23);
 
     &:last-child {
@@ -40,10 +48,20 @@
     margin: 0;
 }
 
-.wpgdprc .wpgdprc-form__description {
+.wpgdprc .wpgdprc-form__description,
+.hbspt-form .hs-field-desc {
     @include text-s();
     color: $color-gray-medium;
     margin-bottom: rem-calc(12);
+}
+
+.hbspt-form .hs-form-booleancheckbox {
+    margin: rem-calc(10) 0;
+}
+
+.hbspt-form .legal-consent-container {
+    @include text-s();
+    color: $color-gray-medium;
 }
 
 .wpgdprc .wpgdprc-form__field--checkbox,

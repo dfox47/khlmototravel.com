@@ -25,19 +25,19 @@ class FormHandler {
 		}
 
 		if ( ! DataProcessor::exists( $id ) ) {
-			echo AdminHelper::wrapNotice( _x( 'Consent could not be found.', 'admin', 'wp-gdpr-compliance' ), 'warning' );
+            AdminHelper::wrapNotice( _x( 'Consent could not be found.', 'admin', 'wp-gdpr-compliance' ), 'warning' );
 
 			return false;
 		}
 
 		$success = DataProcessor::deleteById( $id );
 		if ( ! $success ) {
-			echo AdminHelper::wrapNotice( _x( 'Something went wrong.', 'admin', 'wp-gdpr-compliance' ), 'warning' );
+            AdminHelper::wrapNotice( _x( 'Something went wrong.', 'admin', 'wp-gdpr-compliance' ), 'warning' );
 
 			return false;
 		}
 
-		echo AdminHelper::wrapNotice( _x( 'Consent deleted.', 'admin', 'wp-gdpr-compliance' ) );
+        AdminHelper::wrapNotice( _x( 'Consent deleted.', 'admin', 'wp-gdpr-compliance' ) );
 
 		return true;
 	}
@@ -53,7 +53,7 @@ class FormHandler {
 		$object = new DataProcessor( $data['id'] );
 		$object->setTitle( ! empty( $data['title'] ) ? stripslashes( esc_html( $data['title'] ) ) : '' );
 		$object->setDescription( ! empty( $data['description'] ) ? stripslashes( wp_kses( $data['description'], AdminHelper::getAllowedHTMLTags() ) ) : '' );
-		$object->setSnippet( ! empty( $data['snippet'] ) ? stripslashes( $data['snippet'] ) : '' );
+		$object->setSnippet( ! empty( $data['snippet'] ) ? $data['snippet'] : '' );
 		$object->setWrap( ! empty( $data['wrap'] ) ? 1 : 0 );
 		$object->setPlacement( DataProcessor::validatePlace( ! empty( $data['placement'] ) ? $data['placement'] : null ) );
 		$object->setPlugins( '' );
@@ -83,7 +83,11 @@ class FormHandler {
 	 * Redirect after form save
 	 */
 	public static function consentEditFormRedirect( $args = [] ) {
-		echo '<script>location.href = "' . add_query_arg( $args, PageDashboard::getTabUrl( PageDashboard::TAB_PROCESSORS ) ) . '";</script>';
+        ?>
+            <script>
+                    location.href = "<?php echo esc_js(filter_var( add_query_arg( $args, PageDashboard::getTabUrl( PageDashboard::TAB_PROCESSORS ) ), FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED )); ?>"
+            </script>
+        <?php
 		die();
 	}
 }

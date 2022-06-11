@@ -19,10 +19,10 @@ use WPGDPRC\WordPress\Settings;
  */
 class Integration {
 
-	const KEY_ACTIVE = 'active';
-	const KEY_FORMS = 'forms';
-	const KEY_TEXT = 'text';
-	const KEY_ERROR = 'error_message';
+	const KEY_ACTIVE   = 'active';
+	const KEY_FORMS    = 'forms';
+	const KEY_TEXT     = 'text';
+	const KEY_ERROR    = 'error_message';
 	const KEY_REQUIRED = 'required_message';
 
 	/**
@@ -36,17 +36,20 @@ class Integration {
 	 * @return int
 	 */
 	public static function getValidFormCount(): int {
-		$allFormsPerIntegration = array_map( function ( $integration ) {
-			if ( ! $integration->isValid() ) {
-				return 0;
-			}
+		$allFormsPerIntegration = array_map(
+			function ( $integration ) {
+				if ( ! $integration->isValid() ) {
+					return 0;
+				}
 
-			if ( $integration->hasForms() ) {
-				return count( $integration->getList() );
-			}
+				if ( $integration->hasForms() ) {
+					return count( $integration->getList() );
+				}
 
-			return 1;
-		}, self::getList() );
+				return 1;
+			},
+			self::getList()
+		);
 
 		return array_sum( $allFormsPerIntegration );
 	}
@@ -55,13 +58,16 @@ class Integration {
 	 * @return int
 	 */
 	public static function getActiveFormCount(): int {
-		$enabledFormsPerIntegration = array_map( function ( $integration ) {
-			if ( $integration->hasForms() ) {
-				return count( $integration->getEnabledForms() );
-			}
+		$enabledFormsPerIntegration = array_map(
+			function ( $integration ) {
+				if ( $integration->hasForms() ) {
+					return count( $integration->getEnabledForms() );
+				}
 
-			return (int) $integration->isEnabled();
-		}, self::getList() );
+				return (int) $integration->isEnabled();
+			},
+			self::getList()
+		);
 
 		return array_sum( $enabledFormsPerIntegration );
 	}
@@ -145,19 +151,24 @@ class Integration {
 
 		$settings = [];
 		$group    = Settings::INTEGRATIONS_GROUP;
-		foreach ( Integration::getList() as $type => $integration ) {
+		foreach ( self::getList() as $type => $integration ) {
 			/**
 			 * @var $integration AbstractPlugin | AbstractIntegration
 			 */
 			$option   = Settings::getKey( $type, $group );
-			$defaults = Integration::getDefaultText();
+			$defaults = self::getDefaultText();
 
 			$settings[ $type ] = ! empty( $_POST[ $option ] ) ? 1 : 0;
 			if ( ! empty( $integration->getSelectForm() ) ) {
+				$key = $option . '_' . static::KEY_FORMS;
+				$data = wp_unslash($_POST);
+				$value = $data[$key] ?? null;
+
 				$result = [];
-				if ( isset( $_POST[ $option . '_' . static::KEY_FORMS ] ) ) {
-					foreach ( $_POST[ $option . '_' . static::KEY_FORMS ] as $id => $set ) {
-						if ( $set ) {
+				if ( is_iterable( $value ) ) {
+					// is an array
+                    foreach ( $value as $id => $set ) {
+						if ( !empty( $set ) ) {
 							$result[] = $id;
 						}
 					}
@@ -167,16 +178,15 @@ class Integration {
 
 			foreach ( $defaults as $key => $value ) {
 				if ( empty( $integration->getSelectForm() ) ) {
-					$settings[ $type . '_' . $key ] = isset( $_POST[ $option . '_' . $key ] ) ? sanitize_text_field( $_POST[ $option . '_' . $key ] ) : $value;
+					$settings[ $type . '_' . $key ] = isset( $_POST[ $option . '_' . $key ] ) ? sanitize_text_field( wp_unslash( $_POST[ $option . '_' . $key ] ) ) : $value;
 				} else {
-					$settings[ $type . '_' . $key ] = isset( $_POST[ $option . '_' . $key ] ) ? Helper::sanitizeStringArray( $_POST[ $option . '_' . $key ] ) : [ $value ];
+					$settings[ $type . '_' . $key ] = isset( $_POST[ $option . '_' . $key ] ) ? Helper::sanitizeStringArray( $_POST[ $option . '_' . $key ] ) : [ $value ]; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized,WordPress.Security.ValidatedSanitizedInput.MissingUnslash
 				}
 			}
 
-			// check activation/disabling of integration
-			if ( ! empty( $_POST[ $group ] ) ) {
-				foreach ( $_POST[ $group ] as $key => $integration ) {
-					$settings[ key( $integration ) ] = $key == 'disable' ? '0' : '1';
+			if ( ! empty( $_POST[ $group ] ) && is_iterable($_POST[ $group ]) ) {
+				foreach ( $_POST[ $group ] as $key => $integration ) { // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized,WordPress.Security.ValidatedSanitizedInput.MissingUnslash -- is an array
+					$settings[ sanitize_key( key( $integration ) )] = $key === 'disable' ? '0' : '1';
 				}
 			}
 

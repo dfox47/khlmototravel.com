@@ -1,10 +1,10 @@
-=== Best WordPress Gallery Plugin - FooGallery ===
+=== Best WordPress Gallery Plugin – FooGallery ===
 Contributors: bradvin, steveush, fooplugins
 Donate link: https://fooplugins.com
 Tags: gallery, image gallery, photo gallery, responsive gallery, wordpress gallery plugin, best gallery plugin, albums, media gallery, video gallery, lightbox
-Requires at least: 4.6
+Requires at least: 5.2
 Tested up to: 5.9
-Stable tag: 2.1.34
+Stable tag: 2.2.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,13 +42,14 @@ This has led to dramatically better scores for the 3 key lighthouse factors incl
 
 The following free features make FooGallery the **best gallery plugin** on the market!
 
-*	6 Beautiful Image Gallery templates
+*	7 Beautiful Image Gallery templates
 	*	Responsive Image Gallery - [demo](https://fooplugins.com/foogallery-wordpress-gallery-plugin/responsive-image-gallery/)
 	*	Image Viewer Gallery - [demo](https://fooplugins.com/foogallery-wordpress-gallery-plugin/image-viewer-gallery/)
 	*	Masonry Gallery - [demo](https://fooplugins.com/foogallery-wordpress-gallery-plugin/masonry-gallery/)
 	*	Simple Portfolio - [demo](https://fooplugins.com/foogallery-wordpress-gallery-plugin/wordpress-portfolio-gallery/)
 	*	Justified Gallery - [demo](https://fooplugins.com/foogallery-wordpress-gallery-plugin/justified-gallery/)
 	*	Single Thumbnail Gallery - [demo](https://fooplugins.com/foogallery-wordpress-gallery-plugin/single-thumbnail-gallery/)
+	*	Carousel Gallery - [demo](https://fooplugins.com/foogallery-wordpress-gallery-plugin/wordpress-carousel/)
 *   Easy to customize!
     *   Adjust thumbnail size, spacing & alignment
     *   Adjust border size, rounded corners, drop shadows, inner shadows
@@ -137,6 +138,8 @@ There are 3 PRO plans available, that will work with any budget:
 *	Sell your images online - [demo](https://footest.tastewp.com/)
 	*	Link all your gallery items to a single master product
 	*	Supports variations
+*	Master Galleries
+    *   Set a gallery as a master and then all galleries who use that master will inherit all settings from the master - [docs](https://fooplugins.com/documentation/foogallery/pro-commerce/use-master-gallery/)
 
 [See More Demos](https://fooplugins.com/foogallery-wordpress-gallery-plugin/demos/)
 
@@ -296,8 +299,27 @@ Please update in order to for FooGallery to work in WP 5.5+!
 
 == Changelog ==
 
+= 2.2.7 =
+* Date Updated : 2022-04-15
+* Fix : Fixed carousel not working when no lightbox is available
+* Fix : Fixed RTL styles on FooGallery admin pages
+* Update : FooGallery client side 2.0.32
+
+= 2.2.6 =
+* Date Updated : 2022-03-31
+* New : Added new gallery template : Carousel
+* Fix : Fixed bug with captions showing alternatives when using paging
+* Fix : Fixed conflict with image lazy loading in Safari 15.4, by adding loading=eager
+* Update : FooGallery client side 2.0.30
+
+
+= 2.1.35 =
+* Date Updated : 2022-03-08
+* Fix : Fixed PHP warning on Widget Editor page in admin
+
+
 = 2.1.34 =
-* Date Updated : 2022-02-01
+* Date Updated : 2022-03-01
 * Fix : Fixed bug where WebP images could not be uploaded when using the GD image editor
 * Fix : Security Fix in wp-admin
 * Update : Update to Freemius SDK

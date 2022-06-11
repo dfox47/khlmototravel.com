@@ -1,15 +1,15 @@
-import { ajax, ajaxDataParams } from '../utils/helpers'
+import { ajax, ajaxDataParams, addEventListeners } from '../utils/helpers'
 
 /**
  * Admin Component for the consent bar form (Settings)
  */
 export default class ConsentBarForm {
-    constructor () {
-        this.setProperties()
+    constructor (formElements) {
+        this.setProperties(formElements)
         this.init()
     }
 
-    setProperties () {
+    setProperties (formElements) {
         this.prefix = wpgdprcAdmin.pluginPrefix
         this.ajaxUrl = wpgdprcAdmin.ajaxUrl
         this.ajaxNonce = wpgdprcAdmin.ajaxNonce
@@ -17,15 +17,18 @@ export default class ConsentBarForm {
         this.locale = wpgdprcAdmin.locale
         this.formAction = this.prefix + '_update_plugin_mode'
         this.toggleTile = document.querySelector('.wpgdprc-tile--consent-bar')
+
+        Object.keys(formElements).forEach(key => {
+            this[key] = formElements[key]
+        })
+
         this.colorPickers = document.querySelectorAll('.wpgdprc-form__field--colorpicker')
         this.bar = document.querySelector('.wpgdprc-consent-bar__inner')
         this.barContent = document.querySelector('.wpgdprc-consent-bar__content')
-        this.barText = document.querySelector('.wpgdprc-consent-bar__notice p')
+        this.barText = document.querySelector('.wpgdprc-consent-bar__notice')
         this.buttonAccept = document.querySelector('.wpgdprc-consent-bar .wpgdprc-button--accept')
         this.buttonSettings = document.querySelector('.wpgdprc-consent-bar .wpgdprc-button--settings')
-        this.inputBarText = document.querySelector('.wpgdprc-form__field.wpgdprc-form__field--explaintext input')
-        this.inputButtonAccept = document.querySelector('.wpgdprc-form__field.wpgdprc-form__field--buttontext input')
-        this.inputButtonSettings = document.querySelector('.wpgdprc-form__field.wpgdprc-form__field--moretext input')
+
         this.selectFont = document.querySelector('.wpgdprc-form__field.wpgdprc-form__field--font select')
         this.consentBar = document.querySelector('.wpgdprc-consent-bar')
         this.barFont = ''
@@ -276,7 +279,7 @@ export default class ConsentBarForm {
             return
         }
 
-        this.inputBarText.addEventListener('keyup', event => {
+        addEventListeners(this.inputBarText, ['keyup', 'change'], (event) => {
             this.barText.innerHTML = event.target.value
         })
     }
@@ -286,7 +289,7 @@ export default class ConsentBarForm {
             return
         }
 
-        this.inputButtonAccept.addEventListener('keyup', event => {
+        addEventListeners(this.inputButtonAccept, ['keyup', 'change'], (event) => {
             this.buttonAccept.innerHTML = event.target.value
         })
     }
@@ -296,7 +299,7 @@ export default class ConsentBarForm {
             return
         }
 
-        this.inputButtonSettings.addEventListener('keyup', event => {
+        addEventListeners(this.inputButtonSettings, ['keyup', 'change'], event => {
             this.buttonSettings.innerHTML = event.target.value
         })
     }

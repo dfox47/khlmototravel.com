@@ -912,12 +912,32 @@ function cpt_slider_slides_content($post) {
 
 	// ###### LOOP TO DISPLAY INPUT ELEMENTS FOR EACH SLIDE ######
 	echo "<div id='slider_accordion'>\n";
+	
+	// determine whether to use css classes instead of csss ids
+	$use_classes = 0;
+	$other_settings = get_post_meta($post->ID, 'sa_other_settings', true);
+	if ($other_settings != '') {
+		$other_settings_arr = explode("|", $other_settings);
+	}
+	if (isset($other_settings_arr) && (count($other_settings_arr) > 7)) {
+		$disable_slide_ids = $other_settings_arr[7];
+	} else {
+		$disable_slide_ids = '0';
+	}
+	if ($disable_slide_ids == '1') {
+		$use_classes = 1;
+	}
+	
 	for ($i = 0; $i < count($slide_data); $i++) {
 		// DISPLAY ACCORDION HEADING
 		echo "<h3>Slide ".$slide_data[$i]['slide_no'];
 		$css_id = $slider_css_id."_slide".sprintf('%02d', $slide_data[$i]['slide_no']);
-		// display CSS ID for the current slide
-		echo "<span>#".$css_id."</span>";
+		// display CSS ID/CLASS for the current slide
+		if ($use_classes == 1) {
+			echo "<span>.".$css_id."</span>";
+		} else {
+			echo "<span>#".$css_id."</span>";
+		}
 		echo "</h3>\n";
 		echo "<div>\n";
 
@@ -2131,17 +2151,23 @@ function cpt_slider_style_content($post) {
 	}
 	// setting 7 - bg_image_size
 	$bg_image_size = 'full';
-	if (isset($other_settings_arr) && (count($other_settings_arr)) > 6) {
+	if (isset($other_settings_arr) && (count($other_settings_arr) > 6)) {
 		if ($other_settings_arr[6] != '') {
 			$bg_image_size = $other_settings_arr[6];
 		}
+	}
+	// setting 8 - sa_disable_slide_ids
+	if (isset($other_settings_arr) && (count($other_settings_arr) > 7)) {
+		$disable_slide_ids = $other_settings_arr[7];
+	} else {
+		$disable_slide_ids = '0';
 	}
 	
 	// USE 'DOMContentLoaded' EVENT (checkbox)
 	$tooltip =  'Load the Slide Anything JavaScript during the DOMContentLoaded event. Use this option if jQuery ';
 	$tooltip .= 'is loading in your theme footer and you are getting the JavaScript error message ';
 	$tooltip .= '&quot;Uncaught ReferenceError: jQuery is not defined&quot;.';
-	echo "<div id='sa_window_onload_line'>";
+	echo "<div class='sa_window_onload_line'>";
 	echo "<span class='sa_tooltip' title='".$tooltip."'></span><span style='min-width:160px;'>DOMContentLoaded event:</span>";
 	if ($window_onload == '1') {
 		echo "<input type='checkbox' id='sa_window_onload' name='sa_window_onload' value='1' checked/>";
@@ -2151,8 +2177,9 @@ function cpt_slider_style_content($post) {
 	echo "</div>\n";
 	
 	// Strip JavaScript from Content
+	/*
 	$tooltip = 'Remove JavaScript (<script> tags) from slide content for extra security.';
-	echo "<div id='sa_window_onload_line'>";
+	echo "<div class='sa_window_onload_line'>";
 	echo "<span class='sa_tooltip' title='".$tooltip."'></span><span style='min-width:160px;'>Remove JavaScript Content:</span>";
 	if ($strip_javascript == '1') {
 		echo "<input type='checkbox' id='sa_strip_javascript' name='sa_strip_javascript' value='1' checked/>";
@@ -2160,12 +2187,13 @@ function cpt_slider_style_content($post) {
 		echo "<input type='checkbox' id='sa_strip_javascript' name='sa_strip_javascript' value='1'/>";
 	}
 	echo "</div>\n";
+	*/
 
 	// Enable Lazy Load Images
 	// ##### REMOVE LAZY LOAD IMAGES FEATURE (WHICH IS NOW INCLUDED IN WP 5.5) #####
 	/*
 	$tooltip = "Enable &quot;Lazy Load&quot; for images added to your slide content (note: does not apply to slide backgrounds).";
-	echo "<div id='sa_window_onload_line'>";
+	echo "<div class='sa_window_onload_line'>";
 	echo "<span class='sa_tooltip' title='".$tooltip."'></span><span style='min-width:160px;'>Enable 'Lazy Load' Images:</span>";
 	if ($lazy_load_images == '1') {
 		echo "<input type='checkbox' id='sa_lazy_load_images' name='sa_lazy_load_images' value='1' checked/>";
@@ -2180,7 +2208,7 @@ function cpt_slider_style_content($post) {
 	
 	// Use UL and LI Containers
 	$tooltip = "Use &quot;UL&quot; as the DOM element for &quot;owl-stage&quot; and use &quot;LI&quot; as the DOM elements for &quot;owl-item&quot;.";
-	echo "<div id='sa_window_onload_line'>";
+	echo "<div class='sa_window_onload_line'>";
 	echo "<span class='sa_tooltip' title='".$tooltip."'></span><span style='min-width:160px;'>Use UL and LI Containers:</span>";
 	if ($ulli_containers == '1') {
 		echo "<input type='checkbox' id='sa_ulli_containers' name='sa_ulli_containers' value='1' checked/>";
@@ -2191,7 +2219,7 @@ function cpt_slider_style_content($post) {
 	
 	// Right to Left Slider
 	$tooltip = "Change the direction of the slider to be right to left.";
-	echo "<div id='sa_window_onload_line'>";
+	echo "<div class='sa_window_onload_line'>";
 	echo "<span class='sa_tooltip' title='".$tooltip."'></span><span style='min-width:160px;'>Right to Left Slider:</span>";
 	if ($rtl_slider == '1') {
 		echo "<input type='checkbox' id='sa_rtl_slider' name='sa_rtl_slider' value='1' checked/>";
@@ -2202,12 +2230,23 @@ function cpt_slider_style_content($post) {
 	
 	// Disable Preview Feature
 	$tooltip = "Disable the &quot;Preview Slider&quot; feature in this settings page - the &quot;Slide Anything Popup Preview&quot; page will no longer be auto generated.";
-	echo "<div id='sa_window_onload_line'>";
+	echo "<div class='sa_window_onload_line'>";
 	echo "<span class='sa_tooltip' title='".$tooltip."'></span><span style='min-width:160px;'>Disable Preview Feature:</span>";
 	if ($disable_preview == '1') {
 		echo "<input type='checkbox' id='sa_disable_preview' name='sa_disable_preview' value='1' checked/>";
 	} else {
 		echo "<input type='checkbox' id='sa_disable_preview' name='sa_disable_preview' value='1'/>";
+	}
+	echo "</div>\n";
+	
+	// Don't use Slide IDs
+	$tooltip = "Do not use a unique CSS ID to identify each slide container - use a unique CSS Class instead.";
+	echo "<div class='sa_window_onload_line'>";
+	echo "<span class='sa_tooltip' title='".$tooltip."'></span><span style='min-width:160px;'>Don't use CSS IDs for slides:</span>";
+	if ($disable_slide_ids == '1') {
+		echo "<input type='checkbox' id='sa_disable_slide_ids' name='sa_disable_slide_ids' value='1' checked/>";
+	} else {
+		echo "<input type='checkbox' id='sa_disable_slide_ids' name='sa_disable_slide_ids' value='1'/>";
 	}
 	echo "</div>\n";
 	
@@ -2221,7 +2260,7 @@ function cpt_slider_style_content($post) {
 			$start_pos = 1;
 		}
 		$tooltip = "Which slide number to start display first";
-		echo "<div id='sa_window_onload_line'>";
+		echo "<div class='sa_window_onload_line'>";
 		echo "<span class='sa_tooltip' title='".$tooltip."'></span><span style='min-width:160px;'>Starting Slide Number:</span>";
 		echo "<select name='sa_start_pos'>";
 		for ($i = 1; $i <= $num_slides; $i++) {
@@ -2272,7 +2311,7 @@ function cpt_slider_style_content($post) {
 	}
 	echo "</select>\n";
 	echo "</div>\n"; // .bg_image_size_wrapper
-
+	
 	echo "</div>\n";
 }
 
@@ -2518,8 +2557,8 @@ function cpt_slider_save_postdata() {
 				$slide_popup_bgcol = "sa_slide".$i."_popup_bgcol";
 				$slide_popup_width = "sa_slide".$i."_popup_width";
 			}
-			//$slide_content = wp_kses_post($_POST[$slide_edit_id]);	  										// SANATIZE
-			$slide_content = balanceTags($_POST[$slide_edit_id], true);										// FIX MISSING CLOSING TAGS
+			$slide_content = wp_kses_post($_POST[$slide_edit_id]);	  										// SANATIZE
+			$slide_content = $slide_content;																			// FIX MISSING CLOSING TAGS
 			$slide_image_id_val = abs(intval($_POST[$slide_image_id]));										// SANATIZE
 			$slide_image_pos_val = sanitize_text_field($_POST[$slide_image_pos]);						// SANATIZE
 			$slide_image_size_val = sanitize_text_field($_POST[$slide_image_size]);						// SANATIZE
@@ -2888,6 +2927,7 @@ function cpt_slider_save_postdata() {
 		} else {
 			$other_settings .= "0";
 		}
+		$_POST['sa_strip_javascript'] = 0;
 		if (isset($_POST['sa_strip_javascript']) && ($_POST['sa_strip_javascript'] == '1')) {
 			$other_settings .= "|1";
 		} else {
@@ -2917,6 +2957,11 @@ function cpt_slider_save_postdata() {
 			$other_settings .= "|".$_POST['bg_image_size'];
 		} else {
 			$other_settings .= "|full";
+		}
+		if (isset($_POST['sa_disable_slide_ids']) && ($_POST['sa_disable_slide_ids'] == '1')) {
+			$other_settings .= "|1";
+		} else {
+			$other_settings .= "|0";
 		}
 		update_post_meta($post->ID, 'sa_other_settings', $other_settings);
 		// starting slide number
@@ -3016,7 +3061,7 @@ function duplicate_sa_slider_post_as_draft() {
 				if ($meta_key == '_wp_old_slug') continue;
 				$meta_value = addslashes($meta_info->meta_value);
 				$sql_query_sel[] = $wpdb->prepare(
-					"SELECT %d, %s, $s",
+					"SELECT %d, %s, %s",
 					$new_post_id,
 					$meta_key,
 					$meta_value
@@ -3296,5 +3341,32 @@ function sa_preview_page_template($template) {
 		$template = dirname( __FILE__ ).'/single-page.php';
 	}
 	return $template;
+}
+
+
+// ### FILTER TO ALLOW IFRAMES WITHIN SLIDE CONTENT ###
+function slides_allow_iframes_filter($allowedposttags) {
+	// Only change for users who can publish posts
+	if ( !current_user_can( 'publish_posts' ) ) return $allowedposttags;
+
+	// Allow iframes and the following attributes
+	$allowedposttags['iframe'] = array(
+		'align' => true,
+		'width' => true,
+		'height' => true,
+		'frameborder' => true,
+		'name' => true,
+		'src' => true,
+		'title' => true,
+		'allow' => true,
+		'allowfullscreen' => true,
+		'id' => true,
+		'class' => true,
+		'style' => true,
+		'scrolling' => true,
+		'marginwidth' => true,
+		'marginheight' => true,
+	);
+	return $allowedposttags;
 }
 ?>

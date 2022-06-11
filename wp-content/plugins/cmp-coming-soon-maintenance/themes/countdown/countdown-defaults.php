@@ -12,26 +12,6 @@ $theme_supports					= array(
 	'special_effects'	=> false,
 );
 
-if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
-
-	if( !wp_verify_nonce($_POST['save_options_field'], 'save_options') || !current_user_can('publish_pages') ) {
-		die('Sorry, but this request is invalid');
-	}
-
-
-	if (isset($_POST['niteoCS_active_color_'.$themeslug])) {
-		update_option('niteoCS_active_color['.$themeslug.']', sanitize_hex_color($_POST['niteoCS_active_color_'.$themeslug]));
-	}
-
-	if (isset($_POST['niteoCS_font_color_'.$themeslug])) {
-		update_option('niteoCS_font_color['.$themeslug.']', sanitize_hex_color($_POST['niteoCS_font_color_'.$themeslug]));
-	}
-
-
-	if (isset($_POST['niteoCS_social_location']) && $_POST['niteoCS_social_location']) {
-		update_option('niteoCS_social_location', sanitize_text_field($_POST['niteoCS_social_location']));
-	}
-}
 
 
 // get theme defaults
@@ -39,7 +19,6 @@ $banner_type		= get_option('niteoCS_banner', '2');
 $niteoCS_gradient 	= get_option('niteoCS_gradient', '#1A2980:#26D0CE');
 $active_color		= get_option('niteoCS_active_color['.$themeslug.']', '#e82e1e');
 $font_color			= get_option('niteoCS_font_color['.$themeslug.']', '#ffffff');
-
 $social_location 	= get_option('niteoCS_social_location', 'footer');
 
 $heading_font = array(

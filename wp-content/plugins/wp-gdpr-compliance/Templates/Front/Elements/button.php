@@ -1,8 +1,17 @@
 <?php
 
-if( empty( $text ) ) return;
-if( empty( $attr ) ) $attr = [];
+if ( empty( $text ) ) {
+	return;
+}
+if ( empty( $attr ) ) {
+	$attr = [];
+}
 
 ?>
 
-<button <?php foreach( $attr as $name => $value ) echo $name . '="' . esc_attr($value) . '" '; ?>><?php echo $text; ?></button>
+<button
+<?php
+foreach ( $attr as $name => $value ) {
+	echo esc_attr($name) . '="' . esc_attr( $value ) . '" ';}
+?>
+><?php echo esc_html( $text ); ?></button>

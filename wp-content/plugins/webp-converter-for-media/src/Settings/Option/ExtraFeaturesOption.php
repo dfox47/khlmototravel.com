@@ -123,8 +123,11 @@ class ExtraFeaturesOption extends OptionAbstract {
 	 * @return string[]
 	 */
 	public function get_value_for_debug( array $settings ): array {
-		return [
-			self::OPTION_VALUE_REFERER_DISABLED,
-		];
+		return array_merge(
+			$settings[ self::OPTION_NAME ] ?? [],
+			[
+				self::OPTION_VALUE_REFERER_DISABLED,
+			]
+		);
 	}
 }

@@ -30,9 +30,8 @@ if ( isset( $_POST['niteoCS_bypass_expire'] ) ) {
 	if ( $_POST['niteoCS_bypass_expire'] == '' ) {
 		update_option('niteoCS_bypass_expire', 172800);
 	} else {
-		update_option('niteoCS_bypass_expire', filter_var( $_POST['niteoCS_bypass_expire'], FILTER_SANITIZE_NUMBER_INT ));
+		update_option('niteoCS_bypass_expire', filter_var( $_POST['niteoCS_bypass_expire'], FILTER_SANITIZE_NUMBER_INT ) * 86400);
 	}
-	
 }
 
 if ( isset( $_POST['niteoCS_page_filter'] ) ) {
@@ -230,6 +229,12 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	} else {
 		update_option('niteoCS_rest_api_status', '0');
 	}
+
+	if ( isset($_POST['niteoCS-fa-local']) ) {
+		update_option('niteoCS_fa_local', $this->sanitize_checkbox($_POST['niteoCS-fa-local']) );
+	} else {
+		update_option('niteoCS_fa_local', '0');
+	}
 }
 
 if ( isset( $_POST['niteoCS_custom_login_url'] ) ) {
@@ -258,7 +263,7 @@ $head_scripts					= json_decode(get_option('niteoCS_head_scripts', '[]'), true);
 $footer_scripts					= json_decode(get_option('niteoCS_footer_scripts', '[]'), true);
 $bypass							= get_option('niteoCS_bypass', '0');
 $bypass_id 						= get_option('niteoCS_bypass_id', md5( get_home_url() ));
-$bypass_expire 					= get_option('niteoCS_bypass_expire', '172800');
+$bypass_expire 					= get_option('niteoCS_bypass_expire', 172800) / 86400;
 $topbar_icon 					= get_option('niteoCS_topbar_icon', '1');
 $topbar_version 				= get_option('niteoCS_topbar_version', 'cmp-topbar-full');
 $wpautop 						= get_option('niteoCS_wpautop', '1');
@@ -272,6 +277,8 @@ $subscribe_email 				= get_option('niteoCS_subscribe_email_address', get_option(
 $cmp_cookie_notice_comp			= get_option('cmp_cookie_notice_comp', '1');
 $cmp_rss 						= get_option('niteoCS_rss_status', '1');
 $cmp_rest_api 					= get_option('niteoCS_rest_api_status', '1');
+$cmp_fa_local 					= get_option('niteoCS_fa_local', '0');
+
 ?>
 
 
@@ -507,10 +514,10 @@ $cmp_rest_api 					= get_option('niteoCS_rest_api_status', '1');
 
 									<p class="cmp-hint" style="margin-top:0"><?php _e('You can use passphrase which contains letters, numbers, underscores or dashes only.', 'cmp-coming-soon-maintenance');?></p>
 
-									<h4><?php _e('Set bypass cookie Expiration Time in seconds', 'cmp-coming-soon-maintenance');?></h4>
+									<h4><?php _e('Set bypass cookie Expiration Time in days', 'cmp-coming-soon-maintenance');?></h4>
 									<input type="text" name="niteoCS_bypass_expire" value="<?php echo esc_attr( $bypass_expire ); ?>" class="regular-text code"><br>
 
-									<p class="cmp-hint" style="margin-top:0"><?php _e('You can set custom Bypass CMP Cookie expiration time in seconds (1hour = 3600). Default expiration time is 2 days (172800).', 'cmp-coming-soon-maintenance');?></p>
+									<p class="cmp-hint" style="margin-top:0"><?php _e('You can set custom Bypass CMP Cookie expiration time in days. Default expiration time is 2 days.', 'cmp-coming-soon-maintenance');?></p>
 
 									<p><?php _e('Please note this solution is using browser cookies which might not work correctly if you are using caching plugins.', 'cmp-coming-soon-maintenance');?></p>
 
@@ -817,6 +824,32 @@ $cmp_rest_api 					= get_option('niteoCS_rest_api_status', '1');
 					</table>
 
 				</div>
+
+				<div class="table-wrapper cmp-misc">
+
+					<h3 class="no-icon"><?php _e('Misc Settings', 'cmp-coming-soon-maintenance');?></h3>
+					<table class="general">
+						<tbody>
+
+						<tr>
+							<th><?php _e('Font Awesome Icons', 'cmp-coming-soon-maintenance');?></th>
+
+							<td>
+								<fieldset>
+
+									<label for="cmp-fa-local">
+										<input type="checkbox" name="niteoCS-fa-local" class="mode-change-toggle" id="cmp-fa-local" value="1" <?php checked('1', $cmp_fa_local);?>><?php _e('Load Font Awesome icons from a local server', 'cmp-coming-soon-maintenance');?>
+									</label>
+								</fieldset>
+							</td>
+						</tr>
+						<?php echo $this->render_settings->submit(); ?>
+
+						</tbody>
+					</table>
+
+				</div>
+
 
 				<div class="table-wrapper cmp-misc">
 

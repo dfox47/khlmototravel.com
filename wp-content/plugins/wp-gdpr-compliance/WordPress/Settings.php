@@ -15,89 +15,109 @@ use WPGDPRC\Utils\Request;
  */
 class Settings {
 
-	const ACTIVATION_KEY = Plugin::PREFIX . '_activated';
-	const SETTINGS_KEY = Plugin::PREFIX;
-	const SETTINGS_GROUP = 'settings';
+	const ACTIVATION_KEY     = Plugin::PREFIX . '_activated';
+	const SETTINGS_KEY       = Plugin::PREFIX;
+	const SETTINGS_GROUP     = 'settings';
 	const INTEGRATIONS_GROUP = 'integrations';
 
 	const KEY_PREMIUM = 'enable_premium_mode';
 
-	const KEY_POLICY_TEXT = 'privacy_policy_text';
+	const KEY_POLICY_TEXT   = 'privacy_policy_text';
 	const KEY_POLICY_EXTERN = 'enable_privacy_policy_extern';
-	const KEY_POLICY_PAGE = 'privacy_policy_page';
-	const KEY_POLICY_LINK = 'privacy_policy_link';
+	const KEY_POLICY_PAGE   = 'privacy_policy_page';
+	const KEY_POLICY_LINK   = 'privacy_policy_link';
 
-	const KEY_ACCESS_ENABLE = 'enable_access_request';
-	const KEY_ACCESS_PAGE = 'access_request_page';
-	const KEY_ACCESS_TEXT = 'access_request_form_checkbox_text';
+	const KEY_ACCESS_ENABLE      = 'enable_access_request';
+	const KEY_ACCESS_PAGE        = 'access_request_page';
+	const KEY_ACCESS_TEXT        = 'access_request_form_checkbox_text';
 	const KEY_ACCESS_DELETE_TEXT = 'delete_request_form_explanation_text';
 
-	const KEY_CONSENT_EXPLAIN_TEXT = 'consents_bar_explanation_text';
-	const KEY_CONSENT_INFO_TEXT = 'consents_bar_more_information_text';
-	const KEY_CONSENT_BTN_TEXT = 'consents_bar_button_text';
-	const KEY_CONSENT_FONT = 'consents_bar_font';
-	const KEY_CONSENT_API_KEY = 'consents_api_key';
-	const KEY_CONSENT_POSITION = 'consents_bar_position';
-	const KEY_CONSENT_ANIMATION = 'consents_bar_animation';
-	const KEY_CONSENT_BG_COLOR = 'consents_bar_color';
-	const KEY_CONSENT_TEXT_COLOR = 'consents_bar_text_color';
-	const KEY_CONSENT_BTN_PRIMARY = 'consents_bar_button_color_primary';
+	const KEY_CONSENT_EXPLAIN_TEXT  = 'consents_bar_explanation_text';
+	const KEY_CONSENT_INFO_TEXT     = 'consents_bar_more_information_text';
+	const KEY_CONSENT_BTN_TEXT      = 'consents_bar_button_text';
+	const KEY_CONSENT_FONT          = 'consents_bar_font';
+	const KEY_CONSENT_API_KEY       = 'consents_api_key';
+	const KEY_CONSENT_POSITION      = 'consents_bar_position';
+	const KEY_CONSENT_ANIMATION     = 'consents_bar_animation';
+	const KEY_CONSENT_BG_COLOR      = 'consents_bar_color';
+	const KEY_CONSENT_TEXT_COLOR    = 'consents_bar_text_color';
+	const KEY_CONSENT_BTN_PRIMARY   = 'consents_bar_button_color_primary';
 	const KEY_CONSENT_BTN_SECONDARY = 'consents_bar_button_color_secondary';
 
 	const KEY_CONSENT_MODAL_TITLE = 'consents_modal_title';
-	const KEY_CONSENT_MODAL_TEXT = 'consents_modal_explanation_text';
+	const KEY_CONSENT_MODAL_TEXT  = 'consents_modal_explanation_text';
 
 	// Transients
-    const KEY_PUBLISHED_POSTS = 'published_posts';
+	const KEY_PUBLISHED_POSTS = 'published_posts';
 
 	/**
 	 * Registers all the settings
 	 */
 	public static function registerSettings() {
 		// Premium mode
-		Settings::register( Settings::KEY_PREMIUM, self::getSettingArgs( 'integer', 0 ) );
+		self::register( self::KEY_PREMIUM, self::getSettingArgs( 'integer', 0 ) );
 
 		// Privacy Policy
-		Settings::register( Settings::KEY_POLICY_TEXT, self::getSettingArgs( 'text', __( 'Privacy Policy', 'wp-gdpr-compliance' ) ) );
-		Settings::register( Settings::KEY_POLICY_EXTERN, self::getSettingArgs( 'integer', 0 ) );
-		Settings::register( Settings::KEY_POLICY_PAGE, self::getSettingArgs( 'integer', 0 ) );
-		Settings::register( Settings::KEY_POLICY_LINK, self::getSettingArgs( 'url', __( 'https://www.example.com/privacypolicy', 'wp-gdpr-compliance' ) ) );
+		self::register( self::KEY_POLICY_TEXT, self::getSettingArgs( 'text', __( 'Privacy Policy', 'wp-gdpr-compliance' ) ) );
+		self::register( self::KEY_POLICY_EXTERN, self::getSettingArgs( 'integer', 0 ) );
+		self::register( self::KEY_POLICY_PAGE, self::getSettingArgs( 'integer', 0 ) );
+		self::register( self::KEY_POLICY_LINK, self::getSettingArgs( 'url', __( 'https://www.example.com/privacypolicy', 'wp-gdpr-compliance' ) ) );
 
 		// Access Request
-		Settings::register( Settings::KEY_ACCESS_PAGE, self::getSettingArgs( 'integer', 0 ) );
-		Settings::register( Settings::KEY_ACCESS_ENABLE, self::getSettingArgs( 'integer', 0 ) ); // VERY IMPORTANT that KEY_ACCESS_ENABLE gets registered later than KEY_ACCESS_PAGE. On value change of KEY_ACCESS_ENABLE sometimes edits the value of KEY_ACCESS_PAGE!
-		Settings::register( Settings::KEY_ACCESS_TEXT, self::getSettingArgs( 'text', Config::consentText() ) );
-		Settings::register( Settings::KEY_ACCESS_DELETE_TEXT, self::getSettingArgs( 'textarea', Config::explainText() ) );
+		self::register( self::KEY_ACCESS_PAGE, self::getSettingArgs( 'integer', 0 ) );
+		self::register( self::KEY_ACCESS_ENABLE, self::getSettingArgs( 'integer', 0 ) ); // VERY IMPORTANT that KEY_ACCESS_ENABLE gets registered later than KEY_ACCESS_PAGE. On value change of KEY_ACCESS_ENABLE sometimes edits the value of KEY_ACCESS_PAGE!
+		self::register( self::KEY_ACCESS_TEXT, self::getSettingArgs( 'text', Config::consentText() ) );
+		self::register( self::KEY_ACCESS_DELETE_TEXT, self::getSettingArgs( 'textarea', Config::explainText() ) );
 
 		// Consent bar and modal
 		$default = DataProcessor::allRequired() ? esc_attr__( 'More information', 'wp-gdpr-compliance' ) : esc_attr__( 'My settings', 'wp-gdpr-compliance' );
-		Settings::register( Settings::KEY_CONSENT_INFO_TEXT, self::getSettingArgs( 'text', $default ) );
-		Settings::register( Settings::KEY_CONSENT_EXPLAIN_TEXT, self::getSettingArgs( 'text', __( 'This site uses functional cookies and external scripts to improve your experience.', 'wp-gdpr-compliance' ) ) );
-		Settings::register( Settings::KEY_CONSENT_BTN_TEXT, self::getSettingArgs( 'text', esc_attr__( 'Accept', 'wp-gdpr-compliance' ) ) );
-		Settings::register( Settings::KEY_CONSENT_FONT, self::getSettingArgs( 'text', Helper::arrayKeyFirst( Settings::listFontChoices() ) ) );
-		Settings::register( Settings::KEY_CONSENT_API_KEY, self::getSettingArgs( 'text', '' ) );
-		Settings::register( Settings::KEY_CONSENT_POSITION, self::getSettingArgs( 'text', Helper::arrayKeyFirst( Settings::listPositionChoices() ) ) );
-		Settings::register( Settings::KEY_CONSENT_ANIMATION, self::getSettingArgs( 'text' ) ); // not used.
-		Settings::register( Settings::KEY_CONSENT_BG_COLOR, self::getSettingArgs( 'hex', '#000000' ) );
-		Settings::register( Settings::KEY_CONSENT_TEXT_COLOR, self::getSettingArgs( 'hex', '#ffffff' ) );
-		Settings::register( Settings::KEY_CONSENT_BTN_PRIMARY, self::getSettingArgs( 'hex', '#000000' ) );
-		Settings::register( Settings::KEY_CONSENT_BTN_SECONDARY, self::getSettingArgs( 'hex', '#ffffff' ) );
+		self::register( self::KEY_CONSENT_INFO_TEXT, self::getSettingArgs( 'text', $default ) );
+		self::register(
+			self::KEY_CONSENT_EXPLAIN_TEXT,
+			[
+				'type'    => 'text',
+				'default' => __(
+					'This site uses functional cookies and external scripts to improve your experience.',
+					'wp-gdpr-compliance'
+				),
+			]
+		);
+		self::register( self::KEY_CONSENT_BTN_TEXT, self::getSettingArgs( 'text', esc_attr__( 'Accept', 'wp-gdpr-compliance' ) ) );
+		self::register( self::KEY_CONSENT_FONT, self::getSettingArgs( 'text', Helper::arrayKeyFirst( self::listFontChoices() ) ) );
+		self::register( self::KEY_CONSENT_API_KEY, self::getSettingArgs( 'text', '' ) );
+		self::register( self::KEY_CONSENT_POSITION, self::getSettingArgs( 'text', Helper::arrayKeyFirst( self::listPositionChoices() ) ) );
+		self::register( self::KEY_CONSENT_ANIMATION, self::getSettingArgs( 'text' ) ); // not used.
+		self::register( self::KEY_CONSENT_BG_COLOR, self::getSettingArgs( 'hex', '#000000' ) );
+		self::register( self::KEY_CONSENT_TEXT_COLOR, self::getSettingArgs( 'hex', '#ffffff' ) );
+		self::register( self::KEY_CONSENT_BTN_PRIMARY, self::getSettingArgs( 'hex', '#000000' ) );
+		self::register( self::KEY_CONSENT_BTN_SECONDARY, self::getSettingArgs( 'hex', '#ffffff' ) );
 
-		Settings::register( Settings::KEY_CONSENT_MODAL_TITLE, self::getSettingArgs( 'text', __( 'Privacy Settings', 'wp-gdpr-compliance' ) ) );
-		Settings::register( Settings::KEY_CONSENT_MODAL_TEXT, self::getSettingArgs( 'textarea',
-			__( 'This site uses functional cookies and external scripts to improve your experience. Which cookies and scripts are used and how they impact your visit is specified on the left. You may change your settings at any time. Your choices will not impact your visit.', 'wp-gdpr-compliance' )
-		) );
+		self::register( self::KEY_CONSENT_MODAL_TITLE, self::getSettingArgs( 'text', __( 'Privacy Settings', 'wp-gdpr-compliance' ) ) );
+		self::register(
+			self::KEY_CONSENT_MODAL_TEXT,
+			[
+				'type'    => 'textarea',
+				'default' =>
+											__( 'This site uses functional cookies and external scripts to improve your experience. Which cookies and scripts are used and how they impact your visit is specified on the left. You may change your settings at any time. Your choices will not impact your visit.', 'wp-gdpr-compliance' ),
+			]
+		);
 
 		// Add action on option save
-		add_action( 'pre_update_option_' . self::getKey( Settings::KEY_POLICY_TEXT ), [
-			self::class,
-			'onOptionUpdate'
-		] );
+		add_action(
+			'pre_update_option_' . self::getKey( self::KEY_POLICY_TEXT ),
+			[
+				self::class,
+				'onOptionUpdate',
+			]
+		);
 
-		add_action('save_post', [
-            self::class,
-            'onPostSave'
-        ]);
+		add_action(
+			'save_post',
+			[
+				self::class,
+				'onPostSave',
+			]
+		);
 	}
 
 	/**
@@ -113,6 +133,7 @@ class Settings {
 			'type'              => 'string',
 			'sanitize_callback' => 'sanitize_text_field',
 		];
+
 		if ( ! is_null( $default ) ) {
 			$args['default'] = $default;
 		}
@@ -171,15 +192,15 @@ class Settings {
 		return self::SETTINGS_KEY . '_' . $group . '_' . $key;
 	}
 
-    /**
-     * Return the transient settings key.
-     *
-     * @param $key
-     * @return string
-     */
-    public static function getTransientKey( $key ) {
-        return self::SETTINGS_KEY . '_transient_' . $key;
-    }
+	/**
+	 * Return the transient settings key.
+	 *
+	 * @param $key
+	 * @return string
+	 */
+	public static function getTransientKey( $key ) {
+		return self::SETTINGS_KEY . '_transient_' . $key;
+	}
 
 	/**
 	 * Returns the full setting group key including the prefix
@@ -204,27 +225,27 @@ class Settings {
 		return get_option( self::getKey( $key, $group ) );
 	}
 
-    /**
-     * Return the transient value
-     *
-     * @param string $key
-     * @return mixed
-     */
+	/**
+	 * Return the transient value
+	 *
+	 * @param string $key
+	 * @return mixed
+	 */
 	public static function getTransient( $key = '' ) {
-        return get_transient( self::getTransientKey( $key ) );
-    }
+		return get_transient( self::getTransientKey( $key ) );
+	}
 
-    /**
-     * Set the transient value
-     *
-     * @param string $key
-     * @param mixed $value
-     * @param int $expiration
-     * @return mixed
-     */
-    public static function setTransient( $key = '', $value = '', $expiration = 0 ) {
-        return set_transient( self::getTransientKey( $key ), $value, $expiration );
-    }
+	/**
+	 * Set the transient value
+	 *
+	 * @param string $key
+	 * @param mixed $value
+	 * @param int $expiration
+	 * @return mixed
+	 */
+	public static function setTransient( $key = '', $value = '', $expiration = 0 ) {
+		return set_transient( self::getTransientKey( $key ), $value, $expiration );
+	}
 
 	/**
 	 * Lists all the plugin settings
@@ -233,9 +254,12 @@ class Settings {
 	public static function getAll() {
 		global $wpdb;
 
-		$query  = $wpdb->prepare( "SELECT * FROM `" . $wpdb->options . "` WHERE `option_name` LIKE %s", [
-			self::SETTINGS_KEY . '_%',
-		] );
+		$query  = $wpdb->prepare(
+			'SELECT * FROM `' . $wpdb->options . '` WHERE `option_name` LIKE %s',
+			[
+				self::SETTINGS_KEY . '_%',
+			]
+		);
 		$result = $wpdb->get_results( $query, ARRAY_A );
 		if ( empty( $result ) ) {
 			return [];
@@ -271,9 +295,12 @@ class Settings {
 	public static function deleteAll() {
 		global $wpdb;
 
-		$query = $wpdb->prepare( "DELETE FROM `" . $wpdb->options . "` WHERE `option_name` LIKE %s", [
-			self::SETTINGS_KEY . '_%',
-		] );
+		$query = $wpdb->prepare(
+			'DELETE FROM `' . $wpdb->options . '` WHERE `option_name` LIKE %s',
+			[
+				self::SETTINGS_KEY . '_%',
+			]
+		);
 
 		return $wpdb->query( $query );
 	}
@@ -283,15 +310,15 @@ class Settings {
 	 */
 	public static function setDefaults() {
 		$list = [
-			Settings::KEY_PREMIUM => 0,
-			Settings::KEY_ACCESS_ENABLE => 0,
+			self::KEY_PREMIUM       => 0,
+			self::KEY_ACCESS_ENABLE => 0,
 		];
 
 		foreach ( $list as $key => $default ) {
-			if ( Settings::get( $key ) !== false ) {
+			if ( self::get( $key ) !== false ) {
 				continue;
 			}
-			Settings::saveSetting( $key, $default );
+			self::saveSetting( $key, $default );
 		}
 	}
 
@@ -300,7 +327,7 @@ class Settings {
 	 * @return bool
 	 */
 	public static function isPremium() {
-		return Settings::isEnabled( Settings::KEY_PREMIUM );
+		return self::isEnabled( self::KEY_PREMIUM );
 	}
 
 	/**
@@ -308,7 +335,7 @@ class Settings {
 	 * @return bool
 	 */
 	public static function canRequest() {
-		return Settings::isEnabled( Settings::KEY_ACCESS_ENABLE ) && !empty(Request::getAccessPage());
+		return self::isEnabled( self::KEY_ACCESS_ENABLE ) && ! empty( Request::getAccessPage() );
 	}
 
 	/**
@@ -352,7 +379,7 @@ class Settings {
 	 * @return int
 	 */
 	public static function getAccessRequestPage() {
-		return (int) Settings::get( Settings::KEY_ACCESS_PAGE );
+		return (int) self::get( self::KEY_ACCESS_PAGE );
 	}
 
 	/**
@@ -364,7 +391,7 @@ class Settings {
 	 */
 	public static function getAccessRequestFormCheckboxText( $insert = true ) {
 		$default = Config::consentText();
-		$output  = Settings::get( Settings::KEY_ACCESS_TEXT );
+		$output  = self::get( self::KEY_ACCESS_TEXT );
 		if ( $insert ) {
 			$output = apply_filters( Plugin::PREFIX . '_replace_privacy_link', $output );
 		}
@@ -381,7 +408,7 @@ class Settings {
 	 */
 	public static function getDeleteRequestFormExplanationText( $insert = true ) {
 		$default = Config::explainText();
-		$output  = Settings::get( Settings::KEY_ACCESS_DELETE_TEXT );
+		$output  = self::get( self::KEY_ACCESS_DELETE_TEXT );
 		if ( $insert ) {
 			$output = apply_filters( Plugin::PREFIX . '_replace_privacy_link', $output );
 		}
@@ -399,7 +426,7 @@ class Settings {
 	 * @return bool
 	 */
 	public static function isEnabled( $key, $group = self::SETTINGS_GROUP ) {
-		return (int) Settings::get( $key, $group ) === 1;
+		return (int) self::get( $key, $group ) === 1;
 	}
 
 	/**
@@ -414,7 +441,7 @@ class Settings {
 		if ( empty( $plugin_id ) ) {
 			return $default;
 		}
-		$result = Settings::get( $plugin_id . '_' . Integration::KEY_FORMS, Settings::INTEGRATIONS_GROUP );
+		$result = self::get( $plugin_id . '_' . Integration::KEY_FORMS, self::INTEGRATIONS_GROUP );
 
 		return ! empty( $result ) ? $result : $default;
 	}
@@ -435,21 +462,20 @@ class Settings {
 			return $value;
 		}
 
-		$submit = $_POST[ self::SETTINGS_GROUP ]['submit'];
-		reset( $submit );
-		self::setSectionTransient( key( $submit ) );
+        $submit =  esc_sql( key( sanitize_text_field( wp_unslash( $_POST[ self::SETTINGS_GROUP ]['submit'] ) ) ) );
+		self::setSectionTransient( $submit );
 
 		return $value;
 	}
 
-    /**
-     * All actions to trigger on post save,
-     *
-     * - Reset the published posts list cache.
-     */
+	/**
+	 * All actions to trigger on post save,
+	 *
+	 * - Reset the published posts list cache.
+	 */
 	public static function onPostSave() {
-	    self::setTransient(self::KEY_PUBLISHED_POSTS, false);
-    }
+		self::setTransient( self::KEY_PUBLISHED_POSTS, false );
+	}
 
 	/**
 	 * @param string $value

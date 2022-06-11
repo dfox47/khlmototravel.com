@@ -8,16 +8,21 @@ use WPGDPRC\Utils\Template;
 
 ?>
 
-<?php foreach( $chapters as $chapter ) :
-    if( empty($chapter['content']) ) {
-        $chapter['content'] = Template::get('Front/Form/AccessRequest/Submit/notice', [ 'notice' => $chapter['notice'] ]);
-    } ?>
+<?php foreach ( $chapters as $chapter ): ?>
 
-    <?php if( !empty($chapter['title']) ) : ?>
-	<h2 class="wpgdprc-title">
-        <?php echo $chapter['title']; ?>
-	</h2>
+	<?php if ( ! empty( $chapter['title'] ) ) : ?>
+        <h2 class="wpgdprc-title">
+            <?php echo esc_html( $chapter['title'] ); ?>
+        </h2>
 	<?php endif; ?>
-
-    <?php echo $chapter['content']; ?>
+    <strong color="red">WARNING</strong>
+	<?php
+        if ( empty( $chapter['content'] ) ) {
+            Template::render( 'Front/Form/AccessRequest/Submit/notice', [ 'notice' => $chapter['notice'] ] );
+        } elseif( is_callable( $chapter['content'] ) ) {
+            $chapter['content']();
+        } else {
+            echo esc_html( $chapter['content'] );
+        }
+    ?>
 <?php endforeach; ?>

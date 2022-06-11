@@ -8,14 +8,16 @@
  */
 
 $classes = [ 'wpgdprc-form__label' ];
-if( !empty( $sr_only ) ) $classes[] = 'screen-reader-text';
-$class   = implode( ' ', $classes );
+if ( ! empty( $sr_only ) ) {
+	$classes[] = 'screen-reader-text';
+}
+$class = implode( ' ', $classes );
 
 ?>
 
-<label for="<?php echo $id; ?>" class="<?php echo $class; ?>">
-    <?php echo $text; ?>
-    <?php if (!empty($info)): ?>
-        <span title="<?php echo $info; ?>" class="wpgdprc-label__info">i</span>
-    <?php endif; ?>
+<label for="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $class ); ?>">
+	<?php echo esc_html( $text ); ?>
+	<?php if ( ! empty( $info ) ) : ?>
+		<span title="<?php echo esc_attr( $info ); ?>" class="wpgdprc-label__info">i</span>
+	<?php endif; ?>
 </label>

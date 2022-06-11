@@ -24,7 +24,7 @@ export default class SignUpModal {
 
         this.chosseTypePage = document.querySelector('.wpgdprc-sign-up-modal__choose-type')
         this.signUpPage = document.querySelector('.wpgdprc-sign-up-modal__sign-up')
-        this.backButton = document.querySelector('.wpgdprc-sign-up-modal__back')
+        this.backButton = document.querySelector('.wpgdprc-modal__back')
 
         this.signUpButtons = document.querySelectorAll('.wpgdprc-sign-up-button')
         this.ctaButtons = document.querySelectorAll('.wpgdprc-cta-button')
@@ -37,7 +37,7 @@ export default class SignUpModal {
         this.ajaxNonce = wpgdprcAdmin.ajaxNonce
         this.ajaxArg = wpgdprcAdmin.ajaxArg
         this.locale = wpgdprcAdmin.locale
-        this.showModal = wpgdprcAdmin.showModal
+        this.showSignUpModal = wpgdprcAdmin.showSignUpModal
     }
 
     init () {
@@ -48,7 +48,7 @@ export default class SignUpModal {
         MicroModal.init(this.options)
         this.handleButtonActions()
 
-        if (this.showModal) {
+        if (this.showSignUpModal) {
             MicroModal.show(this.modalId, this.options)
         }
     }

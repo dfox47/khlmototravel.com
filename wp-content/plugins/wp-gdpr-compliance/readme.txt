@@ -4,7 +4,7 @@ Tags: gdpr, law, regulations, compliance, data, protection, privacy, data protec
 Requires at least: 5.3
 Tested up to: 5.9
 Requires PHP: 7.0
-Stable tag: 2.0.8
+Stable tag: 2.0.15
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,14 +12,14 @@ Get your website’s consent foundation in place with our free cookie pop-up (GD
 
 == Description ==
 
-This plugin helps your website stay compliant with GDPR using a free cookie pop-up, consent log, and more.
+This plugin helps you on your journey to become compliant with GDPR using a free cookie pop-up, consent log, and more.
 
 Did you know? If you own a business website, you’ll need to comply with additional regulations to avoid huge fines and eliminate uncertainty.
 
 You can try Cookie Information’s business features for free for 30 days.
 
 Get immediate access to:
-- Full compliance with global privacy regulations (GDPR, ePrivacy, and CCPA)
+- Helping you become compliant with global privacy regulations (GDPR, ePrivacy, and CCPA)
 - A pop-up you can customize to reflect your brand in 40+ languages
 - A powerful cookie scanner that immediately notifies you when one of your webpages is illegally tracking and saving private data
 
@@ -38,8 +38,42 @@ Get immediate access to:
 
 == Changelog ==
 
+= 2.0.15 =
+*Release date: 6th May 2022*
+* Removed signup requirement.
+
+= 2.0.14 =
+*Release date: 3th May 2022*
+* Improved code quality of the plugin
+* More Security improvements.
+
+= 2.0.13 =
+*Release date: 25th April 2022*
+* Improved code quality of the plugin
+* More Security improvements.
+
+= 2.0.12 =
+*Release date: 5th April 2022*
+* Improved code quality of the plugin
+* More Security improvements.
+
+= 2.0.11 =
+*Release date: 25th March 2022*
+* Improved code quality of the plugin
+* More Security improvements.
+
+= 2.0.10 =
+*Release date: 15th March 2022*
+* Improved code quality of the plugin
+* Added wpcs checker dependency.
+
+= 2.0.9 =
+*Release date: 14th March 2022*
+* Improved code quality of the plugin
+* Improved performance with memcache
+
 = 2.0.8 =
-*Release date: 18th february 2022*
+*Release date: 18th February 2022*
 * Improved usability of the first time setup.
 
 = 2.0.7 =
@@ -63,7 +97,7 @@ Get immediate access to:
 *Release date: 15th November 2021*
 * Improved the consent popup to also use the chosen font settings.
 * Smaller frontend css.
-* Fixed edge case of iframes in a noscript tag not bening loaded properly.
+* Fixed edge case of iframes in a noscript tag not being loaded properly.
 * Copy updates.
 
 = 2.0.3 =

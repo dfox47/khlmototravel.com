@@ -13,70 +13,74 @@ use WPGDPRC\WordPress\Plugin;
  */
 class UpdateProcessorMode extends AbstractAjax {
 
-    /**
-     * Returns AJAX action name
-     * @return string
-     */
-    protected static function getAction() {
-        return Plugin::PREFIX . '_update_plugin_mode';
+	/**
+	 * Returns AJAX action name
+	 * @return string
+	 */
+	protected static function getAction() {
+		return Plugin::PREFIX . '_update_plugin_mode';
+	}
+
+	/**
+	 * Determines if AJAX is public
+	 * @return bool
+	 */
+	protected static function isPublic() {
+		return false;
+	}
+
+	/**
+	 * @return array
+	 */
+	public static function requiredData() {
+		return [ 'value' ];
+	}
+
+    public static function hasData()
+    {
+        return true;
     }
 
-    /**
-     * Determines if AJAX is public
-     * @return bool
-     */
-    protected static function isPublic() {
-        return false;
-    }
+	/**
+	 * Builds the AJAX response
+	 * (security handling + data validation -if any- is done in the abstract class)
+	 * @param array $data
+	 */
+	public static function buildResponse( $data = [] ) {
+		$updated = [];
+		if ( ! empty( $data['value'] ) ) {
+			// enabling data processors should be done one by one
+			$response = [
+				'success' => true,
+				'data'    => $data,
+			];
+			static::returnResponse( $response );
+		}
 
-    /**
-     * @return array
-     */
-    public static function requiredData() {
-        return [ 'value' ];
-    }
+		// disable all active data processors
+		$list = DataProcessor::getListByType( DataProcessor::KEY_ACTIVE );
+		if ( empty( $list ) ) {
+			static::returnSuccess( _x( 'No active data processors.', 'admin', 'wp-gdpr-compliance' ) );
+		}
 
-    /**
-     * Builds the AJAX response
-     * (security handling + data validation -if any- is done in the abstract class)
-     * @param array $data
-     */
-    public static function buildResponse( $data = [] ) {
-        $updated = [];
-        if( !empty($data['value']) ) {
-            // enabling data processors should be done one by one
-            $response = [
-                'success' => true,
-                'debug'   => $_POST,
-                'data'    => $data,
-            ];
-            static::returnResponse($response);
-        }
+		foreach ( $list as $object ) {
+			$object->setActive( 0 );
+			$updated[] = $object->save();
+		}
 
-        // disable all active data processors
-        $list = DataProcessor::getListByType(DataProcessor::KEY_ACTIVE);
-        if( empty($list) ) {
-            static::returnSuccess(_x('No active data processors.', 'admin', 'wp-gdpr-compliance'));
-        }
+		$tile = [
+			'text'   => Banner::getStatusText(),
+			'footer' => '<p class="wpgdprc-tile__message">' . _x( 'To enable the consent bar, activate one (or more) data processor(s).', 'admin', 'wp-gdpr-compliance' ) . '</p>',
+		];
 
-        foreach( $list as $object ) {
-            $object->setActive(0);
-            $updated[] = $object->save();
-        }
-
-        $tile   = [
-            'text'   => Banner::getStatusText(),
-            'footer' => '<p class="wpgdprc-tile__message">' . _x('To enable the consent bar, activate one (or more) data processor(s).', 'admin', 'wp-gdpr-compliance') . '</p>',
-        ];
-
-        $response = [
-            'success' => true,
-            'data'    => $data,
-            'tile'    => $tile,
-            'updated' => $updated,
-	        'header'  => Template::get('Admin/header')
-        ];
-        static::returnResponse($response);
-    }
+		$response = [
+			'success' => true,
+			'data'    => $data,
+			'tile'    => $tile,
+			'updated' => $updated,
+			'header'  => Template::get( 'Admin/header' ),
+		];
+		static::returnResponse( $response );
+	}
 
 }

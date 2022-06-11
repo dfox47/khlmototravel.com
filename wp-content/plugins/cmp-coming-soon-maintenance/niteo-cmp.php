@@ -3,7 +3,7 @@
  Plugin Name: 		CMP - Coming Soon & Maintenance Plugin
  Plugin URI: 		https://wordpress.org/plugins/cmp-coming-soon-maintenance/
  Description:       Display customizable landing page for Coming Soon, Maintenance & Under Construction page.
- Version:           4.0.20
+ Version:           4.1.2
  Author:            NiteoThemes
  Author URI:        https://www.niteothemes.com
  Text Domain:       cmp-coming-soon-maintenance
@@ -62,8 +62,8 @@ if ( ! class_exists( 'CMP_Coming_Soon_and_Maintenance' ) ) :
 
 		// define constants
 		private function constants() {
-			$this->define( 'CMP_VERSION', '4.0.20' );
-			$this->define( 'CMP_DEBUG', false );
+			$this->define( 'CMP_VERSION', '4.1.2' );
+			$this->define( 'CMP_DEBUG', FALSE );
 			$this->define( 'CMP_AUTHOR', 'NiteoThemes' );
 			$this->define( 'CMP_AUTHOR_HOMEPAGE', 'https://niteothemes.com' );
 			$this->define( 'CMP_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
@@ -463,15 +463,18 @@ if ( ! class_exists( 'CMP_Coming_Soon_and_Maintenance' ) ) :
 		public function cmp_premium_themes() {
 			
 			$premium_themes = array();
-			array_push( $premium_themes, array('name' => 'loki', 'url' => 'https://niteothemes.com/downloads/cmp-loki-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=loki', 'price' => '12') );
-			array_push( $premium_themes, array('name' => 'orion', 'url' => 'https://niteothemes.com/downloads/cmp-orion-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=orion', 'price' => '12') );
-			array_push( $premium_themes, array('name' => 'titan', 'url' => 'https://niteothemes.com/downloads/cmp-titan-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=titan', 'price' => '12') );
-			array_push( $premium_themes, array('name' => 'saturn', 'url' => 'https://niteothemes.com/downloads/cmp-saturn-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=saturn', 'price' => '12') );
+			array_push( $premium_themes, array('name' => 'nova', 'url' => 'https://niteothemes.com/downloads/cmp-nova-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=nova', 'price' => '12') );
 			array_push( $premium_themes, array('name' => 'mercury', 'url' => 'https://niteothemes.com/downloads/cmp-mercury-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=mercury', 'price' => '10') );
 			array_push( $premium_themes, array('name' => 'fifty', 'url' => 'https://niteothemes.com/downloads/cmp-fifty-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=fifty', 'price' => '10') );
+			array_push( $premium_themes, array('name' => 'apollo', 'url' => 'https://niteothemes.com/downloads/cmp-apollo-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=apollo', 'price' => '10') );
+			array_push( $premium_themes, array('name' => 'loki', 'url' => 'https://niteothemes.com/downloads/cmp-loki-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=loki', 'price' => '12') );
+			array_push( $premium_themes, array('name' => 'orion', 'url' => 'https://niteothemes.com/downloads/cmp-orion-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=orion', 'price' => '12') );
+			array_push( $premium_themes, array('name' => 'vega', 'url' => 'https://niteothemes.com/downloads/cmp-vega-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=vega', 'price' => '10') );			
+			array_push( $premium_themes, array('name' => 'mosaic', 'url' => 'https://niteothemes.com/downloads/cmp-mosaic-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=mosaic', 'price' => '10') );
+			array_push( $premium_themes, array('name' => 'titan', 'url' => 'https://niteothemes.com/downloads/cmp-titan-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=titan', 'price' => '12') );
+			array_push( $premium_themes, array('name' => 'saturn', 'url' => 'https://niteothemes.com/downloads/cmp-saturn-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=saturn', 'price' => '12') );
 			array_push( $premium_themes, array('name' => 'atlas', 'url' => 'https://niteothemes.com/downloads/cmp-atlas-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=atlas', 'price' => '12') );
 			array_push( $premium_themes, array('name' => 'scout', 'url' => 'https://niteothemes.com/downloads/cmp-scout-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=scout', 'price' => '10') );
-			array_push( $premium_themes, array('name' => 'mosaic', 'url' => 'https://niteothemes.com/downloads/cmp-mosaic-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=mosaic', 'price' => '10') );
 			array_push( $premium_themes, array('name' => 'libra', 'url' => 'https://niteothemes.com/downloads/cmp-libra-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=libra', 'price' => '10') );
 			array_push( $premium_themes, array('name' => 'delta', 'url' => 'https://niteothemes.com/downloads/cmp-delta-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=delta', 'price' => '10') );
 			array_push( $premium_themes, array('name' => 'headliner', 'url' => 'https://niteothemes.com/downloads/cmp-headliner-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=headliner', 'price' => '10') );
@@ -482,12 +485,10 @@ if ( ! class_exists( 'CMP_Coming_Soon_and_Maintenance' ) ) :
 			array_push( $premium_themes, array('name' => 'hardwork_premium', 'url' => 'https://niteothemes.com/downloads/cmp-hardwork-premium/?utm_source=cmp&utm_medium=referral&utm_campaign=hardwork_premium', 'price' => '10') );
 			array_push( $premium_themes, array('name' => 'tempie', 'url' => 'https://niteothemes.com/downloads/cmp-tempie-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=tempie', 'price' => '10') );
 			array_push( $premium_themes, array('name' => 'stylo', 'url' => 'https://niteothemes.com/downloads/cmp-stylo-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=stylo', 'price' => '10') );
-			array_push( $premium_themes, array('name' => 'apollo', 'url' => 'https://niteothemes.com/downloads/cmp-apollo-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=apollo', 'price' => '10') );
 			array_push( $premium_themes, array('name' => 'ares', 'url' => 'https://niteothemes.com/downloads/cmp-ares-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=ares', 'price' => '10') );
 			array_push( $premium_themes, array('name' => 'juno', 'url' => 'https://niteothemes.com/downloads/cmp-juno-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=juno', 'price' => '10') );
 			array_push( $premium_themes, array('name' => 'pluto', 'url' => 'https://niteothemes.com/downloads/cmp-pluto-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=pluto', 'price' => '10') );
 			array_push( $premium_themes, array('name' => 'agency', 'url' => 'https://niteothemes.com/downloads/cmp-agency-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=agency', 'price' => '15') );
-			array_push( $premium_themes, array('name' => 'vega', 'url' => 'https://niteothemes.com/downloads/cmp-vega-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=vega', 'price' => '10') );			
 			array_push( $premium_themes, array('name' => 'element', 'url' => 'https://niteothemes.com/downloads/cmp-element-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=element', 'price' => '10') );			
 			array_push( $premium_themes, array('name' => 'postery', 'url' => 'https://niteothemes.com/downloads/cmp-postery/?utm_source=cmp&utm_medium=referral&utm_campaign=postery', 'price' => '10') );
 			array_push( $premium_themes, array('name' => 'frame', 'url' => 'https://niteothemes.com/downloads/cmp-frame-theme/?utm_source=cmp&utm_medium=referral&utm_campaign=frame', 'price' => '10') );
@@ -803,7 +804,7 @@ if ( ! class_exists( 'CMP_Coming_Soon_and_Maintenance' ) ) :
 			if ( isset( $_GET['cmp_bypass'] ) && $_GET['cmp_bypass'] == get_option('niteoCS_bypass_id', md5( get_home_url() )) && get_option('niteoCS_bypass', '0') == '1' ) {
 				nocache_headers();
 				header('Cache-Control: max-age=0; private');
-				setcookie('cmp_bypass', get_option('niteoCS_bypass_id', md5( get_home_url() ) ), time() + get_option('niteoCS_bypass_expire', '172800'));
+				setcookie('cmp_bypass', get_option('niteoCS_bypass_id', md5( get_home_url() ) ), time() + get_option('niteoCS_bypass_expire', 172800));
 				// exit CMP
 				return;
 			}

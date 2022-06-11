@@ -5,23 +5,23 @@
 
 @use 'sass:math';
 
-.wpgdprc-sign-up-modal {
+.wpgdprc.modal {
     display: none;
 }
 
-.wpgdprc-sign-up-modal.is-open {
+.wpgdprc.modal.is-open {
     display: block !important;
 }
 
-.wpgdprc-sign-up-modal[aria-hidden='false'] .wpgdprc-sign-up-modal__overlay {
+.wpgdprc.modal[aria-hidden='false'] .wpgdprc-modal__overlay {
     animation: wpgdprcFadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.wpgdprc-sign-up-modal[aria-hidden='true'] .wpgdprc-sign-up-modal__overlay {
+.wpgdprc.modal[aria-hidden='true'] .wpgdprc-modal__overlay {
     animation: wpgdprcFadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.wpgdprc-sign-up-modal__overlay {
+.wpgdprc-modal__overlay {
     will-change: transform;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@
     z-index: 999999;
 }
 
-.wpgdprc-sign-up-modal__inner {
+.wpgdprc-modal__inner {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -51,12 +51,12 @@
     border-radius: $radius-l;
 }
 
-.wpgdprc-sign-up-modal__header {
+.wpgdprc-modal__header {
     padding: rem-calc(15);
     border-bottom: 1px solid #ededed;
 }
 
-:root .wpgdprc-sign-up-modal__title {
+:root .wpgdprc-modal__title {
     font-family: $heading-font-family;
     font-size: rem-calc(20);
     font-weight: bold;
@@ -71,9 +71,9 @@
     margin-bottom: rem-calc(10);
 }
 
-:root .wpgdprc-sign-up-modal {
-    button.wpgdprc-sign-up-modal__close,
-    button.wpgdprc-sign-up-modal__back {
+:root .wpgdprc-modal {
+    button.wpgdprc-modal__close,
+    button.wpgdprc-modal__back {
         position: absolute;
         top: rem-calc(12);
         right: rem-calc(10);
@@ -107,9 +107,41 @@
     }
 }
 
-.wpgdprc-sign-up-modal__body {
+.wpgdprc-modal__body {
     flex-grow: 1;
     border-bottom: 1px solid #ededed;
+}
+
+.wpgdprc-form-modal__body {
+    padding: rem-calc(32) 0;
+    margin: auto;
+
+    // all hubspot specific style to make it more consistent.
+    ul {
+        margin: 0 rem-calc(16) 0 0;
+    }
+
+    li {
+        margin: 0 0 rem-calc(16);
+    }
+
+    .hs-error-msg {
+        color: $color-alert;
+    }
+
+    .hs-button[type='submit'] {
+        margin-top: rem-calc(8);
+        @extend .wpgdprc-button; /* stylelint-disable-line */
+    }
+
+    .hs-form-booleancheckbox-display {
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-left: 0 !important;
+        }
+    }
 }
 
 .wpgdprc-sign-up-modal__description {
@@ -189,7 +221,7 @@
     }
 }
 
-:root .wpgdprc button.wpgdprc-sign-up-modal__back {
+:root .wpgdprc button.wpgdprc-modal__back {
     display: none;
     right: rem-calc(60) !important;
 
@@ -232,19 +264,19 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .wpgdprc-sign-up-modal__header {
+    .wpgdprc-modal__header {
         padding: rem-calc(24 25);
     }
 
-    :root .wpgdprc-sign-up-modal {
-        button.wpgdprc-sign-up-modal__close,
-        button.wpgdprc-sign-up-modal__back {
+    :root .wpgdprc-modal {
+        button.wpgdprc-modal__close,
+        button.wpgdprc-modal__back {
             top: rem-calc(20);
             right: rem-calc(15);
         }
     }
 
-    .wpgdprc-sign-up-modal__body {
+    .wpgdprc-modal__body {
         display: flex;
         flex-direction: row;
     }
@@ -331,13 +363,11 @@ abbr.wpgdprc-required + abbr.required {
     }
 }
 
-.wpgdprc-sign-up-modal__open {
+.wpgdprc-modal__open {
     background-color: transparent;
     border: 0;
 
     padding: rem-calc(2);
-    position: absolute;
-    left: 0;
 
     &,
     svg {
@@ -352,6 +382,10 @@ abbr.wpgdprc-required + abbr.required {
 
     &:hover svg path {
         fill: $color-primary;
+    }
+
+    &:nth-of-type(2) {
+        transform: rotate(180deg) scaleX(-1);
     }
 }
 

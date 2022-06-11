@@ -3,7 +3,7 @@ Contributors: simonpedge
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RP7JLGK6VT252
 Tags: slider, carousel, content slider, responsive slider, html slider, owl carousel
 Requires at least: 4.0
-Tested up to: 5.8
+Tested up to: 5.9.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -97,6 +97,18 @@ Adding a SLIDE ANYTHING slider using the WordPress 5.0 'Block Editor' is pretty 
 2. How a carousel created using `Slide Anything` appears within the slider preview popup.
 
 == Changelog ==
+
+= 2.3.45 =
+* Added the WordPress filter 'wp_kses_allowed_html' to allow IFRAME content to be inserted into slide content, which is required to insert YouTube & Vimeo IFRAMEs.
+
+= 2.3.44 =
+* Another security fix. WPScan notified me of a potential security vunerability where high privilege users (with a role of 'Editor' and above) could perform Cross-Site Scripting attacks by inserting malicious scripts within slide content. Fixed by using 'wp_kses_post()' function to sanitise slide content before updating sliders.
+
+= 2.3.43 =
+* Fixed a code syntax error in the security fix I did in release 2.3.41 (oops!)
+
+= 2.3.42 =
+* Added a new option 'Don't use CSS IDs for slides' - when checked CSS Classes will be used instead of CSS IDs to identify each slide container.
 
 = 2.3.41 =
 * A security fix to remove a vunerability to SQL injection with the slide duplication function.
@@ -740,3 +752,15 @@ Adding a SLIDE ANYTHING slider using the WordPress 5.0 'Block Editor' is pretty 
 
 = 2.3.41 =
 * A security fix to remove a vunerability to SQL injection with the slide duplication function.
+
+= 2.3.42 =
+* Added a new option 'Don't use CSS IDs for slides' - when checked CSS Classes will be used instead of CSS IDs to identify each slide container.
+
+= 2.3.43 =
+* Fixed a code syntax error in the security fix I did in release 2.3.41 (oops!)
+
+= 2.3.44 =
+* Another security fix. WPScan notified me of a potential security vunerability where high privilege users (with a role of 'Editor' and above) could perform Cross-Site Scripting attacks by inserting malicious scripts within slide content. Fixed by using 'wp_kses_post()' function to sanitise slide content before updating sliders.
+
+= 2.3.45 =
+* Added the WordPress filter 'wp_kses_allowed_html' to allow IFRAME content to be inserted into slide content, which is required to insert YouTube & Vimeo IFRAMEs.

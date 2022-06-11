@@ -64,7 +64,7 @@ class Anonymous {
 		}
 
 		$replace = '*';
-		if ( in_array( $length, range( 3, 5 ) ) ) {
+		if ( in_array( $length, range( 3, 5 ), true ) ) {
 			$replace = '**';
 		} elseif ( $length > 5 ) {
 			$replace = '***';

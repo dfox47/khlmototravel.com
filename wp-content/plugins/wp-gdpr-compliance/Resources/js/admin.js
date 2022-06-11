@@ -22,6 +22,8 @@ import SettingsForm from './admin/settings-form'
 import Wizard from './admin/wizard'
 import SignUpModal from './admin/sign-up-modal'
 import ComparisonSlider from './admin/comparison-slider'
+import ConsentBarText from './admin/consent-bar-text'
+import FormModal from './admin/form-modal'
 
 /**
  * When using FontAwesome via Javascript
@@ -45,9 +47,17 @@ init(() => {
     new Tabs()
 
     // Add Admin components here...
+    const formElements = {
+        inputBarText: document.querySelector('.wpgdprc-form__field.wpgdprc-form__field--explaintext input'),
+        inputButtonAccept: document.querySelector('.wpgdprc-form__field.wpgdprc-form__field--buttontext input'),
+        inputButtonSettings: document.querySelector('.wpgdprc-form__field.wpgdprc-form__field--moretext input'),
+        inputModalTitle: document.querySelector('.wpgdprc-form__field.wpgdprc-form__field--modaltitle input'),
+        inputModalText: document.querySelector('.wpgdprc-form__field.wpgdprc-form__field--modaltext textarea')
+    }
+    new ConsentBarForm(formElements)
+    new ConsentBarText(formElements)
     new BannerItems()
     new Expand()
-    new ConsentBarForm()
     new IntegrationsForm()
     new PrivacyPolicyForm()
     new RequestUserForm()
@@ -57,5 +67,6 @@ init(() => {
     new ComparisonSlider()
 
     new SignUpModal(premiumForm)
+    new FormModal()
     new Wizard(mirror)
 })

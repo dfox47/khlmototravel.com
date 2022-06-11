@@ -17,13 +17,14 @@ use WPGDPRC\WordPress\Settings;
  */
 class Wizard {
 
+
 	const OPTION_KEY = Plugin::PREFIX . '_fts_finished';
-	const URL_KEY = Plugin::PREFIX . '_fts';
+	const URL_KEY    = Plugin::PREFIX . '_fts';
 
 	const STATUS_FINISHED = 'finished';
-	const STATUS_RESTART = 'restart';
+	const STATUS_RESTART  = 'restart';
 
-	const AJAX_SAVE_CONSENT = Plugin::PREFIX . '_wizard_save_consent';
+	const AJAX_SAVE_CONSENT  = Plugin::PREFIX . '_wizard_save_consent';
 	const AJAX_SAVE_SETTINGS = Plugin::PREFIX . '_wizard_save_settings';
 
 	public static function initHooks() {
@@ -96,14 +97,14 @@ class Wizard {
 		}
 
 		$status = sanitize_key( $_GET[ self::URL_KEY ] );
-		if ( ! in_array( $status, [ self::STATUS_FINISHED, self::STATUS_RESTART ] ) ) {
+		if ( ! in_array( $status, [ self::STATUS_FINISHED, self::STATUS_RESTART ], true ) ) {
 			return false;
 		}
 
 		// if it is not finished because of the check above it has to be restarted.
 		$isDone = $status === self::STATUS_FINISHED;
 
-		Wizard::setCompletionStatus( $isDone );
+		self::setCompletionStatus( $isDone );
 
 		return $isDone;
 	}
@@ -112,22 +113,34 @@ class Wizard {
 	 * Show the simple wizard notice on the main dashboard page.
 	 */
 	public static function simpleNotice() {
-
 		if ( ! is_admin() ) {
 			return;
 		}
 
 		$screen = get_current_screen();
-		if ( $screen->id !== "dashboard" ) {
+		if ( $screen->id !== 'dashboard' ) {
 			return;
 		}
 
-        if (get_option(Settings::ACTIVATION_KEY, false)) {
-            return;
-        }
+		if ( get_option( Settings::ACTIVATION_KEY, false ) ) {
+			return;
+		}
 
-		$link = Elements::getLink( esc_url( PageWizard::getPageUrl() ), _x( 'First time setup Wizard', 'admin', 'wp-gdpr-compliance' ) );
-		echo AdminHelper::wrapNotice( sprintf( _x( '<strong>Hey!</strong> Thank you for installing %s!', 'admin', 'wp-gdpr-compliance' ), Config::pluginName() ) . '<br/>' . sprintf( _x( 'To setup the plugin and see what this plugin can do, go to our %1s.', 'admin', 'wp-gdpr-compliance' ), $link ) );
+		$link = Elements::getLink(
+			esc_url( PageWizard::getPageUrl() ),
+			_x( 'First time setup Wizard', 'admin', 'wp-gdpr-compliance' )
+		);
+        AdminHelper::wrapNotice(
+			sprintf(
+				/* translators: %s: Plugin name */
+				_x( '<strong>Hey!</strong> Thank you for installing %s!', 'admin', 'wp-gdpr-compliance' ),
+				Config::pluginName()
+			) . '<br/>' . sprintf(
+				/* translators: %1s: Site link element */
+				_x( 'To setup the plugin and see what this plugin can do, go to our %1s.', 'admin', 'wp-gdpr-compliance' ),
+				$link
+			)
+		);
 	}
 
 	/**

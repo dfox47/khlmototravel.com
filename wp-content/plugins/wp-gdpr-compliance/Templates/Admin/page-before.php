@@ -7,17 +7,17 @@ use WPGDPRC\Utils\Wizard;
 
 ?>
 
-<div class="wrap wpgdprc <?php echo sanitize_key($_GET['page']); ?>" data-mode="<?php echo Settings::isPremium() ? 'premium' : 'free'; ?>">
-	<h1 class="wp-heading-inline screen-reader-text"><?php echo Config::pluginName(); ?></h1>
+<div class="wrap wpgdprc <?php echo esc_attr( sanitize_key( $_GET['page'] ?? '' ) ); ?>" data-mode="<?php echo Settings::isPremium() ? 'premium' : 'free'; ?>">
+	<h1 class="wp-heading-inline screen-reader-text"><?php echo esc_html( Config::pluginName() ); ?></h1>
 
-    <header class="wpgdprc-header">
-        <?php Template::render('Admin/header'); ?>
-    </header>
+	<header class="wpgdprc-header">
+		<?php Template::render( 'Admin/header' ); ?>
+	</header>
 
 	<hr class="wp-header-end">
 
-    <?php if(!Wizard::isCompleted()): ?>
-        <?php Wizard::renderNotice(); ?>
-    <?php endif; ?>
+	<?php if ( ! Wizard::isCompleted() ) : ?>
+		<?php Wizard::renderNotice(); ?>
+	<?php endif; ?>
 
-	<main class="wpgdprc-main">
+	<main id="wpgdprc-main" class="wpgdprc-main">

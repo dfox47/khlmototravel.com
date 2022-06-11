@@ -82,8 +82,9 @@ class WooCommerce extends AbstractPlugin {
 	 */
 	public function getResults( bool $front, string $search ): array {
 		return [
-			'icon'   => WooCommerce::getIcon(),
-			'title'  => WooCommerce::getName( $front ),
+			'icon'   => self::getIcon(),
+			'title'  => self::getName( $front ),
+			/* translators: %1s: search query */
 			'notice' => sprintf( __( 'No orders found with email address%1s.', 'wp-gdpr-compliance' ), $search ),
 		];
 	}
@@ -165,9 +166,12 @@ class WooCommerce extends AbstractPlugin {
 	 * Add WP GDPR field before submit button
 	 */
 	public function addField() {
-		$required = Template::get( 'Front/Elements/required', [
-			'message' => $this->getRequiredText( (int) $this->getID() ),
-		] );
+		$required = Template::get(
+			'Front/Elements/required',
+			[
+				'message' => $this->getRequiredText( (int) $this->getID() ),
+			]
+		);
 		$args     = [
 			'type'     => 'checkbox',
 			'class'    => [ Plugin::PREFIX . '-checkbox' ],
@@ -202,7 +206,7 @@ class WooCommerce extends AbstractPlugin {
 		$value = $this->getAcceptedDate( ! empty( $date ) );
 		$text  = sprintf( '<p class="form-field form-field-wide wpgdprc-accepted-date"><strong>%1s</strong><br />%2s</p>', $label, $value );
 
-		echo apply_filters( Plugin::PREFIX . '_woocommerce_accepted_date_in_order_data', $text, $label, $value, $order );
+        echo wp_kses( apply_filters( Plugin::PREFIX . '_woocommerce_accepted_date_in_order_data', $text, $label, $value, $order ), \WPGDPRC\Utils\AdminHelper::getAllowedHTMLTags() );
 	}
 
 	/**
@@ -212,13 +216,14 @@ class WooCommerce extends AbstractPlugin {
 	 * @return string
 	 */
 	public function acceptedDateInOrderOverview( string $column = '', int $order_id = 0 ): string {
-		if ( $column != $this->getFieldTag() . '-privacy' ) {
+		if ( $column !== $this->getFieldTag() . '-privacy' ) {
 			return $column;
 		}
 
 		$date  = get_post_meta( $order_id, '_' . $this->getFieldTag(), true );
 		$value = $this->getAcceptedDate( ! empty( $date ) );
-		echo apply_filters( Plugin::PREFIX . '_accepted_date_in_woocommerce_order_overview', $value, $order_id );
+
+		echo esc_html( apply_filters( Plugin::PREFIX . '_accepted_date_in_woocommerce_order_overview', $value, $order_id ) );
 
 		return $column;
 	}

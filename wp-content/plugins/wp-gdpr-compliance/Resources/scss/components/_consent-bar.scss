@@ -5,7 +5,8 @@
 
 @use 'sass:math';
 
-.wpgdprc-consent-bar {
+.wpgdprc-consent-bar,
+.wpgdprc-admin-bar {
     position: fixed;
     bottom: 0;
     right: 0;
@@ -13,6 +14,10 @@
     margin: rem-calc(15);
     font-family: var(--wp-gdpr--bar--font-family, inherit); // should default to the global font off the site.
     z-index: 99999;
+}
+
+.wpgdprc-admin-bar .wpgdprc-consent-bar__notice {
+    text-align: center;
 }
 
 .wpgdprc-consent-bar__inner {
@@ -61,16 +66,15 @@
 
 .wpgdprc-consent-bar__column--settings,
 .wpgdprc-consent-bar__column--accept {
-    @include breakpoint(medium down) {
+    .wpgdprc-button {
+        white-space: nowrap;
         flex-grow: 1;
-
-        .wpgdprc-button {
-            width: 100%;
-        }
     }
 }
 
 .wpgdprc-consent-bar__notice {
+    @extend p; /* stylelint-disable-line */
+
     font-size: 1rem;
 
     p {

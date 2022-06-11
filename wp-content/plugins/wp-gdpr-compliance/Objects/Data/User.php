@@ -61,7 +61,7 @@ class User {
 	 */
 	public function load() {
 		global $wpdb;
-		$query = "SELECT * FROM `" . $wpdb->users . "` WHERE `ID` = %d";
+		$query = 'SELECT * FROM `' . $wpdb->users . '` WHERE `ID` = %d';
 		$row   = $wpdb->get_row( $wpdb->prepare( $query, $this->getId() ) );
 		if ( empty( $row ) ) {
 			return;
@@ -106,7 +106,7 @@ class User {
 
 		global $wpdb;
 		$output  = [];
-		$query   = "SELECT * FROM `" . $wpdb->usermeta . "` WHERE `user_id` = %d";
+		$query   = 'SELECT * FROM `' . $wpdb->usermeta . '` WHERE `user_id` = %d';
 		$results = $wpdb->get_results( $wpdb->prepare( $query, $user_id ) );
 		if ( empty( $results ) ) {
 			return $output;
@@ -133,7 +133,7 @@ class User {
 		}
 
 		global $wpdb;
-		$query   = "SELECT * FROM `" . $wpdb->users . "` WHERE `user_email` = %s";
+		$query   = 'SELECT * FROM `' . $wpdb->users . '` WHERE `user_email` = %s';
 		$results = $wpdb->get_results( $wpdb->prepare( $query, $email ) );
 		if ( empty( $results ) ) {
 			return $output;
@@ -186,7 +186,7 @@ class User {
 			'shipping_postcode',
 			'shipping_state',
 			'shipping_country',
-			'shipping_phone'
+			'shipping_phone',
 		];
 
 		static::process_meta( $user_id, $meta );

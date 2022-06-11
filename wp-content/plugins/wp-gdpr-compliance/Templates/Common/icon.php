@@ -7,12 +7,12 @@
 
 use WPGDPRC\WordPress\Plugin;
 
-$href = Plugin::getAssetsUrl('icons') . "/sprite-$sprite.svg#$icon"
+$href = Plugin::getAssetsUrl( 'icons' ) . "/sprite-$sprite.svg#$icon"
 
 ?>
 
-<span data-icon="<?= $icon ?>" class="icon--wrap">
-    <svg class="icon">
-        <use href=<?= esc_url($href) ?>></use>
-    </svg>
+<span data-icon="<?php echo esc_attr( $icon ); ?>" class="icon--wrap">
+	<svg class="icon">
+		<use href=<?php echo esc_url( $href ); ?>></use>
+	</svg>
 </span>

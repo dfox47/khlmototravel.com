@@ -27,7 +27,7 @@ abstract class AbstractPlugin extends AbstractIntegration {
 			return;
 		}
 
-		add_action('init', [$this, 'setupValues'], 1);
+		add_action( 'init', [ $this, 'setupValues' ], 1 );
 
 		$this->initHooks();
 	}
@@ -42,11 +42,10 @@ abstract class AbstractPlugin extends AbstractIntegration {
 				$this->setValues( [], $name );
 			}
 
-
 			$stored = Settings::get( $this->getID() . '_' . $name, Settings::INTEGRATIONS_GROUP );
 			foreach ( $this->getList() as $id => $form ) {
 				$values        = $this->getValues( $name );
-				$values[ $id ] = !isset($stored[ $id ]) || $stored[ $id ] === false ?  $default : $stored[ $id ];
+				$values[ $id ] = ! isset( $stored[ $id ] ) || $stored[ $id ] === false ? $default : $stored[ $id ];
 				$this->setValues( $values, $name );
 			}
 		}
@@ -128,6 +127,7 @@ abstract class AbstractPlugin extends AbstractIntegration {
 	 * @return string
 	 */
 	public function notInstalledText(): string {
+		/* translators: %1s: plugin name */
 		return sprintf( _x( 'Currently the %1s plugin is not installed.', 'admin', 'wp-gdpr-compliance' ), $this->getName() );
 	}
 
@@ -139,7 +139,8 @@ abstract class AbstractPlugin extends AbstractIntegration {
 		$url  = add_query_arg( [ 'plugin_status' => 'inactive' ], admin_url( 'plugins.php' ) );
 		$link = Elements::getLink( $url, _x( 'not activated', 'admin', 'wp-gdpr-compliance' ), [ 'target' => '_blank' ] );
 
-		return sprintf( _x( 'Currently the %1s plugin is installed, but %2s.', 'admin', 'wp-gdpr-compliance' ), $this->getName(), $link );
+		/* translators: %1$1s: plugin name %2$2s: activation link element with text "Not activated" */
+		return sprintf( _x( 'Currently the %1$1s plugin is installed, but %2$2s.', 'admin', 'wp-gdpr-compliance' ), $this->getName(), $link );
 	}
 
 	/**
@@ -150,7 +151,8 @@ abstract class AbstractPlugin extends AbstractIntegration {
 		$url  = add_query_arg( [ 'plugin_status' => 'upgrade' ], admin_url( 'plugins.php' ) );
 		$link = Elements::getLink( $url, _x( 'this version is not supported', 'admin', 'wp-gdpr-compliance' ), [ 'target' => '_blank' ] );
 
-		return sprintf( _x( 'Currently the %1s plugin is installed, but %2s. The plugin will be supported from version %3s and up.', 'admin', 'wp-gdpr-compliance' ), $this->getName(), $link, $this->getVersion() );
+		/* translators: %1$1s: plugin name %2$2s: link %3$3s: Version */
+		return sprintf( _x( 'Currently the %1$1s plugin is installed, but %2$2s. The plugin will be supported from version %3$3s and up.', 'admin', 'wp-gdpr-compliance' ), $this->getName(), $link, $this->getVersion() );
 	}
 
 	/**
@@ -158,6 +160,7 @@ abstract class AbstractPlugin extends AbstractIntegration {
 	 * @return string
 	 */
 	public function noFormsText(): string {
+		/* translators: %1$1s: plugin name */
 		return sprintf( _x( 'No active %1s forms found. Please create a form and return to set the checkbox message(s).', 'admin', 'wp-gdpr-compliance' ), $this->getName() );
 	}
 
@@ -275,7 +278,7 @@ abstract class AbstractPlugin extends AbstractIntegration {
 			return false;
 		}
 
-		return in_array( (int) $form_id, $list );
+		return in_array( (int) $form_id, $list, true );
 	}
 
 }

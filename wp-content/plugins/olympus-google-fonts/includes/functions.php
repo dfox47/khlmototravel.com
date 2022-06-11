@@ -57,7 +57,7 @@ function ogf_get_elements() {
 			'label'       => esc_html__( 'Site Title Typography', 'olympus-google-fonts' ),
 			'description' => esc_html__( 'Select and configure the font for your site title.', 'olympus-google-fonts' ),
 			'section'     => 'ogf_advanced__branding',
-			'selectors'   => '#site-title, .site-title, #site-title a, .site-title a, #site-logo, #site-logo a, #logo, #logo a, .logo, .logo a',
+			'selectors'   => '#site-title, .site-title, #site-title a, .site-title a, #site-logo, #site-logo a, #logo, #logo a, .logo, .logo a, .wp-block-site-title, .wp-block-site-title a',
 		),
 		'ogf_site_description' => array(
 			'label'       => esc_html__( 'Site Description Typography', 'olympus-google-fonts' ),
@@ -69,7 +69,7 @@ function ogf_get_elements() {
 			'label'       => esc_html__( 'Navigation Typography', 'olympus-google-fonts' ),
 			'description' => esc_html__( 'Select and configure the font for your site navigation.', 'olympus-google-fonts' ),
 			'section'     => 'ogf_advanced__navigation',
-			'selectors'   => '.menu, .page_item a, .menu-item a',
+			'selectors'   => '.menu, .page_item a, .menu-item a, .wp-block-navigation, .wp-block-navigation-item__content',
 		),
 		'ogf_post_page_content' => array(
 			'label'       => esc_html__( 'Content Typography', 'olympus-google-fonts' ),
@@ -81,7 +81,7 @@ function ogf_get_elements() {
 			'label'       => esc_html__( 'Title and H1 Typography', 'olympus-google-fonts' ),
 			'description' => esc_html__( 'Select and configure the font for your title and H1 headings.', 'olympus-google-fonts' ),
 			'section'     => 'ogf_advanced__content',
-			'selectors'   => '.entry-title, .entry-title a, .post-title, .post-title a, .page-title, .entry-content h1, #content h1, .type-post h1, .type-page h1',
+			'selectors'   => '.wp-block-post-title, .wp-block-post-title a, .entry-title, .entry-title a, .post-title, .post-title a, .page-title, .entry-content h1, #content h1, .type-post h1, .type-page h1',
 		),
 		'ogf_post_page_h2' => array(
 			'label'       => esc_html__( 'H2 Typography', 'olympus-google-fonts' ),
@@ -135,9 +135,7 @@ function ogf_get_elements() {
 			'label'       => esc_html__( 'Headings Typography', 'olympus-google-fonts' ),
 			'description' => esc_html__( 'Select and configure the font for your footer headings.', 'olympus-google-fonts' ),
 			'section'     => 'ogf_advanced__footer',
-			'selectors'   => 'footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
-												.footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6
-												#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6',
+			'selectors'   => 'footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6, #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6',
 		),
 		'ogf_footer_content' => array(
 			'label'       => esc_html__( 'Content Typography', 'olympus-google-fonts' ),

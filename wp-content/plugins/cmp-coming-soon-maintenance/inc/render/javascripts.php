@@ -422,7 +422,7 @@ if ( isset( $theme_supports['counter_script']) && $theme_supports['counter_scrip
 
 if ( $counter_script && get_option('niteoCS_counter', '1') == '1') {
     $countdown_action   = get_option('niteoCS_countdown_action', 'no-action');
-    $days_counter = array('delta', 'mercury', 'libra', 'thor', 'headliner', 'mosaic', 'saturn');
+    $days_counter = array('delta', 'mercury', 'libra', 'thor', 'headliner', 'mosaic', 'saturn', 'nova');
     // counter script for day only
     if ( in_array($themeslug, $days_counter)  ) { ?>
         <script>

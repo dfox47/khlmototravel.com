@@ -12,56 +12,61 @@ use WPGDPRC\WordPress\Settings;
  */
 class UpdatePremiumMode extends AbstractAjax {
 
-    /**
-     * Returns AJAX action name
-     * @return string
-     */
-    protected static function getAction() {
-        return Plugin::PREFIX . '_update_premium';
+	/**
+	 * Returns AJAX action name
+	 * @return string
+	 */
+	protected static function getAction() {
+		return Plugin::PREFIX . '_update_premium';
+	}
+
+	/**
+	 * Determines if AJAX is public
+	 * @return bool
+	 */
+	protected static function isPublic() {
+		return false;
+	}
+
+	/**
+	 * @return array
+	 */
+	public static function requiredData() {
+		return [ 'checked' ];
+	}
+
+    public static function hasData()
+    {
+        return true;
     }
 
-    /**
-     * Determines if AJAX is public
-     * @return bool
-     */
-    protected static function isPublic() {
-        return false;
-    }
+	/**
+	 * Builds the AJAX response
+	 * (security handling + data validation -if any- is done in the abstract class)
+	 * @param array $data
+	 */
+	public static function buildResponse( $data = [] ) {
+		$userType = $data['userType'] ?? null;
+		UserTypeHelper::setUserType( $userType );
 
-    /**
-     * @return array
-     */
-    public static function requiredData() {
-        return [ 'checked' ];
-    }
+		$checked = filter_var( $data['checked'], FILTER_VALIDATE_BOOLEAN );
+		if ( $userType === UserTypeHelper::business ) { // if usertype was set to business with this call update to premium.
+			$checked = true;
+		}
 
-    /**
-     * Builds the AJAX response
-     * (security handling + data validation -if any- is done in the abstract class)
-     * @param array $data
-     */
-    public static function buildResponse( $data = [] ) {
-        $userType = $data['userType'] ?? null;
-        UserTypeHelper::setUserType($userType);
+		if ( ! is_null( $userType ) ) {
+			UserTypeHelper::setLastShown( time() );
+		}
 
-        $checked  = filter_var($data['checked'], FILTER_VALIDATE_BOOLEAN);
-        if ($userType === UserTypeHelper::business) { // if usertype was set to business with this call update to premium.
-            $checked = true;
-        }
+		$success = Settings::saveSetting( Settings::KEY_PREMIUM, $checked );
 
-        if (!is_null($userType)) {
-            UserTypeHelper::setLastShown(time());
-        }
-
-        $success  = Settings::saveSetting(Settings::KEY_PREMIUM, $checked);
-
-        $response = [
-            'success' => $success,
-            'premium' => Settings::isPremium(),
-            'user_type' => UserTypeHelper::getUserType(),
-            'header'  => Template::get('Admin/header'),
-        ];
-        static::returnResponse($response);
-    }
+		$response = [
+			'success'   => $success,
+			'premium'   => Settings::isPremium(),
+			'user_type' => UserTypeHelper::getUserType(),
+			'header'    => Template::get( 'Admin/header' ),
+		];
+		static::returnResponse( $response );
+	}
 
 }

@@ -23,9 +23,9 @@ use WPGDPRC\WordPress\Settings;
  */
 class Request {
 
-    const KEY_COUNT     = 'count';
-    const KEY_REQUESTED = 'requested';
-    const KEY_PROCESSED = 'processed';
+	const KEY_COUNT     = 'count';
+	const KEY_REQUESTED = 'requested';
+	const KEY_PROCESSED = 'processed';
 
 	/**
 	 * @return false|WP_Post
@@ -104,12 +104,12 @@ class Request {
 			'icon'              => '',
 			'title'             => '',
 			'content'           => '',
+			/* translators: %s: email address (Beginning with a space!) */
 			'notice'            => sprintf( __( 'No data found with email address%1s.', 'wp-gdpr-compliance' ), $search ),
 			self::KEY_COUNT     => 0,
 			self::KEY_REQUESTED => 0,
 			self::KEY_PROCESSED => 0,
 		];
-
 
 		/**
 		 * @var $integration AbstractIntegration | AbstractPlugin
@@ -124,11 +124,9 @@ class Request {
 
 		$result = array_merge( $defaults, $result );
 		if ( $front ) {
-			$items = Data::getOutput( $data, $type, $object->getId() );
-			if ( ! empty( $items ) ) {
-				$result['content'] = $items;
+			if ( ! empty( $data ) ) {
+				$result['content'] = function() use ($data, $type, $object) {Data::renderOutput($data, $type, $object->getId() );};
 			}
-
 		} else {
 			$result['list'] = [];
 
@@ -136,22 +134,26 @@ class Request {
 				foreach ( $data as $item ) {
 					$result['list'][] = $item->getId();
 
-                    $request = RequestDelete::getByTypeAndDataIdAndAccessId($type, $item->getId(), $object->getId());
-                    if( !empty($request) ) {
-                        $result[self::KEY_REQUESTED]++;
-                        if( $request->getProcessed() ) $result[ self::KEY_PROCESSED ]++;
-                    }
-                }
-            }
+					$request = RequestDelete::getByTypeAndDataIdAndAccessId( $type, $item->getId(), $object->getId() );
+					if ( ! empty( $request ) ) {
+						$result[ self::KEY_REQUESTED ]++;
+						if ( $request->getProcessed() ) {
+							$result[ self::KEY_PROCESSED ]++;
+						}
+					}
+				}
+			}
 
-            $list = RequestDelete::getByTypeAndAccessId($type, $object->getId());
-            foreach( $list as $request ) {
-                if( !in_array($request->getDataId(), $result['list']) ) {
-                    $result['list'][] = $request->getDataId();
-                    $result[self::KEY_REQUESTED]++;
-	                if( $request->getProcessed() ) $result[ self::KEY_PROCESSED ]++;
-                };
-            }
+			$list = RequestDelete::getByTypeAndAccessId( $type, $object->getId() );
+			foreach ( $list as $request ) {
+				if ( ! in_array( $request->getDataId(), $result['list'], true ) ) {
+					$result['list'][] = $request->getDataId();
+					$result[ self::KEY_REQUESTED ]++;
+					if ( $request->getProcessed() ) {
+						$result[ self::KEY_PROCESSED ]++;
+					}
+				};
+			}
 
 			$result[ self::KEY_COUNT ] = count( $result['list'] );
 		}
@@ -230,19 +232,23 @@ class Request {
 
 		$result = [];
 		if ( ! empty( $offset['y'] ) ) {
-			$result[] = sprintf( _nx( '1 year', '%1s years', (int) $offset['y'], 'admin', 'wp-gdpr-compliance' ), $offset['y'] );
+			/* translators: %1s: number of years */
+			$result[] = sprintf( _nx( '%1s year', '%1s years', (int) $offset['y'], 'admin', 'wp-gdpr-compliance' ), $offset['y'] );
 		}
 
 		if ( ! empty( $offset['m'] ) ) {
-			$result[] = sprintf( _nx( '1 month', '%1s months', (int) $offset['m'], 'admin', 'wp-gdpr-compliance' ), $offset['m'] );
+			/* translators: %1s: number of months */
+			$result[] = sprintf( _nx( '%1s month', '%1s months', (int) $offset['m'], 'admin', 'wp-gdpr-compliance' ), $offset['m'] );
 		}
 
 		if ( ! empty( $offset['d'] ) ) {
-			$result[] = sprintf( _nx( '1 day', '%1s days', (int) $offset['d'], 'admin', 'wp-gdpr-compliance' ), $offset['d'] );
+			/* translators: %1s: number of days */
+			$result[] = sprintf( _nx( '%1s day', '%1s days', (int) $offset['d'], 'admin', 'wp-gdpr-compliance' ), $offset['d'] );
 		}
 
 		if ( ! empty( $offset['h'] ) ) {
-			$result[] = sprintf( _nx( '1 hour', '%1s hours', (int) $offset['h'], 'admin', 'wp-gdpr-compliance' ), $offset['h'] );
+			/* translators: %1s: number of hours */
+			$result[] = sprintf( _nx( '%1s hour', '%1s hours', (int) $offset['h'], 'admin', 'wp-gdpr-compliance' ), $offset['h'] );
 		}
 
 		if ( empty( $result ) ) {
@@ -255,7 +261,8 @@ class Request {
 		$last = end( $result );
 		array_pop( $result );
 
-		return sprintf( _x( '%1s and %2s', 'admin', 'wp-gdpr-compliance' ), implode( ', ', $result ), $last );
+		/* translators: %1$1s: results %2$2s: last */
+		return sprintf( _x( '%1$1s and %2$2s', 'admin', 'wp-gdpr-compliance' ), implode( ', ', $result ), $last );
 	}
 
 }

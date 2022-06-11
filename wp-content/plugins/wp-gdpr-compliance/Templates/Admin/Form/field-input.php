@@ -8,6 +8,8 @@
  * @var string $attr
  */
 
+use WPGDPRC\Utils\AdminForm;
+
 if ( empty( $id ) ) {
 	$id = sanitize_key( $name );
 }
@@ -16,10 +18,10 @@ if ( empty( $type ) ) {
 }
 ?>
 
-<input type="<?php echo $type; ?>" id="<?php echo $id; ?>" class="<?php echo $class; ?>" name="<?php echo $name; ?>"
-       value="<?php echo $type === 'text' ? esc_html( $value ) : $value; ?>" <?php echo $attr; ?> />
+<input type="<?php echo esc_attr( $type ); ?>" id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $class ); ?>" name="<?php echo esc_attr( $name ); ?>" value="<?php echo esc_attr( $value ); ?>"
+    <?php echo AdminForm::buildAttributes( $attr ); // PHPCS: XSS ok; ?> />
 
 <?php if ( $type === 'color' ) : ?>
-    <input type="text" id="<?php echo $id . '-text'; ?>" class="<?php echo $class . '_text'; ?>"
-           name="<?php echo $name . '_text'; ?>" value="<?php echo $value; ?>" <?php echo $attr; ?> />
+	<input type="text" id="<?php echo esc_attr( $id ) . '-text'; ?>" class="<?php echo esc_attr( $class ) . '_text'; ?>" name="<?php echo esc_attr( $name ) . '_text'; ?>" value="<?php echo esc_attr( $value ); ?>"
+        <?php echo AdminForm::buildAttributes( $attr ); // PHPCS: XSS ok; ?> />
 <?php endif; ?>

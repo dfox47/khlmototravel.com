@@ -232,3 +232,20 @@ export const partition = (array, isValid) => {
         return isValid(elem) ? [[...pass, elem], fail] : [pass, [...fail, elem]]
     }, [[], []])
 }
+
+/**
+ * Set event listeners on multiple events at once.
+ *
+ * @param element
+ * @param events
+ * @param callback
+ *
+ * @example ``` javascript
+ *  addEventListeners(myElement, ['click', 'mouseover'], (e) => { console.log('click or mouseover') })
+ * ```
+ */
+export const addEventListeners = (element, events, callback) => {
+    events.forEach(event => {
+        element.addEventListener(event, callback)
+    })
+}

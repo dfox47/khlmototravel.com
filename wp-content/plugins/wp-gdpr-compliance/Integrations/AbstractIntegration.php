@@ -31,7 +31,7 @@ abstract class AbstractIntegration {
 	protected function __construct() {
 		foreach ( Integration::defaultTexts() as $name => $default ) {
 			$value = Settings::get( $this->getID() . '_' . $name, Settings::INTEGRATIONS_GROUP );
-			if ($value === false) {
+			if ( $value === false ) {
 				$value = $default;
 			}
 			$this->setValues( $value, $name );
@@ -193,7 +193,7 @@ abstract class AbstractIntegration {
 
 		$setting = Settings::get( $this->getID() . '_' . $type, Settings::INTEGRATIONS_GROUP );
 
-		return $setting != false ? $setting : Integration::getDefaultText( $type );
+		return $setting ?: Integration::getDefaultText( $type );
 	}
 
 	/**
@@ -234,6 +234,7 @@ abstract class AbstractIntegration {
 
 		$date = Time::localDateFormat( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), time() );
 
+		/* translators: %s: date */
 		return sprintf( __( 'Accepted on %s.', 'wp-gdpr-compliance' ), $date );
 	}
 

@@ -14,9 +14,9 @@ use WPGDPRC\WordPress\Shortcodes\RequestAccessForm;
  */
 class PageSettings extends AbstractPage {
 
-	const SECTION_PRIVACY = 'policy';
-	const SECTION_CONSENT = 'consent';
-	const SECTION_REQUEST = 'request';
+	const SECTION_PRIVACY   = 'policy';
+	const SECTION_CONSENT   = 'consent';
+	const SECTION_REQUEST   = 'request';
 	const SECTION_INTEGRATE = 'integrations';
 
 	public static function init() {
@@ -67,7 +67,7 @@ class PageSettings extends AbstractPage {
 		if ( empty( $_GET['page'] ) ) {
 			return;
 		}
-		if ( sanitize_text_field( strtolower( $_GET['page'] ) ) != self::getPageSlug() ) {
+		if ( sanitize_text_field( strtolower( sanitize_text_field( wp_unslash( $_GET['page'] ) ) ) ) !== self::getPageSlug() ) {
 			return;
 		}
 
@@ -76,7 +76,7 @@ class PageSettings extends AbstractPage {
 		// Check for GET params in URL
 		if ( empty( $_GET['section'] ) ) {
 			// Just redirect to main Settings section
-			wp_redirect( $redirect );
+			wp_safe_redirect( $redirect );
 			exit;
 		}
 
@@ -86,7 +86,7 @@ class PageSettings extends AbstractPage {
 			$redirect = self::getSectionUrl( $section );
 		}
 
-		wp_redirect( $redirect );
+		wp_safe_redirect( $redirect );
 	}
 
 	/**
@@ -150,6 +150,7 @@ class PageSettings extends AbstractPage {
 						'args'    => [
 							'class'       => 'regular-text',
 							'placeholder' => _x( 'Our Privacy Policy', 'admin', 'wp-gdpr-compliance' ),
+							/* translators: %s: The privacy policy page placeholder */
 							'description' => sprintf( _x( 'Your text will be used in the following pop-up sentence: “Learn more on %1s page.”', 'admin', 'wp-gdpr-compliance' ), PrivacyPolicy::REPLACER ),
 						],
 					],
@@ -207,13 +208,13 @@ class PageSettings extends AbstractPage {
 							'choices' => Settings::listFontChoices(),
 						],
 					],
-					Settings::KEY_CONSENT_API_KEY => [
+					Settings::KEY_CONSENT_API_KEY       => [
 						'key'     => Settings::KEY_CONSENT_API_KEY,
 						'type'    => 'text',
 						'label'   => _x( 'Google Fonts API key', 'admin', 'wp-gdpr-compliance' ),
 						'sr_only' => false,
 						'args'    => [
-							'class' => 'regular-text',
+							'class'       => 'regular-text',
 							'description' => _x( 'Google fonts API key', 'admin', 'wp-gdpr-compliance' ),
 						],
 					],
@@ -322,7 +323,8 @@ class PageSettings extends AbstractPage {
 						'args'    => [
 							'class'       => 'regular-text',
 							'value'       => Settings::get( Settings::KEY_ACCESS_ENABLE ),
-							'description' => sprintf( _x( 'Enabling this will create one private page containing the necessary shortcode: %1s. You can determine when and how to publish this page yourself.', 'admin', 'wp-gdpr-compliance' ), '<strong>[' . RequestAccessForm::getShortcode() . ']</strong>' )
+							/* translators: %s: The shortcode */
+							'description' => sprintf( _x( 'Enabling this will create one private page containing the necessary shortcode: %1s. You can determine when and how to publish this page yourself.', 'admin', 'wp-gdpr-compliance' ), '<strong>[' . RequestAccessForm::getShortcode() . ']</strong>' ),
 						],
 					],
 					Settings::KEY_ACCESS_TEXT        => [
@@ -341,11 +343,15 @@ class PageSettings extends AbstractPage {
 						'sr_only' => false,
 						'args'    => [
 							'post_status' => [ 'publish', 'draft', 'private' ],
-							'description' => implode( ' ', [
-								_x( 'Visitors will receive a link to this page on which the visitor can view all the data stored which is associated with their email address.', 'admin', 'wp-gdpr-compliance' ),
-								'<br>',
-                                sprintf(_x( 'Please make sure that the access request form shortcode %s is active on the selected page', 'admin', 'wp-gdpr-compliance' ), '<strong>[wpgdprc_access_request_form]</strong>' )
-							] ),
+							'description' => implode(
+								' ',
+								[
+									_x( 'Visitors will receive a link to this page on which the visitor can view all the data stored which is associated with their email address.', 'admin', 'wp-gdpr-compliance' ),
+									'<br>',
+									/* translators: %s: The shortocde */
+									sprintf( _x( 'Please make sure that the access request form shortcode %s is active on the selected page', 'admin', 'wp-gdpr-compliance' ), '<strong>[wpgdprc_access_request_form]</strong>' ),
+								]
+							),
 						],
 					],
 					Settings::KEY_ACCESS_DELETE_TEXT => [

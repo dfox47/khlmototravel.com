@@ -1,6 +1,29 @@
 <?php 
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
+if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
+
+	if( !wp_verify_nonce($_POST['save_options_field'], 'save_options') || !current_user_can('publish_pages') ) {
+		die('Sorry, but this request is invalid');
+	}
+    
+    if ( isset( $_POST['niteoCS_font_color_'.$themeslug] ) ) {
+        update_option('niteoCS_font_color['.$themeslug.']', sanitize_hex_color($_POST['niteoCS_font_color_'.$themeslug]));
+    }
+
+    if ( isset( $_POST['niteoCS_footer_background_'.$themeslug] ) ) {
+        update_option('niteoCS_footer_background['.$themeslug.']', sanitize_hex_color( $_POST['niteoCS_footer_background_'.$themeslug]) );
+    }
+
+
+    if ( isset( $_POST['niteoCS_footer_background_opacity_'.$themeslug] ) ) {
+        update_option('niteoCS_footer_background_opacity['.$themeslug.']', sanitize_text_field( $_POST['niteoCS_footer_background_opacity_'.$themeslug]) );
+    }
+}
+
+$font_color			= get_option('niteoCS_font_color['.$themeslug.']', '#ffffff');
+$footer_background  = get_option('niteoCS_footer_background['.$themeslug.']', '#000000');
+$footer_opacity     = get_option('niteoCS_footer_background_opacity['.$themeslug.']', '0.4');
 ?>
 
 <style>

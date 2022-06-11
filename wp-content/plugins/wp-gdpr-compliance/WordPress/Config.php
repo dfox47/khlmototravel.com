@@ -5,7 +5,6 @@ namespace WPGDPRC\WordPress;
 use WPGDPRC\Utils\Elements;
 use WPGDPRC\Utils\Helper;
 use WPGDPRC\Utils\Template;
-use WPGDPRC\WordPress\Admin\Pages\PageWizard;
 
 /**
  * Class Config
@@ -14,13 +13,13 @@ use WPGDPRC\WordPress\Admin\Pages\PageWizard;
 class Config {
 
 	/**
-	 * Gets the (translated) plugin name
+	 * Gets the plugin name
 	 * @return string
 	 */
 	public static function pluginName(): string {
 		$data = Helper::getPluginData();
 
-		return _x( $data['Name'], 'admin', 'wp-gdpr-compliance' );
+		return $data['Name'];
 	}
 
 	public static function addUTMParams( $url ) {
@@ -71,6 +70,13 @@ class Config {
 	/**
 	 * @return string
 	 */
+	public static function premiumDashboardUrl(): string {
+		return self::addUTMParams( 'https://app.cookieinformation.com/' );
+	}
+
+	/**
+	 * @return string
+	 */
 	public static function premiumScriptUrl(): string {
 		return 'https://policy.app.cookieinformation.com/uc.js';
 	}
@@ -94,7 +100,7 @@ class Config {
 	 */
 	public static function explainText(): string {
 		return sprintf(
-			__( "Below we show you all of the data stored by %1s on %1s. Select the data you wish the site owner to anonymize so it cannot be linked to your email address any longer. It is the site's owner responsibility to act upon your request. When your data is anonymized you will receive an email confirmation.", 'wp-gdpr-compliance' ),
+			__( "Below we show you all of the data stored by %1\$1s on %2\$1s. Select the data you wish the site owner to anonymize so it cannot be linked to your email address any longer. It is the site's owner responsibility to act upon your request. When your data is anonymized you will receive an email confirmation.", 'wp-gdpr-compliance' ),
 			get_option( 'blogname' ),
 			get_option( 'siteurl' )
 		);
@@ -111,9 +117,17 @@ class Config {
 	 * @return string
 	 */
 	public static function welcomeText(): string {
-		$link = Elements::getLink( Config::premiumUrl(), _x( 'try it out here', 'admin', 'wp-gdpr-compliance' ), [ 'target' => '_blank', 'class' => 'wpgdprc-sign-up-button' ] );
+		$link = Elements::getLink(
+			self::premiumUrl(),
+			_x( 'try it out here', 'admin', 'wp-gdpr-compliance' ),
+			[
+				'target' => '_blank',
+				'class'  => 'wpgdprc-sign-up-button',
+			]
+		);
 
-		return sprintf( _x( "Thank you very much for choosing this plugin to help you with your GDPR Compliance. This is a free tool that offers Compliance. We also provide a version that automates many of these tasks and makes sure that you are always up to date: %1s", 'admin', 'wp-gdpr-compliance' ), $link );
+		/* translators: %s: Link */
+		return sprintf( _x( 'Thank you very much for choosing this plugin to help you with your GDPR Compliance. This is a free tool that offers Compliance. We also provide a version that automates many of these tasks and makes sure that you are always up to date: %1s', 'admin', 'wp-gdpr-compliance' ), $link );
 	}
 
 	/**

@@ -79,7 +79,14 @@ function iqfix_wpcf7_recaptcha_enqueue_scripts() {
 		'response_err'		=> esc_html__( 'wpcf7-recaptcha: Could not verify reCaptcha response.', 'wpcf7-recaptcha' ),
 	) );
 
-	wp_enqueue_script( 'google-recaptcha' );
+	/**
+	 * Enqueue globally for FSE Themes.
+	 * Enqueue as needed for all other
+	 * themes in the shortcode callback.
+	 */
+	if( function_exists( 'wp_is_block_theme' ) && wp_is_block_theme() ) {
+		wp_enqueue_script( 'google-recaptcha' );
+	}
 
 }
 add_action( 'wp_enqueue_scripts', 'iqfix_wpcf7_recaptcha_enqueue_scripts', 50 );
@@ -99,6 +106,10 @@ add_action( 'wp_enqueue_scripts', 'iqfix_wpcf7_recaptcha_enqueue_scripts', 50 );
 function iqfix_wpcf7_recaptcha_form_tag_handler( $tag ) {
 
 	$atts = array();
+
+	if( ! wp_script_is( 'google-recaptcha', 'enequeued' ) ) {
+		wp_enqueue_script( 'google-recaptcha' );
+	}
 
 	$recaptcha = WPCF7_RECAPTCHA::get_instance();
 	$atts['data-sitekey'] = $recaptcha->get_sitekey();

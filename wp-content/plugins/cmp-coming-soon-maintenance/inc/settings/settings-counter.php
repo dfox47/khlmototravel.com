@@ -114,9 +114,12 @@ $niteoCS_counter_heading 	= get_option('niteoCS_counter_heading', 'STAY TUNED, W
 						<h4 for="niteoCS_countdown_redirect" style="padding-top:1em"><?php _e('Enter redirect URL', 'cmp-coming-soon-maintenance');?></h4>
 						<input type="text" id="niteoCS_countdown_redirect" name="niteoCS_countdown_redirect" value="<?php echo esc_url( $niteoCS_countdown_redirect ); ?>" class="regular-text code"><br>
 					</div>
-
-
 				</fieldset>
+				<?php 
+				// include custom theme slider settings
+				if ( file_exists( $this->cmp_theme_dir($themeslug).$themeslug.'/counter_settings.php' ) ) {
+					include ( $this->cmp_theme_dir($themeslug).$themeslug.'/counter_settings.php' );
+				} ?>
 			</td>
 		</tr>
 

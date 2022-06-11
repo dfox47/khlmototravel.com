@@ -76,7 +76,7 @@ class GravityForms extends AbstractPlugin {
 	 * @return array
 	 */
 	public function getData( string $email ): array {
-		return GravityFormsEntry::getByEmail($email);
+		return GravityFormsEntry::getByEmail( $email );
 	}
 
 	/**
@@ -86,11 +86,12 @@ class GravityForms extends AbstractPlugin {
 	 * @return array
 	 */
 	public function getResults( bool $front, string $search ): array {
-        return [
-            'icon'   => $this->getIcon(),
-            'title'  => $this->getName($front),
-            'notice' => sprintf( __( 'No form entries found with email address%1s.', 'wp-gdpr-compliance' ), $search ),
-        ];
+		return [
+			'icon'   => $this->getIcon(),
+			'title'  => $this->getName( $front ),
+			/* translators: %1s: search query */
+			'notice' => sprintf( __( 'No form entries found with email address%1s.', 'wp-gdpr-compliance' ), $search ),
+		];
 	}
 
 	/**
@@ -113,7 +114,7 @@ class GravityForms extends AbstractPlugin {
 		}
 
 		foreach ( $this->getList() as $form_id => $title ) {
-			if ( ! in_array( $form_id, $this->getEnabledForms() ) ) {
+			if ( ! in_array( (int) $form_id, $this->getEnabledForms(), true ) ) {
 				continue;
 			}
 
@@ -291,9 +292,12 @@ class GravityForms extends AbstractPlugin {
 
 		$field_id  = 0;
 		$field_tag = $this->getFieldTag();
-		$required  = Template::get( 'Front/Elements/required', [
-			'message' => $this->getRequiredTextByForm( $form['id'] ),
-		] );
+		$required  = Template::get(
+			'Front/Elements/required',
+			[
+				'message' => $this->getRequiredTextByForm( $form['id'] ),
+			]
+		);
 		$checkbox  = [
 			'text'       => implode( ' ', [ $this->getCheckboxTextByForm( $form['id'] ), $required ] ),
 			'value'      => 'true',
@@ -318,9 +322,13 @@ class GravityForms extends AbstractPlugin {
 		}
 
 		if ( empty( $field_id ) ) {
-			$field_id = array_reduce($form['fields'], function($carry, $item) {
-				return $item->id > $carry ? $item->id : $carry;
-			}, 1);
+			$field_id = array_reduce(
+				$form['fields'],
+				function( $carry, $item ) {
+					return $item->id > $carry ? $item->id : $carry;
+				},
+				1
+			);
 		}
 		$input = [
 			'id'    => $field_id . '.1',
@@ -364,7 +372,7 @@ class GravityForms extends AbstractPlugin {
 			if ( ! property_exists( $field, $field_tag ) ) {
 				return false;
 			}
-			if ( $field->{$field_tag} != true ) {
+			if ( $field->{$field_tag} !== true ) {
 				return false;
 			}
 
@@ -374,7 +382,7 @@ class GravityForms extends AbstractPlugin {
 		if ( empty( $field[ $field_tag ] ) ) {
 			return false;
 		}
-		if ( $field[ $field_tag ] != true ) {
+		if ( $field[ $field_tag ] !== true ) {
 			return false;
 		}
 
@@ -457,12 +465,11 @@ class GravityForms extends AbstractPlugin {
 			return $value;
 		}
 
-        if ( (int) $field_id != floor( $id ) ) {
+		if ( (int) $field_id != floor( $id ) ) {
 			return $value;
 		}
 
 		$value = ! empty( $entry[ $id ] ) ? $entry[ $id ] : $this->getAcceptedDate( false );
-
 
 		return apply_filters( Plugin::PREFIX . '_gforms_accepted_date_in_entry_overview', $value, $field_id, $form_id, $entry );
 	}
@@ -528,7 +535,7 @@ class GravityForms extends AbstractPlugin {
 			if ( ! isset( $field['failed_validation'] ) ) {
 				continue;
 			}
-			if ( $field['failed_validation'] != true ) {
+			if ( $field['failed_validation'] !== true ) {
 				continue;
 			}
 

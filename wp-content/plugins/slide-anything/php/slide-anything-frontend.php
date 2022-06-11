@@ -365,9 +365,16 @@ function slide_anything_shortcode($atts) {
 			}
 			// setting 7 - bg_image_size
 			$slide_data['bg_image_size'] = 'full';
-			if (isset($other_settings_arr) && (count($other_settings_arr)) > 6) {
+			if (isset($other_settings_arr) && (count($other_settings_arr) > 6)) {
 				if ($other_settings_arr[6] != '') {
 					$slide_data['bg_image_size'] = $other_settings_arr[6];
+				}
+			}
+			// setting 8 - disable_slide_ids
+			$slide_data['disable_slide_ids'] = '0';
+			if (isset($other_settings_arr) && (count($other_settings_arr) > 7)) {
+				if ($other_settings_arr[7] != '') {
+					$slide_data['disable_slide_ids'] = $other_settings_arr[7];
 				}
 			}
 			// Start Position
@@ -695,10 +702,18 @@ function slide_anything_shortcode($atts) {
 				//$data_hash = $slide_data['css_id']."_slide".sprintf('%02d', $i);
 				//$output .= "<div class='sa_hover_container' data-hash='".$data_hash."' style='".esc_attr($slide_style)."'>";
 				$css_id = $slide_data['css_id']."_slide".sprintf('%02d', $slide_data["slide".$i."_num"]);
-				if ($slide_data['vert_center'] == 'true') {
-					$output .= "<div id='".$css_id."' class='sa_hover_container sa_vert_center_wrap' style='".esc_attr($slide_style)."'>";
+				if ($slide_data['disable_slide_ids'] == '1') {
+					if ($slide_data['vert_center'] == 'true') {
+						$output .= "<div class='".$css_id." sa_hover_container sa_vert_center_wrap' style='".esc_attr($slide_style)."'>";
+					} else {
+						$output .= "<div class='".$css_id." sa_hover_container' style='".esc_attr($slide_style)."'>";
+					}
 				} else {
-					$output .= "<div id='".$css_id."' class='sa_hover_container' style='".esc_attr($slide_style)."'>";
+					if ($slide_data['vert_center'] == 'true') {
+						$output .= "<div id='".$css_id."' class='sa_hover_container sa_vert_center_wrap' style='".esc_attr($slide_style)."'>";
+					} else {
+						$output .= "<div id='".$css_id."' class='sa_hover_container' style='".esc_attr($slide_style)."'>";
+					}
 				}
 				if (($link_output != '') || ($popup_output != '')) {
 					if ($slide_data['slide_icons_location'] == 'Top Left') {

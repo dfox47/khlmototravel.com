@@ -4,8 +4,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KV2JF
 Tags: coming soon, coming soon page, launch page, maintenance mode, under construction
 Requires at least: 3.0
 Requires PHP: 5.6
-Tested up to: 5.9
-Stable tag: 4.0.20
+Tested up to: 6.0
+Stable tag: 4.1.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -160,6 +160,20 @@ https://www.youtube.com/watch?v=uxuJfHzwdtE
 <p>Nothing is better than a good feedback! Please go to <a href="https://wordpress.org/support/plugin/cmp-coming-soon-maintenance/reviews/">Plugin reviews</a> and rate it! Alternatively you can click on a Donate button too!:)</p>
 
 == Changelog ==
+<h4>CMP 4.1.2 - 17-May-22</h4>
+<ul>
+	<li>Added option to load font awesome from a local server. Requested by @blauemango</li>
+	<li>Changed Bypass settings to be set in days instead of seconds. Suggested by @pierreb</li>
+	<li>Confirmed compatibility with WordPress 6.0</li>
+</ul>
+<h4>CMP 4.1.1 - 25-Mar-22</h4>
+<ul>
+	<li>Resolved issue when using CF7 form in the CMP content and error message "This request is invalid"</li>
+</ul>
+<h4>CMP 4.1 - 11-Mar-22</h4>
+<ul>
+	<li>New CMP Theme Nova!</li>
+</ul>
 <h4>CMP 4.0.20 - 07-Feb-22</h4>
 <ul>
 	<li>WordPress 4.9 compatibility</li>

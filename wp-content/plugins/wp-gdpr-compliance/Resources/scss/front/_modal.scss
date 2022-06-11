@@ -179,7 +179,11 @@
     letter-spacing: 0;
     color: $color-gray-dark;
 
-    > * {
+    h2 {
+        font-size: rem-calc(21);
+    }
+
+    > *:not(h2):not(h3):not(h4):not(h5):not(h6):not(ul):not(ol) {
         margin-bottom: rem-calc(26);
 
         &:last-child {

@@ -18,7 +18,7 @@ class WPComments extends AbstractIntegration {
 	 * @return string
 	 */
 	public function getID(): string {
-		return 'wordpress';
+		return 'WordPress';
 	}
 
 	/**
@@ -44,7 +44,7 @@ class WPComments extends AbstractIntegration {
 	 * Inits additional integration filters (that are not ready upon first call)
 	 */
 	public function initFormFilters() {
-		if (AdminHelper::userIsAdmin()) {
+		if ( AdminHelper::userIsAdmin() ) {
 			add_filter( 'comment_form_submit_field', [ $this, 'addFieldForAdmin' ], 999 );
 
 			return;
@@ -89,10 +89,11 @@ class WPComments extends AbstractIntegration {
 	 *
 	 * @return array
 	 */
-	public function getResults(bool $front, string $search ): array {
+	public function getResults( bool $front, string $search ): array {
 		return [
-			'icon'   => WPComments::getIcon(),
-			'title'  => WPComments::getName( $front ),
+			'icon'   => self::getIcon(),
+			'title'  => self::getName( $front ),
+			/* translators: %1s: search query */
 			'notice' => sprintf( __( 'No comments found with email address%1s.', 'wp-gdpr-compliance' ), $search ),
 		];
 	}
@@ -141,7 +142,7 @@ class WPComments extends AbstractIntegration {
 		}
 
 		$modules = (array) get_option( 'jetpack_active_modules', [] );
-		if ( ! in_array( 'comments', $modules ) ) {
+		if ( ! in_array( 'comments', $modules, true ) ) {
 			return false;
 		}
 
@@ -181,12 +182,15 @@ class WPComments extends AbstractIntegration {
 	public function getCheckbox( bool $checked = false ): string {
 		$required = Template::get( 'Front/Elements/required', [ 'message' => $this->getRequiredText() ] );
 
-		return Template::get( 'Front/Comment/checkbox', [
-			'name'    => $this->getFieldTag(),
-			'label'   => implode( ' ', [ $this->getCheckboxText(), $required ] ),
-			'checked' => $checked,
-			'class'   => 'comment-form-' . Plugin::PREFIX,
-		] );
+		return Template::get(
+			'Front/Comment/checkbox',
+			[
+				'name'    => $this->getFieldTag(),
+				'label'   => implode( ' ', [ $this->getCheckboxText(), $required ] ),
+				'checked' => $checked,
+				'class'   => 'comment-form-' . Plugin::PREFIX,
+			]
+		);
 	}
 
 	public function checkPost() {
@@ -195,7 +199,7 @@ class WPComments extends AbstractIntegration {
 		}
 
 		$message = Template::get( 'Front/Elements/error', [ 'message' => $this->getErrorText() ] );
-		wp_die( $message, __( 'Comment Submission Failure' ), [ 'back_link' => true ] );
+		wp_die( wp_kses( $message, \WPGDPRC\Utils\AdminHelper::getAllowedHTMLTags() ), esc_html( __( 'Comment Submission Failure', 'wp-gdpr-compliance' ) ), [ 'back_link' => true ] );
 	}
 
 	/**
@@ -218,7 +222,7 @@ class WPComments extends AbstractIntegration {
 	 * @return array
 	 */
 	public function acceptedDateColumnInCommentOverview( array $columns = [] ): array {
-		$columns[ $this->getFieldTag() . '-date' ] = apply_filters( Plugin::PREFIX . '_accepted_date_column_in_comment_overview', _x( 'GDPR accepted on', 'admin', 'wp-gdpr-compliance' ) );
+		$columns[ $this->getFieldTag() . '-date' ] = esc_html( apply_filters( Plugin::PREFIX . '_accepted_date_column_in_comment_overview', _x( 'GDPR accepted on', 'admin', 'wp-gdpr-compliance' ) ) );
 
 		return $columns;
 	}
@@ -230,13 +234,13 @@ class WPComments extends AbstractIntegration {
 	 * @return string
 	 */
 	public function acceptedDateInCommentOverview( string $column = '', int $comment_id = 0 ): string {
-		if ( $column != $this->getFieldTag() . '-date' ) {
+		if ( $column !== $this->getFieldTag() . '-date' ) {
 			return $column;
 		}
 
 		$date  = get_comment_meta( $comment_id, '_' . $this->getFieldTag(), true );
 		$value = $this->getAcceptedDate( $date );
-		echo apply_filters( Plugin::PREFIX . '_accepted_date_in_comment_overview', $value, $comment_id );
+		echo esc_html( apply_filters( Plugin::PREFIX . '_accepted_date_in_comment_overview', $value, $comment_id ) );
 
 		return $column;
 	}

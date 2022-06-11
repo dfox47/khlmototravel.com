@@ -8,6 +8,7 @@
     $days_label     = $translation[3]['translation'];
     $date           = get_option('niteoCS_counter_date', time() + 86400);
     $counter_date   = $days_only ? abs(time() - $date)/60/60/24 : $date;
+    
     ob_start();
     ?>
     <div id="counter" class="<?php echo esc_attr( $wrapper_class );?>" data-date="<?php echo esc_attr( $counter_date );?>">

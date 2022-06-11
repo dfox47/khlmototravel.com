@@ -91,8 +91,9 @@ class WPRegistration extends AbstractIntegration {
 	 */
 	public function getResults( bool $front, string $search ): array {
 		return [
-			'icon'   => WPRegistration::getIcon(),
-			'title'  => WPRegistration::getName( $front ),
+			'icon'   => self::getIcon(),
+			'title'  => self::getName( $front ),
+			/* translators: %1s: search query */
 			'notice' => sprintf( __( 'No users found with email address%1s.', 'wp-gdpr-compliance' ), $search ),
 		];
 	}
@@ -142,14 +143,20 @@ class WPRegistration extends AbstractIntegration {
 	 * Adds a GDPRC field to the site registration form
 	 */
 	public function addField() {
-		$required = Template::get( 'Front/Elements/required', [
-			'message' => $this->getRequiredText(),
-		] );
+		$required = Template::get(
+			'Front/Elements/required',
+			[
+				'message' => $this->getRequiredText(),
+			]
+		);
 
-		Template::render( 'Front/Registration/checkbox', [
-			'name'  => $this->getFieldTag(),
-			'label' => implode( ' ', [ $this->getCheckboxText(), $required ] ),
-		] );
+		Template::render(
+			'Front/Registration/checkbox',
+			[
+				'name'  => $this->getFieldTag(),
+				'label' => implode( ' ', [ $this->getCheckboxText(), $required ] ),
+			]
+		);
 	}
 
 	/**
@@ -164,6 +171,7 @@ class WPRegistration extends AbstractIntegration {
 			return $error;
 		}
 
+		/* translators: %s: error message */
 		$error->add( 'gdpr_consent_error', sprintf( __( '<strong>ERROR</strong>: %1s', 'wp-gdpr-compliance' ), $this->getErrorText() ) );
 
 		return $error;
@@ -182,9 +190,12 @@ class WPRegistration extends AbstractIntegration {
 			return;
 		}
 
-		Template::render( 'Front/Registration/checkbox', [
-			'text' => $message,
-		] );
+		Template::render(
+			'Front/Registration/checkbox',
+			[
+				'text' => $message,
+			]
+		);
 	}
 
 	/**
@@ -196,7 +207,7 @@ class WPRegistration extends AbstractIntegration {
 	 */
 	public function validateMultisiteField( array $result = [] ): array {
 		if ( ! empty( $_POST[ $this->getFieldTag() ] ) ) {
-			$result[ $this->getFieldTag() ] = sanitize_text_field( $_POST[ $this->getFieldTag() ] );
+			$result[ $this->getFieldTag() ] = sanitize_text_field( wp_unslash( $_POST[ $this->getFieldTag() ] ) );
 
 			return $result;
 		}
@@ -215,7 +226,7 @@ class WPRegistration extends AbstractIntegration {
 	public function logConsent( $user ) {
 		$data = [
 			Log::KEY_PLUGIN_ID    => $this->getID(),
-			Log::KEY_USER         => Anonymous::anonymizeEmail( $_POST['user_email'] ),
+			Log::KEY_USER         => Anonymous::anonymizeEmail( sanitize_email( wp_unslash($_POST['user_email'] ?? '' ) ) ),
 			Log::KEY_IP_ADDRESS   => Anonymous::anonymizeIP( IpAddress::getClientIp() ),
 			Log::KEY_LOG          => __( 'User has given consent when registering', 'wp-gdpr-compliance' ),
 			Log::KEY_CONSENT_TEXT => $this->getCheckboxText(),

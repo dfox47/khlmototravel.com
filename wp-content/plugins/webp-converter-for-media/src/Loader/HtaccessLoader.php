@@ -2,8 +2,10 @@
 
 namespace WebpConverter\Loader;
 
+use WebpConverter\Service\PathsGenerator;
 use WebpConverter\Settings\Option\ExtraFeaturesOption;
 use WebpConverter\Settings\Option\LoaderTypeOption;
+use WebpConverter\Settings\Option\OutputFormatsOption;
 use WebpConverter\Settings\Option\SupportedExtensionsOption;
 
 /**
@@ -12,6 +14,13 @@ use WebpConverter\Settings\Option\SupportedExtensionsOption;
 class HtaccessLoader extends LoaderAbstract {
 
 	const LOADER_TYPE = 'htaccess';
+
+	/**
+	 * {@inheritdoc}
+	 */
+	public function init_hooks() {
+		add_action( 'webpc_htaccess_rewrite_root', [ $this, 'modify_document_root_path' ] );
+	}
 
 	/**
 	 * {@inheritdoc}
@@ -25,7 +34,7 @@ class HtaccessLoader extends LoaderAbstract {
 	 * {@inheritdoc}
 	 */
 	public function activate_loader( bool $is_debug = false ) {
-		$settings = ( $is_debug ) ? $this->plugin_data->get_debug_settings() : $this->plugin_data->get_plugin_settings();
+		$settings = ( ! $is_debug ) ? $this->plugin_data->get_plugin_settings() : $this->plugin_data->get_debug_settings();
 
 		$this->deactivate_loader();
 
@@ -43,6 +52,20 @@ class HtaccessLoader extends LoaderAbstract {
 		$this->add_rewrite_rules_to_wp_content( false, $settings );
 		$this->add_rewrite_rules_to_uploads( false, $settings );
 		$this->add_rewrite_rules_to_uploads_webp( false, $settings );
+	}
+
+	/**
+	 * @param string $original_path .
+	 *
+	 * @return string
+	 * @internal
+	 */
+	public function modify_document_root_path( string $original_path ): string {
+		if ( isset( $_SERVER['SERVER_ADMIN'] ) && strpos( $_SERVER['SERVER_ADMIN'], '.home.pl' ) ) { // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
+			return '%{DOCUMENT_ROOT}' . ABSPATH;
+		}
+
+		return $original_path;
 	}
 
 	/**
@@ -89,7 +112,7 @@ class HtaccessLoader extends LoaderAbstract {
 		$path_parts = explode( '/', apply_filters( 'webpc_dir_name', '', 'uploads' ) );
 		$content    = $this->add_comments_to_rules(
 			[
-				$this->get_mod_rewrite_rules( $settings, false, end( $path_parts ) ),
+				$this->get_mod_rewrite_rules( $settings, end( $path_parts ) ),
 			]
 		);
 
@@ -126,41 +149,57 @@ class HtaccessLoader extends LoaderAbstract {
 	/**
 	 * Generates rules for rewriting source images to output images.
 	 *
-	 * @param mixed[]     $settings         Plugin settings.
-	 * @param bool        $add_slash_prefix Slash as prefix before RewriteRule.
-	 * @param string|null $output_path      Location of .htaccess file.
+	 * @param mixed[]     $settings           Plugin settings.
+	 * @param string|null $output_path_suffix Location of .htaccess file.
 	 *
 	 * @return string Rules for .htaccess file.
 	 */
-	private function get_mod_rewrite_rules( array $settings, bool $add_slash_prefix = false, string $output_path = null ): string {
+	private function get_mod_rewrite_rules( array $settings, string $output_path_suffix = null ): string {
 		$content = '';
 		if ( ! $settings[ SupportedExtensionsOption::OPTION_NAME ] ) {
 			return $content;
 		}
 
-		$prefix_path  = apply_filters( 'webpc_uploads_prefix', '/' );
-		$prefix_rule  = apply_filters( 'webpc_htaccess_prefix_rule', $prefix_path );
-		$prefix_slash = ( $add_slash_prefix ) ? '/' : '';
-		$path         = apply_filters( 'webpc_dir_name', '', 'webp' );
-		if ( $output_path !== null ) {
-			$path .= '/' . $output_path;
+		$root_document      = preg_replace( '/(\/|\\\\)/', '/', rtrim( $_SERVER['DOCUMENT_ROOT'], '\/' ) ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
+		$root_document_real = preg_replace( '/(\/|\\\\)/', '/', rtrim( realpath( $_SERVER['DOCUMENT_ROOT'] ) ?: '', '\/' ) ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
+		$root_wordpress     = preg_replace( '/(\/|\\\\)/', '/', rtrim( PathsGenerator::get_wordpress_root_path(), '\/' ) );
+
+		$root_path     = trim( str_replace( $root_document_real ?: '', '', $root_wordpress ?: '' ), '\/' );
+		$root_suffix   = apply_filters(
+			'webpc_htaccess_rewrite_path',
+			apply_filters( 'webpc_uploads_prefix', str_replace( '//', '/', sprintf( '/%s/', $root_path ) ) )
+		);
+		$document_root = apply_filters(
+			'webpc_htaccess_rewrite_root',
+			( $root_document !== $root_document_real ) ? ( $root_wordpress . '/' ) : ( '%{DOCUMENT_ROOT}' . $root_suffix )
+		);
+
+		$output_path = apply_filters( 'webpc_dir_name', '', 'webp' );
+		if ( $output_path_suffix !== null ) {
+			$output_path .= '/' . $output_path_suffix;
 		}
 
-		foreach ( $this->get_mime_types() as $format => $mime_type ) {
+		foreach ( $this->format_factory->get_mime_types( $settings[ OutputFormatsOption::OPTION_NAME ] ) as $format => $mime_type ) {
 			$content .= '<IfModule mod_rewrite.c>' . PHP_EOL;
 			$content .= '  RewriteEngine On' . PHP_EOL;
 			foreach ( $settings[ SupportedExtensionsOption::OPTION_NAME ] as $ext ) {
 				$content .= "  RewriteCond %{HTTP_ACCEPT} ${mime_type}" . PHP_EOL;
-				$content .= "  RewriteCond %{DOCUMENT_ROOT}${prefix_path}${path}/$1.${ext}.${format} -f" . PHP_EOL;
+				$content .= "  RewriteCond %{REQUEST_FILENAME} -f" . PHP_EOL;
+				if ( $document_root === '%{DOCUMENT_ROOT}' ) {
+					$content .= "  RewriteCond ${document_root}${output_path}/$1.${ext}.${format} -f" . PHP_EOL;
+				} else {
+					$content .= "  RewriteCond ${document_root}${output_path}/$1.${ext}.${format} -f [OR]" . PHP_EOL;
+					$content .= "  RewriteCond %{DOCUMENT_ROOT}${root_suffix}${output_path}/$1.${ext}.${format} -f" . PHP_EOL;
+				}
 				if ( ! in_array( ExtraFeaturesOption::OPTION_VALUE_REFERER_DISABLED, $settings[ ExtraFeaturesOption::OPTION_NAME ] ) ) {
 					$content .= "  RewriteCond %{HTTP_HOST}@@%{HTTP_REFERER} ^([^@]*)@@https?://\\1/.*" . PHP_EOL;
 				}
-				$content .= "  RewriteRule ${prefix_slash}(.+)\.${ext}$ ${prefix_rule}${path}/$1.${ext}.${format} [NC,T=${mime_type},L]" . PHP_EOL;
+				$content .= "  RewriteRule (.+)\.${ext}$ ${root_suffix}${output_path}/$1.${ext}.${format} [NC,T=${mime_type},L]" . PHP_EOL;
 			}
 			$content .= '</IfModule>' . PHP_EOL;
 		}
 
-		return apply_filters( 'webpc_htaccess_mod_rewrite', trim( $content ), $path );
+		return apply_filters( 'webpc_htaccess_mod_rewrite', trim( $content ), $output_path );
 	}
 
 	/**
@@ -203,7 +242,7 @@ class HtaccessLoader extends LoaderAbstract {
 
 		$content .= '<IfModule mod_expires.c>' . PHP_EOL;
 		$content .= '  ExpiresActive On' . PHP_EOL;
-		foreach ( $this->get_mime_types() as $format => $mime_type ) {
+		foreach ( $this->format_factory->get_mime_types( $settings[ OutputFormatsOption::OPTION_NAME ] ) as $format => $mime_type ) {
 			$content .= "  ExpiresByType ${mime_type} \"access plus 1 year\"" . PHP_EOL;
 		}
 		$content .= '</IfModule>';
@@ -225,7 +264,7 @@ class HtaccessLoader extends LoaderAbstract {
 		}
 
 		$content .= '<IfModule mod_mime.c>' . PHP_EOL;
-		foreach ( $this->get_mime_types() as $format => $mime_type ) {
+		foreach ( $this->format_factory->get_mime_types( $settings[ OutputFormatsOption::OPTION_NAME ] ) as $format => $mime_type ) {
 			$content .= "  AddType ${mime_type} .${format}" . PHP_EOL;
 		}
 		$content .= '</IfModule>';

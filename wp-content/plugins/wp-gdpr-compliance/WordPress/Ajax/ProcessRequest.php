@@ -18,79 +18,90 @@ use WPGDPRC\WordPress\Settings;
  */
 class ProcessRequest extends AbstractAjax {
 
-    // @TODO Originally this would work per delete request, now it handles all in one go
+	// @TODO Originally this would work per delete request, now it handles all in one go
 
-    /**
-     * Returns AJAX action name
-     * @return string
-     */
-    protected static function getAction() {
-        return Plugin::PREFIX . '_process_request';
+	/**
+	 * Returns AJAX action name
+	 * @return string
+	 */
+	protected static function getAction() {
+		return Plugin::PREFIX . '_process_request';
+	}
+
+	/**
+	 * Determines if AJAX is public
+	 * @return bool
+	 */
+	protected static function isPublic() {
+		return false;
+	}
+
+	/**
+	 * @return array
+	 */
+	public static function requiredData() {
+		return [ 'item' ];
+	}
+
+    public static function hasData()
+    {
+        return true;
     }
 
-    /**
-     * Determines if AJAX is public
-     * @return bool
-     */
-    protected static function isPublic() {
-        return false;
-    }
+	/**
+	 * Builds the AJAX response
+	 * (security handling + data validation -if any- is done in the abstract class)
+	 * @param array $data
+	 */
+	public static function buildResponse( $data = [] ) {
+		if ( ! Settings::isEnabled( Settings::KEY_ACCESS_ENABLE ) ) {
+			static::returnError( _x( 'The access request functionality is not enabled.', 'admin', 'wp-gdpr-compliance' ) );
+		}
 
-    /**
-     * @return array
-     */
-    public static function requiredData() {
-        return [ 'item' ];
-    }
+		$object = new RequestAccess( $data['item'] );
+		if ( empty( $object ) ) {
+			static::returnError( _x( 'Unable to locate request.', 'admin', 'wp-gdpr-compliance' ) );
+		}
 
-    /**
-     * Builds the AJAX response
-     * (security handling + data validation -if any- is done in the abstract class)
-     * @param array $data
-     */
-    public static function buildResponse( $data = [] ) {
-        if( !Settings::isEnabled(Settings::KEY_ACCESS_ENABLE) ) {
-            static::returnError(_x('The access request functionality is not enabled.', 'admin', 'wp-gdpr-compliance'));
-        }
+		$result  = static::processRequest( $object );
+		$message = empty( $result['error'] ) ? _x( 'Data anonymized.', 'admin', 'wp-gdpr-compliance' ) : _x( 'Unable to (fully) anonymize all data.', 'admin', 'wp-gdpr-compliance' );
+		if ( ! empty( $result['message'] ) ) {
+			$message = implode( ' ', [ $message, $result['message'] ] );
+		}
 
-        $object = new RequestAccess($data['item']);
-        if( empty($object) ) {
-            static::returnError(_x('Unable to locate request.', 'admin', 'wp-gdpr-compliance'));
-        }
+		$response = [
+			'success' => true,
+			'message' => $message,
+			'result'  => $result,
+			'debug'   => $data,
+		];
+		static::returnResponse( $response );
+	}
 
-        $result  = static::processRequest($object);
-        $message = empty($result['error']) ? _x('Data anonymized.', 'admin', 'wp-gdpr-compliance') : _x('Unable to (fully) anonymize all data.', 'admin', 'wp-gdpr-compliance');
-        if( !empty($result['message']) ) $message = implode(' ', [ $message, $result['message'] ]);
+	/**
+	 * @param RequestAccess $object
+	 * @return array
+	 */
+	public static function processRequest( RequestAccess $object ) {
+		$list = RequestDelete::getByAccessId( $object->getId() );
+		if ( empty( $list ) ) {
+			$response = [
+				'success' => true,
+				'message' => __( 'No requests to process.', 'wp-gdpr-compliance' ),
+			];
+			static::returnResponse( $response );
+		}
 
-        $response = [
-            'success' => true,
-            'message' => $message,
-            'result'  => $result,
-            'debug'   => $data,
-        ];
-        static::returnResponse($response);
-    }
+		$output = RequestDelete::anonymizeByAccessId( $object->getId() );
+		if ( ! empty( $output['error'] ) ) {
+			return $output;
+		}
 
-    /**
-     * @param RequestAccess $object
-     * @return array
-     */
-    public static function processRequest( RequestAccess $object ) {
-        $list = RequestDelete::getByAccessId($object->getId());
-        if( empty($list) ) {
-            $response = [
-                'success' => true,
-                'message' => __('No requests to process.', 'wp-gdpr-compliance'),
-            ];
-            static::returnResponse($response);
-        }
-
-        $output = RequestDelete::anonymizeByAccessId($object->getId());
-        if( !empty($output['error']) ) return $output;
-
-        $success = RequestDelete::sendNotification($object, $output);
-        if( $success ) $output['message'] = $success;
-        return $output;
-    }
+		$success = RequestDelete::sendNotification( $object, $output );
+		if ( $success ) {
+			$output['message'] = $success;
+		}
+		return $output;
+	}
 
 }

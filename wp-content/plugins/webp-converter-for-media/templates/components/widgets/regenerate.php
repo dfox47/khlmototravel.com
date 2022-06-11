@@ -32,12 +32,28 @@ use WebpConverter\WebpConverterConstants;
 					<div class="webpLoader__barProgress" data-percent="0">
 						<div class="webpLoader__barCount"></div>
 					</div>
-					<div class="webpLoader__size">
+					<div class="webpLoader__progress">
 						<?php
 						echo sprintf(
 						/* translators: %s progress value */
 							wp_kses_post( __( 'Saving the weight of your images: %s', 'webp-converter-for-media' ) ),
-							'<span class="webpLoader__sizeProgress">0 kB</span>'
+							'<span class="webpLoader__progressValue webpLoader__progressValue--size">0 kB</span>'
+						);
+						?>
+						<br>
+						<?php
+						echo sprintf(
+						/* translators: %s images count */
+							wp_kses_post( __( 'Successfully converted files: %s', 'webp-converter-for-media' ) ),
+							'<span class="webpLoader__progressValue webpLoader__progressValue--successful">0</span>'
+						);
+						?>
+						<br>
+						<?php
+						echo sprintf(
+						/* translators: %s images count */
+							wp_kses_post( __( 'Failed or skipped file conversion attempts: %s', 'webp-converter-for-media' ) ),
+							'<span class="webpLoader__progressValue webpLoader__progressValue--failed">0 </span>'
 						);
 						?>
 					</div>
@@ -69,18 +85,18 @@ use WebpConverter\WebpConverterConstants;
 									echo wp_kses_post(
 										sprintf(
 										/* translators: %s break line tag */
-											__( 'Hello, my name is Mateusz! %sI am glad you managed to reduce the weight of your website. If you would like to support me in developing this plugin and achieve even better image conversion results using AVIF format, check out the PRO version of my plugin.', 'webp-converter-for-media' ),
+											__( 'Hello, my name is Mateusz! %sI am glad you managed to reduce the weight of your website. Did you know that you can achieve even better image optimization results? Check how much you can reduce the weight of images on your website by also using the AVIF format.', 'webp-converter-for-media' ),
 											'<br>'
 										)
 									);
 									?>
 								</p>
 								<p>
-									<a href="<?php echo esc_url( sprintf( WebpConverterConstants::UPGRADE_PRO_PREFIX_URL, 'regeneration-notice-upgrade' ) ); ?>"
+									<a href="<?php echo esc_url( sprintf( WebpConverterConstants::OPTIMIZATION_TEST_PREFIX_URL, 'regeneration-notice-upgrade' ) ); ?>"
 										target="_blank"
 										class="webpButton webpButton--blue dashicons-external"
 									>
-										<?php echo wp_kses_post( __( 'Meet the PRO version', 'webp-converter-for-media' ) ); ?>
+										<?php echo wp_kses_post( __( 'Test image optimization', 'webp-converter-for-media' ) ); ?>
 									</a>
 								</p>
 							</div>

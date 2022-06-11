@@ -23,7 +23,7 @@ get_header(); ?>
 			<div id="bikes" class="bikes">
 				<?php // should be 800x600 or equal ?>
 				<label class="bike_item">
-					<input class="js-bike-price" type="radio" name="bike" data-price="60" value="BMW G 310 R" />
+					<input class="js-bike-price" type="radio" name="bike" data-price="60" value="BMW G 310 R" checked />
 
 					<span class="bike_desc">
 						<img src="<?php echo $i; ?>/bikes/10.jpg" alt="" />
@@ -57,7 +57,7 @@ get_header(); ?>
 				</label>
 
 				<label class="bike_item">
-					<input class="js-bike-price" type="radio" name="bike" data-price="60" value="BMW G 310 GS" checked />
+					<input class="js-bike-price" type="radio" name="bike" data-price="60" value="BMW G 310 GS" />
 
 					<span class="bike_desc">
 						<img src="<?php echo $i; ?>/bikes/9.jpg" alt="" />

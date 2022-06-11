@@ -9,5 +9,5 @@ use WPGDPRC\WordPress\Plugin;
 ?>
 
 <div class="wpgdprc-message wpgdprc-message--notice">
-    <?php echo $notice; ?>
+	<?php echo wp_kses($notice, \WPGDPRC\Utils\AdminHelper::getAllowedHTMLTags()) ?>
 </div>

@@ -6,4 +6,4 @@
 
 ?>
 
-<p class="error"><?php echo $text; ?></p>
+<p class="error"><?php echo esc_html( $text ); ?></p>

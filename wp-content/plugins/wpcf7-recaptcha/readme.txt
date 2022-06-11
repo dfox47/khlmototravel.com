@@ -2,8 +2,8 @@
 Contributors: iqcomputing
 Tags: contact-form-7, contact-form-7-recaptcha, recaptcha, spam
 Requires at least: 4.9
-Tested up to: 5.8
-Stable tag: 1.3.8
+Tested up to: 6.0
+Stable tag: 1.4.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,12 +60,11 @@ Should the above be correct, at this point it's time to open a support thread fo
 
 == Changelog ==
 
+= 1.4.0 (2022-06-01) =
+* Updated supported version for WordPress 6.0
+
+= 1.3.9 (2022-04-13) =
+* Using `wp_is_block_theme()` to conditionally test if Google ReCaptcha script should be enqueued globally or inline.
+
 = 1.3.8 (2022-03-07) =
 * New global reCaptcha Locale filter hook `wpcf7_recaptcha_locale`.
-
-= 1.3.7 (2022-01-03) =
-* Happy New Year!
-* Fixed issue with reCpatcha not appearing in the new WordPress Full Site Editing feature of TwentyTwentyTwo theme. Thanks @gerhardfasol !
-
-= 1.3.6 (2021-11-29) =
-* Resolved conflict with Conditional Fields for Contact Form 7.

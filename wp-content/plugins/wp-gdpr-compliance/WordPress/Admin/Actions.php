@@ -33,16 +33,17 @@ class Actions {
 		Template::render( 'Admin/page-before', [] );
 
 		// handle possible deletion requests
-		if ( PageDashboard::getCurrentTab() == PageDashboard::TAB_PROCESSORS ) {
+		if ( PageDashboard::getCurrentTab() === PageDashboard::TAB_PROCESSORS ) {
 			if ( ! empty( $_GET['updated'] ) ) {
-				echo AdminHelper::wrapNotice( _x( 'Consent updated.', 'admin', 'wp-gdpr-compliance' ) );
+                AdminHelper::wrapNotice( _x( 'Consent updated.', 'admin', 'wp-gdpr-compliance' ) );
 			} elseif ( ! empty( $_GET['delete'] ) ) {
 				FormHandler::consentDeleteForm( (int) $_GET['delete'] );
 			}
 		}
 
-		if ( ! empty( $_POST[ PageDashboard::TAB_PROCESSORS ] ) ) {
-			$args = FormHandler::consentEditForm( $_POST[ PageDashboard::TAB_PROCESSORS ] );
+		if ( ! empty( $_POST[ PageDashboard::TAB_PROCESSORS ] ) && is_iterable( $_POST[ PageDashboard::TAB_PROCESSORS ] ) ) {
+            // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- is an array.
+			$args = FormHandler::consentEditForm( wp_unslash( $_POST[ PageDashboard::TAB_PROCESSORS ] ) );
 			FormHandler::consentEditFormRedirect( $args );
 		}
 	}
@@ -73,7 +74,7 @@ class Actions {
 
 		// check for presence of shortcode in the content
 		if ( has_shortcode( strtolower( $post->post_content ), RequestAccessForm::getShortcode() ) ) {
-			if ( in_array( $post_id, $list ) ) {
+			if ( in_array( $post_id, $list, true ) ) {
 				return;
 			}
 
@@ -84,12 +85,12 @@ class Actions {
 		}
 
 		// no shortcode, so make sure it not in the list
-		if ( ! in_array( $post_id, $list ) ) {
+		if ( ! in_array( $post_id, $list, true ) ) {
 			return;
 		}
 
 		foreach ( $list as $id => $value ) {
-			if ( $value != $post_id ) {
+			if ( $value !== $post_id ) {
 				continue;
 			}
 			unset( $list[ $id ] );

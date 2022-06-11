@@ -9,5 +9,5 @@ use WPGDPRC\WordPress\Plugin;
 ?>
 
 <div class="wpgdprc-message wpgdprc-message--error">
-    <p><?php echo $message; ?></p>
+	<p><?php echo esc_html( $message ); ?></p>
 </div>
