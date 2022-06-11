@@ -32,8 +32,6 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 	<main id="main" <?php generate_do_element_classes( 'main' ); ?>>
 		<h1><?php echo __('Motorcycle Tours', 'khl_template'); ?></h1>
 
-		<h3 class="text-center"><?php echo __('Calendar for 2022', 'khl_template'); ?></h3>
-
 		<div class="tours_list">
 			<?php // lang
 			$langUrl = '';
