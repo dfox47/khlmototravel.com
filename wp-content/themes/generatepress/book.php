@@ -20,17 +20,17 @@
 				</h3>
 
 				<label>
-								<span>
-									<?php if (get_locale() == 'en_US') { ?>
-										Name
-									<?php }
-									elseif (get_locale() == 'ru_RU') { ?>
-										Имя
-									<?php }
-									elseif (get_locale() == 'de_DE') { ?>
-										Name
-									<?php } ?>
-								</span>
+					<span>
+						<?php if (get_locale() == 'en_US') { ?>
+							Name
+						<?php }
+						elseif (get_locale() == 'ru_RU') { ?>
+							Имя
+						<?php }
+						elseif (get_locale() == 'de_DE') { ?>
+							Name
+						<?php } ?>
+					</span>
 
 					<input class="js-field-name" type="text" name="name" />
 				</label>
