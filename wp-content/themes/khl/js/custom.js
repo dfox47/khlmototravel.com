@@ -1,13 +1,12 @@
 
 var $ = jQuery
 
-// menu toggle [START]
+// menu toggle
 document.querySelectorAll('.menu-toggle').forEach((button) => {
 	button.addEventListener('click', () => {
 		document.querySelector('html').classList.toggle('topmenu_active')
 	})
 })
-// menu toggle [END]
 
 $(window).bind('load', function() {
 	$('.js-feedback-btn').on('click', function () {
