@@ -8,6 +8,18 @@ document.querySelectorAll('.menu-toggle').forEach((button) => {
 	})
 })
 
+
+
+// all options https://splidejs.com/guides/options/
+// https://splidejs.com/guides/getting-started/
+let splideSliders = document.getElementsByClassName('js-splide-slider')
+
+for (let i = 0; i < splideSliders.length; i++) {
+	let splide = new Splide(splideSliders[ i ]).mount({})
+}
+
+
+
 $(window).bind('load', function() {
 	$('.js-feedback-btn').on('click', function () {
 		$('.js-book-popup').addClass('active')

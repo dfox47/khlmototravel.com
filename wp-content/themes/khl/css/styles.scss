@@ -20,6 +20,7 @@ Author URI: https://www.khlmototravel.com/
 @import "lang";
 @import "order";
 @import "popup";
+@import "splide.min";
 @import "tours";
 
 
@@ -366,6 +367,28 @@ html {
 	margin: 106px 0 0;
 }
 
+.slider_video {
+	&__content {
+		height: 100%;
+		width: 70%;
+	}
+
+	&__desc {
+		padding: 0 30px 0 0;
+		width: 30%;
+	}
+
+	.splide {
+		&__slide {
+			align-items: center;
+			display: flex;
+			flex-wrap: wrap;
+			min-height: 400px;
+			padding: 0 80px 50px;
+		}
+	}
+}
+
 .text-center {
 	text-align: center;
 }
@@ -380,6 +403,10 @@ html {
 	.menu-toggle {
 		display: none;
 	}
+}
+
+.tour-title {
+	top: 100px;
 }
 
 .ui-datepicker {
@@ -399,8 +426,4 @@ html {
 	img {
 		height: auto;
 	}
-}
-
-.tour-title {
-	top: 100px;
 }
