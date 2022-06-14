@@ -19,14 +19,14 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 do_action( 'generate_before_footer' ); ?>
 
-<div <?php generate_do_element_classes( 'footer' ); ?>>
+<div <?php generate_do_element_classes('footer'); ?>>
 	<?php
 	/**
 	 * generate_before_footer_content hook.
 	 *
 	 * @since 0.1
 	 */
-	do_action( 'generate_before_footer_content' );
+	do_action('generate_before_footer_content');
 
 	/**
 	 * generate_footer hook.
@@ -36,14 +36,14 @@ do_action( 'generate_before_footer' ); ?>
 	 * @hooked generate_construct_footer_widgets - 5
 	 * @hooked generate_construct_footer - 10
 	 */
-	do_action( 'generate_footer' );
+	do_action('generate_footer');
 
 	/**
 	 * generate_after_footer_content hook.
 	 *
 	 * @since 0.1
 	 */
-	do_action( 'generate_after_footer_content' ); ?>
+	do_action('generate_after_footer_content'); ?>
 </div>
 
 <?php
@@ -52,23 +52,14 @@ do_action( 'generate_before_footer' ); ?>
  *
  * @since 2.1
  */
-do_action( 'generate_after_footer' );
+do_action('generate_after_footer');
 
 wp_footer(); ?>
 
 <!--<script src="//code-ya.jivosite.com/widget/lgCYMdLgiq" async></script>-->
 
-<div class="js-popup popup">
-	<div class="popup__bg js-popup-close"></div>
-
-	<div class="popup__content">
-		<div class="popup__close js-popup-close"></div>
-
-		<div class="js-popup-content"></div>
-	</div>
-</div>
-
 <?php include_once 'book.php'; ?>
+<?php include_once 'popup.php'; ?>
 
 <?php // vars
 $themeFolderJs = '/wp-content/themes/khl/js'; ?>
