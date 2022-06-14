@@ -75,14 +75,15 @@ $themeFolderJs = '/wp-content/themes/khl/js'; ?>
 
 <?php // should be 1st ?>
 <script src="<?php echo $themeFolderJs; ?>/jquery-3.6.0.min.js"></script>
-
 <script src="<?php echo $themeFolderJs; ?>/jquery-ui.min.js"></script>
+
 <script src="<?php echo $themeFolderJs; ?>/getUrlParameter.js"></script>
 <script src="<?php echo $themeFolderJs; ?>/popup.js"></script>
 <script src="<?php echo $themeFolderJs; ?>/priceTotal.js"></script>
 <script src="<?php echo $themeFolderJs; ?>/rentPromo.js"></script>
 <script src="<?php echo $themeFolderJs; ?>/rentalDays.js"></script>
 <script src="<?php echo $themeFolderJs; ?>/sendmail.js"></script>
+<script src="<?php echo $themeFolderJs; ?>/splide.min.js"></script>
 
 <?php // should be last ?>
 <script src="<?php echo $themeFolderJs; ?>/custom.js?v<?php echo(date("YmdHi")); ?>"></script>
