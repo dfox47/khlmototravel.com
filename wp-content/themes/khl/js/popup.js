@@ -18,8 +18,10 @@ $(document).on('click', '.js-popup-link', function (e) {
 	$('html').addClass('popup_active')
 })
 
-$(document).on('click', '.js-popup-close', function (e) {
-	e.preventDefault()
+document.querySelectorAll('.js-popup-close').forEach((closeBtn) => {
+	closeBtn.preventDefault()
 
-	$('html').removeClass('popup_active')
+	closeBtn.addEventListener('click', () => {
+		document.querySelector('html').classList.remove('popup_active')
+	})
 })
