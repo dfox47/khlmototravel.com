@@ -370,21 +370,58 @@ html {
 .slider_video {
 	&__content {
 		height: 100%;
+		min-height: 250px;
 		width: 70%;
+
+		@media #{$tablet} {
+			height: 250px;
+			width: 100%;
+		}
 	}
 
 	&__desc {
 		padding: 0 30px 0 0;
 		width: 30%;
+
+		@media #{$tablet} {
+			padding: 0 0 30px;
+			width: 100%;
+		}
 	}
 
 	.splide {
+		&__arrow {
+			&--next {
+				@media #{$tablet} {
+					right: -38px;
+				}
+			}
+
+			&--prev {
+				@media #{$tablet} {
+					left: -38px;
+				}
+			}
+		}
+
+		&__pagination {
+			&__page {
+				&.is-active {
+					background-color: $c_main;
+				}
+			}
+		}
+
 		&__slide {
 			align-items: center;
 			display: flex;
 			flex-wrap: wrap;
 			min-height: 400px;
 			padding: 0 80px 50px;
+
+			@media #{$tablet} {
+				padding: 0 0 50px;
+			}
 		}
 	}
 }

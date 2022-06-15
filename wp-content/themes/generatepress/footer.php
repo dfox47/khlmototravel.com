@@ -64,9 +64,10 @@ wp_footer(); ?>
 <?php // vars
 $themeFolderJs = '/wp-content/themes/khl/js'; ?>
 
-<?php // should be 1st ?>
+<?php // should be 1st | libraries ?>
 <script src="<?php echo $themeFolderJs; ?>/jquery-3.6.0.min.js"></script>
 <script src="<?php echo $themeFolderJs; ?>/jquery-ui.min.js"></script>
+<script src="<?php echo $themeFolderJs; ?>/splide.min.js"></script>
 
 <script src="<?php echo $themeFolderJs; ?>/getUrlParameter.js"></script>
 <script src="<?php echo $themeFolderJs; ?>/popup.js"></script>
@@ -74,7 +75,7 @@ $themeFolderJs = '/wp-content/themes/khl/js'; ?>
 <script src="<?php echo $themeFolderJs; ?>/rentPromo.js"></script>
 <script src="<?php echo $themeFolderJs; ?>/rentalDays.js"></script>
 <script src="<?php echo $themeFolderJs; ?>/sendmail.js"></script>
-<script src="<?php echo $themeFolderJs; ?>/splide.min.js"></script>
+<script src="<?php echo $themeFolderJs; ?>/slider.js"></script>
 
 <?php // should be last ?>
 <script src="<?php echo $themeFolderJs; ?>/custom.js?v<?php echo(date("YmdHi")); ?>"></script>
