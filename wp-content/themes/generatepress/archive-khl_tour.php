@@ -10,25 +10,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 
-if ( ICL_LANGUAGE_CODE == 'en' ) {
-	$calendarUrl = "/calendar";
-}
-elseif(ICL_LANGUAGE_CODE == 'de') {
-	$calendarUrl = "/de/calendar";
-}
-elseif(ICL_LANGUAGE_CODE == 'ru') {
-	$calendarUrl = "/ru/calendar";
-}
-elseif (ICL_LANGUAGE_CODE == 'cs') {
-	$calendarUrl = "/cs/calendar";
-}
-elseif (ICL_LANGUAGE_CODE == 'bg') {
-	$calendarUrl = "/bg/calendar";
-} ?>
+$calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 
 
-<div id="primary" <?php generate_do_element_classes( 'content' ); ?>>
+<div id="primary" <?php generate_do_element_classes( 'content' ); ?> data-x="<?php echo ICL_LANGUAGE_CODE; ?>">
 	<main id="main" <?php generate_do_element_classes( 'main' ); ?>>
 		<h1><?php echo __('Motorcycle Tours', 'khl_template'); ?></h1>
 
@@ -141,37 +127,6 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 					</span>
 				</a>
 
-				<!-- Turkey -->
-				<a class="tours_list__item" href="/moto-tours/turkey/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/turkey.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Turkey</span>
-
-						<span class="tours_dates">
-<!--							<span class="tours_dates__item">8 - 18 April 2022</span>-->
-							<!--							<span class="tours_dates__item">29 April - 9 May 2022</span>-->
-							<span class="tours_dates__item">20 - 30 May 2022</span>
-							<span class="tours_dates__item">10 - 20 October 2022</span>
-						</span>
-
-						<span class="tours_desc__duration">11 days</span>
-
-						<span class="tours_desc__more">Read more</span>
-					</span>
-				</a>
-
-				<!-- Turkey | offroad -->
-				<a class="tours_list__item" href="javascript:void(0);">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/enduro.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Turkey | Offroad</span>
-						<span class="tours_desc__duration">15 days</span>
-						<span class="tours_desc__more">Read more</span>
-					</span>
-				</a>
-
 				<!-- Bulgaria | offroad | 11 days -->
 				<a class="tours_list__item" href="/moto-tours/bulgaria-offroad-11-days/">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-03.jpg);"></span>
@@ -216,6 +171,37 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 						<span class="tours_desc__duration">7 days</span>
 
 						<span class="tours_desc__more">Read more</span>
+					</span>
+				</a>
+
+				<!-- Turkey -->
+				<a class="tours_list__item" href="/moto-tours/turkey/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/turkey.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Turkey</span>
+
+						<span class="tours_dates">
+<!--							<span class="tours_dates__item">8 - 18 April 2022</span>-->
+							<!--							<span class="tours_dates__item">29 April - 9 May 2022</span>-->
+							<span class="tours_dates__item">20 - 30 May 2022</span>
+							<span class="tours_dates__item">10 - 20 October 2022</span>
+						</span>
+
+						<span class="tours_desc__duration">11 days</span>
+
+						<span class="tours_desc__more">Read more</span>
+					</span>
+				</a>
+
+				<!-- Turkey | offroad -->
+				<a class="tours_list__item" href="javascript:void(0);">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/enduro.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Turkey | Offroad</span>
+						<span class="tours_desc__duration">15 days</span>
+						<span class="tours_desc__more">Coming soon</span>
 					</span>
 				</a>
 			<?php }
@@ -282,39 +268,6 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 					</span>
 				</a>
 
-				<!-- Turkey -->
-				<a class="tours_list__item" href="/bg/moto-tours/die-tuerkei/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/turkey.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Турция</span>
-
-						<span class="tours_dates">
-<!--							<span class="tours_dates__item">8 - 18 Април 2022</span>-->
-							<!--							<span class="tours_dates__item">29 Април - 9 Май 2022</span>-->
-							<span class="tours_dates__item">20 - 30 Май 2022</span>
-							<span class="tours_dates__item">10 - 20 Октомври 2022</span>
-						</span>
-
-						<span class="tours_desc__duration">11 дни</span>
-
-						<span class="tours_desc__more">Повече</span>
-					</span>
-				</a>
-
-				<!-- Turkey | offroad -->
-				<a class="tours_list__item" href="javascript:void(0);">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/enduro.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Турция | Offroad</span>
-
-						<span class="tours_desc__duration">15 дни</span>
-
-						<span class="tours_desc__more">Повече</span>
-					</span>
-				</a>
-
 				<!-- Bulgaria | offroad | 11 days -->
 				<a class="tours_list__item" href="/bg/moto-tours/bulgari-offroad-11-dnej/">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-03.jpg);"></span>
@@ -359,6 +312,39 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 						<span class="tours_desc__duration">7 дни</span>
 
 						<span class="tours_desc__more">Повече</span>
+					</span>
+				</a>
+
+				<!-- Turkey -->
+				<a class="tours_list__item" href="/bg/moto-tours/die-tuerkei/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/turkey.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Турция</span>
+
+						<span class="tours_dates">
+<!--							<span class="tours_dates__item">8 - 18 Април 2022</span>-->
+							<!--							<span class="tours_dates__item">29 Април - 9 Май 2022</span>-->
+							<span class="tours_dates__item">20 - 30 Май 2022</span>
+							<span class="tours_dates__item">10 - 20 Октомври 2022</span>
+						</span>
+
+						<span class="tours_desc__duration">11 дни</span>
+
+						<span class="tours_desc__more">Повече</span>
+					</span>
+				</a>
+
+				<!-- Turkey | offroad -->
+				<a class="tours_list__item" href="javascript:void(0);">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/enduro.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Турция | Offroad</span>
+
+						<span class="tours_desc__duration">15 дни</span>
+
+						<span class="tours_desc__more">Очаквайте скоро</span>
 					</span>
 				</a>
 			<?php }
@@ -426,37 +412,6 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 					</span>
 				</a>
 
-				<!-- Turkey -->
-				<a class="tours_list__item" href="/de/moto-tours/die-tuerkei/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/turkey.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Truthahn</span>
-
-						<span class="tours_dates">
-<!--							<span class="tours_dates__item">8 - 18 April 2022</span>-->
-							<!--							<span class="tours_dates__item">29 April - 9 May 2022</span>-->
-							<span class="tours_dates__item">20 - 30 May 2022</span>
-							<span class="tours_dates__item">10 - 20 Oktober 2022</span>
-						</span>
-
-						<span class="tours_desc__duration">11 tage</span>
-
-						<span class="tours_desc__more">Weiterlesen</span>
-					</span>
-				</a>
-
-				<!-- Turkey | offroad -->
-				<a class="tours_list__item" href="javascript:void(0);">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/enduro.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Truthahn | Offroad</span>
-						<span class="tours_desc__duration">15 tage</span>
-						<span class="tours_desc__more">Weiterlesen</span>
-					</span>
-				</a>
-
 				<!-- Bulgaria | offroad | 11 days -->
 				<a class="tours_list__item" href="/de/moto-tours/bulgari-offroad-11-dnej/">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-03.jpg);"></span>
@@ -501,6 +456,37 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 						<span class="tours_desc__duration">7 tage</span>
 
 						<span class="tours_desc__more">Weiterlesen</span>
+					</span>
+				</a>
+
+				<!-- Turkey -->
+				<a class="tours_list__item" href="/de/moto-tours/die-tuerkei/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/turkey.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Truthahn</span>
+
+						<span class="tours_dates">
+<!--							<span class="tours_dates__item">8 - 18 April 2022</span>-->
+							<!--							<span class="tours_dates__item">29 April - 9 May 2022</span>-->
+							<span class="tours_dates__item">20 - 30 May 2022</span>
+							<span class="tours_dates__item">10 - 20 Oktober 2022</span>
+						</span>
+
+						<span class="tours_desc__duration">11 tage</span>
+
+						<span class="tours_desc__more">Weiterlesen</span>
+					</span>
+				</a>
+
+				<!-- Turkey | offroad -->
+				<a class="tours_list__item" href="javascript:void(0);">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/enduro.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Truthahn | Offroad</span>
+						<span class="tours_desc__duration">15 tage</span>
+						<span class="tours_desc__more">Demnächst</span>
 					</span>
 				</a>
 			<?php }
@@ -569,39 +555,6 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 					</span>
 				</a>
 
-				<!-- Turkey -->
-				<a class="tours_list__item" href="/ru/moto-tours/turcziya/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/turkey.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Турция</span>
-
-						<span class="tours_dates">
-							<span class="tours_dates__item">8 - 18 Апреля 2022</span>
-							<span class="tours_dates__item">29 Апреля - 9 Мая 2022</span>
-							<span class="tours_dates__item">20 - 30 Мая 2022</span>
-							<span class="tours_dates__item">10 - 20 Октября 2022</span>
-						</span>
-
-						<span class="tours_desc__duration">11 дней</span>
-
-						<span class="tours_desc__more">Подробнее</span>
-					</span>
-				</a>
-
-				<!-- Turkey | offroad -->
-				<a class="tours_list__item" href="javascript:void(0);">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/enduro.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Турция | Offroad</span>
-
-						<span class="tours_desc__duration">15 дней</span>
-
-						<span class="tours_desc__more">Подробнее</span>
-					</span>
-				</a>
-
 				<!-- Bulgaria | offroad | 11 days -->
 				<a class="tours_list__item" href="/ru/moto-tours/bolgariya-offroad/">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-03.jpg);"></span>
@@ -647,6 +600,39 @@ elseif (ICL_LANGUAGE_CODE == 'bg') {
 						<span class="tours_desc__duration">7 дней</span>
 
 						<span class="tours_desc__more">Подробнее</span>
+					</span>
+				</a>
+
+				<!-- Turkey -->
+				<a class="tours_list__item" href="/ru/moto-tours/turcziya/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/turkey.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Турция</span>
+
+						<span class="tours_dates">
+							<span class="tours_dates__item">8 - 18 Апреля 2022</span>
+							<span class="tours_dates__item">29 Апреля - 9 Мая 2022</span>
+							<span class="tours_dates__item">20 - 30 Мая 2022</span>
+							<span class="tours_dates__item">10 - 20 Октября 2022</span>
+						</span>
+
+						<span class="tours_desc__duration">11 дней</span>
+
+						<span class="tours_desc__more">Подробнее</span>
+					</span>
+				</a>
+
+				<!-- Turkey | offroad -->
+				<a class="tours_list__item" href="javascript:void(0);">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/enduro.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Турция | Offroad</span>
+
+						<span class="tours_desc__duration">15 дней</span>
+
+						<span class="tours_desc__more">Ожидайте в ближайшее время</span>
 					</span>
 				</a>
 			<?php }
