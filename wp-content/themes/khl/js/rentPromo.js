@@ -12,8 +12,6 @@ if (promoCodeUrl && $promoInput) {
 }
 
 function checkPromo() {
-	console.log('s33')
-
 	if ($promoInput.val() == null) return
 
 	// get new value of input

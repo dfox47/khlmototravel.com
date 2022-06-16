@@ -25,8 +25,6 @@ $(document).on('click', '.js-popup-link', function (e) {
 
 // popup close button
 document.querySelectorAll('.js-popup-close').forEach((closeBtn) => {
-	console.log('s28')
-
 	closeBtn.addEventListener('click', () => {
 		document.querySelector('html').classList.remove('popup_active')
 	})
