@@ -29,8 +29,15 @@ get_header(); ?>
 			);
 
 			$loop           = new WP_Query( $args );
-			$tours_array    = array();
 			$today          = date("jS F");
+			$tours_array    = array();
+
+			// tours prices
+			$price_5_countries  = '4100 €';
+			$price_offroad_11   = '3500 €';
+			$price_offroad_7    = '2400 €';
+			$price_romania      = '2600 €';
+			$price_turkey       = '3850 €';
 
 			while ( $loop->have_posts() ) :
 				$loop->the_post();
@@ -218,7 +225,7 @@ get_header(); ?>
 <!--						<span class="calendar_item__title">Turkey</span>-->
 <!--						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>-->
 <!--						<span class="calendar_item__days">11 days</span>-->
-<!--						<span class="calendar_item__price">2450 €</span>-->
+<!--						<span class="calendar_item__price">2450</span>-->
 <!--						<span class="calendar_item__book">More details</span>-->
 <!--					</a>-->
 
@@ -227,7 +234,7 @@ get_header(); ?>
 <!--						<span class="calendar_item__title">Turkey</span>-->
 <!--						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>-->
 <!--						<span class="calendar_item__days">11 days</span>-->
-<!--						<span class="calendar_item__price">2450 €</span>-->
+<!--						<span class="calendar_item__price">2450</span>-->
 <!--						<span class="calendar_item__book">More details</span>-->
 <!--					</a>-->
 
@@ -236,7 +243,7 @@ get_header(); ?>
 <!--						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>-->
 <!--						<span class="calendar_item__desc">Bulgaria | Offroad</span>-->
 <!--						<span class="calendar_item__days">11 days</span>-->
-<!--						<span class="calendar_item__price">3500 €</span>-->
+<!--						<span class="calendar_item__price">3500</span>-->
 <!--						<span class="calendar_item__book">More details</span>-->
 <!--					</a>-->
 
@@ -249,7 +256,7 @@ get_header(); ?>
 <!--						<span class="calendar_item__title">Turkey</span>-->
 <!--						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>-->
 <!--						<span class="calendar_item__days">11 days</span>-->
-<!--						<span class="calendar_item__price">2450 €</span>-->
+<!--						<span class="calendar_item__price">2450</span>-->
 <!--						<span class="calendar_item__book">More details</span>-->
 <!--					</a>-->
 <!---->
@@ -258,7 +265,7 @@ get_header(); ?>
 <!--						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>-->
 <!--						<span class="calendar_item__desc">Bulgaria | Offroad</span>-->
 <!--						<span class="calendar_item__days">7 days</span>-->
-<!--						<span class="calendar_item__price">2400 €</span>-->
+<!--						<span class="calendar_item__price">2400</span>-->
 <!--						<span class="calendar_item__book">More details</span>-->
 <!--					</a>-->
 
@@ -271,7 +278,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -280,7 +287,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Balkan Moto Cruise</span>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 days</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -289,7 +296,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -298,7 +305,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Balkan Moto Cruise</span>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 days</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -311,7 +318,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -320,7 +327,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Romania</span>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
 						<span class="calendar_item__days">9 days</span>
-						<span class="calendar_item__price">1900 €</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -329,7 +336,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -338,7 +345,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Balkan Moto Cruise</span>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 days</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -351,7 +358,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -360,7 +367,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Romania</span>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
 						<span class="calendar_item__days">9 days</span>
-						<span class="calendar_item__price">1900 €</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -369,7 +376,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -382,7 +389,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Romania</span>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
 						<span class="calendar_item__days">9 days</span>
-						<span class="calendar_item__price">1900 €</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -391,7 +398,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -400,7 +407,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Balkan Moto Cruise</span>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 days</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -409,7 +416,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -418,7 +425,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -431,7 +438,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Turkey</span>
 						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
 						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price">2450 €</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -440,7 +447,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 
@@ -449,7 +456,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">More details</span>
 					</a>
 				<?php }
@@ -462,7 +469,7 @@ get_header(); ?>
 						<span class="calendar_item__title">България | Offroad | 7 дни</span>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">7 дни</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -471,7 +478,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Около Балканите</span>
 						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дни</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -480,7 +487,7 @@ get_header(); ?>
 						<span class="calendar_item__title">България | Offroad | 11 дни</span>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">11 дни</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -489,7 +496,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Около Балканите</span>
 						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дни</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -502,7 +509,7 @@ get_header(); ?>
 						<span class="calendar_item__title">България | Offroad | 7 дни</span>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">7 дни</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -511,7 +518,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Румъния</span>
 						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Букорещ,Русе</span>
 						<span class="calendar_item__days">9 дни</span>
-						<span class="calendar_item__price">1900 €</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -520,7 +527,7 @@ get_header(); ?>
 						<span class="calendar_item__title">България | Offroad | 11 дни</span>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">11 дни</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -529,7 +536,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Около Балканите</span>
 						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дни</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -542,7 +549,7 @@ get_header(); ?>
 						<span class="calendar_item__title">България | Offroad | 7 дни</span>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">7 дни</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -551,7 +558,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Румъния</span>
 						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Букорещ,Русе</span>
 						<span class="calendar_item__days">9 дни</span>
-						<span class="calendar_item__price">1900 €</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -560,7 +567,7 @@ get_header(); ?>
 						<span class="calendar_item__title">България | Offroad | 11 дни</span>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">11 дни</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -573,7 +580,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Румъния</span>
 						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Букорещ,Русе</span>
 						<span class="calendar_item__days">9 дни</span>
-						<span class="calendar_item__price">1900 €</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -582,7 +589,7 @@ get_header(); ?>
 						<span class="calendar_item__title">България | Offroad | 7 дни</span>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">7 дни</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -591,7 +598,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Около Балканите</span>
 						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дни</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -600,7 +607,7 @@ get_header(); ?>
 						<span class="calendar_item__title">България | Offroad | 11 дни</span>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">11 дни</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -609,7 +616,7 @@ get_header(); ?>
 						<span class="calendar_item__title">България | Offroad | 7 дни</span>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">7 дни</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -622,7 +629,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Турция</span>
 						<span class="calendar_item__desc">Истанбул, Анкара, Кападокия, Памуккале, Бергама, Чанаккале</span>
 						<span class="calendar_item__days">11 дни</span>
-						<span class="calendar_item__price">2450 €</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -631,7 +638,7 @@ get_header(); ?>
 						<span class="calendar_item__title">България | Offroad | 7 дни</span>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">7 дни</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 
@@ -640,7 +647,7 @@ get_header(); ?>
 						<span class="calendar_item__title">България | Offroad | 7 дни</span>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">7 дни</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Повече информация</span>
 					</a>
 				<?php }
@@ -653,7 +660,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">7 Tage</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -662,7 +669,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Vokrut Balkan</span>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 Tage</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -671,7 +678,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgarien | Offroad | 11 Tage</span>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">11 Tage</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -680,7 +687,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Vokrut Balkan</span>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 Tage</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -693,7 +700,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">7 Tage</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -702,7 +709,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Rumänien</span>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bukarest, Russe.</span>
 						<span class="calendar_item__days">9 Tage</span>
-						<span class="calendar_item__price">1900 €</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -711,7 +718,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgarien | Offroad | 11 Tage</span>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">11 Tage</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -720,7 +727,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Vokrut Balkan</span>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 Tage</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -733,7 +740,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">7 Tage</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -742,7 +749,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Rumänien</span>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bukarest, Russe.</span>
 						<span class="calendar_item__days">9 Tage</span>
-						<span class="calendar_item__price">1900 €</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -751,7 +758,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgarien | Offroad | 11 Tage</span>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">11 Tage</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -764,7 +771,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Rumänien</span>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bukarest, Russe.</span>
 						<span class="calendar_item__days">9 Tage</span>
-						<span class="calendar_item__price">1900 €</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -773,7 +780,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">7 Tage</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -782,7 +789,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Vokrut Balkan</span>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 Tage</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -791,7 +798,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgarien | Offroad | 11 Tage</span>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">11 Tage</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -800,7 +807,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">7 Tage</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -813,7 +820,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Die Türkei</span>
 						<span class="calendar_item__desc">Istanbul, Ankara, Kappadokien, Pamukkale, Bergama, Canakkale.</span>
 						<span class="calendar_item__days">11 Tage</span>
-						<span class="calendar_item__price">2450 €</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -822,7 +829,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">7 Tage</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 
@@ -831,7 +838,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">7 Tage</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Mehr Details</span>
 					</a>
 				<?php }
@@ -844,7 +851,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">7 дней</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -853,7 +860,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Вокруг Балкан</span>
 						<span class="calendar_item__desc">Страны: Сербия, Черногория, Албания, Северная Македония.<br /><br />Города: София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дней</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -862,7 +869,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Болгария | Offroad | 11 дней</span>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -871,7 +878,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Вокруг Балкан</span>
 						<span class="calendar_item__desc">Страны: Сербия, Черногория, Албания, Северная Македония.<br /><br />Города: София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дней</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -884,7 +891,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">7 дней</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -893,7 +900,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Румыния</span>
 						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Бухарест, Русе.</span>
 						<span class="calendar_item__days">9 дней</span>
-						<span class="calendar_item__price">1900 €</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -902,7 +909,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Болгария | Offroad | 11 дней</span>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -911,7 +918,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Вокруг Балкан</span>
 						<span class="calendar_item__desc">Страны: Сербия, Черногория, Албания, Северная Македония.<br /><br />Города: София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дней</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -924,7 +931,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">7 дней</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -933,7 +940,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Румыния</span>
 						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Бухарест, Русе.</span>
 						<span class="calendar_item__days">9 дней</span>
-						<span class="calendar_item__price">1900 €</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -942,7 +949,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Болгария | Offroad | 11 дней</span>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -955,7 +962,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Румыния</span>
 						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Бухарест, Русе.</span>
 						<span class="calendar_item__days">9 дней</span>
-						<span class="calendar_item__price">1900 €</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -964,7 +971,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">7 дней</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -973,7 +980,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Вокруг Балкан</span>
 						<span class="calendar_item__desc">Страны: Сербия, Черногория, Албания, Северная Македония.<br /><br />Города: София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дней</span>
-						<span class="calendar_item__price">3000 €</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -982,7 +989,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Болгария | Offroad | 11 дней</span>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price">3500 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -991,7 +998,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">7 дней</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -1004,7 +1011,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Турция</span>
 						<span class="calendar_item__desc">Стамбул, Анкара, Каппадокия, Памуккале, Бергама, Чанаккале</span>
 						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price">2450 €</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -1013,7 +1020,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">7 дней</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 
@@ -1022,7 +1029,7 @@ get_header(); ?>
 						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">7 дней</span>
-						<span class="calendar_item__price">2400 €</span>
+						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
 						<span class="calendar_item__book">Подробнее</span>
 					</a>
 				<?php }
