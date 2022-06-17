@@ -19,20 +19,8 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 		<h1><?php echo __('Motorcycle Tours', 'khl_template'); ?></h1>
 
 		<div class="tours_list">
-			<?php // lang
-			$langUrl = '';
-			if (get_locale() == 'bg_BG') {
-				$langUrl= '/bg';
-			}
-			else if (get_locale() == 'de_DE') {
-				$langUrl= '/de';
-			}
-			else if (get_locale() == 'ru_RU') {
-				$langUrl= '/ru';
-			} ?>
-
 			<!-- Individual -->
-			<a class="tours_list__item" href="<?php echo $langUrl; ?>/contact-us/">
+			<a class="tours_list__item" href="/<?php echo ICL_LANGUAGE_CODE; ?>/contact-us/">
 				<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_636336056-e1615801862207.jpg);"></span>
 
 				<span class="tours_desc">
@@ -72,7 +60,7 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 					<span class="tours_desc">
 						<span class="tours_desc__title">Balkan Moto Cruise</span>
 
-						<span class="tours_desc__destinations">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
+						<span class="tours_desc__destinations">Bulgaria, Serbia, Montenegro, Albania, North Macedonia</span>
 
 						<span class="tours_dates">
 							<span class="tours_dates__item">6 - 18 June 2022</span>
@@ -214,7 +202,7 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 					<span class="tours_desc">
 						<span class="tours_desc__title">Около Балканите</span>
 
-						<span class="tours_desc__destinations">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
+						<span class="tours_desc__destinations">България, Сърбия, Черна гора, Албания, Северна Македония</span>
 
 						<span class="tours_dates">
 							<span class="tours_dates__item">6 - 18 Юни 2022</span>
@@ -357,7 +345,7 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 					<span class="tours_desc">
 						<span class="tours_desc__title">Vokrut Balkan</span>
 
-						<span class="tours_desc__destinations">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
+						<span class="tours_desc__destinations">Bulgarien, Serbien, Montenegro, Albanien, Nordmazedonien</span>
 
 						<span class="tours_dates">
 							<span class="tours_dates__item">6 - 18 Juni 2022</span>
@@ -499,7 +487,7 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 					<span class="tours_desc">
 						<span class="tours_desc__title">Вокруг Балкан</span>
 
-						<span class="tours_desc__destinations">Белоградчик, Златибор, Коласин, Будва, Дюррес, Охрид, Битола, Скопье</span>
+						<span class="tours_desc__destinations">Болгария, Сербия, Черногория, Албания, Северная Македония</span>
 
 						<span class="tours_dates">
 							<span class="tours_dates__item">7 - 19 Июня 2022</span>
