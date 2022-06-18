@@ -43,18 +43,18 @@ get_header(); ?>
 				$loop->the_post();
 				$tour_url           = rtrim(get_permalink( $post->ID ), '/');
 				$tour_book_url      = $tour_url . '#book-now';
-				$tour_start         = get_post_meta($post->ID, 'khl_tour_details_khl_start', true);
 				$tour_end           = get_post_meta($post->ID, 'khl_tour_details_khl_end', true);
-				$tour_start2        = get_post_meta($post->ID, 'khl_tour_details_khl_start2', true);
 				$tour_end2          = get_post_meta($post->ID, 'khl_tour_details_khl_end2', true);
-				$tour_start3        = get_post_meta($post->ID, 'khl_tour_details_khl_start3', true);
 				$tour_end3          = get_post_meta($post->ID, 'khl_tour_details_khl_end3', true);
-				$tour_start4        = get_post_meta($post->ID, 'khl_tour_details_khl_start4', true);
 				$tour_end4          = get_post_meta($post->ID, 'khl_tour_details_khl_end4', true);
-				$tour_start5        = get_post_meta($post->ID, 'khl_tour_details_khl_start5', true);
 				$tour_end5          = get_post_meta($post->ID, 'khl_tour_details_khl_end5', true);
-				$tour_start6        = get_post_meta($post->ID, 'khl_tour_details_khl_start6', true);
 				$tour_end6          = get_post_meta($post->ID, 'khl_tour_details_khl_end6', true);
+				$tour_start         = get_post_meta($post->ID, 'khl_tour_details_khl_start', true);
+				$tour_start2        = get_post_meta($post->ID, 'khl_tour_details_khl_start2', true);
+				$tour_start3        = get_post_meta($post->ID, 'khl_tour_details_khl_start3', true);
+				$tour_start4        = get_post_meta($post->ID, 'khl_tour_details_khl_start4', true);
+				$tour_start5        = get_post_meta($post->ID, 'khl_tour_details_khl_start5', true);
+				$tour_start6        = get_post_meta($post->ID, 'khl_tour_details_khl_start6', true);
 
 				if ($tour_start2) {
 					$sdate2     = DateTime::createFromFormat("Ymd", $tour_start2);
@@ -64,31 +64,31 @@ get_header(); ?>
 				}
 
 				if ($tour_start3) {
-					$sdate3 = DateTime::createFromFormat("Ymd", $tour_start3);
-					$t_start = $sdate3->format('jS F');
-					$edate3 = DateTime::createFromFormat("Ymd", $tour_end3);
-					$t_end = $edate3->format('jS F');
+					$sdate3     = DateTime::createFromFormat("Ymd", $tour_start3);
+					$t_start    = $sdate3->format('jS F');
+					$edate3     = DateTime::createFromFormat("Ymd", $tour_end3);
+					$t_end      = $edate3->format('jS F');
 				}
 
 				if ($tour_start4) {
-					$sdate4 = DateTime::createFromFormat("Ymd", $tour_start4);
-					$fo_start = $sdate4->format('jS F');
-					$edate4 = DateTime::createFromFormat("Ymd", $tour_end4);
-					$fo_end = $edate4->format('jS F');
+					$sdate4     = DateTime::createFromFormat("Ymd", $tour_start4);
+					$fo_start   = $sdate4->format('jS F');
+					$edate4     = DateTime::createFromFormat("Ymd", $tour_end4);
+					$fo_end     = $edate4->format('jS F');
 				}
 
 				if ($tour_start5) {
-					$sdate5 = DateTime::createFromFormat("Ymd", $tour_start5);
-					$fi_start = $sdate5->format('jS F');
-					$edate5 = DateTime::createFromFormat("Ymd", $tour_end5);
-					$fi_end = $edate5->format('jS F');
+					$sdate5     = DateTime::createFromFormat("Ymd", $tour_start5);
+					$fi_start   = $sdate5->format('jS F');
+					$edate5     = DateTime::createFromFormat("Ymd", $tour_end5);
+					$fi_end     = $edate5->format('jS F');
 				}
 
 				if ($tour_start6) {
-					$sdate6 = DateTime::createFromFormat("Ymd", $tour_start6);
-					$si_start = $sdate6->format('jS F');
-					$edate6 = DateTime::createFromFormat("Ymd", $tour_end6);
-					$si_end = $edate6->format('jS F');
+					$sdate6     = DateTime::createFromFormat("Ymd", $tour_start6);
+					$si_start   = $sdate6->format('jS F');
+					$edate6     = DateTime::createFromFormat("Ymd", $tour_end6);
+					$si_end     = $edate6->format('jS F');
 				}
 
 				$sdate      = DateTime::createFromFormat("Ymd", $tour_start);
