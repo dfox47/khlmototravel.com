@@ -19,24 +19,24 @@ $calendarUrl            =  '/' . $langCode . '/calendar';
 $tour_book_url          = $tour_url . '#book-now';
 $tour_title             = $post->post_title;
 $feautured_image        = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-$tour_short_desc        = get_post_meta($post->ID, 'khl_short_desc', true);
-$tour_desc              = get_post_meta($post->ID, 'khl_tour_description', true);
-$tour_highlights        = get_post_meta($post->ID, 'khl_tour_details_khl_highlights', true);
-$tour_days              = get_post_meta($post->ID, 'khl_tour_details_khl_days', true);
-$tour_nights            = get_post_meta($post->ID, 'khl_tour_details_khl_nights', true);
-$tour_riding_days       = get_post_meta($post->ID, 'khl_tour_details_khl_riding_days', true);
-$total_distance_km      = get_post_meta($post->ID, 'khl_tour_details_khl_total_distance', true);
-$total_distance_m       = round($total_distance_km * 0.621371192, 0);
-$starting_price         = get_post_meta($post->ID, 'khl_tour_prices_khl_pilot', true);
-$price_bmw850           = get_post_meta($post->ID, 'khl_tour_prices_khl850', true);
-$price_bmw900           = get_post_meta($post->ID, 'khl_tour_prices_khl900', true);
 $price_bmw1250          = get_post_meta($post->ID, 'khl_tour_prices_khl1250', true);
 $price_bmw1250gs        = get_post_meta($post->ID, 'khl_tour_prices_khl1250A', true);
+$price_bmw850           = get_post_meta($post->ID, 'khl_tour_prices_khl850', true);
+$price_bmw900           = get_post_meta($post->ID, 'khl_tour_prices_khl900', true);
 $price_passenger        = get_post_meta($post->ID, 'khl_tour_prices_khl_passenger', true);
 $price_single_room      = get_post_meta($post->ID, 'khl_tour_prices_khl_single_room_surcharge', true);
-$tour_startfinish       =  get_post_meta($post->ID, 'khl_tour_details_khl_startfinish', true);
-$tour_arr_accomodation  =  get_post_meta($post->ID, 'khl_tour_details_khl_accomodation', true);
+$starting_price         = get_post_meta($post->ID, 'khl_tour_prices_khl_pilot', true);
+$total_distance_km      = get_post_meta($post->ID, 'khl_tour_details_khl_total_distance', true);
+$total_distance_m       = round($total_distance_km * 0.621371192, 0);
 $tour_accomodation      = "";
+$tour_arr_accomodation  = get_post_meta($post->ID, 'khl_tour_details_khl_accomodation', true);
+$tour_days              = get_post_meta($post->ID, 'khl_tour_details_khl_days', true);
+$tour_desc              = get_post_meta($post->ID, 'khl_tour_description', true);
+$tour_highlights        = get_post_meta($post->ID, 'khl_tour_details_khl_highlights', true);
+$tour_nights            = get_post_meta($post->ID, 'khl_tour_details_khl_nights', true);
+$tour_riding_days       = get_post_meta($post->ID, 'khl_tour_details_khl_riding_days', true);
+$tour_short_desc        = get_post_meta($post->ID, 'khl_short_desc', true);
+$tour_startfinish       = get_post_meta($post->ID, 'khl_tour_details_khl_startfinish', true);
 
 foreach ($tour_arr_accomodation as $accom) {
 	if ($tour_accomodation != "") {
@@ -63,7 +63,7 @@ $tour_arr_character     = get_post_meta($post->ID, 'khl_tour_details_khl_terrain
 $tour_character         = "";
 
 foreach ($tour_arr_character as $tour_char) {
-	if($tour_character != ""){
+	if ($tour_character != "") {
 		$tour_character .= ", ";
 	}
 
@@ -392,7 +392,7 @@ $tour_not_included_arr  = get_post_meta($post->ID, 'khl_not_included', true); ?>
 					<ul class="included-list">
 						<h3><?php echo __('Include: ', 'khl_template'); ?></h3>
 
-						<?php foreach($tour_included_arr as $tour_included) {
+						<?php foreach ($tour_included_arr as $tour_included) {
 							echo '<li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="15" height="15"><circle style="fill:#14c304;" cx="25" cy="25" r="25"/><line style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="25" y1="13" x2="25" y2="38"/><line style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="37.5" y1="25" x2="12.5" y2="25"/></svg>'. $tour_included . '</li>';
 						} ?>
 					</ul>
@@ -400,7 +400,7 @@ $tour_not_included_arr  = get_post_meta($post->ID, 'khl_not_included', true); ?>
 					<ul class="included-list">
 						<h3><?php echo __('Not included: ', 'khl_template'); ?></h3>
 
-						<?php foreach($tour_not_included_arr as $tour_not_included) {
+						<?php foreach ($tour_not_included_arr as $tour_not_included) {
 							echo '<li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="15" width="15"><circle style="fill:#FF0000;" cx="25" cy="25" r="25"/><line style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="38" y1="25" x2="12" y2="25"/></svg>'. $tour_not_included . '</li>';
 						} ?>
 					</ul>
