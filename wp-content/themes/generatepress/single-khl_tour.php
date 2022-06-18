@@ -11,43 +11,32 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header(); ?>
 
-<?php if (ICL_LANGUAGE_CODE == 'en') {
-	$calendar_url = "/calendar";
-}
-elseif(ICL_LANGUAGE_CODE == 'de') {
-	$calendar_url = "/de/calendar";
-}
-elseif(ICL_LANGUAGE_CODE == 'ru') {
-	$calendar_url = "/ru/calendar";
-}
-elseif(ICL_LANGUAGE_CODE == 'cs') {
-	$calendar_url = "/cs/calendar";
-}
-elseif(ICL_LANGUAGE_CODE == 'bg') {
-	$calendar_url = "/bg/calendar";
-}
+<?php
 
-$tour_book_url = $tour_url . '#book-now';
-$tour_title = $post->post_title;
-$feautured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-$tour_short_desc = get_post_meta($post->ID, 'khl_short_desc', true);
-$tour_desc = get_post_meta($post->ID, 'khl_tour_description', true);
-$tour_highlights = get_post_meta($post->ID, 'khl_tour_details_khl_highlights', true);
-$tour_days = get_post_meta($post->ID, 'khl_tour_details_khl_days', true);
-$tour_nights = get_post_meta($post->ID, 'khl_tour_details_khl_nights', true);
-$tour_riding_days = get_post_meta($post->ID, 'khl_tour_details_khl_riding_days', true);
-$total_distance_km = get_post_meta($post->ID, 'khl_tour_details_khl_total_distance', true);
-$total_distance_m = round($total_distance_km * 0.621371192, 0);
-$starting_price = get_post_meta($post->ID, 'khl_tour_prices_khl_pilot', true);
-$price_bmw850 = get_post_meta($post->ID, 'khl_tour_prices_khl850', true);
-$price_bmw900 = get_post_meta($post->ID, 'khl_tour_prices_khl900', true);
-$price_bmw1250 = get_post_meta($post->ID, 'khl_tour_prices_khl1250', true);
-$price_bmw1250gs = get_post_meta($post->ID, 'khl_tour_prices_khl1250A', true);
-$price_passenger = get_post_meta($post->ID, 'khl_tour_prices_khl_passenger', true);
-$price_single_room = get_post_meta($post->ID, 'khl_tour_prices_khl_single_room_surcharge', true);
-$tour_startfinish =  get_post_meta($post->ID, 'khl_tour_details_khl_startfinish', true);
-$tour_arr_accomodation =  get_post_meta($post->ID, 'khl_tour_details_khl_accomodation', true);
-$tour_accomodation = "";
+$langCode               = ICL_LANGUAGE_CODE;
+
+$calendarUrl            =  '/' . $langCode . '/calendar';
+$tour_book_url          = $tour_url . '#book-now';
+$tour_title             = $post->post_title;
+$feautured_image        = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+$tour_short_desc        = get_post_meta($post->ID, 'khl_short_desc', true);
+$tour_desc              = get_post_meta($post->ID, 'khl_tour_description', true);
+$tour_highlights        = get_post_meta($post->ID, 'khl_tour_details_khl_highlights', true);
+$tour_days              = get_post_meta($post->ID, 'khl_tour_details_khl_days', true);
+$tour_nights            = get_post_meta($post->ID, 'khl_tour_details_khl_nights', true);
+$tour_riding_days       = get_post_meta($post->ID, 'khl_tour_details_khl_riding_days', true);
+$total_distance_km      = get_post_meta($post->ID, 'khl_tour_details_khl_total_distance', true);
+$total_distance_m       = round($total_distance_km * 0.621371192, 0);
+$starting_price         = get_post_meta($post->ID, 'khl_tour_prices_khl_pilot', true);
+$price_bmw850           = get_post_meta($post->ID, 'khl_tour_prices_khl850', true);
+$price_bmw900           = get_post_meta($post->ID, 'khl_tour_prices_khl900', true);
+$price_bmw1250          = get_post_meta($post->ID, 'khl_tour_prices_khl1250', true);
+$price_bmw1250gs        = get_post_meta($post->ID, 'khl_tour_prices_khl1250A', true);
+$price_passenger        = get_post_meta($post->ID, 'khl_tour_prices_khl_passenger', true);
+$price_single_room      = get_post_meta($post->ID, 'khl_tour_prices_khl_single_room_surcharge', true);
+$tour_startfinish       =  get_post_meta($post->ID, 'khl_tour_details_khl_startfinish', true);
+$tour_arr_accomodation  =  get_post_meta($post->ID, 'khl_tour_details_khl_accomodation', true);
+$tour_accomodation      = "";
 
 foreach ($tour_arr_accomodation as $accom) {
 	if ($tour_accomodation != "") {
@@ -61,17 +50,17 @@ $tour_language1 = get_post_meta($post->ID, 'khl_tour_details_khl_tour_language',
 $tour_language = "";
 
 foreach ($tour_language1 as $tour_lang) {
-	if($tour_lang != ""){
+	if ($tour_lang != "") {
 		$tour_lang .= ", ";
 	}
 
 	$tour_language .= $tour_lang;
 }
 
-$tour_min_group = get_post_meta($post->ID, 'khl_tour_details_khl_min_members', true);
-$tour_max_group = get_post_meta($post->ID, 'khl_tour_details_khl_max_members', true);
-$tour_arr_character = get_post_meta($post->ID, 'khl_tour_details_khl_terrain_character', true);
-$tour_character = "";
+$tour_min_group         = get_post_meta($post->ID, 'khl_tour_details_khl_min_members', true);
+$tour_max_group         = get_post_meta($post->ID, 'khl_tour_details_khl_max_members', true);
+$tour_arr_character     = get_post_meta($post->ID, 'khl_tour_details_khl_terrain_character', true);
+$tour_character         = "";
 
 foreach ($tour_arr_character as $tour_char) {
 	if($tour_character != ""){
@@ -81,42 +70,42 @@ foreach ($tour_arr_character as $tour_char) {
 	$tour_character .= $tour_char;
 }
 
-$tour_map = get_post_meta($post->ID, 'khl_tour_map', true);
-$tour_map_url = wp_get_attachment_url( $tour_map, 'full' );
-$tour_included_arr = get_post_meta($post->ID, 'khl_what_is_included', true);
-$tour_not_included_arr = get_post_meta($post->ID, 'khl_not_included', true);
-$tour_events_arr = get_post_meta($post->ID, 'khl_tour_events', true);
-$day1_title = get_post_meta($post->ID, 'khl_tour_events_khl_day1_title', true);
-$day1_desc = get_post_meta($post->ID, 'khl_tour_events_khl_day_1', true);
-$day2_title = get_post_meta($post->ID, 'khl_tour_events_khl_day2_title', true);
-$day2_desc = get_post_meta($post->ID, 'khl_tour_events_khl_day_2', true);
-$day3_title = get_post_meta($post->ID, 'khl_tour_events_khl_day3_title', true);
-$day3_desc = get_post_meta($post->ID, 'khl_tour_events_khl_day_3', true);
-$day4_title = get_post_meta($post->ID, 'khl_tour_events_khl_day4_title', true);
-$day4_desc = get_post_meta($post->ID, 'khl_tour_events_khl_day_4', true);
-$day5_title = get_post_meta($post->ID, 'khl_tour_events_khl_day5_title', true);
-$day5_desc = get_post_meta($post->ID, 'khl_tour_events_khl_day_5', true);
-$day6_title = get_post_meta($post->ID, 'khl_tour_events_khl_day6_title', true);
-$day6_desc = get_post_meta($post->ID, 'khl_tour_events_khl_day_6', true);
-$day7_title = get_post_meta($post->ID, 'khl_tour_events_khl_day7_title', true);
-$day7_desc = get_post_meta($post->ID, 'khl_tour_events_khl_day_7', true);
-$day8_title = get_post_meta($post->ID, 'khl_tour_events_khl_day8_title', true);
-$day8_desc = get_post_meta($post->ID, 'khl_tour_events_khl_day_8', true);
-$day9_title = get_post_meta($post->ID, 'khl_tour_events_khl_day9_title', true);
-$day9_desc = get_post_meta($post->ID, 'khl_tour_events_khl_day_9', true);
-$day10_title = get_post_meta($post->ID, 'khl_tour_events_khl_day10_title', true);
-$day10_desc = get_post_meta($post->ID, 'khl_tour_events_khl_day_10', true);
-$day11_title = get_post_meta($post->ID, 'khl_tour_events_khl_day11_title', true);
-$day11_desc = get_post_meta($post->ID, 'khl_tour_events_khl_day_11', true);
-$day12_title = get_post_meta($post->ID, 'khl_tour_events_khl_day12_title', true);
-$day12_desc = get_post_meta($post->ID, 'khl_tour_events_khl_day_12', true);
-$day13_title = get_post_meta($post->ID, 'khl_tour_events_khl_day13_title', true);
-$day13_desc = get_post_meta($post->ID, 'khl_tour_events_khl_day_13', true);
-$day14_title = get_post_meta($post->ID, 'khl_tour_events_khl_day14_title', true);
-$day14_desc = get_post_meta($post->ID, 'khl_tour_events_khl_day_14', true);
-$calc_form = get_post_meta($post->ID, 'khl_calc_form', true);
-$gallery = get_post_meta($post->ID, 'khl_gallery', true);
-$deposit = get_post_meta($post->ID, 'khl_tour_prices_deposit_motorcycle', true); ?>
+$calc_form              = get_post_meta($post->ID, 'khl_calc_form', true);
+$day10_desc             = get_post_meta($post->ID, 'khl_tour_events_khl_day_10', true);
+$day10_title            = get_post_meta($post->ID, 'khl_tour_events_khl_day10_title', true);
+$day11_desc             = get_post_meta($post->ID, 'khl_tour_events_khl_day_11', true);
+$day11_title            = get_post_meta($post->ID, 'khl_tour_events_khl_day11_title', true);
+$day12_desc             = get_post_meta($post->ID, 'khl_tour_events_khl_day_12', true);
+$day12_title            = get_post_meta($post->ID, 'khl_tour_events_khl_day12_title', true);
+$day13_desc             = get_post_meta($post->ID, 'khl_tour_events_khl_day_13', true);
+$day13_title            = get_post_meta($post->ID, 'khl_tour_events_khl_day13_title', true);
+$day14_desc             = get_post_meta($post->ID, 'khl_tour_events_khl_day_14', true);
+$day14_title            = get_post_meta($post->ID, 'khl_tour_events_khl_day14_title', true);
+$day1_desc              = get_post_meta($post->ID, 'khl_tour_events_khl_day_1', true);
+$day1_title             = get_post_meta($post->ID, 'khl_tour_events_khl_day1_title', true);
+$day2_desc              = get_post_meta($post->ID, 'khl_tour_events_khl_day_2', true);
+$day2_title             = get_post_meta($post->ID, 'khl_tour_events_khl_day2_title', true);
+$day3_desc              = get_post_meta($post->ID, 'khl_tour_events_khl_day_3', true);
+$day3_title             = get_post_meta($post->ID, 'khl_tour_events_khl_day3_title', true);
+$day4_desc              = get_post_meta($post->ID, 'khl_tour_events_khl_day_4', true);
+$day4_title             = get_post_meta($post->ID, 'khl_tour_events_khl_day4_title', true);
+$day5_desc              = get_post_meta($post->ID, 'khl_tour_events_khl_day_5', true);
+$day5_title             = get_post_meta($post->ID, 'khl_tour_events_khl_day5_title', true);
+$day6_desc              = get_post_meta($post->ID, 'khl_tour_events_khl_day_6', true);
+$day6_title             = get_post_meta($post->ID, 'khl_tour_events_khl_day6_title', true);
+$day7_desc              = get_post_meta($post->ID, 'khl_tour_events_khl_day_7', true);
+$day7_title             = get_post_meta($post->ID, 'khl_tour_events_khl_day7_title', true);
+$day8_desc              = get_post_meta($post->ID, 'khl_tour_events_khl_day_8', true);
+$day8_title             = get_post_meta($post->ID, 'khl_tour_events_khl_day8_title', true);
+$day9_desc              = get_post_meta($post->ID, 'khl_tour_events_khl_day_9', true);
+$day9_title             = get_post_meta($post->ID, 'khl_tour_events_khl_day9_title', true);
+$deposit                = get_post_meta($post->ID, 'khl_tour_prices_deposit_motorcycle', true);
+$gallery                = get_post_meta($post->ID, 'khl_gallery', true);
+$tour_events_arr        = get_post_meta($post->ID, 'khl_tour_events', true);
+$tour_included_arr      = get_post_meta($post->ID, 'khl_what_is_included', true);
+$tour_map               = get_post_meta($post->ID, 'khl_tour_map', true);
+$tour_map_url           = wp_get_attachment_url( $tour_map, 'full' );
+$tour_not_included_arr  = get_post_meta($post->ID, 'khl_not_included', true); ?>
 
 	<div class="tour-content">
 		<div class="tour-header">
@@ -207,14 +196,14 @@ $deposit = get_post_meta($post->ID, 'khl_tour_prices_deposit_motorcycle', true);
 		<div class="two-col cont-500">
 			<div class="col bordered shadowed-left">
 				<h2><?php echo __('Tour Overview', 'khl_template'); ?></h2>
-				<p>
-					<?php printf( '%s', $tour_desc); ?>
-				</p>
+
+				<p><?php printf( '%s', $tour_desc); ?></p>
+
 				<div class="tour-overview-specs">
 					<ul>
 						<li><?php echo __('Start/Finish: ', 'khl_template'); ?> <?php printf( '%s', $tour_startfinish); ?></li>
 						<li><?php echo __('Accomodation: ', 'khl_template'); ?><?php printf( '%s', $tour_accomodation); ?></li>
-						<li><?php echo __('Tour dates: ', 'khl_template'); ?><a href="<?php echo $calendar_url; ?>"><?php echo __('Calendar', 'khl_template'); ?></a></li>
+						<li><?php echo __('Tour dates: ', 'khl_template'); ?><a href="<?php echo $calendarUrl; ?>"><?php echo __('Calendar', 'khl_template'); ?></a></li>
 						<li><?php echo __('Highlights: ', 'khl_template'); ?><?php printf( '%s', $tour_highlights); ?></li>
 						<li><?php echo __('Duration: ', 'khl_template'); ?><?php printf( '%s ' . __('days', 'khl_template') . ', %s ' . __('nights', 'khl_template') . ', %s ' . __('riding days', 'khl_template'), $tour_days, $tour_nights, $tour_riding_days); ?></li>
 						<li><?php echo __('Guide language: ', 'khl_template'); ?><?php printf( '%s', $tour_language); ?></li>
@@ -225,7 +214,7 @@ $deposit = get_post_meta($post->ID, 'khl_tour_prices_deposit_motorcycle', true);
 			</div>
 
 			<div class="col">
-				<img class="map-img" src="<?php printf( '%s', $tour_map_url); ?>" />
+				<img class="map-img" src="<?php printf( '%s', $tour_map_url); ?>" alt="" />
 			</div>
 		</div>
 
@@ -233,61 +222,159 @@ $deposit = get_post_meta($post->ID, 'khl_tour_prices_deposit_motorcycle', true);
 			<h2><?php echo __('Day by day schedule: ', 'khl_template'); ?></h2>
 
 			<div class="days-cont">
-				<?php if( $day1_title && $day1_desc){
-					echo '<div class="day-cont"><div class="day-circle"><strong>1</strong></div><div class="day-desc"><h3>' . __('Day 1', 'khl_template') . '. '. $day1_title . '</h3><p>' . $day1_desc . '</p></div></div>';
-				} ?>
+				<?php if ($day1_title && $day1_desc) { ?>
+					<div class="day-cont">
+						<div class="day-circle"><strong>1</strong></div>
 
-				<?php if( $day2_title && $day2_desc){
-					echo '<div class="day-cont"><div class="day-circle"><strong>2</strong></div><div class="day-desc"><h3>' . __('Day 2', 'khl_template') . '. '. $day2_title . '</h3><p>' . $day2_desc . '</p></div></div>';
-				} ?>
+						<div class="day-desc">
+							<h3><?php echo __('Day 1', 'khl_template'); ?>. <?php echo $day1_title; ?></h3>
+							<p><?php echo $day1_desc; ?></p>
+						</div>
+					</div>
+				<?php } ?>
 
-				<?php if( $day3_title && $day3_desc){
-					echo '<div class="day-cont"><div class="day-circle"><strong>3</strong></div><div class="day-desc"><h3>' . __('Day 3', 'khl_template') . '. '. $day3_title . '</h3><p>' . $day3_desc . '</p></div></div>';
-				} ?>
+				<?php if ($day2_title && $day2_desc) { ?>
+					<div class="day-cont">
+						<div class="day-circle"><strong>2</strong></div>
 
-				<?php if( $day4_title && $day4_desc){
-					echo '<div class="day-cont"><div class="day-circle"><strong>4</strong></div><div class="day-desc"><h3>' . __('Day 4', 'khl_template') . '. '. $day4_title . '</h3><p>' . $day4_desc . '</p></div></div>';
-				} ?>
+						<div class="day-desc">
+							<h3><?php echo __('Day 2', 'khl_template'); ?>. <?php echo $day2_title; ?></h3>
+							<p><?php echo $day2_desc; ?></p>
+						</div>
+					</div>
+				<?php } ?>
 
-				<?php if( $day5_title && $day5_desc){
-					echo '<div class="day-cont"><div class="day-circle"><strong>5</strong></div><div class="day-desc"><h3>' . __('Day 5', 'khl_template') . '. '. $day5_title . '</h3><p>' . $day5_desc . '</p></div></div>';
-				} ?>
+				<?php if ($day3_title && $day3_desc) { ?>
+					<div class="day-cont">
+						<div class="day-circle"><strong>3</strong></div>
 
-				<?php if( $day6_title && $day6_desc){
-					echo '<div class="day-cont"><div class="day-circle"><strong>6</strong></div><div class="day-desc"><h3>' . __('Day 6', 'khl_template') . '. '. $day6_title . '</h3><p>' . $day6_desc . '</p></div></div>';
-				} ?>
+						<div class="day-desc">
+							<h3><?php echo __('Day 3', 'khl_template'); ?>. <?php echo $day3_title; ?></h3>
+							<p><?php echo $day3_desc; ?></p>
+						</div>
+					</div>
+				<?php } ?>
 
-				<?php if( $day7_title && $day7_desc){
-					echo '<div class="day-cont"><div class="day-circle"><strong>7</strong></div><div class="day-desc"><h3>' . __('Day 7', 'khl_template') . '. '. $day7_title . '</h3><p>' . $day7_desc . '</p></div></div>';
-				} ?>
+				<?php if ($day4_title && $day4_desc) { ?>
+					<div class="day-cont">
+						<div class="day-circle"><strong>4</strong></div>
 
-				<?php if( $day8_title && $day8_desc) {
-					echo '<div class="day-cont"><div class="day-circle"><strong>8</strong></div><div class="day-desc"><h3>' . __('Day 8', 'khl_template') . '. '. $day8_title . '</h3><p>' . $day8_desc . '</p></div></div>';
-				} ?>
+						<div class="day-desc">
+							<h3><?php echo __('Day 4', 'khl_template'); ?>. <?php echo $day4_title; ?></h3>
+							<p><?php echo $day4_desc; ?></p>
+						</div>
+					</div>
+				<?php } ?>
 
-				<?php if( $day9_title && $day9_desc) {
-					echo '<div class="day-cont"><div class="day-circle"><strong>9</strong></div><div class="day-desc"><h3>' . __('Day 9', 'khl_template') . '. '. $day9_title . '</h3><p>' . $day9_desc . '</p></div></div>';
-				} ?>
+				<?php if ($day5_title && $day5_desc) { ?>
+					<div class="day-cont">
+						<div class="day-circle"><strong>5</strong></div>
 
-				<?php if( $day10_title && $day10_desc) {
-					echo '<div class="day-cont"><div class="day-circle"><strong>10</strong></div><div class="day-desc"><h3>' . __('Day 10', 'khl_template') . '. '. $day10_title . '</h3><p>' . $day10_desc . '</p></div></div>';
-				} ?>
+						<div class="day-desc">
+							<h3><?php echo __('Day 5', 'khl_template'); ?>. <?php echo $day5_title; ?></h3>
+							<p><?php echo $day5_desc; ?></p>
+						</div>
+					</div>
+				<?php } ?>
 
-				<?php if( $day11_title && $day11_desc) {
-					echo '<div class="day-cont"><div class="day-circle"><strong>11</strong></div><div class="day-desc"><h3>' . __('Day 11', 'khl_template') . '. '. $day11_title . '</h3><p>' . $day11_desc . '</p></div></div>';
-				} ?>
+				<?php if ($day6_title && $day6_desc) { ?>
+					<div class="day-cont">
+						<div class="day-circle"><strong>6</strong></div>
 
-				<?php if( $day12_title && $day12_desc) {
-					echo '<div class="day-cont"><div class="day-circle"><strong>12</strong></div><div class="day-desc"><h3>' . __('Day 12', 'khl_template') . '. '. $day12_title . '</h3><p>' . $day12_desc . '</p></div></div>';
-				} ?>
+						<div class="day-desc">
+							<h3><?php echo __('Day 6', 'khl_template'); ?>. <?php echo $day6_title; ?></h3>
+							<p><?php echo $day6_desc; ?></p>
+						</div>
+					</div>
+				<?php } ?>
 
-				<?php if( $day13_title && $day13_desc) {
-					echo '<div class="day-cont"><div class="day-circle"><strong>13</strong></div><div class="day-desc"><h3>' . __('Day 13', 'khl_template') . '. '. $day13_title . '</h3><p>' . $day13_desc . '</p></div></div>';
-				} ?>
+				<?php if ($day7_title && $day7_desc) { ?>
+					<div class="day-cont">
+						<div class="day-circle"><strong>7</strong></div>
 
-				<?php if( $day14_title && $day14_desc) {
-					echo '<div class="day-cont"><div class="day-circle"><strong>14</strong></div><div class="day-desc"><h3>' . __('Day 14', 'khl_template') . '. '. $day14_title . '</h3><p>' . $day14_desc . '</p></div></div>';
-				} ?>
+						<div class="day-desc">
+							<h3><?php echo __('Day 7', 'khl_template'); ?>. <?php echo $day7_title; ?></h3>
+							<p><?php echo $day7_desc; ?></p>
+						</div>
+					</div>
+				<?php } ?>
+
+				<?php if ($day8_title && $day8_desc) { ?>
+					<div class="day-cont">
+						<div class="day-circle"><strong>8</strong></div>
+
+						<div class="day-desc">
+							<h3><?php echo __('Day 8', 'khl_template'); ?>. <?php echo $day8_title; ?></h3>
+							<p><?php echo $day8_desc; ?></p>
+						</div>
+					</div>
+				<?php } ?>
+
+				<?php if ($day9_title && $day9_desc) { ?>
+					<div class="day-cont">
+						<div class="day-circle"><strong>9</strong></div>
+
+						<div class="day-desc">
+							<h3><?php echo __('Day 9', 'khl_template'); ?>. <?php echo $day9_title; ?></h3>
+							<p><?php echo $day9_desc; ?></p>
+						</div>
+					</div>
+				<?php } ?>
+
+				<?php if ($day10_title && $day10_desc) { ?>
+					<div class="day-cont">
+						<div class="day-circle"><strong>10</strong></div>
+
+						<div class="day-desc">
+							<h3><?php echo __('Day 10', 'khl_template'); ?>. <?php echo $day10_title; ?></h3>
+							<p><?php echo $day10_desc; ?></p>
+						</div>
+					</div>
+				<?php } ?>
+
+				<?php if ($day11_title && $day11_desc) { ?>
+					<div class="day-cont">
+						<div class="day-circle"><strong>11</strong></div>
+
+						<div class="day-desc">
+							<h3><?php echo __('Day 11', 'khl_template'); ?>. <?php echo $day11_title; ?></h3>
+							<p><?php echo $day11_desc; ?></p>
+						</div>
+					</div>
+				<?php } ?>
+
+				<?php if ($day12_title && $day12_desc) { ?>
+					<div class="day-cont">
+						<div class="day-circle"><strong>12</strong></div>
+
+						<div class="day-desc">
+							<h3><?php echo __('Day 12', 'khl_template'); ?>. <?php echo $day12_title; ?></h3>
+							<p><?php echo $day12_desc; ?></p>
+						</div>
+					</div>
+				<?php } ?>
+
+				<?php if ($day13_title && $day13_desc) { ?>
+					<div class="day-cont">
+						<div class="day-circle"><strong>13</strong></div>
+
+						<div class="day-desc">
+							<h3><?php echo __('Day 13', 'khl_template'); ?>. <?php echo $day13_title; ?></h3>
+							<p><?php echo $day13_desc; ?></p>
+						</div>
+					</div>
+				<?php } ?>
+
+				<?php if ($day14_title && $day14_desc) { ?>
+					<div class="day-cont">
+						<div class="day-circle"><strong>14</strong></div>
+
+						<div class="day-desc">
+							<h3><?php echo __('Day 14', 'khl_template'); ?>. <?php echo $day14_title; ?></h3>
+							<p><?php echo $day14_desc; ?></p>
+						</div>
+					</div>
+				<?php } ?>
 			</div>
 		</div>
 
@@ -368,29 +455,35 @@ $deposit = get_post_meta($post->ID, 'khl_tour_prices_deposit_motorcycle', true);
 		<div class="book js-book">
 			<div class="book_actions">
 				<button class="btn_primary js-feedback-btn">
-					<?php if (get_locale() == 'en_US') { ?>
+					<?php if ($langCode == 'bg') { ?>
+						Изпрати заявка
+					<?php }
+					elseif ($langCode == 'de') { ?>
+						Anfrage senden
+					<?php }
+					elseif ($langCode == 'en') { ?>
 						Send request
 					<?php }
-					elseif (get_locale() == 'ru_RU') { ?>
+					elseif ($langCode == 'ru') { ?>
 						Послать запрос
-					<?php }
-					elseif (get_locale() == 'de_DE') { ?>
-						Anfrage senden
 					<?php } ?>
 				</button>
 
 				<button class="btn_primary js-fullform-btn">
-					<?php if (get_locale() == 'en_US') { ?>
+					<?php if ($langCode == 'bg') { ?>
+						Попълнете заявлението сами
+					<?php }
+					elseif ($langCode == 'de') { ?>
+						Füllen Sie den Antrag selbst aus
+					<?php }
+					elseif ($langCode == 'en') { ?>
 						Fill out the application yourself
 					<?php }
-					elseif (get_locale() == 'ru_RU') { ?>
+					elseif ($langCode == 'ru') { ?>
 						Заполните заявку самостоятельно
-					<?php } elseif (get_locale() == 'de_DE') { ?>
-						Füllen Sie den Antrag selbst aus
 					<?php } ?>
 				</button>
 			</div>
-
 
 			<div class="book_form_fullX js-book-form-full">
 				<?php echo do_shortcode($calc_form); ?>
