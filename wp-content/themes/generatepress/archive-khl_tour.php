@@ -10,44 +10,43 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 
-$calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
+$langCode       = ICL_LANGUAGE_CODE;
+$calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 
-
-
-<div id="primary" <?php generate_do_element_classes( 'content' ); ?> data-x="<?php echo ICL_LANGUAGE_CODE; ?>">
+<div id="primary" <?php generate_do_element_classes( 'content' ); ?>>
 	<main id="main" <?php generate_do_element_classes( 'main' ); ?>>
 		<h1><?php echo __('Motorcycle Tours', 'khl_template'); ?></h1>
 
 		<div class="tours_list">
 			<!-- Individual -->
-			<a class="tours_list__item" href="/<?php echo ICL_LANGUAGE_CODE; ?>/contact-us/">
+			<a class="tours_list__item" href="/<?php echo $langCode; ?>/contact-us/">
 				<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_636336056-e1615801862207.jpg);"></span>
 
 				<span class="tours_desc">
-						<span class="tours_desc__title"><?php echo __('Individual Moto Tour', 'khl_template'); ?></span>
+					<span class="tours_desc__title"><?php echo __('Individual Moto Tour', 'khl_template'); ?></span>
 
-						<span class="tours_desc__destinations">
-							<?php echo __('We offer individual motorcycle tours drawn up for your liking and desire! Tell us what you need for your trip and we will bring it to live.It is also possible to offer a motorcycle tour of your choice, on dates convenient for you. The group must be at least 4 people.', 'khl_template');  ?>
-						</span>
-
-						<span class="tours_desc__destinations">
-							<strong><?php echo __('Destinations: ', 'khl_template'); ?></strong> <?php echo __('Of your choice', 'khl_template'); ?>
-						</span>
-
-						<span class="tours_desc__destinations">
-							<strong><?php echo __('Duration: ', 'khl_template')?></strong> <?php echo __('Of your choice', 'khl_template'); ?>
-						</span>
-
-						<span class="tours_desc__destinations">
-							<strong><?php echo __('Dates: ', 'khl_template')?></strong> <?php echo __('Of your choice', 'khl_template'); ?>
-						</span>
-
-						<span class="tours_desc__destinations">
-							<strong><?php echo __('Prices from: ', 'khl_template')?></strong> 150 EUR
-						</span>
-
-						<span class="tours_desc__more">Read more</span>
+					<span class="tours_desc__destinations">
+						<?php echo __('We offer individual motorcycle tours drawn up for your liking and desire! Tell us what you need for your trip and we will bring it to live.It is also possible to offer a motorcycle tour of your choice, on dates convenient for you. The group must be at least 4 people.', 'khl_template');  ?>
 					</span>
+
+					<span class="tours_desc__destinations">
+						<strong><?php echo __('Prices from: ', 'khl_template')?></strong> 150 € /
+						<?php if ($langCode == 'bg') { ?>
+							ден
+						<?php }
+						elseif ($langCode == 'de') { ?>
+							tag
+						<?php }
+						elseif ($langCode == 'en') { ?>
+							day
+						<?php }
+						elseif ($langCode == 'ru') { ?>
+							день
+						<?php } ?>
+					</span>
+
+					<span class="tours_desc__more">Read more</span>
+				</span>
 			</a>
 
 			<?php
@@ -59,18 +58,14 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Balkan Moto Cruise</span>
-
 						<span class="tours_desc__destinations">Bulgaria, Serbia, Montenegro, Albania, North Macedonia</span>
-
+						<span class="tours_desc__duration">14 days</span>
 						<span class="tours_dates">
 							<span class="tours_dates__item">6 - 18 June 2022</span>
 							<span class="tours_dates__item">24 June - 6 July 2022</span>
 							<span class="tours_dates__item">31 July - 12 August 2022</span>
 							<span class="tours_dates__item">16 - 28 September 2022</span>
 						</span>
-
-						<span class="tours_desc__duration">14 days</span>
-
 						<span class="tours_desc__more">Read more</span>
 					</span>
 				</a>
@@ -81,15 +76,11 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Bulgaria</span>
-
 						<span class="tours_desc__destinations">Sofia, Belogradchik, Veliko Tarnovo, Velingrad, Devin, Bansko</span>
-
+						<span class="tours_desc__duration">9 days</span>
 						<span class="tours_dates">
 							<span class="tours_dates__item">By prior arrangement. Group of 4 people</span>
 						</span>
-
-						<span class="tours_desc__duration">9 days</span>
-
 						<span class="tours_desc__more">Read more</span>
 					</span>
 				</a>
@@ -100,17 +91,13 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Romania</span>
-
 						<span class="tours_desc__destinations">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse</span>
-
+						<span class="tours_desc__duration">9 days</span>
 						<span class="tours_dates">
 							<span class="tours_dates__item">15 - 23 July 2022</span>
 							<span class="tours_dates__item">19 - 27 August 2022</span>
 							<span class="tours_dates__item">2 - 10 September 2022</span>
 						</span>
-
-						<span class="tours_desc__duration">9 days</span>
-
 						<span class="tours_desc__more">Read more</span>
 					</span>
 				</a>
@@ -121,9 +108,8 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Bulgaria | Offroad</span>
-
 						<span class="tours_desc__destinations">Sofia, Veliko Tarnovo, Velingrad</span>
-
+						<span class="tours_desc__duration">11 days</span>
 						<span class="tours_dates">
 <!--							<span class="tours_dates__item">30 April - 10 May 2022</span>-->
 							<span class="tours_dates__item">18 - 28 June 2022</span>
@@ -131,9 +117,6 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 							<span class="tours_dates__item">20 - 30 August 2022</span>
 							<span class="tours_dates__item">17 - 27 September 2022</span>
 						</span>
-
-						<span class="tours_desc__duration">11 days</span>
-
 						<span class="tours_desc__more">Read more</span>
 					</span>
 				</a>
@@ -144,9 +127,8 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Bulgaria | Offroad</span>
-
 						<span class="tours_desc__destinations">Sofia, Veliko Tarnovo, Velingrad</span>
-
+						<span class="tours_desc__duration">7 days</span>
 						<span class="tours_dates">
 							<span class="tours_dates__item">21 - 27 May 2022</span>
 							<span class="tours_dates__item">04 - 10 June 2022</span>
@@ -155,9 +137,6 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 							<span class="tours_dates__item">03 - 09 October 2022</span>
 							<span class="tours_dates__item">17 - 23 October 2022</span>
 						</span>
-
-						<span class="tours_desc__duration">7 days</span>
-
 						<span class="tours_desc__more">Read more</span>
 					</span>
 				</a>
@@ -168,16 +147,13 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Turkey</span>
-
+						<span class="tours_desc__duration">11 days</span>
 						<span class="tours_dates">
 <!--							<span class="tours_dates__item">8 - 18 April 2022</span>-->
 							<!--							<span class="tours_dates__item">29 April - 9 May 2022</span>-->
 							<span class="tours_dates__item">20 - 30 May 2022</span>
 							<span class="tours_dates__item">10 - 20 October 2022</span>
 						</span>
-
-						<span class="tours_desc__duration">11 days</span>
-
 						<span class="tours_desc__more">Read more</span>
 					</span>
 				</a>
@@ -185,7 +161,6 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 				<!-- Turkey | offroad -->
 				<a class="tours_list__item" href="javascript:void(0);">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/enduro.jpg);"></span>
-
 					<span class="tours_desc">
 						<span class="tours_desc__title">Turkey | Offroad</span>
 						<span class="tours_desc__duration">15 days</span>
@@ -201,18 +176,14 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Около Балканите</span>
-
 						<span class="tours_desc__destinations">България, Сърбия, Черна гора, Албания, Северна Македония</span>
-
+						<span class="tours_desc__duration">14 дни</span>
 						<span class="tours_dates">
 							<span class="tours_dates__item">6 - 18 Юни 2022</span>
 							<span class="tours_dates__item">24 Юни - 6 Юли 2022</span>
 							<span class="tours_dates__item">31 Юли - 12 Август 2022</span>
 							<span class="tours_dates__item">16 - 28 Септември 2022</span>
 						</span>
-
-						<span class="tours_desc__duration">14 дни</span>
-
 						<span class="tours_desc__more">Повече</span>
 					</span>
 				</a>
@@ -223,14 +194,11 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">България</span>
-
 						<span class="tours_desc__destinations">София, Белоградчик, Велико Търново, Велинград, Девин, Банско</span>
-
+						<span class="tours_desc__duration">9 дни</span>
 						<span class="tours_dates">
 							<span class="tours_dates__item">След предишни дискусии. Група от 4 човека</span>
 						</span>
-
-						<span class="tours_desc__duration">9 дни</span>
 						<span class="tours_desc__more">Повече</span>
 					</span>
 				</a>
@@ -241,16 +209,13 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Румъния</span>
-
 						<span class="tours_desc__destinations">София, Белоградчик, Новаци, Турда, Брашов, Букурещ, Русе</span>
-
+						<span class="tours_desc__duration">9 дни</span>
 						<span class="tours_dates">
 							<span class="tours_dates__item">15 - 23 Юли 2022</span>
 							<span class="tours_dates__item">19 - 27 Август 2022</span>
 							<span class="tours_dates__item">2 - 10 Септември 2022</span>
 						</span>
-
-						<span class="tours_desc__duration">9 дни</span>
 
 						<span class="tours_desc__more">Повече</span>
 					</span>
@@ -262,9 +227,8 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">България | Offroad</span>
-
 						<span class="tours_desc__destinations">София, Велико Търново, Велинград</span>
-
+						<span class="tours_desc__duration">11 дни</span>
 						<span class="tours_dates">
 <!--							<span class="tours_dates__item">30 Април - 10 Май 2022</span>-->
 							<span class="tours_dates__item">18 - 28 Юни 2022</span>
@@ -272,9 +236,6 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 							<span class="tours_dates__item">20 - 30 Август 2022</span>
 							<span class="tours_dates__item">17 - 27 Септември 2022</span>
 						</span>
-
-						<span class="tours_desc__duration">11 дни</span>
-
 						<span class="tours_desc__more">Повече</span>
 					</span>
 				</a>
@@ -285,9 +246,8 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">България | Offroad</span>
-
 						<span class="tours_desc__destinations">София, Велико Търново, Велинград</span>
-
+						<span class="tours_desc__duration">7 дни</span>
 						<span class="tours_dates">
 							<span class="tours_dates__item">21 - 27 May 2022</span>
 							<span class="tours_dates__item">4 - 10 Юни 2022</span>
@@ -296,9 +256,6 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 							<span class="tours_dates__item">3 - 9 Октомври 2022</span>
 							<span class="tours_dates__item">17 - 23 Октомври 2022</span>
 						</span>
-
-						<span class="tours_desc__duration">7 дни</span>
-
 						<span class="tours_desc__more">Повече</span>
 					</span>
 				</a>
@@ -309,16 +266,13 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Турция</span>
-
+						<span class="tours_desc__duration">11 дни</span>
 						<span class="tours_dates">
 <!--							<span class="tours_dates__item">8 - 18 Април 2022</span>-->
 							<!--							<span class="tours_dates__item">29 Април - 9 Май 2022</span>-->
 							<span class="tours_dates__item">20 - 30 Май 2022</span>
 							<span class="tours_dates__item">10 - 20 Октомври 2022</span>
 						</span>
-
-						<span class="tours_desc__duration">11 дни</span>
-
 						<span class="tours_desc__more">Повече</span>
 					</span>
 				</a>
@@ -329,9 +283,7 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Турция | Offroad</span>
-
 						<span class="tours_desc__duration">15 дни</span>
-
 						<span class="tours_desc__more">Очаквайте скоро</span>
 					</span>
 				</a>
@@ -344,18 +296,14 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Vokrut Balkan</span>
-
 						<span class="tours_desc__destinations">Bulgarien, Serbien, Montenegro, Albanien, Nordmazedonien</span>
-
+						<span class="tours_desc__duration">14 tage</span>
 						<span class="tours_dates">
 							<span class="tours_dates__item">6 - 18 Juni 2022</span>
 							<span class="tours_dates__item">24 Juni - 6 Juli 2022</span>
 							<span class="tours_dates__item">31 Juli - 12 August 2022</span>
 							<span class="tours_dates__item">16 - 28 September 2022</span>
 						</span>
-
-						<span class="tours_desc__duration">14 tage</span>
-
 						<span class="tours_desc__more">Weiterlesen</span>
 					</span>
 				</a>
@@ -366,15 +314,11 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Bulgarien</span>
-
 						<span class="tours_desc__destinations">Sofia, Belogradchik, Veliko Tarnovo, Velingrad, Devin, Bansko</span>
-
+						<span class="tours_desc__duration">9 Tage</span>
 						<span class="tours_dates">
 							<span class="tours_dates__item">Nach vorheriger Absprache. Gruppe von 4 Personen</span>
 						</span>
-
-						<span class="tours_desc__duration">9 Tage</span>
-
 						<span class="tours_desc__more">Mehr Details</span>
 					</span>
 				</a>
@@ -385,17 +329,13 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Rumänien</span>
-
 						<span class="tours_desc__destinations">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse</span>
-
+						<span class="tours_desc__duration">9 tage</span>
 						<span class="tours_dates">
 							<span class="tours_dates__item">15 - 23 Juli 2022</span>
 							<span class="tours_dates__item">19 - 27 August 2022</span>
 							<span class="tours_dates__item">2 - 10 September 2022</span>
 						</span>
-
-						<span class="tours_desc__duration">9 tage</span>
-
 						<span class="tours_desc__more">Weiterlesen</span>
 					</span>
 				</a>
@@ -406,9 +346,8 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Bulgarien | Offroad</span>
-
 						<span class="tours_desc__destinations">Sofia, Veliko Tarnovo, Velingrad</span>
-
+						<span class="tours_desc__duration">11 tage</span>
 						<span class="tours_dates">
 <!--							<span class="tours_dates__item">30 April - 10 May 2022</span>-->
 							<span class="tours_dates__item">18 - 28 Juni 2022</span>
@@ -416,9 +355,6 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 							<span class="tours_dates__item">20 - 30 August 2022</span>
 							<span class="tours_dates__item">17 - 27 September 2022</span>
 						</span>
-
-						<span class="tours_desc__duration">11 tage</span>
-
 						<span class="tours_desc__more">Weiterlesen</span>
 					</span>
 				</a>
@@ -429,9 +365,8 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Bulgarien | Offroad</span>
-
 						<span class="tours_desc__destinations">Sofia, Veliko Tarnovo, Velingrad</span>
-
+						<span class="tours_desc__duration">7 tage</span>
 						<span class="tours_dates">
 							<span class="tours_dates__item">21 - 27 May 2022</span>
 							<span class="tours_dates__item">4 - 10 Juni 2022</span>
@@ -440,9 +375,6 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 							<span class="tours_dates__item">3 - 9 Oktober 2022</span>
 							<span class="tours_dates__item">17 - 23 Oktober 2022</span>
 						</span>
-
-						<span class="tours_desc__duration">7 tage</span>
-
 						<span class="tours_desc__more">Weiterlesen</span>
 					</span>
 				</a>
@@ -453,16 +385,13 @@ $calendarUrl =  '/' . ICL_LANGUAGE_CODE . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Truthahn</span>
-
+						<span class="tours_desc__duration">11 tage</span>
 						<span class="tours_dates">
 <!--							<span class="tours_dates__item">8 - 18 April 2022</span>-->
 							<!--							<span class="tours_dates__item">29 April - 9 May 2022</span>-->
 							<span class="tours_dates__item">20 - 30 May 2022</span>
 							<span class="tours_dates__item">10 - 20 Oktober 2022</span>
 						</span>
-
-						<span class="tours_desc__duration">11 tage</span>
-
 						<span class="tours_desc__more">Weiterlesen</span>
 					</span>
 				</a>
