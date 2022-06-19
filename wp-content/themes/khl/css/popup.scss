@@ -108,3 +108,60 @@
 	margin: 20px 0 0;
 	width: 50px;
 }
+
+.popup2 {
+	align-items: center;
+	display: none;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+
+	&::after {
+		background-color: #000;
+		content: "";
+		height: 100%;
+		left: 0;
+		opacity: .7;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+	&__bg {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+	}
+
+	&__close {
+		position: absolute;
+	}
+
+	&__content {
+		background-color: #fff;
+		height: 90%;
+		left: 5%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		padding: 30px;
+		position: absolute;
+		text-align: center;
+		top: 5%;
+		width: 90%;
+		z-index: 3;
+	}
+}
+
+.popup2_active {
+	.popup2 {
+		display: block;
+	}
+}
