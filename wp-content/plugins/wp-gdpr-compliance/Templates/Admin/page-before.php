@@ -18,6 +18,8 @@ use WPGDPRC\Utils\Wizard;
 
 	<?php if ( ! Wizard::isCompleted() ) : ?>
 		<?php Wizard::renderNotice(); ?>
-	<?php endif; ?>
+    <?php elseif ( !Settings::isPremium() ) : ?>
+        <?php Template::render( 'Admin/notice-upgrade' ); ?>
+    <?php endif; ?>
 
 	<main id="wpgdprc-main" class="wpgdprc-main">

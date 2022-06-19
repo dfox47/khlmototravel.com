@@ -175,7 +175,7 @@ class Elements {
 	 * @param string $type
 	 * @return string
 	 */
-	public static function notice( string $title = '', string $text = '', string $button = '', string $type = 'notice' ): string {
+	public static function notice( string $title = '', string $text = '', string $button = '', string $type = 'notice' ) {
 		$icon = 'icon-info-circle.svg';
 		switch ( $type ) {
 			case 'error':
@@ -189,9 +189,12 @@ class Elements {
 			case 'wizard':
 				$icon = 'icon-wave.svg';
 				break;
+
+            case 'upgrade':
+                $icon = 'icon-sparkles.svg';
 		}
 
-		return Template::get(
+        Template::render(
 			'Admin/Elements/notice-fancy',
 			[
 				'type'   => $type,

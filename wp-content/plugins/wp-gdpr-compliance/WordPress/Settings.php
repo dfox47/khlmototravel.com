@@ -462,7 +462,7 @@ class Settings {
 			return $value;
 		}
 
-        $submit =  esc_sql( key( sanitize_text_field( wp_unslash( $_POST[ self::SETTINGS_GROUP ]['submit'] ) ) ) );
+        $submit =  esc_sql( sanitize_text_field( wp_unslash( $_POST[ self::SETTINGS_GROUP ]['submit'] ) ) );
 		self::setSectionTransient( $submit );
 
 		return $value;

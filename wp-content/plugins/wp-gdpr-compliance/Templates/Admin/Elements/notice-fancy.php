@@ -13,7 +13,7 @@ use WPGDPRC\Utils\Template;
 if ( empty( $type ) ) {
 	$type = 'notice';
 }
-if ( $type === 'wizard' ) {
+if ( $type === 'wizard' || $type === 'upgrade' ) {
 	$type = 'notice wpgdprc-message--large-icon';
 }
 
