@@ -51,7 +51,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 
 			<?php
 			// en
-			if (get_locale() == 'en_US') { ?>
+			if ($langCode == 'en') { ?>
 				<!-- Balkan Moto Cruise | 6 - 18 June 2022 -->
 				<a class="tours_list__item" href="/moto-tours/5-countries">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg);"></span>
