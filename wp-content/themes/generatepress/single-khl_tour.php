@@ -485,7 +485,7 @@ $tour_not_included_arr  = get_post_meta($post->ID, 'khl_not_included', true); ?>
 				</button>
 			</div>
 
-			<div class="book_form_fullX js-book-form-full">
+			<div class="book_form_full js-book-form-full">
 				<?php echo do_shortcode($calc_form); ?>
 			</div>
 		</div>

@@ -10,6 +10,29 @@ document.querySelectorAll('.menu-toggle').forEach((button) => {
 
 
 
+// full form
+const fullForm = () => {
+	let $showFullForm   = document.querySelector('.js-fullform-btn')
+	let $formBook       = document.querySelector('.js-book-form-full')
+
+	if (!$showFullForm || !$formBook) return
+
+	$showFullForm.addEventListener('click', () => {
+		setTimeout(() => {
+			window.scroll({
+				behavior: 'smooth',
+				top: $showFullForm.getBoundingClientRect().top + window.scrollY
+			});
+		}, 100)
+
+		$formBook.classList.toggle('active')
+	})
+}
+
+fullForm()
+
+
+
 $(window).bind('load', function() {
 	$('.js-feedback-btn').on('click', function () {
 		$('.js-book-popup').addClass('active')
@@ -17,10 +40,6 @@ $(window).bind('load', function() {
 
 	$('.js-book-popup-close').on('click', function () {
 		$('.js-book-popup').removeClass('active')
-	})
-
-	$('.js-fullform-btn').on('click', function () {
-		$('.js-book-form-full').addClass('active')
 	})
 
 
