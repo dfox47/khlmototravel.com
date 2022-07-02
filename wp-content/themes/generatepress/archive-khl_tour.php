@@ -40,8 +40,8 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 						elseif ($langCode == 'ru') { ?>
 							день
 						<?php }
-                        else { ?>
-                            day
+						else { ?>
+							day
 						<?php } ?>
 					</span>
 
