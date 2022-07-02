@@ -15,8 +15,9 @@ get_header(); ?>
 	<div class="wrap">
 		<h1>
 			<span class="lang_bg_only">Мотор под наем в София</span>
-			<span class="lang_de_only">Rent a motorcycle in Sofia</span>
+			<span class="lang_de_only">Mieten Sie ein Motorrad in Sofia</span>
 			<span class="lang_en_only">Rent a motorcycle in Sofia</span>
+			<span class="lang_ru_only">Аренда мотоциклов в София</span>
 		</h1>
 
 		<form class="order_form js-order-form" action="/wp-content/themes/khl/rentBikeMail.php" method="post">
