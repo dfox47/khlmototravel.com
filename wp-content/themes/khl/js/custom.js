@@ -157,3 +157,17 @@ $(window).bind('load', function() {
 		$('.js-popup').removeClass('active')
 	})
 })
+
+const addCustomHeader = () => {
+	let customHeader = document.querySelector('.js-custom-header')
+
+	if (!customHeader) return
+
+	let fullSizeImg = document.querySelector('.attachment-full')
+	let titleH1     = document.querySelector('.entry-title')
+
+	customHeader.appendChild(fullSizeImg)
+	customHeader.appendChild(titleH1)
+}
+
+addCustomHeader()

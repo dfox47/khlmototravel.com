@@ -192,6 +192,41 @@ h3 {
 	margin: 0 0 30px !important;
 }
 
+.custom-header {
+	margin: 0 0 30px;
+	position: relative;
+
+	&::after {
+		background-color: #000;
+		content: "";
+		height: 100%;
+		left: 0;
+		opacity: .5;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+	}
+
+	img {
+		display: block;
+		position: relative;
+		z-index: 1;
+	}
+
+	.entry-title {
+		font-size: 60px;
+		left: 50%;
+		padding: 0;
+		position: absolute;
+		text-transform: uppercase;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		z-index: 3;
+	}
+}
+
 .entry-title {
 	font-family: $font_josefin;
 }
@@ -280,6 +315,13 @@ html {
 .navigation-branding {
 	img {
 		padding: 0;
+	}
+}
+
+// individual tour page
+.page-id-15791 {
+	.entry-content {
+		margin-top: 0;
 	}
 }
 
