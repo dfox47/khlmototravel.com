@@ -50,7 +50,7 @@ function calcDiff() {
 				calcDiff()
 				checkPromo()
 			}
-		});
+		})
 
 		$dateFrom.datepicker('setDate', dateFromInputVal)
 		dateFromGet = $dateFrom.datepicker('getDate')
