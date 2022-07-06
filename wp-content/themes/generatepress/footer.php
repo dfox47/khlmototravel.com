@@ -56,7 +56,7 @@ do_action('generate_after_footer');
 
 wp_footer(); ?>
 
-<!--<script src="//code-ya.jivosite.com/widget/lgCYMdLgiq" async></script>-->
+<script src="//code-ya.jivosite.com/widget/lgCYMdLgiq" async></script>
 
 <?php include_once 'book.php'; ?>
 <?php include_once 'popup.php'; ?>
