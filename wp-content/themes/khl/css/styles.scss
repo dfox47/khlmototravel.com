@@ -224,6 +224,10 @@ h3 {
 		transform: translate(-50%, -50%);
 		width: 100%;
 		z-index: 3;
+
+		@media #{$mobile} {
+			font-size: 30px;
+		}
 	}
 }
 
@@ -339,6 +343,30 @@ html {
 
 // individual tour page
 .page-id-15791 {
+	#page {
+		&.grid-container {
+			max-width: none;
+		}
+
+		.wpcf7-form {
+			margin: 0 auto;
+			max-width: 600px;
+			padding: 30px;
+		}
+
+		.entry-content {
+			.gb-grid-wrapper {
+				margin: 0 auto;
+				max-width: 1200px;
+				padding: 30px;
+			}
+		}
+
+		.site-content {
+			padding: 0;
+		}
+	}
+
 	.entry-content {
 		margin-top: 0;
 	}
