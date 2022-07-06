@@ -67,7 +67,7 @@ get_header(); ?>
 							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
 							<span class="lang_bg_only">€/ден</span>
 							<span class="lang_de_only">€/Tag</span>
-							<span class="lang_en_only">€/day</span>
+							<spdateFromGetan class="lang_en_only">€/day</spdateFromGetan>
 							<span class="lang_ru_only">€/день</span>
 						</span>
 
@@ -374,7 +374,7 @@ get_header(); ?>
 					<span class="lang_de_only">Abholdatum</span>
 					<span class="lang_en_only">Pickup date</span>
 					<span class="lang_ru_only">Дата от</span>
-					<input class="js-datepicker js-pickup-date" type="text" name="pickup_date" value="<?php echo(date('m/d/Y')); ?>" />
+					<input class="js-datepicker js-pickup-date" type="text" name="pickup_date" value="<?php echo(date('d/m/Y')); ?>" />
 				</label>
 
 				<label class="order_label return_date">
@@ -382,7 +382,7 @@ get_header(); ?>
 					<span class="lang_de_only">Rückflugdatum</span>
 					<span class="lang_en_only">Return date</span>
 					<span class="lang_ru_only">Дата до</span>
-					<input class="js-datepicker js-return-date" type="text" name="return_date" value="<?php echo(date('m/d/Y', strtotime('+1 day'))); ?>" />
+					<input class="js-datepicker js-return-date" type="text" name="return_date" value="<?php echo(date('d/m/Y', strtotime('+1 day'))); ?>" />
 				</label>
 
 				<div class="order_total_days">

@@ -5,12 +5,14 @@ $(window).bind('load', function() {
 	// check phone | allow only numbers
 	$('.js-order-phone').keypress(function (e) {
 		let charCode = (e.which) ? e.which : e.keyCode
+
 		if (String.fromCharCode(charCode).match(/[^0-9()\-+]/g)) return false
 	})
 
 	// check name | allow only letters
 	$('.js-order-name').bind('keyup blur',function() {
 		let node = $(this)
+
 		node.val(node.val().replace(/[^a-zA-Z ]/g,''))
 	})
 })
@@ -20,8 +22,10 @@ let calendarDate = () => {
 
 	if (!datePicker.length) return
 
+	// after update
 	datePicker.datepicker({
 		defaultDate: +1,
+		dateFormat: 'dd/mm/yy',
 		minDate: 0,
 		onSelect: function() {
 			calcDiff()
@@ -44,35 +48,36 @@ let calcDiff = () => {
 	$dateFrom.removeClass('error')
 	$dateTo.removeClass('error')
 
-	// date FROM not empty
+	// date FROM empty
 	if (!dateFromGet) {
-		let dateFromInputVal = $dateFrom.val()
-
 		$dateFrom.datepicker({
+			dateFormat: 'dd/mm/yy',
+			defaultDate: $dateFrom.val(),
 			minDate: 0,
 			onSelect: function() {
 				calcDiff()
 				checkPromo()
-			}
+			},
+			yearRange: '2022:2023'
 		})
 
-		$dateFrom.datepicker('setDate', dateFromInputVal)
 		dateFromGet = $dateFrom.datepicker('getDate')
 	}
 
-	// date TO not empty
+	// date TO empty
 	if (!dateToGet) {
-		let dateToInputVal = $dateTo.val()
 		$dateTo.datepicker({
+			dateFormat: 'dd/mm/yy',
 			defaultDate: +1,
 			minDate: +1,
 			onSelect: function() {
 				calcDiff()
 				checkPromo()
-			}
+			},
+			yearRange: '2022:2023'
 		})
 
-		$dateTo.datepicker('setDate', dateToInputVal)
+		$dateTo.datepicker('setDate', $dateTo.val())
 		dateToGet = $dateTo.datepicker('getDate')
 	}
 
