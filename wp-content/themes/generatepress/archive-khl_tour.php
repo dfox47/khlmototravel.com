@@ -40,6 +40,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 						elseif ($langCode == 'ru') { ?>
 							день
 						<?php }
+						// en
 						else { ?>
 							day
 						<?php } ?>
@@ -169,7 +170,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 				</a>
 			<?php }
 			// bg
-			else if (get_locale() == 'bg_BG') { ?>
+			else if ($langCode == 'bg') { ?>
 				<!-- Balkan Moto Cruise | 6 - 18 June 2022 -->
 				<a class="tours_list__item" href="/bg/moto-tours/5-countries">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg);"></span>
@@ -289,7 +290,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 				</a>
 			<?php }
 			// de
-			else if (get_locale() == 'de_DE') { ?>
+			else if ($langCode == 'de') { ?>
 				<!-- Balkan Moto Cruise | 6 - 18 June 2022 -->
 				<a class="tours_list__item" href="/de/moto-tours/5-countries">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg);"></span>
@@ -408,7 +409,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 				</a>
 			<?php }
 			// ru
-			else if (get_locale() == 'ru_RU') { ?>
+			else if ($langCode == 'ru') { ?>
 				<!-- Balkan Moto Cruise | 6 - 18 June 2022 -->
 				<a class="tours_list__item" href="/ru/moto-tours/5-countries">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg);"></span>
