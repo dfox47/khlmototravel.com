@@ -194,6 +194,26 @@ switch ($langCode) {
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
+
+				<!-- Wine, Spa & History -->
+				<a class="tours_list__item" href="/moto-tours/wine-spa-history/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/06/shutterstock_633371231-e1615800001229.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">Wine, Spa & History</span>
+						<span class="tours_desc__duration">5 days</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- History, sea, culture of Bulgaria and Greece -->
+				<a class="tours_list__item" href="/moto-tours/history-sea-culture-of-bulgaria-and-greece/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">History, sea, culture of Bulgaria and Greece</span>
+						<span class="tours_desc__duration">12 days</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
 			<?php }
 			// bg
 			else if ($langCode == 'bg') { ?>
@@ -249,7 +269,8 @@ switch ($langCode) {
 				</a>
 
 				<!-- Bulgaria | offroad | 11 days -->
-				<a class="tours_list__item" href="/bg/moto-tours/bulgari-offroad-11-dnej/">
+				<!--				<a class="tours_list__item" href="/bg/moto-tours/bulgari-offroad-11-dnej/">-->
+				<a class="tours_list__item" href="/moto-tours/bulgaria-offroad-11-days/">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-03.jpg);"></span>
 
 					<span class="tours_desc">
@@ -268,7 +289,8 @@ switch ($langCode) {
 				</a>
 
 				<!-- Bulgaria | offroad | 7 days -->
-				<a class="tours_list__item" href="/bg/moto-tours/bulgaria-offroad-7-day/">
+<!--				<a class="tours_list__item" href="/bg/moto-tours/bulgaria-offroad-7-day/">-->
+				<a class="tours_list__item" href="/moto-tours/bulgaria-offroad-7-days/">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-08.jpg);"></span>
 
 					<span class="tours_desc">
@@ -288,7 +310,8 @@ switch ($langCode) {
 				</a>
 
 				<!-- Turkey -->
-				<a class="tours_list__item" href="/bg/moto-tours/die-tuerkei/">
+<!--				<a class="tours_list__item" href="/bg/moto-tours/die-tuerkei/">-->
+				<a class="tours_list__item" href="/moto-tours/turkey/">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/turkey.jpg);"></span>
 
 					<span class="tours_desc">
@@ -321,6 +344,26 @@ switch ($langCode) {
 					<span class="tours_desc">
 						<span class="tours_desc__title">Macedonia</span>
 						<span class="tours_desc__duration">5 дни</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- Wine, Spa & History -->
+				<a class="tours_list__item" href="/bg/moto-tours/wine-spa-history/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/06/shutterstock_633371231-e1615800001229.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">Вино, СПА и история</span>
+						<span class="tours_desc__duration">5 дни</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- History, sea, culture of Bulgaria and Greece -->
+				<a class="tours_list__item" href="/bg/moto-tours/history-sea-culture-of-bulgaria-and-greece/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">История, море, култура на България и Гърция</span>
+						<span class="tours_desc__duration">12 дни</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
@@ -450,6 +493,26 @@ switch ($langCode) {
 					<span class="tours_desc">
 						<span class="tours_desc__title">Mazedonien</span>
 						<span class="tours_desc__duration">5 Tage</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- Wine, Spa & History -->
+				<a class="tours_list__item" href="/de/moto-tours/wine-spa-history/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/06/shutterstock_633371231-e1615800001229.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">Wein, Spa & Geschichte</span>
+						<span class="tours_desc__duration">5 Tage</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- History, sea, culture of Bulgaria and Greece -->
+				<a class="tours_list__item" href="/de/moto-tours/history-sea-culture-of-bulgaria-and-greece/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">Geschichte, Meer, Kultur Bulgariens und Griechenlands</span>
+						<span class="tours_desc__duration">12 Tage</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
@@ -602,6 +665,26 @@ switch ($langCode) {
 					<span class="tours_desc">
 						<span class="tours_desc__title">Македония</span>
 						<span class="tours_desc__duration">5 дней</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- Wine, Spa & History -->
+				<a class="tours_list__item" href="/ru/moto-tours/wine-spa-history/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/06/shutterstock_633371231-e1615800001229.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">Вино, СПА и История</span>
+						<span class="tours_desc__duration">5 дней</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- History, sea, culture of Bulgaria and Greece -->
+				<a class="tours_list__item" href="/ru/moto-tours/history-sea-culture-of-bulgaria-and-greece/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">История, море, культура Болгарии и Греции</span>
+						<span class="tours_desc__duration">12 дней</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
