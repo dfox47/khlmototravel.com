@@ -193,7 +193,13 @@ h3 {
 }
 
 .custom-header {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	height: 100vh;
 	margin: 0 0 30px;
+	max-height: 700px;
+	overflow: hidden;
 	position: relative;
 
 	&::after {
@@ -210,6 +216,7 @@ h3 {
 
 	img {
 		display: block;
+		object-fit: cover;
 		position: relative;
 		z-index: 1;
 	}
