@@ -185,8 +185,6 @@ switch ($langCode) {
 					</span>
 				</a>
 
-
-
 				<!-- Macedonia -->
 				<a class="tours_list__item" href="/moto-tours/macedonia/">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/05/IMG_6666-scaled.jpg);"></span>
@@ -316,6 +314,16 @@ switch ($langCode) {
 						<span class="tours_desc__more">Очаквайте скоро</span>
 					</span>
 				</a>
+
+				<!-- Macedonia -->
+				<a class="tours_list__item" href="/bg/moto-tours/macedonia/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/05/IMG_6666-scaled.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">Macedonia</span>
+						<span class="tours_desc__duration">5 дни</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
 			<?php }
 			// de
 			else if ($langCode == 'de') { ?>
@@ -433,6 +441,16 @@ switch ($langCode) {
 						<span class="tours_desc__title">Truthahn | Offroad</span>
 						<span class="tours_desc__duration">15 tage</span>
 						<span class="tours_desc__more">Demnächst</span>
+					</span>
+				</a>
+
+				<!-- Macedonia -->
+				<a class="tours_list__item" href="/de/moto-tours/macedonia/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/05/IMG_6666-scaled.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">Mazedonien</span>
+						<span class="tours_desc__duration">5 Tage</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 			<?php }
@@ -575,6 +593,16 @@ switch ($langCode) {
 						<span class="tours_desc__duration">15 дней</span>
 
 						<span class="tours_desc__more">Ожидайте в ближайшее время</span>
+					</span>
+				</a>
+
+				<!-- Macedonia -->
+				<a class="tours_list__item" href="/ru/moto-tours/macedonia/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/05/IMG_6666-scaled.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">Македония</span>
+						<span class="tours_desc__duration">5 дней</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 			<?php }
