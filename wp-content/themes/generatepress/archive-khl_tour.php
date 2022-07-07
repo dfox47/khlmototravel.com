@@ -11,7 +11,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 
 $langCode       = ICL_LANGUAGE_CODE;
-$calendarUrl    =  '/' . $langCode . '/calendar'; ?>
+$calendarUrl    =  '/' . $langCode . '/calendar';
+
+switch ($langCode) {
+	case 'ru':
+		$readMore = 'Подробнее';
+		break;
+	case 'de':
+		$readMore = 'Weiterlesen';
+		break;
+	case 'bg':
+		$readMore = 'Повече';
+		break;
+	// en
+	default:
+		$readMore = 'Read more';
+		break;
+} ?>
 
 <div id="primary" <?php generate_do_element_classes( 'content' ); ?>>
 	<main id="main" <?php generate_do_element_classes( 'main' ); ?>>
@@ -46,7 +62,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 						<?php } ?>
 					</span>
 
-					<span class="tours_desc__more">Read more</span>
+					<span class="tours_desc__more"><?php echo $readMore; ?></span>
 				</span>
 			</a>
 
@@ -67,7 +83,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 							<span class="tours_dates__item">31 July - 12 August 2022</span>
 							<span class="tours_dates__item">16 - 28 September 2022</span>
 						</span>
-						<span class="tours_desc__more">Read more</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -82,7 +98,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 						<span class="tours_dates">
 							<span class="tours_dates__item">By prior arrangement. Group of 4 people</span>
 						</span>
-						<span class="tours_desc__more">Read more</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -99,7 +115,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 							<span class="tours_dates__item">19 - 27 August 2022</span>
 							<span class="tours_dates__item">2 - 10 September 2022</span>
 						</span>
-						<span class="tours_desc__more">Read more</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -118,7 +134,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 							<span class="tours_dates__item">20 - 30 August 2022</span>
 							<span class="tours_dates__item">17 - 27 September 2022</span>
 						</span>
-						<span class="tours_desc__more">Read more</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -138,7 +154,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 							<span class="tours_dates__item">03 - 09 October 2022</span>
 							<span class="tours_dates__item">17 - 23 October 2022</span>
 						</span>
-						<span class="tours_desc__more">Read more</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -155,7 +171,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 							<span class="tours_dates__item">20 - 30 May 2022</span>
 							<span class="tours_dates__item">10 - 20 October 2022</span>
 						</span>
-						<span class="tours_desc__more">Read more</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -166,6 +182,18 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 						<span class="tours_desc__title">Turkey | Offroad</span>
 						<span class="tours_desc__duration">15 days</span>
 						<span class="tours_desc__more">Coming soon</span>
+					</span>
+				</a>
+
+
+
+				<!-- Macedonia -->
+				<a class="tours_list__item" href="/moto-tours/macedonia/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/05/IMG_6666-scaled.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">Macedonia</span>
+						<span class="tours_desc__duration">5 days</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 			<?php }
@@ -185,7 +213,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 							<span class="tours_dates__item">31 Юли - 12 Август 2022</span>
 							<span class="tours_dates__item">16 - 28 Септември 2022</span>
 						</span>
-						<span class="tours_desc__more">Повече</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -200,7 +228,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 						<span class="tours_dates">
 							<span class="tours_dates__item">След предишни дискусии. Група от 4 човека</span>
 						</span>
-						<span class="tours_desc__more">Повече</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -218,7 +246,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 							<span class="tours_dates__item">2 - 10 Септември 2022</span>
 						</span>
 
-						<span class="tours_desc__more">Повече</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -237,7 +265,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 							<span class="tours_dates__item">20 - 30 Август 2022</span>
 							<span class="tours_dates__item">17 - 27 Септември 2022</span>
 						</span>
-						<span class="tours_desc__more">Повече</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -257,7 +285,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 							<span class="tours_dates__item">3 - 9 Октомври 2022</span>
 							<span class="tours_dates__item">17 - 23 Октомври 2022</span>
 						</span>
-						<span class="tours_desc__more">Повече</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -274,7 +302,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 							<span class="tours_dates__item">20 - 30 Май 2022</span>
 							<span class="tours_dates__item">10 - 20 Октомври 2022</span>
 						</span>
-						<span class="tours_desc__more">Повече</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -305,7 +333,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 							<span class="tours_dates__item">31 Juli - 12 August 2022</span>
 							<span class="tours_dates__item">16 - 28 September 2022</span>
 						</span>
-						<span class="tours_desc__more">Weiterlesen</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -320,7 +348,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 						<span class="tours_dates">
 							<span class="tours_dates__item">Nach vorheriger Absprache. Gruppe von 4 Personen</span>
 						</span>
-						<span class="tours_desc__more">Mehr Details</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -337,7 +365,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 							<span class="tours_dates__item">19 - 27 August 2022</span>
 							<span class="tours_dates__item">2 - 10 September 2022</span>
 						</span>
-						<span class="tours_desc__more">Weiterlesen</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -356,7 +384,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 							<span class="tours_dates__item">20 - 30 August 2022</span>
 							<span class="tours_dates__item">17 - 27 September 2022</span>
 						</span>
-						<span class="tours_desc__more">Weiterlesen</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -376,7 +404,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 							<span class="tours_dates__item">3 - 9 Oktober 2022</span>
 							<span class="tours_dates__item">17 - 23 Oktober 2022</span>
 						</span>
-						<span class="tours_desc__more">Weiterlesen</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -393,7 +421,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 							<span class="tours_dates__item">20 - 30 May 2022</span>
 							<span class="tours_dates__item">10 - 20 Oktober 2022</span>
 						</span>
-						<span class="tours_desc__more">Weiterlesen</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -416,19 +444,15 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Вокруг Балкан</span>
-
 						<span class="tours_desc__destinations">Болгария, Сербия, Черногория, Албания, Северная Македония</span>
-
 						<span class="tours_dates">
 							<span class="tours_dates__item">7 - 19 Июня 2022</span>
 							<span class="tours_dates__item">25 Июня - 7 Июля 2022</span>
 							<span class="tours_dates__item">1 - 13 Авугста 2022</span>
 							<span class="tours_dates__item">17 - 29 Сентября 2022</span>
 						</span>
-
 						<span class="tours_desc__duration">14 дней</span>
-
-						<span class="tours_desc__more">Подробнее</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -448,7 +472,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 
 						<span class="tours_desc__duration">9 дней</span>
 
-						<span class="tours_desc__more">Подробнее</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -469,7 +493,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 
 						<span class="tours_desc__duration">9 дней</span>
 
-						<span class="tours_desc__more">Подробнее</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -492,7 +516,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 
 						<span class="tours_desc__duration">11 дней</span>
 
-						<span class="tours_desc__more">Подробнее</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -517,7 +541,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 
 						<span class="tours_desc__duration">7 дней</span>
 
-						<span class="tours_desc__more">Подробнее</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -537,7 +561,7 @@ $calendarUrl    =  '/' . $langCode . '/calendar'; ?>
 
 						<span class="tours_desc__duration">11 дней</span>
 
-						<span class="tours_desc__more">Подробнее</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
