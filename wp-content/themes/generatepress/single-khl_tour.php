@@ -14,6 +14,7 @@ get_header(); ?>
 <?php
 
 $langCode               = ICL_LANGUAGE_CODE;
+$currentUrl             = $_SERVER['REQUEST_URI'];
 
 $calendarUrl            =  '/' . $langCode . '/calendar';
 $tour_book_url          = $tour_url . '#book-now';
@@ -37,6 +38,31 @@ $tour_nights            = get_post_meta($post->ID, 'khl_tour_details_khl_nights'
 $tour_riding_days       = get_post_meta($post->ID, 'khl_tour_details_khl_riding_days', true);
 $tour_short_desc        = get_post_meta($post->ID, 'khl_short_desc', true);
 $tour_startfinish       = get_post_meta($post->ID, 'khl_tour_details_khl_startfinish', true);
+
+switch ($langCode) {
+	case 'ru':
+		$textFillAppYourself = 'Заполните заявку самостоятельно';
+		$textFormTitle = 'Отправить запрос на тур';
+		$textSendRequest = 'Послать запрос';
+		break;
+	case 'de':
+		$textFillAppYourself = 'Füllen Sie den Antrag selbst aus';
+		$textFormTitle = 'Senden Sie eine Touranfrage';
+		$textSendRequest = 'Anfrage senden';
+		break;
+	case 'bg':
+		$textFillAppYourself = 'Попълнете заявлението сами';
+		$textFormTitle = 'Изпратете заявка за обиколка';
+		$textSendRequest = 'Изпрати заявка';
+		break;
+	default:
+		$textFillAppYourself = 'Fill out the application yourself';
+		$textFormTitle = 'Submit a tour request';
+		$textSendRequest = 'Send request';
+		break;
+}
+
+
 
 foreach ($tour_arr_accomodation as $accom) {
 	if ($tour_accomodation != "") {
@@ -452,45 +478,45 @@ $tour_not_included_arr  = get_post_meta($post->ID, 'khl_not_included', true); ?>
 			</div>
 		</div>
 
-		<div class="book js-book">
-			<div class="book_actions">
-				<button class="btn_primary js-feedback-btn">
-					<?php if ($langCode == 'bg') { ?>
-						Изпрати заявка
-					<?php }
-					elseif ($langCode == 'de') { ?>
-						Anfrage senden
-					<?php }
-					elseif ($langCode == 'en') { ?>
-						Send request
-					<?php }
-					elseif ($langCode == 'ru') { ?>
-						Послать запрос
-					<?php } ?>
-				</button>
+		<?php if (
+			// Wine, Spa & History
+			$currentUrl == '/bg/moto-tours/wine-spa-history/' ||
+			$currentUrl == '/de/moto-tours/wine-spa-history/' ||
+			$currentUrl == '/ru/moto-tours/wine-spa-history/' ||
+			$currentUrl == '/moto-tours/wine-spa-history/' ||
 
-				<button class="btn_primary js-fullform-btn">
-					<?php if ($langCode == 'bg') { ?>
-						Попълнете заявлението сами
-					<?php }
-					elseif ($langCode == 'de') { ?>
-						Füllen Sie den Antrag selbst aus
-					<?php }
-					elseif ($langCode == 'en') { ?>
-						Fill out the application yourself
-					<?php }
-					elseif ($langCode == 'ru') { ?>
-						Заполните заявку самостоятельно
-					<?php } ?>
-				</button>
-			</div>
+			// History, sea, culture of Bulgaria and Greece
+			$currentUrl == '/bg/moto-tours/history-sea-culture-of-bulgaria-and-greece/' ||
+			$currentUrl == '/de/moto-tours/history-sea-culture-of-bulgaria-and-greece/' ||
+			$currentUrl == '/ru/moto-tours/history-sea-culture-of-bulgaria-and-greece/' ||
+			$currentUrl == '/moto-tours/history-sea-culture-of-bulgaria-and-greece/' ||
 
-			<div class="book_form_full js-book-form-full">
-				<?php echo do_shortcode($calc_form); ?>
+			// Macedonia
+			$currentUrl == '/bg/moto-tours/macedonia/' ||
+			$currentUrl == '/de/moto-tours/macedonia/' ||
+			$currentUrl == '/ru/moto-tours/macedonia/' ||
+			$currentUrl == '/moto-tours/macedonia/'
+		) { ?>
+			<div class="form_tour_short">
+				<h2><?php echo $textFormTitle; ?></h2>
+
+				<?php echo do_shortcode('[contact-form-7 id="15795" title="Individual tour | ALL"]'); ?>
 			</div>
-		</div>
+		<?php }
+		else { ?>
+			<div class="book js-book">
+				<div class="book_actions">
+					<button class="btn_primary js-feedback-btn"><?php echo $textSendRequest; ?></button>
+
+					<button class="btn_primary js-fullform-btn"><?php echo $textFillAppYourself; ?></button>
+				</div>
+
+				<div class="book_form_full js-book-form-full">
+					<?php echo do_shortcode($calc_form); ?>
+				</div>
+			</div>
+		<?php } ?>
 	</div>
-
 <?php
 /**
  * generate_after_primary_content_area hook.
