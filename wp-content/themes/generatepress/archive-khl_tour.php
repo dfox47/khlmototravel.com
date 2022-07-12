@@ -35,7 +35,7 @@ switch ($langCode) {
 
 		<div class="tours_list">
 			<!-- Individual -->
-			<a class="tours_list__item" href="<?php if ($langCode !== 'en') echo '/' . $langCode; ?>/moto-tours/individual-moto-tour/">
+			<a class="tours_list__item" href="<?php if ($langCode !== 'en') echo '/' . $langCode; ?>/individual-moto-tour/">
 				<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_636336056-e1615801862207.jpg);"></span>
 
 				<span class="tours_desc">
