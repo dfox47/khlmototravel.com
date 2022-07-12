@@ -190,7 +190,7 @@ switch ($langCode) {
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/05/IMG_6666-scaled.jpg);"></span>
 					<span class="tours_desc">
 						<span class="tours_desc__title">Macedonia</span>
-						<span class="tours_desc__duration">5 days</span>
+						<span class="tours_desc__duration">7 days</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
@@ -343,7 +343,7 @@ switch ($langCode) {
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/05/IMG_6666-scaled.jpg);"></span>
 					<span class="tours_desc">
 						<span class="tours_desc__title">Macedonia</span>
-						<span class="tours_desc__duration">5 дни</span>
+						<span class="tours_desc__duration">7 дни</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
@@ -492,7 +492,7 @@ switch ($langCode) {
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/05/IMG_6666-scaled.jpg);"></span>
 					<span class="tours_desc">
 						<span class="tours_desc__title">Mazedonien</span>
-						<span class="tours_desc__duration">5 Tage</span>
+						<span class="tours_desc__duration">7 Tage</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
@@ -664,7 +664,7 @@ switch ($langCode) {
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/05/IMG_6666-scaled.jpg);"></span>
 					<span class="tours_desc">
 						<span class="tours_desc__title">Македония</span>
-						<span class="tours_desc__duration">5 дней</span>
+						<span class="tours_desc__duration">7 дней</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
