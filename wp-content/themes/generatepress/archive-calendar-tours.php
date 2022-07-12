@@ -11,10 +11,27 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header(); ?>
 
+<?php $langCode = ICL_LANGUAGE_CODE;
+
+switch ($langCode) {
+	case 'ru':
+		$textReadMore = 'Подробнее';
+		break;
+	case 'de':
+		$textReadMore = 'Mehr Details';
+		break;
+	case 'bg':
+		$textReadMore = 'Повече информация';
+		break;
+	default:
+		$textReadMore = 'More details';
+		break;
+} ?>
 
 
-<div id="primary" <?php generate_do_element_classes( 'content' ); ?>>
-	<main id="main" <?php generate_do_element_classes( 'main' ); ?>>
+
+<div id="primary" <?php generate_do_element_classes('content'); ?>>
+	<main id="main" <?php generate_do_element_classes('main'); ?>>
 		<h1><?php echo __('Motorcycle Tours Calendar', 'khl_template'); ?></h1>
 
 		<div class="tours-cont">
@@ -226,7 +243,7 @@ get_header(); ?>
 <!--						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>-->
 <!--						<span class="calendar_item__days">11 days</span>-->
 <!--						<span class="calendar_item__price">2450</span>-->
-<!--						<span class="calendar_item__book">More details</span>-->
+<!--						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>-->
 <!--					</a>-->
 
 <!--					<a class="calendar_item" href="/moto-tours/turkey/">-->
@@ -235,7 +252,7 @@ get_header(); ?>
 <!--						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>-->
 <!--						<span class="calendar_item__days">11 days</span>-->
 <!--						<span class="calendar_item__price">2450</span>-->
-<!--						<span class="calendar_item__book">More details</span>-->
+<!--						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>-->
 <!--					</a>-->
 
 <!--					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">-->
@@ -244,7 +261,7 @@ get_header(); ?>
 <!--						<span class="calendar_item__desc">Bulgaria | Offroad</span>-->
 <!--						<span class="calendar_item__days">11 days</span>-->
 <!--						<span class="calendar_item__price">3500</span>-->
-<!--						<span class="calendar_item__book">More details</span>-->
+<!--						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>-->
 <!--					</a>-->
 
 
@@ -257,7 +274,7 @@ get_header(); ?>
 <!--						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>-->
 <!--						<span class="calendar_item__days">11 days</span>-->
 <!--						<span class="calendar_item__price">2450</span>-->
-<!--						<span class="calendar_item__book">More details</span>-->
+<!--						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>-->
 <!--					</a>-->
 <!---->
 <!--					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">-->
@@ -266,7 +283,7 @@ get_header(); ?>
 <!--						<span class="calendar_item__desc">Bulgaria | Offroad</span>-->
 <!--						<span class="calendar_item__days">7 days</span>-->
 <!--						<span class="calendar_item__price">2400</span>-->
-<!--						<span class="calendar_item__book">More details</span>-->
+<!--						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>-->
 <!--					</a>-->
 
 
@@ -279,7 +296,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">7 days</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/5-countries">
@@ -288,7 +305,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 days</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
@@ -297,7 +314,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">11 days</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/5-countries">
@@ -306,7 +323,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 days</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -319,7 +336,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">7 days</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/romania/">
@@ -328,7 +345,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
 						<span class="calendar_item__days">9 days</span>
 						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
@@ -337,7 +354,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">11 days</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/5-countries">
@@ -346,7 +363,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 days</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -359,7 +376,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">7 days</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/romania/">
@@ -368,7 +385,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
 						<span class="calendar_item__days">9 days</span>
 						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
@@ -377,7 +394,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">11 days</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -390,7 +407,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
 						<span class="calendar_item__days">9 days</span>
 						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
@@ -399,7 +416,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">7 days</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/5-countries">
@@ -408,7 +425,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 days</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
@@ -417,7 +434,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">11 days</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
@@ -426,7 +443,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">7 days</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -439,7 +456,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
 						<span class="calendar_item__days">11 days</span>
 						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
@@ -448,7 +465,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">7 days</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
@@ -457,7 +474,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgaria | Offroad</span>
 						<span class="calendar_item__days">7 days</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">More details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 				<?php }
 				// bg
@@ -470,7 +487,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">7 дни</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/bg/moto-tours/5-countries">
@@ -479,7 +496,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дни</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
@@ -488,7 +505,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">11 дни</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/bg/moto-tours/5-countries">
@@ -497,7 +514,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дни</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -510,7 +527,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">7 дни</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/bg/moto-tours/romania/">
@@ -519,7 +536,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Букорещ,Русе</span>
 						<span class="calendar_item__days">9 дни</span>
 						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
@@ -528,7 +545,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">11 дни</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/bg/moto-tours/5-countries">
@@ -537,7 +554,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дни</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -550,7 +567,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">7 дни</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/bg/moto-tours/romania/">
@@ -559,7 +576,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Букорещ,Русе</span>
 						<span class="calendar_item__days">9 дни</span>
 						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
@@ -568,7 +585,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">11 дни</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -581,7 +598,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Букорещ,Русе</span>
 						<span class="calendar_item__days">9 дни</span>
 						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
@@ -590,7 +607,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">7 дни</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/bg/moto-tours/5-countries">
@@ -599,7 +616,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дни</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
@@ -608,7 +625,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">11 дни</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
@@ -617,7 +634,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">7 дни</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -630,7 +647,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Истанбул, Анкара, Кападокия, Памуккале, Бергама, Чанаккале</span>
 						<span class="calendar_item__days">11 дни</span>
 						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
@@ -639,7 +656,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">7 дни</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
@@ -648,7 +665,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">България | Offroad</span>
 						<span class="calendar_item__days">7 дни</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Повече информация</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 				<?php }
 				// de
@@ -661,7 +678,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">7 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/de/moto-tours/5-countries">
@@ -670,7 +687,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/de/moto-tours/bulgari-offroad-11-dnej/">
@@ -679,7 +696,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">11 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/de/moto-tours/5-countries">
@@ -688,7 +705,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -701,7 +718,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">7 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/de/moto-tours/romania/">
@@ -710,7 +727,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bukarest, Russe.</span>
 						<span class="calendar_item__days">9 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/de/moto-tours/bulgari-offroad-11-dnej/">
@@ -719,7 +736,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">11 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/de/moto-tours/5-countries">
@@ -728,7 +745,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -741,7 +758,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">7 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/de/moto-tours/romania/">
@@ -750,7 +767,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bukarest, Russe.</span>
 						<span class="calendar_item__days">9 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/de/moto-tours/bulgari-offroad-11-dnej/">
@@ -759,7 +776,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">11 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -772,7 +789,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bukarest, Russe.</span>
 						<span class="calendar_item__days">9 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/de/moto-tours/bulgaria-offroad-7-day/">
@@ -781,7 +798,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">7 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/de/moto-tours/5-countries">
@@ -790,7 +807,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
 						<span class="calendar_item__days">14 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/de/moto-tours/bulgari-offroad-11-dnej/">
@@ -799,7 +816,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">11 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/de/moto-tours/bulgaria-offroad-7-day/">
@@ -808,7 +825,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">7 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -821,7 +838,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Istanbul, Ankara, Kappadokien, Pamukkale, Bergama, Canakkale.</span>
 						<span class="calendar_item__days">11 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/de/moto-tours/bulgaria-offroad-7-day/">
@@ -830,7 +847,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">7 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/de/moto-tours/bulgaria-offroad-7-day/">
@@ -839,7 +856,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Bulgarien | Offroad</span>
 						<span class="calendar_item__days">7 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Mehr Details</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 				<?php }
 				// ru
@@ -852,7 +869,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">7 дней</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/ru/moto-tours/5-countries/">
@@ -861,7 +878,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Страны: Сербия, Черногория, Албания, Северная Македония.<br /><br />Города: София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дней</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad/">
@@ -870,7 +887,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">11 дней</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/ru/moto-tours/5-countries/">
@@ -879,7 +896,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Страны: Сербия, Черногория, Албания, Северная Македония.<br /><br />Города: София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дней</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -892,7 +909,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">7 дней</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/ru/moto-tours/romania/">
@@ -901,7 +918,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Бухарест, Русе.</span>
 						<span class="calendar_item__days">9 дней</span>
 						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad/">
@@ -910,7 +927,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">11 дней</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/ru/moto-tours/5-countries/">
@@ -919,7 +936,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Страны: Сербия, Черногория, Албания, Северная Македония.<br /><br />Города: София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дней</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -932,7 +949,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">7 дней</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/ru/moto-tours/romania/">
@@ -941,7 +958,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Бухарест, Русе.</span>
 						<span class="calendar_item__days">9 дней</span>
 						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad/">
@@ -950,7 +967,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">11 дней</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -963,7 +980,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Бухарест, Русе.</span>
 						<span class="calendar_item__days">9 дней</span>
 						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad-7-dnej/">
@@ -972,7 +989,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">7 дней</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/ru/moto-tours/5-countries/">
@@ -981,7 +998,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Страны: Сербия, Черногория, Албания, Северная Македония.<br /><br />Города: София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
 						<span class="calendar_item__days">14 дней</span>
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad/">
@@ -990,7 +1007,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">11 дней</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad-7-dnej/">
@@ -999,7 +1016,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">7 дней</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 
@@ -1012,7 +1029,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Стамбул, Анкара, Каппадокия, Памуккале, Бергама, Чанаккале</span>
 						<span class="calendar_item__days">11 дней</span>
 						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad-7-dnej/">
@@ -1021,7 +1038,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">7 дней</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
 					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad-7-dnej/">
@@ -1030,7 +1047,7 @@ get_header(); ?>
 						<span class="calendar_item__desc">Болгария | Offroad</span>
 						<span class="calendar_item__days">7 дней</span>
 						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book">Подробнее</span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 				<?php }
 				else { ?>
@@ -1143,10 +1160,8 @@ get_header(); ?>
  *
  * @since 2.0
  */
-do_action( 'generate_after_primary_content_area' );
+do_action('generate_after_primary_content_area');
 
 generate_construct_sidebars();
 
 get_footer(); ?>
-
-
