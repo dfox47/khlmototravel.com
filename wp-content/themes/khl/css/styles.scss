@@ -352,6 +352,18 @@ html {
 	}
 }
 
+.main-navigation {
+	.main-nav {
+		ul {
+			li {
+				a {
+					padding: 0 20px;
+				}
+			}
+		}
+	}
+}
+
 .navigation-branding {
 	img {
 		padding: 0;
