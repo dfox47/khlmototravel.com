@@ -506,7 +506,7 @@ $tour_not_included_arr  = get_post_meta($post->ID, 'khl_not_included', true); ?>
 		else { ?>
 			<div class="book js-book">
 				<div class="book_actions">
-					<button class="btn_primary js-feedback-btn"><?php echo $textSendRequest; ?></button>
+					<button class="btn_primary btn_primary_orange js-feedback-btn"><?php echo $textSendRequest; ?></button>
 
 					<button class="btn_primary js-fullform-btn"><?php echo $textFillAppYourself; ?></button>
 				</div>

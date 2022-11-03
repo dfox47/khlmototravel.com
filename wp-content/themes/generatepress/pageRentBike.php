@@ -67,7 +67,7 @@ get_header(); ?>
 							<span class="bike_price"><span class="bike_price__old js-price-old"></span><span class="bike_price__new js-price-new"></span></span>
 							<span class="lang_bg_only">€/ден</span>
 							<span class="lang_de_only">€/Tag</span>
-							<spdateFromGetan class="lang_en_only">€/day</spdateFromGetan>
+							<span class="lang_en_only">€/day</span>
 							<span class="lang_ru_only">€/день</span>
 						</span>
 
@@ -318,7 +318,7 @@ get_header(); ?>
 						</span>
 					</span>
 				</label>
-
+				<? /*
 				<label class="bike_item">
 					<input class="js-bike-price" type="radio" name="bike" data-price="135" value="KTM 1290 Super adventure s" />
 
@@ -356,6 +356,7 @@ get_header(); ?>
 						</span>
 					</span>
 				</label>
+				*/ ?>
 			</div>
 
 			<div id="order" class="order_user_info">
@@ -427,12 +428,24 @@ get_header(); ?>
 				<label class="order_label">
 					<input class="js-order-value-check" type="checkbox" name="terms" checked />
 					<span class="order_label__checkbox">
-							<span class="lang_bg_only">Запознат с <a href="/bg/terms/" target="_blank">правилата на лизинга</a></span>
-							<span class="lang_de_only">Bedingungen <a href="/de/terms/" target="_blank">zugestimmt</a></span>
-							<span class="lang_en_only">Agreed with <a href="/terms/" target="_blank">terms</a></span>
-							<span class="lang_ru_only">Согласие с <a href="/ru/terms/" target="_blank">общими правилами</a></span>
-						</span>
+						<span class="lang_bg_only">Запознат с <a href="/bg/terms/" target="_blank">правилата на лизинга</a></span>
+						<span class="lang_de_only">Bedingungen <a href="/de/terms/" target="_blank">zugestimmt</a></span>
+						<span class="lang_en_only">Agreed with <a href="/terms/" target="_blank">terms</a></span>
+						<span class="lang_ru_only">Согласие с <a href="/ru/terms/" target="_blank">общими правилами</a></span>
+					</span>
 				</label>
+
+				<div class="hidden">
+					<label class="rent_label">
+						<input class="rent_label__input js-rent-equip" type="checkbox" name="rent_gloves" data-price="10" />
+						<span class="rent_label__desc">Перчатки (+10)</span>
+					</label>
+
+					<label class="rent_label">
+						<input class="rent_label__input js-rent-equip" type="checkbox" name="rent_jacket" data-price="20" />
+						<span class="rent_label__desc">Куртка (+20)</span>
+					</label>
+				</div>
 
 				<div class="form_submit">
 					<button class="btn btn__submit" type="submit">
@@ -535,6 +548,10 @@ get_header(); ?>
 				</div>
 			</div>
 		</form>
+
+		<div class="hidden">
+			<?php echo do_shortcode('[ezfc id="21"]'); ?>
+		</div>
 
 		<div class="price_total">
 			<div class="price_total__discount js-order-discount">

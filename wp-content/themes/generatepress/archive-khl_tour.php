@@ -69,6 +69,7 @@ switch ($langCode) {
 			<?php
 			// en
 			if ($langCode == 'en') { ?>
+
 				<!-- Balkan Moto Cruise | 6 - 18 June 2022 -->
 				<a class="tours_list__item" href="/moto-tours/5-countries">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg);"></span>
@@ -78,10 +79,9 @@ switch ($langCode) {
 						<span class="tours_desc__destinations">Bulgaria, Serbia, Montenegro, Albania, North Macedonia</span>
 						<span class="tours_desc__duration">14 days</span>
 						<span class="tours_dates">
-							<span class="tours_dates__item">6 - 18 June 2022</span>
-							<span class="tours_dates__item">24 June - 6 July 2022</span>
-							<span class="tours_dates__item">31 July - 12 August 2022</span>
-							<span class="tours_dates__item">16 - 28 September 2022</span>
+							<span class="tours_dates__item">10 - 23 June 2023</span>
+							<span class="tours_dates__item">1 June - 14 July 2023</span>
+							<span class="tours_dates__item">26 August - 8 September 2023</span>
 						</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
@@ -96,28 +96,34 @@ switch ($langCode) {
 						<span class="tours_desc__destinations">Sofia, Belogradchik, Veliko Tarnovo, Velingrad, Devin, Bansko</span>
 						<span class="tours_desc__duration">9 days</span>
 						<span class="tours_dates">
-							<span class="tours_dates__item">By prior arrangement. Group of 4 people</span>
+							<span class="tours_dates__item">13 - 21 May 2023</span>
+							<span class="tours_dates__item">27 May - 4 June 2023</span>
+							<span class="tours_dates__item">10 - 18 June 2023</span>
+							<span class="tours_dates__item">1 - 9 July 2023</span>
+							<span class="tours_dates__item">12 - 20 August 2023</span>
 						</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
-				<!-- Romania | 15 - 23 July 2022 -->
-				<a class="tours_list__item" href="/moto-tours/romania/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/08/Photo_6553967_DJI_367_jpg_7369832_0_2021713112238_photo_original-scaled.jpg);"></span>
 
+				<!-- Bulgaria  -->
+				<a class="tours_list__item" href="/moto-tours/wine-spa-history/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/06/shutterstock_633371231-e1615800001229.jpg);"></span>
 					<span class="tours_desc">
-						<span class="tours_desc__title">Romania</span>
-						<span class="tours_desc__destinations">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse</span>
-						<span class="tours_desc__duration">9 days</span>
+						<span class="tours_desc__title">Bulgaria | Wine, Spa & History</span>
+						<span class="tours_desc__destinations">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="tours_desc__duration">5 days</span>
 						<span class="tours_dates">
-							<span class="tours_dates__item">15 - 23 July 2022</span>
-							<span class="tours_dates__item">19 - 27 August 2022</span>
-							<span class="tours_dates__item">2 - 10 September 2022</span>
-						</span>
+						<span class="tours_dates__item">22 - 26 May 2023</span>
+						<span class="tours_dates__item">20 - 25 July 2023</span>
+						<span class="tours_dates__item">10 - 14 Septmeber 2023</span>
+					</span>
+
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
+
 
 				<!-- Bulgaria | offroad | 11 days -->
 				<a class="tours_list__item" href="/moto-tours/bulgaria-offroad-11-days/">
@@ -125,14 +131,11 @@ switch ($langCode) {
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Bulgaria | Offroad</span>
-						<span class="tours_desc__destinations">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="tours_desc__destinations">Sofia, Bansko, Dospat, Devin, Smolyan, Byal Izvor, Zlatograd</span>
 						<span class="tours_desc__duration">11 days</span>
 						<span class="tours_dates">
-<!--							<span class="tours_dates__item">30 April - 10 May 2022</span>-->
-							<span class="tours_dates__item">18 - 28 June 2022</span>
-							<span class="tours_dates__item">23 July - 2 August 2022</span>
-							<span class="tours_dates__item">20 - 30 August 2022</span>
-							<span class="tours_dates__item">17 - 27 September 2022</span>
+						<span class="tours_dates__item">May - Septermber 2023 Available on request</span>
+						<span class="tours_dates__item">Min. group 2 people</span>	
 						</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
@@ -144,15 +147,11 @@ switch ($langCode) {
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Bulgaria | Offroad</span>
-						<span class="tours_desc__destinations">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="tours_desc__destinations">Sofia, Bansko, Dospat, Devin, Pamporovo</span>
 						<span class="tours_desc__duration">7 days</span>
 						<span class="tours_dates">
-							<span class="tours_dates__item">21 - 27 May 2022</span>
-							<span class="tours_dates__item">04 - 10 June 2022</span>
-							<span class="tours_dates__item">09 - 15 July 2022</span>
-							<span class="tours_dates__item">08 - 14 August 2022</span>
-							<span class="tours_dates__item">03 - 09 October 2022</span>
-							<span class="tours_dates__item">17 - 23 October 2022</span>
+						<span class="tours_dates__item">May - Septermber 2023 Available on request</span>
+						<span class="tours_dates__item">Min. group 2 people</span>
 						</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
@@ -160,16 +159,15 @@ switch ($langCode) {
 
 				<!-- Turkey -->
 				<a class="tours_list__item" href="/moto-tours/turkey/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/turkey.jpg);"></span>
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2022/09/i5p8jrecg2s71.jpg);"></span>
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Turkey</span>
 						<span class="tours_desc__duration">11 days</span>
 						<span class="tours_dates">
-<!--							<span class="tours_dates__item">8 - 18 April 2022</span>-->
-							<!--							<span class="tours_dates__item">29 April - 9 May 2022</span>-->
-							<span class="tours_dates__item">20 - 30 May 2022</span>
-							<span class="tours_dates__item">10 - 20 October 2022</span>
+							<span class="tours_dates__item">15 - 25 April 2023</span>
+							<span class="tours_dates__item">29 April - 9 May 2023</span>
+							<span class="tours_dates__item">30 Septmeber - 10 October 2023</span>
 						</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
@@ -177,11 +175,28 @@ switch ($langCode) {
 
 				<!-- Turkey | offroad -->
 				<a class="tours_list__item" href="javascript:void(0);">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/enduro.jpg);"></span>
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2022/09/33.jpg);"></span>
 					<span class="tours_desc">
 						<span class="tours_desc__title">Turkey | Offroad</span>
 						<span class="tours_desc__duration">15 days</span>
 						<span class="tours_desc__more">Coming soon</span>
+					</span>
+				</a>
+
+				<!-- Romania | 15 - 23 July 2022 -->
+				<a class="tours_list__item" href="/moto-tours/romania/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/08/Photo_6553967_DJI_367_jpg_7369832_0_2021713112238_photo_original-scaled.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Romania</span>
+						<span class="tours_desc__destinations">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse</span>
+						<span class="tours_desc__duration">9 days</span>
+						<span class="tours_dates">							
+							<span class="tours_dates__item">20 - 28 July 2023</span>
+							<span class="tours_dates__item">30 July - 8 August 2023</span>
+							<span class="tours_dates__item">16 - 24 Septmeber 2023</span>
+						</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
@@ -190,30 +205,28 @@ switch ($langCode) {
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/05/IMG_6666-scaled.jpg);"></span>
 					<span class="tours_desc">
 						<span class="tours_desc__title">Macedonia</span>
+						<span class="tours_desc__destinations">Sofia, Skopje, Bitola, Ohrid, Mavrovo</span>
 						<span class="tours_desc__duration">7 days</span>
+						<span class="tours_dates__item">May - Septermber 2023 Available on request</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
-				<!-- Wine, Spa & History -->
-				<a class="tours_list__item" href="/moto-tours/wine-spa-history/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/06/shutterstock_633371231-e1615800001229.jpg);"></span>
-					<span class="tours_desc">
-						<span class="tours_desc__title">Wine, Spa & History</span>
-						<span class="tours_desc__duration">5 days</span>
-						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
+				
 
 				<!-- History, sea, culture of Bulgaria and Greece -->
 				<a class="tours_list__item" href="/moto-tours/history-sea-culture-of-bulgaria-and-greece/">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg);"></span>
 					<span class="tours_desc">
 						<span class="tours_desc__title">History, sea, culture of Bulgaria and Greece</span>
+						<span class="tours_desc__destinations">Sofia, Belogradchik, Tsarevo, Devin, Thassos, Sandanski, Velingrad</span>
 						<span class="tours_desc__duration">12 days</span>
+						<span class="tours_dates__item">May - Septermber 2023 Available on request</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
+
+
 			<?php }
 			// bg
 			else if ($langCode == 'bg') { ?>
@@ -226,10 +239,9 @@ switch ($langCode) {
 						<span class="tours_desc__destinations">България, Сърбия, Черна гора, Албания, Северна Македония</span>
 						<span class="tours_desc__duration">14 дни</span>
 						<span class="tours_dates">
-							<span class="tours_dates__item">6 - 18 Юни 2022</span>
-							<span class="tours_dates__item">24 Юни - 6 Юли 2022</span>
-							<span class="tours_dates__item">31 Юли - 12 Август 2022</span>
-							<span class="tours_dates__item">16 - 28 Септември 2022</span>
+							<span class="tours_dates__item">10 - 23 Июни 2023</span>
+							<span class="tours_dates__item">1 Июни - 14  Июли</span>
+							<span class="tours_dates__item">26 Август - 8 Септември 2023</span>
 						</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
@@ -244,9 +256,90 @@ switch ($langCode) {
 						<span class="tours_desc__destinations">София, Белоградчик, Велико Търново, Велинград, Девин, Банско</span>
 						<span class="tours_desc__duration">9 дни</span>
 						<span class="tours_dates">
-							<span class="tours_dates__item">След предишни дискусии. Група от 4 човека</span>
+							<span class="tours_dates__item">13 - 21 Май 2023</span>
+							<span class="tours_dates__item">27 Май - 4 Июни 2023</span>
+							<span class="tours_dates__item">10 - 18 Июни 2023</span>
+							<span class="tours_dates__item">1 - 9 Июли 2023</span>
+							<span class="tours_dates__item">12 - 20 Август 2023</span>
 						</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+
+				<!-- Bulgaria  -->
+				<a class="tours_list__item" href="/bg/moto-tours/wine-spa-history/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/06/shutterstock_633371231-e1615800001229.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">България | Вино, СПА и история</span>
+						<span class="tours_desc__destinations">София, Велико Търново, Велинград</span>
+						<span class="tours_desc__duration">5 дни</span>
+						<span class="tours_dates">
+						<span class="tours_dates__item">22 - 26 Май 2023</span>
+						<span class="tours_dates__item">20 - 25 Июни 2023</span>
+						<span class="tours_dates__item">10 - 14 Септември 2023</span>
+					</span>
+
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+
+				<!-- Bulgaria | offroad | 11 days -->
+				<a class="tours_list__item" href="/bg/moto-tours/bulgaria-offroad-11-days/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-03.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">България | Offroad</span>
+						<span class="tours_desc__destinations">София, Банско, Доспат, Девин, Смолян, Бял извор, Златоград</span>
+						<span class="tours_desc__duration">11 дни</span>
+						<span class="tours_dates">
+						<span class="tours_dates__item">Май - септември 2023 г.</span>
+						<span class="tours_dates__item">Мин. група 2 души. Ние предлагаме при поискване</span>	
+						</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- Bulgaria | offroad | 7 days -->
+				<a class="tours_list__item" href="/bg/moto-tours/bulgaria-offroad-7-days/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-08.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">България | Offroad</span>
+						<span class="tours_desc__destinations">София, Банско, Доспат, Девин, Пампорово</span>
+						<span class="tours_desc__duration">7 дни</span>
+						<span class="tours_dates">
+						<span class="tours_dates__item">Май - септември 2023 г.</span>
+						<span class="tours_dates__item">Мин. група 2 души. Ние предлагаме при поискване</span>
+						</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- Turkey -->
+				<a class="tours_list__item" href="/bg/moto-tours/turkey/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2022/09/i5p8jrecg2s71.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Турция</span>
+						<span class="tours_desc__duration">11 дни</span>
+						<span class="tours_dates">
+							<span class="tours_dates__item">15 - 25 Април 2023</span>
+							<span class="tours_dates__item">29 Април - 9 Май 2023</span>
+							<span class="tours_dates__item">30 Септеври - 10 Октомври 2023</span>
+						</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- Turkey | offroad -->
+				<a class="tours_list__item" href="javascript:void(0);">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2022/09/33.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">Турция | Offroad</span>
+						<span class="tours_desc__duration">15 дни</span>
+						<span class="tours_desc__more">ОЧАКВАЙТЕ СКОРО</span>
 					</span>
 				</a>
 
@@ -255,123 +348,51 @@ switch ($langCode) {
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/08/Photo_6553967_DJI_367_jpg_7369832_0_2021713112238_photo_original-scaled.jpg);"></span>
 
 					<span class="tours_desc">
-						<span class="tours_desc__title">Румъния</span>
+						<span class="tours_desc__title">РУМЪНИЯ</span>
 						<span class="tours_desc__destinations">София, Белоградчик, Новаци, Турда, Брашов, Букурещ, Русе</span>
 						<span class="tours_desc__duration">9 дни</span>
-						<span class="tours_dates">
-							<span class="tours_dates__item">15 - 23 Юли 2022</span>
-							<span class="tours_dates__item">19 - 27 Август 2022</span>
-							<span class="tours_dates__item">2 - 10 Септември 2022</span>
-						</span>
-
-						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
-
-				<!-- Bulgaria | offroad | 11 days -->
-				<!--				<a class="tours_list__item" href="/bg/moto-tours/bulgari-offroad-11-dnej/">-->
-				<a class="tours_list__item" href="/moto-tours/bulgaria-offroad-11-days/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-03.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">България | Offroad</span>
-						<span class="tours_desc__destinations">София, Велико Търново, Велинград</span>
-						<span class="tours_desc__duration">11 дни</span>
-						<span class="tours_dates">
-<!--							<span class="tours_dates__item">30 Април - 10 Май 2022</span>-->
-							<span class="tours_dates__item">18 - 28 Юни 2022</span>
-							<span class="tours_dates__item">23 Юли - 2 Август 2022</span>
-							<span class="tours_dates__item">20 - 30 Август 2022</span>
-							<span class="tours_dates__item">17 - 27 Септември 2022</span>
+						<span class="tours_dates">							
+							<span class="tours_dates__item">20 - 28 Юли 2023</span>
+							<span class="tours_dates__item">30 Юли - 8 Аугуст 2023</span>
+							<span class="tours_dates__item">16 - 24 Септември 2023</span>
 						</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
-
-				<!-- Bulgaria | offroad | 7 days -->
-<!--				<a class="tours_list__item" href="/bg/moto-tours/bulgaria-offroad-7-day/">-->
-				<a class="tours_list__item" href="/moto-tours/bulgaria-offroad-7-days/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-08.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">България | Offroad</span>
-						<span class="tours_desc__destinations">София, Велико Търново, Велинград</span>
-						<span class="tours_desc__duration">7 дни</span>
-						<span class="tours_dates">
-							<span class="tours_dates__item">21 - 27 May 2022</span>
-							<span class="tours_dates__item">4 - 10 Юни 2022</span>
-							<span class="tours_dates__item">9 - 15 Юли 2022</span>
-							<span class="tours_dates__item">8 - 14 Август 2022</span>
-							<span class="tours_dates__item">3 - 9 Октомври 2022</span>
-							<span class="tours_dates__item">17 - 23 Октомври 2022</span>
-						</span>
-						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
-
-				<!-- Turkey -->
-<!--				<a class="tours_list__item" href="/bg/moto-tours/die-tuerkei/">-->
-				<a class="tours_list__item" href="/moto-tours/turkey/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/turkey.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Турция</span>
-						<span class="tours_desc__duration">11 дни</span>
-						<span class="tours_dates">
-<!--							<span class="tours_dates__item">8 - 18 Април 2022</span>-->
-							<!--							<span class="tours_dates__item">29 Април - 9 Май 2022</span>-->
-							<span class="tours_dates__item">20 - 30 Май 2022</span>
-							<span class="tours_dates__item">10 - 20 Октомври 2022</span>
-						</span>
-						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
-
-				<!-- Turkey | offroad -->
-				<a class="tours_list__item" href="javascript:void(0);">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/enduro.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Турция | Offroad</span>
-						<span class="tours_desc__duration">15 дни</span>
-						<span class="tours_desc__more">Очаквайте скоро</span>
 					</span>
 				</a>
 
 				<!-- Macedonia -->
-				<a class="tours_list__item" href="/bg/moto-tours/macedonia/">
+				<a class="tours_list__item" href="/moto-tours/macedonia/">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/05/IMG_6666-scaled.jpg);"></span>
 					<span class="tours_desc">
-						<span class="tours_desc__title">Macedonia</span>
-						<span class="tours_desc__duration">7 дни</span>
+						<span class="tours_desc__title">Македония</span>
+						<span class="tours_desc__destinations">Сфоия, Скопие, Битоля, Охрид, Маврово</span>
+						<span class="tours_desc__duration">7 days</span>
+						<span class="tours_dates__item">Май - септември 2023 г. Ние предлагаме при поискване</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
-				<!-- Wine, Spa & History -->
-				<a class="tours_list__item" href="/bg/moto-tours/wine-spa-history/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/06/shutterstock_633371231-e1615800001229.jpg);"></span>
-					<span class="tours_desc">
-						<span class="tours_desc__title">Вино, СПА и история</span>
-						<span class="tours_desc__duration">5 дни</span>
-						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
+				
 
 				<!-- History, sea, culture of Bulgaria and Greece -->
 				<a class="tours_list__item" href="/bg/moto-tours/history-sea-culture-of-bulgaria-and-greece/">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg);"></span>
 					<span class="tours_desc">
 						<span class="tours_desc__title">История, море, култура на България и Гърция</span>
+						<span class="tours_desc__destinations">София, Белоградчик, Велико Търново, Царево, Девин, о. Тасос, Сандански, Велинград</span>
 						<span class="tours_desc__duration">12 дни</span>
+						<span class="tours_dates__item">Май - септември 2023 г. Ние предлагаме при поискване</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
+
+
+
 			<?php }
 			// de
 			else if ($langCode == 'de') { ?>
 				<!-- Balkan Moto Cruise | 6 - 18 June 2022 -->
-				<a class="tours_list__item" href="/de/moto-tours/5-countries">
+				<a class="tours_list__item" href="/de//moto-tours/5-countries">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg);"></span>
 
 					<span class="tours_desc">
@@ -379,10 +400,9 @@ switch ($langCode) {
 						<span class="tours_desc__destinations">Bulgarien, Serbien, Montenegro, Albanien, Nordmazedonien</span>
 						<span class="tours_desc__duration">14 tage</span>
 						<span class="tours_dates">
-							<span class="tours_dates__item">6 - 18 Juni 2022</span>
-							<span class="tours_dates__item">24 Juni - 6 Juli 2022</span>
-							<span class="tours_dates__item">31 Juli - 12 August 2022</span>
-							<span class="tours_dates__item">16 - 28 September 2022</span>
+							<span class="tours_dates__item">10 - 23 Juni 2023</span>
+							<span class="tours_dates__item">1 Juni - 14 Juli 2023</span>
+							<span class="tours_dates__item">26 August - 8 September 2023</span>
 						</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
@@ -397,9 +417,90 @@ switch ($langCode) {
 						<span class="tours_desc__destinations">Sofia, Belogradchik, Veliko Tarnovo, Velingrad, Devin, Bansko</span>
 						<span class="tours_desc__duration">9 Tage</span>
 						<span class="tours_dates">
-							<span class="tours_dates__item">Nach vorheriger Absprache. Gruppe von 4 Personen</span>
+							<span class="tours_dates__item">13 - 21 May 2023</span>
+							<span class="tours_dates__item">27 May - 4 Juni 2023</span>
+							<span class="tours_dates__item">10 - 18 Juni 2023</span>
+							<span class="tours_dates__item">1 - 9 Juli 2023</span>
+							<span class="tours_dates__item">12 - 20 August 2023</span>
 						</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+
+				<!-- Bulgaria  -->
+				<a class="tours_list__item" href="/de/moto-tours/wine-spa-history/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/06/shutterstock_633371231-e1615800001229.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">Bulgarien | Wein, Spa & Geschichte</span>
+						<span class="tours_desc__destinations">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="tours_desc__duration">5 Tage</span>
+						<span class="tours_dates">
+						<span class="tours_dates__item">22 - 26 May 2023</span>
+						<span class="tours_dates__item">20 - 25 Juli 2023</span>
+						<span class="tours_dates__item">10 - 14 Septmeber 2023</span>
+					</span>
+
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+
+				<!-- Bulgaria | offroad | 11 days -->
+				<a class="tours_list__item" href="/de/moto-tours/bulgaria-offroad-11-days/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-03.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Bulgarien | Offroad</span>
+						<span class="tours_desc__destinations">Sofia, Bansko, Dospat, Devin, Smolyan, Byal Izvor, Zlatograd</span>
+						<span class="tours_desc__duration">11 Tage</span>
+						<span class="tours_dates">
+						<span class="tours_dates__item">May - Septermber 2023 Auf Anfrage verfügbar</span>
+						<span class="tours_dates__item">Min Gruppe 2 Personen</span>	
+						</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- Bulgaria | offroad | 7 days -->
+				<a class="tours_list__item" href="/de/moto-tours/bulgaria-offroad-7-days/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-08.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Bulgarien | Offroad</span>
+						<span class="tours_desc__destinations">Sofia, Bansko, Dospat, Devin, Pamporovo</span>
+						<span class="tours_desc__duration">7 Tage</span>
+						<span class="tours_dates">
+						<span class="tours_dates__item">May - Septermber 2023 Auf Anfrage verfügbar</span>
+						<span class="tours_dates__item">Min Gruppe 2 Personen</span>
+						</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- Turkey -->
+				<a class="tours_list__item" href="/de/moto-tours/turkey/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2022/09/i5p8jrecg2s71.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Truthahn</span>
+						<span class="tours_desc__duration">11 Tage</span>
+						<span class="tours_dates">
+							<span class="tours_dates__item">15 - 25 April 2023</span>
+							<span class="tours_dates__item">29 April - 9 May 2023</span>
+							<span class="tours_dates__item">30 Septmeber - 10 October 2023</span>
+						</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- Turkey | offroad -->
+				<a class="tours_list__item" href="javascript:void(0);">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2022/09/33.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">Truthahn | Offroad</span>
+						<span class="tours_desc__duration">15 Tage</span>
+						<span class="tours_desc__more">Demnächst</span>
 					</span>
 				</a>
 
@@ -410,80 +511,13 @@ switch ($langCode) {
 					<span class="tours_desc">
 						<span class="tours_desc__title">Rumänien</span>
 						<span class="tours_desc__destinations">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse</span>
-						<span class="tours_desc__duration">9 tage</span>
-						<span class="tours_dates">
-							<span class="tours_dates__item">15 - 23 Juli 2022</span>
-							<span class="tours_dates__item">19 - 27 August 2022</span>
-							<span class="tours_dates__item">2 - 10 September 2022</span>
+						<span class="tours_desc__duration">9 Tage</span>
+						<span class="tours_dates">							
+							<span class="tours_dates__item">20 - 28 Juli 2023</span>
+							<span class="tours_dates__item">30 Juli - 8 August 2023</span>
+							<span class="tours_dates__item">16 - 24 Septmeber 2023</span>
 						</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
-
-				<!-- Bulgaria | offroad | 11 days -->
-				<a class="tours_list__item" href="/de/moto-tours/bulgari-offroad-11-dnej/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-03.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Bulgarien | Offroad</span>
-						<span class="tours_desc__destinations">Sofia, Veliko Tarnovo, Velingrad</span>
-						<span class="tours_desc__duration">11 tage</span>
-						<span class="tours_dates">
-<!--							<span class="tours_dates__item">30 April - 10 May 2022</span>-->
-							<span class="tours_dates__item">18 - 28 Juni 2022</span>
-							<span class="tours_dates__item">23 Juli - 2 August 2022</span>
-							<span class="tours_dates__item">20 - 30 August 2022</span>
-							<span class="tours_dates__item">17 - 27 September 2022</span>
-						</span>
-						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
-
-				<!-- Bulgaria | offroad | 7 days -->
-				<a class="tours_list__item" href="/de/moto-tours/bulgaria-offroad-7-day/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-08.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Bulgarien | Offroad</span>
-						<span class="tours_desc__destinations">Sofia, Veliko Tarnovo, Velingrad</span>
-						<span class="tours_desc__duration">7 tage</span>
-						<span class="tours_dates">
-							<span class="tours_dates__item">21 - 27 May 2022</span>
-							<span class="tours_dates__item">4 - 10 Juni 2022</span>
-							<span class="tours_dates__item">9 - 15 Juli 2022</span>
-							<span class="tours_dates__item">8 - 14 August 2022</span>
-							<span class="tours_dates__item">3 - 9 Oktober 2022</span>
-							<span class="tours_dates__item">17 - 23 Oktober 2022</span>
-						</span>
-						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
-
-				<!-- Turkey -->
-				<a class="tours_list__item" href="/de/moto-tours/die-tuerkei/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/turkey.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Truthahn</span>
-						<span class="tours_desc__duration">11 tage</span>
-						<span class="tours_dates">
-<!--							<span class="tours_dates__item">8 - 18 April 2022</span>-->
-							<!--							<span class="tours_dates__item">29 April - 9 May 2022</span>-->
-							<span class="tours_dates__item">20 - 30 May 2022</span>
-							<span class="tours_dates__item">10 - 20 Oktober 2022</span>
-						</span>
-						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
-
-				<!-- Turkey | offroad -->
-				<a class="tours_list__item" href="javascript:void(0);">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/enduro.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Truthahn | Offroad</span>
-						<span class="tours_desc__duration">15 tage</span>
-						<span class="tours_desc__more">Demnächst</span>
 					</span>
 				</a>
 
@@ -492,30 +526,28 @@ switch ($langCode) {
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/05/IMG_6666-scaled.jpg);"></span>
 					<span class="tours_desc">
 						<span class="tours_desc__title">Mazedonien</span>
+						<span class="tours_desc__destinations">Sofia, Skopje, Bitola, Ohrid, Mavrovo</span>
 						<span class="tours_desc__duration">7 Tage</span>
+						<span class="tours_dates__item">May - Septermber 2023 Auf Anfrage verfügbar</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
-				<!-- Wine, Spa & History -->
-				<a class="tours_list__item" href="/de/moto-tours/wine-spa-history/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/06/shutterstock_633371231-e1615800001229.jpg);"></span>
-					<span class="tours_desc">
-						<span class="tours_desc__title">Wein, Spa & Geschichte</span>
-						<span class="tours_desc__duration">5 Tage</span>
-						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
+				
 
 				<!-- History, sea, culture of Bulgaria and Greece -->
 				<a class="tours_list__item" href="/de/moto-tours/history-sea-culture-of-bulgaria-and-greece/">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg);"></span>
 					<span class="tours_desc">
 						<span class="tours_desc__title">Geschichte, Meer, Kultur Bulgariens und Griechenlands</span>
+						<span class="tours_desc__destinations">Sofia, Belogradchik, Tsarevo, Devin, Thassos, Sandanski, Velingrad</span>
 						<span class="tours_desc__duration">12 Tage</span>
+						<span class="tours_dates__item">May - Septermber 2023 Auf Anfrage verfügbar</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
+
+
 			<?php }
 			// ru
 			else if ($langCode == 'ru') { ?>
@@ -526,13 +558,12 @@ switch ($langCode) {
 					<span class="tours_desc">
 						<span class="tours_desc__title">Вокруг Балкан</span>
 						<span class="tours_desc__destinations">Болгария, Сербия, Черногория, Албания, Северная Македония</span>
-						<span class="tours_dates">
-							<span class="tours_dates__item">7 - 19 Июня 2022</span>
-							<span class="tours_dates__item">25 Июня - 7 Июля 2022</span>
-							<span class="tours_dates__item">1 - 13 Авугста 2022</span>
-							<span class="tours_dates__item">17 - 29 Сентября 2022</span>
-						</span>
 						<span class="tours_desc__duration">14 дней</span>
+						<span class="tours_dates">
+							<span class="tours_dates__item">10 - 23 Июня 2023</span>
+							<span class="tours_dates__item">1 Июня - 14 Июля</span>
+							<span class="tours_dates__item">26 Августа - 8 Сентября 2023</span>
+						</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
@@ -543,17 +574,93 @@ switch ($langCode) {
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Болгария</span>
-
-						<span class="tours_desc__destinations">София, Белоградчик, Велико Тырново, Велинград, Девин, Банско</span>
-
-						<span class="tours_dates">
-<!--							<span class="tours_dates__item">7 - 18 Июня 2022</span>-->
-							<span class="tours_dates__item">По предварительной заявке. Группа от 4-х человек</span>
-						</span>
-
+						<span class="tours_desc__destinations">София, Белоградчик, Велико Търново, Велинград, Девин, Банско</span>
 						<span class="tours_desc__duration">9 дней</span>
+						<span class="tours_dates">
+							<span class="tours_dates__item">13 - 21 Мая 2023</span>
+							<span class="tours_dates__item">27 Мая - 4 Июня 2023</span>
+							<span class="tours_dates__item">10 - 18 Июня 2023</span>
+							<span class="tours_dates__item">1 - 9 Июля 2023</span>
+							<span class="tours_dates__item">12 - 20 Августа 2023</span>
+						</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+
+				<!-- Bulgaria  -->
+				<a class="tours_list__item" href="/ru/moto-tours/wine-spa-history/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/06/shutterstock_633371231-e1615800001229.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">Болгария | Вино, СПА и история</span>
+						<span class="tours_desc__destinations">София, Велико Търново, Велинград</span>
+						<span class="tours_desc__duration">5 дней</span>
+						<span class="tours_dates">
+						<span class="tours_dates__item">22 - 26 Мая 2023</span>
+						<span class="tours_dates__item">20 - 25 Июня 2023</span>
+						<span class="tours_dates__item">10 - 14 Сентября 2023</span>
+					</span>
 
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+
+				<!-- Bulgaria | offroad | 11 days -->
+				<a class="tours_list__item" href="/ru/moto-tours/bulgaria-offroad-11-days/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-03.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Болгария | Offroad</span>
+						<span class="tours_desc__destinations">София, Банско, Доспат, Девин, Смолян, Бял извор, Златоград</span>
+						<span class="tours_desc__duration">11 дней</span>
+						<span class="tours_dates">
+						<span class="tours_dates__item">Май - Сентябрь 2023 г.</span>
+						<span class="tours_dates__item">Мин. группа 2 человека. Доступно по запросу</span>	
+						</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- Bulgaria | offroad | 7 days -->
+				<a class="tours_list__item" href="/ru/moto-tours/bulgaria-offroad-7-days/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-08.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Болгария | Offroad</span>
+						<span class="tours_desc__destinations">София, Банско, Доспат, Девин, Пампорово</span>
+						<span class="tours_desc__duration">7 дней</span>
+						<span class="tours_dates">
+						<span class="tours_dates__item">Май - Сентябрь 2023 г.</span>
+						<span class="tours_dates__item">Мин. группа 2 человека. Доступно по запросу</span>
+						</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- Turkey -->
+				<a class="tours_list__item" href="/ru/moto-tours/turkey/">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2022/09/i5p8jrecg2s71.jpg);"></span>
+
+					<span class="tours_desc">
+						<span class="tours_desc__title">Турция</span>
+						<span class="tours_desc__duration">11 дней</span>
+						<span class="tours_dates">
+							<span class="tours_dates__item">15 - 25 Апреля 2023</span>
+							<span class="tours_dates__item">29 Апреля - 9 Мая 2023</span>
+							<span class="tours_dates__item">30 Сентября - 10 Октября 2023</span>
+						</span>
+						<span class="tours_desc__more"><?php echo $readMore; ?></span>
+					</span>
+				</a>
+
+				<!-- Turkey | offroad -->
+				<a class="tours_list__item" href="javascript:void(0);">
+					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2022/09/33.jpg);"></span>
+					<span class="tours_desc">
+						<span class="tours_desc__title">Турция | Offroad</span>
+						<span class="tours_desc__duration">15 дней</span>
+						<span class="tours_desc__more">СКОРО</span>
 					</span>
 				</a>
 
@@ -563,131 +670,44 @@ switch ($langCode) {
 
 					<span class="tours_desc">
 						<span class="tours_desc__title">Румыния</span>
-
-						<span class="tours_desc__destinations">София, Белоградчик, Новаци, Турда, Брасов, Бухарест, Русе</span>
-
-						<span class="tours_dates">
-							<span class="tours_dates__item">15 - 23 Июля 2022</span>
-							<span class="tours_dates__item">19 - 27 Августа 2022</span>
-							<span class="tours_dates__item">2 - 10 Сентября 2022</span>
-						</span>
-
+						<span class="tours_desc__destinations">София, Белоградчик, Новаци, Турда, Брашов, Букурещ, Русе</span>
 						<span class="tours_desc__duration">9 дней</span>
-
-						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
-
-				<!-- Bulgaria | offroad | 11 days -->
-				<a class="tours_list__item" href="/ru/moto-tours/bolgariya-offroad/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-03.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Болгария | Offroad</span>
-
-						<span class="tours_desc__destinations">София, Велико Тырново, Велинград</span>
-
-						<span class="tours_dates">
-							<span class="tours_dates__item">30 Апреля - 10 Мая 2022</span>
-							<span class="tours_dates__item">18 - 28 Июня 2022</span>
-							<span class="tours_dates__item">23 Июля - 2 Августа 2022</span>
-							<span class="tours_dates__item">20 - 30 Августа 2022</span>
-							<span class="tours_dates__item">17 - 27 Сентября 2022</span>
+						<span class="tours_dates">							
+							<span class="tours_dates__item">20 - 28 Июля 2023</span>
+							<span class="tours_dates__item">30 Июля - 8 Аугуста 2023</span>
+							<span class="tours_dates__item">16 - 24 Сентября 2023</span>
 						</span>
-
-						<span class="tours_desc__duration">11 дней</span>
-
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
-
-				<!-- Bulgaria | offroad | 7 days -->
-				<a class="tours_list__item" href="/ru/moto-tours/bolgariya-offroad-7-dnej/">
-					<!--					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/08/IMG_6987-scaled.jpg);"></span>-->
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/photo_2021-12-23_19-44-08.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Болгария | Offroad</span>
-
-						<span class="tours_desc__destinations">София, Велико Тырново, Велинград</span>
-
-						<span class="tours_dates">
-							<span class="tours_dates__item">21 - 27 Мая 2022</span>
-							<span class="tours_dates__item">4 - 10 Июня 2022</span>
-							<span class="tours_dates__item">9 - 15 Июля 2022</span>
-							<span class="tours_dates__item">8 - 14 Август 2022</span>
-							<span class="tours_dates__item">3 - 9 Октября 2022</span>
-							<span class="tours_dates__item">17 - 23 Октября 2022</span>
-						</span>
-
-						<span class="tours_desc__duration">7 дней</span>
-
-						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
-
-				<!-- Turkey -->
-				<a class="tours_list__item" href="/ru/moto-tours/turcziya/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/turkey.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Турция</span>
-
-						<span class="tours_dates">
-							<span class="tours_dates__item">8 - 18 Апреля 2022</span>
-							<span class="tours_dates__item">29 Апреля - 9 Мая 2022</span>
-							<span class="tours_dates__item">20 - 30 Мая 2022</span>
-							<span class="tours_dates__item">10 - 20 Октября 2022</span>
-						</span>
-
-						<span class="tours_desc__duration">11 дней</span>
-
-						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
-
-				<!-- Turkey | offroad -->
-				<a class="tours_list__item" href="javascript:void(0);">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/12/enduro.jpg);"></span>
-
-					<span class="tours_desc">
-						<span class="tours_desc__title">Турция | Offroad</span>
-
-						<span class="tours_desc__duration">15 дней</span>
-
-						<span class="tours_desc__more">Ожидайте в ближайшее время</span>
 					</span>
 				</a>
 
 				<!-- Macedonia -->
-				<a class="tours_list__item" href="/ru/moto-tours/macedonia/">
+				<a class="tours_list__item" href="/moto-tours/macedonia/">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2021/05/IMG_6666-scaled.jpg);"></span>
 					<span class="tours_desc">
 						<span class="tours_desc__title">Македония</span>
+						<span class="tours_desc__destinations">София, Скопие, Битоля, Охрид, Маврово</span>
 						<span class="tours_desc__duration">7 дней</span>
+						<span class="tours_dates__item"> Май - Сентябрь 2023 г. Доступно по запросу</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
 
-				<!-- Wine, Spa & History -->
-				<a class="tours_list__item" href="/ru/moto-tours/wine-spa-history/">
-					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/06/shutterstock_633371231-e1615800001229.jpg);"></span>
-					<span class="tours_desc">
-						<span class="tours_desc__title">Вино, СПА и История</span>
-						<span class="tours_desc__duration">5 дней</span>
-						<span class="tours_desc__more"><?php echo $readMore; ?></span>
-					</span>
-				</a>
+				
 
 				<!-- History, sea, culture of Bulgaria and Greece -->
 				<a class="tours_list__item" href="/ru/moto-tours/history-sea-culture-of-bulgaria-and-greece/">
 					<span class="tours_bg" style="background-image: url(/wp-content/uploads/2020/05/shutterstock_639716314-e1615802247379.jpg);"></span>
 					<span class="tours_desc">
 						<span class="tours_desc__title">История, море, культура Болгарии и Греции</span>
+						<span class="tours_desc__destinations">София, Белоградчик, Велико Търново, Царево, Девин, о. Тасос, Сандански, Велинград</span>
 						<span class="tours_desc__duration">12 дней</span>
+						<span class="tours_dates__item">Май - Сентябрь 2023 г. Доступно по запросу</span>
 						<span class="tours_desc__more"><?php echo $readMore; ?></span>
 					</span>
 				</a>
+
+
 			<?php }
 			else { ?>
 				<div class="hidden">

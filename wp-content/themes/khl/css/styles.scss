@@ -482,6 +482,39 @@ html {
 	}
 }
 
+
+
+.rent_label {
+	cursor: pointer;
+	display: block;
+	margin: 0 0 10px;
+
+	&__desc {
+		display: flex;
+
+		&::before {
+			border: 2px solid $c_text;
+			content: "";
+			display: block;
+			height: 20px;
+			margin: 0 10px 0 0;
+			width: 20px;
+		}
+	}
+
+	&__input {
+		&:checked {
+			+ .rent_label__desc {
+				&::before {
+					background-color: $c_main;
+				}
+			}
+		}
+	}
+}
+
+
+
 .site-main {
 	margin: 106px 0 0;
 }

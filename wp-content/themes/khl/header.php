@@ -45,26 +45,23 @@ $favicon    = $i . '/favicon';
 	</script>
 
 
-	<!-- Facebook Pixel Code -->
+	<!-- Meta Pixel Code -->
 	<script>
-		!function(f,b,e,v,n,t,s)
-		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-			n.queue=[];t=b.createElement(e);t.async=!0;
-			t.src=v;s=b.getElementsByTagName(e)[0];
-			s.parentNode.insertBefore(t,s)}(window,document,'script',
-			'https://connect.facebook.net/en_US/fbevents.js');
-		fbq('init', '936298160442425');
-		fbq('track', 'PageView');
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '748258353103321');
+	fbq('track', 'PageView');
 	</script>
-
-	<noscript>
-		<img height="1" width="1" src="https://www.facebook.com/tr?id=936298160442425&ev=PageView&noscript=1" />
-	</noscript>
-	<!-- End Facebook Pixel Code -->
-
-
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=748258353103321&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Meta Pixel Code -->
 
 	<!-- Yandex.Metrika counter -->
 	<script>
@@ -80,6 +77,8 @@ $favicon    = $i . '/favicon';
 	</script>
 	<noscript><div><img src="https://mc.yandex.ru/watch/85699691" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
+
+	<meta name="google-site-verification" content="wNMss3Dbktws7gYwcVxdUGv8atTvqtRKUPiPOhpOmaI" />
 </head>
 
 <body <?php body_class('loading-overlay-showing');?> data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 500}">

@@ -32,7 +32,7 @@ switch ($langCode) {
 
 <div id="primary" <?php generate_do_element_classes('content'); ?>>
 	<main id="main" <?php generate_do_element_classes('main'); ?>>
-		<h1><?php echo __('Motorcycle Tours Calendar', 'khl_template'); ?></h1>
+		<h1><?php echo __('Motorcycle Tours Calendar 2023', 'khl_template'); ?></h1>
 
 		<div class="tours-cont">
 			<?php setlocale(LC_ALL, 'nl_NL');
@@ -55,6 +55,8 @@ switch ($langCode) {
 			$price_offroad_7    = '2400 €';
 			$price_romania      = '2600 €';
 			$price_turkey       = '3850 €';
+			$price_bulgaria_9   = '2600 €';
+			$price_bulgaria_5   = '1500 €';
 
 			while ( $loop->have_posts() ) :
 				$loop->the_post();
@@ -235,223 +237,12 @@ switch ($langCode) {
 				<?php
 				// en
 				if (get_locale() == 'en_US') { ?>
-<!--					<h2>April 2022</h2>-->
-
-<!--					<a class="calendar_item" href="/moto-tours/turkey/">-->
-<!--						<span class="calendar_item__date">8 - 18 April</span>-->
-<!--						<span class="calendar_item__title">Turkey</span>-->
-<!--						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>-->
-<!--						<span class="calendar_item__days">11 days</span>-->
-<!--						<span class="calendar_item__price">2450</span>-->
-<!--						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>-->
-<!--					</a>-->
-
-<!--					<a class="calendar_item" href="/moto-tours/turkey/">-->
-<!--						<span class="calendar_item__date">29 April - 9 Mai</span>-->
-<!--						<span class="calendar_item__title">Turkey</span>-->
-<!--						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>-->
-<!--						<span class="calendar_item__days">11 days</span>-->
-<!--						<span class="calendar_item__price">2450</span>-->
-<!--						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>-->
-<!--					</a>-->
-
-<!--					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">-->
-<!--						<span class="calendar_item__date">30 April - 10 Mai</span>-->
-<!--						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>-->
-<!--						<span class="calendar_item__desc">Bulgaria | Offroad</span>-->
-<!--						<span class="calendar_item__days">11 days</span>-->
-<!--						<span class="calendar_item__price">3500</span>-->
-<!--						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>-->
-<!--					</a>-->
 
 
-
-<!--					<h2>May 2022</h2>-->
-<!---->
-<!--					<a class="calendar_item" href="/moto-tours/turkey/">-->
-<!--						<span class="calendar_item__date">20 - 30 May</span>-->
-<!--						<span class="calendar_item__title">Turkey</span>-->
-<!--						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>-->
-<!--						<span class="calendar_item__days">11 days</span>-->
-<!--						<span class="calendar_item__price">2450</span>-->
-<!--						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>-->
-<!--					</a>-->
-<!---->
-<!--					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">-->
-<!--						<span class="calendar_item__date">21 - 27 May</span>-->
-<!--						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>-->
-<!--						<span class="calendar_item__desc">Bulgaria | Offroad</span>-->
-<!--						<span class="calendar_item__days">7 days</span>-->
-<!--						<span class="calendar_item__price">2400</span>-->
-<!--						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>-->
-<!--					</a>-->
-
-
-
-					<h2>June 2022</h2>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">4 - 10 June</span>
-						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
-						<span class="calendar_item__desc">Bulgaria | Offroad</span>
-						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/5-countries">
-						<span class="calendar_item__date">6 - 19 June</span>
-						<span class="calendar_item__title">Balkan Moto Cruise</span>
-						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
-						<span class="calendar_item__days">14 days</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
-						<span class="calendar_item__date">18 - 28 June</span>
-						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>
-						<span class="calendar_item__desc">Bulgaria | Offroad</span>
-						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/5-countries">
-						<span class="calendar_item__date">24 June - 7 July</span>
-						<span class="calendar_item__title">Balkan Moto Cruise</span>
-						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
-						<span class="calendar_item__days">14 days</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>July 2022</h2>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">9 - 15 July</span>
-						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
-						<span class="calendar_item__desc">Bulgaria | Offroad</span>
-						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/romania/">
-						<span class="calendar_item__date">15 - 23 July</span>
-						<span class="calendar_item__title">Romania</span>
-						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
-						<span class="calendar_item__days">9 days</span>
-						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
-						<span class="calendar_item__date">23 July - 2 August</span>
-						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>
-						<span class="calendar_item__desc">Bulgaria | Offroad</span>
-						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/5-countries">
-						<span class="calendar_item__date">31 July - 13 August</span>
-						<span class="calendar_item__title">Balkan Moto Cruise</span>
-						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
-						<span class="calendar_item__days">14 days</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>August 2022</h2>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">8 - 14 August</span>
-						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
-						<span class="calendar_item__desc">Bulgaria | Offroad</span>
-						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/romania/">
-						<span class="calendar_item__date">19 - 27 August</span>
-						<span class="calendar_item__title">Romania</span>
-						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
-						<span class="calendar_item__days">9 days</span>
-						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
-						<span class="calendar_item__date">20 - 30 August</span>
-						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>
-						<span class="calendar_item__desc">Bulgaria | Offroad</span>
-						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>September 2022</h2>
-
-					<a class="calendar_item" href="/moto-tours/romania/">
-						<span class="calendar_item__date">2 - 10 September</span>
-						<span class="calendar_item__title">Romania</span>
-						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
-						<span class="calendar_item__days">9 days</span>
-						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">3 - 9 September</span>
-						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
-						<span class="calendar_item__desc">Bulgaria | Offroad</span>
-						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/5-countries">
-						<span class="calendar_item__date">16 - 29 September</span>
-						<span class="calendar_item__title">Balkan Moto Cruise</span>
-						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
-						<span class="calendar_item__days">14 days</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
-						<span class="calendar_item__date">17 - 27 September</span>
-						<span class="calendar_item__title">Bulgaria | Offroad | 11 days</span>
-						<span class="calendar_item__desc">Bulgaria | Offroad</span>
-						<span class="calendar_item__days">11 days</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">17 - 23 September</span>
-						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
-						<span class="calendar_item__desc">Bulgaria | Offroad</span>
-						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>October 2022</h2>
+					<h2>April</h2>
 
 					<a class="calendar_item" href="/moto-tours/turkey/">
-						<span class="calendar_item__date">10 - 20 October</span>
+						<span class="calendar_item__date">15 - 25 April</span>
 						<span class="calendar_item__title">Turkey</span>
 						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
 						<span class="calendar_item__days">11 days</span>
@@ -459,190 +250,183 @@ switch ($langCode) {
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">3 - 9 October</span>
-						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
-						<span class="calendar_item__desc">Bulgaria | Offroad</span>
-						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
+					<a class="calendar_item" href="/moto-tours/turkey/">
+						<span class="calendar_item__date">29 April - 9 May</span>
+						<span class="calendar_item__title">Turkey</span>
+						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
+						<span class="calendar_item__days">11 days</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">17 - 23 October</span>
-						<span class="calendar_item__title">Bulgaria | Offroad | 7 days</span>
-						<span class="calendar_item__desc">Bulgaria | Offroad</span>
-						<span class="calendar_item__days">7 days</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
+
+					<h2>May</h2>
+
+					<a class="calendar_item" href="/moto-tours/highlights-of-bulgaria">
+						<span class="calendar_item__date">13 - 21 May</span>
+						<span class="calendar_item__title">Bulgaria</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Veliko Tarnovo, Velingrad, Devin, Bansko</span>
+						<span class="calendar_item__days">9 days</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
+
+
+					<a class="calendar_item" href="/moto-tours/highlights-of-bulgaria">
+						<span class="calendar_item__date">27 May - 4 June</span>
+						<span class="calendar_item__title">Bulgaria</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Veliko Tarnovo, Velingrad, Devin, Bansko</span>
+						<span class="calendar_item__days">9 days</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+
+					<h2>June</h2>
+
+					<a class="calendar_item" href="/moto-tours/5-countries">
+						<span class="calendar_item__date">10 - 23 June</span>
+						<span class="calendar_item__title">Balkan Moto Cruise</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
+						<span class="calendar_item__days">14 days</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/highlights-of-bulgaria">
+						<span class="calendar_item__date">10 - 18 June</span>
+						<span class="calendar_item__title">Bulgaria</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Veliko Tarnovo, Velingrad, Devin, Bansko</span>
+						<span class="calendar_item__days">9 days</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					
+
+
+					<h2>July</h2>
+
+					<a class="calendar_item" href="/moto-tours/highlights-of-bulgaria">
+						<span class="calendar_item__date">1 - 9 July</span>
+						<span class="calendar_item__title">Bulgaria</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Veliko Tarnovo, Velingrad, Devin, Bansko</span>
+						<span class="calendar_item__days">9 days</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/5-countries">
+						<span class="calendar_item__date">1 - 14 July</span>
+						<span class="calendar_item__title">Balkan Moto Cruise</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
+						<span class="calendar_item__days">14 days</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+						</a>
+
+
+					<a class="calendar_item" href="/moto-tours/romania/">
+						<span class="calendar_item__date">20 - 28 July</span>
+						<span class="calendar_item__title">Romania</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
+						<span class="calendar_item__days">9 days</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+					<a class="calendar_item" href="/moto-tours/romania/">
+						<span class="calendar_item__date">30 July - 7 August</span>
+						<span class="calendar_item__title">Romania</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
+						<span class="calendar_item__days">9 days</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+				
+
+					
+					<h2>August</h2>
+
+					<a class="calendar_item" href="/moto-tours/highlights-of-bulgaria">
+						<span class="calendar_item__date">12 - 20 August</span>
+						<span class="calendar_item__title">Bulgaria</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Veliko Tarnovo, Velingrad, Devin, Bansko</span>
+						<span class="calendar_item__days">9 days</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+					<a class="calendar_item" href="/moto-tours/5-countries">
+						<span class="calendar_item__date">26 August - 8 September</span>
+						<span class="calendar_item__title">Balkan Moto Cruise</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
+						<span class="calendar_item__days">14 days</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+
+
+					<h2>September</h2>
+
+					<a class="calendar_item" href="/moto-tours/wine-spa-history">
+						<span class="calendar_item__date">10 - 14 September</span>
+						<span class="calendar_item__title">Bulgaria: Wine, Spa & History</span>
+						<span class="calendar_item__desc">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="calendar_item__days">5 days</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_5; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					<a class="calendar_item" href="/moto-tours/romania/">
+						<span class="calendar_item__date">16 - 24 September</span>
+						<span class="calendar_item__title">Romania</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
+						<span class="calendar_item__days">9 days</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+					<a class="calendar_item" href="/moto-tours/turkey/">
+						<span class="calendar_item__date">30 September - 10 October</span>
+						<span class="calendar_item__title">Turkey</span>
+						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
+						<span class="calendar_item__days">11 days</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+
+
+					<h2>October</h2>
+
+					<a class="calendar_item" href="/moto-tours/turkey/">
+						<span class="calendar_item__date">14 - 24 October</span>
+						<span class="calendar_item__title">Turkey</span>
+						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
+						<span class="calendar_item__days">11 days</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					
 				<?php }
 				// bg
 				else if (get_locale() == 'bg_BG') { ?>
-					<h2>Юни 2022</h2>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">4 - 10 Юни</span>
-						<span class="calendar_item__title">България | Offroad | 7 дни</span>
-						<span class="calendar_item__desc">България | Offroad</span>
-						<span class="calendar_item__days">7 дни</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/bg/moto-tours/5-countries">
-						<span class="calendar_item__date">6 - 19 Юни</span>
-						<span class="calendar_item__title">Около Балканите</span>
-						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
-						<span class="calendar_item__days">14 дни</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
-						<span class="calendar_item__date">18 - 28 Юни</span>
-						<span class="calendar_item__title">България | Offroad | 11 дни</span>
-						<span class="calendar_item__desc">България | Offroad</span>
-						<span class="calendar_item__days">11 дни</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/bg/moto-tours/5-countries">
-						<span class="calendar_item__date">24 Юни - 7 July</span>
-						<span class="calendar_item__title">Около Балканите</span>
-						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
-						<span class="calendar_item__days">14 дни</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>Юли 2022</h2>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">9 - 15 Юли</span>
-						<span class="calendar_item__title">България | Offroad | 7 дни</span>
-						<span class="calendar_item__desc">България | Offroad</span>
-						<span class="calendar_item__days">7 дни</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/bg/moto-tours/romania/">
-						<span class="calendar_item__date">15 - 23 Юли</span>
-						<span class="calendar_item__title">Румъния</span>
-						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Букорещ,Русе</span>
-						<span class="calendar_item__days">9 дни</span>
-						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
-						<span class="calendar_item__date">23 Юли - 2 Август</span>
-						<span class="calendar_item__title">България | Offroad | 11 дни</span>
-						<span class="calendar_item__desc">България | Offroad</span>
-						<span class="calendar_item__days">11 дни</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/bg/moto-tours/5-countries">
-						<span class="calendar_item__date">31 Юли - 13 Август</span>
-						<span class="calendar_item__title">Около Балканите</span>
-						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
-						<span class="calendar_item__days">14 дни</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>Август 2022</h2>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">8 - 14 Август</span>
-						<span class="calendar_item__title">България | Offroad | 7 дни</span>
-						<span class="calendar_item__desc">България | Offroad</span>
-						<span class="calendar_item__days">7 дни</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/bg/moto-tours/romania/">
-						<span class="calendar_item__date">19 - 27 Август</span>
-						<span class="calendar_item__title">Румъния</span>
-						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Букорещ,Русе</span>
-						<span class="calendar_item__days">9 дни</span>
-						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
-						<span class="calendar_item__date">20 - 30 Август</span>
-						<span class="calendar_item__title">България | Offroad | 11 дни</span>
-						<span class="calendar_item__desc">България | Offroad</span>
-						<span class="calendar_item__days">11 дни</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>Септември 2022</h2>
-
-					<a class="calendar_item" href="/bg/moto-tours/romania/">
-						<span class="calendar_item__date">2 - 10 Септември</span>
-						<span class="calendar_item__title">Румъния</span>
-						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Букорещ,Русе</span>
-						<span class="calendar_item__days">9 дни</span>
-						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">3 - 9 Септември</span>
-						<span class="calendar_item__title">България | Offroad | 7 дни</span>
-						<span class="calendar_item__desc">България | Offroad</span>
-						<span class="calendar_item__days">7 дни</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/bg/moto-tours/5-countries">
-						<span class="calendar_item__date">16 - 29 Септември</span>
-						<span class="calendar_item__title">Около Балканите</span>
-						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
-						<span class="calendar_item__days">14 дни</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-11-days/">
-						<span class="calendar_item__date">17 - 27 Септември</span>
-						<span class="calendar_item__title">България | Offroad | 11 дни</span>
-						<span class="calendar_item__desc">България | Offroad</span>
-						<span class="calendar_item__days">11 дни</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">17 - 23 Септември</span>
-						<span class="calendar_item__title">България | Offroad | 7 дни</span>
-						<span class="calendar_item__desc">България | Offroad</span>
-						<span class="calendar_item__days">7 дни</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>Октомври 2022</h2>
+					
+					<h2>Април</h2>
 
 					<a class="calendar_item" href="/moto-tours/turkey/">
-						<span class="calendar_item__date">10 - 20 Октомври</span>
+						<span class="calendar_item__date">15 - 25 Април</span>
 						<span class="calendar_item__title">Турция</span>
 						<span class="calendar_item__desc">Истанбул, Анкара, Кападокия, Памуккале, Бергама, Чанаккале</span>
 						<span class="calendar_item__days">11 дни</span>
@@ -650,405 +434,543 @@ switch ($langCode) {
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">3 - 9 Октомври</span>
-						<span class="calendar_item__title">България | Offroad | 7 дни</span>
-						<span class="calendar_item__desc">България | Offroad</span>
-						<span class="calendar_item__days">7 дни</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
+					<a class="calendar_item" href="/moto-tours/turkey/">
+						<span class="calendar_item__date">29 Април - 9 Май</span>
+						<span class="calendar_item__title">Турция</span>
+						<span class="calendar_item__desc">Истанбул, Анкара, Кападокия, Памуккале, Бергама, Чанаккале</span>
+						<span class="calendar_item__days">11 дни</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
-					<a class="calendar_item" href="/moto-tours/bulgaria-offroad-7-days/">
-						<span class="calendar_item__date">17 - 23 Октомври</span>
-						<span class="calendar_item__title">България | Offroad | 7 дни</span>
-						<span class="calendar_item__desc">България | Offroad</span>
-						<span class="calendar_item__days">7 дни</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
+
+					<h2>Май</h2>
+
+					<a class="calendar_item" href="/bg/moto-tours/highlights-of-bulgaria/">
+						<span class="calendar_item__date">13 - 21 Май</span>
+						<span class="calendar_item__title">България</span>
+						<span class="calendar_item__desc">София, Белоградчик, Велико Търново, Велинград, Банско</span>
+						<span class="calendar_item__days">9 дни</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
+
+
+					<a class="calendar_item" href="/bg/moto-tours/highlights-of-bulgaria/">
+						<span class="calendar_item__date">27 Май - 4 Юни</span>
+						<span class="calendar_item__title">България</span>
+						<span class="calendar_item__desc">София, Белоградчик, Велико Търново, Велинград, Банско</span>
+						<span class="calendar_item__days">9 дни</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+
+					<h2>Юни</h2>
+
+					<a class="calendar_item" href="/bg/moto-tours/5-countries/">
+						<span class="calendar_item__date">10 - 23 Юни</span>
+						<span class="calendar_item__title">Около Балканите</span>
+						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
+						<span class="calendar_item__days">14 дни</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					<a class="calendar_item" href="/bg/moto-tours/highlights-of-bulgaria/">
+						<span class="calendar_item__date">10 - 18 Юни</span>
+						<span class="calendar_item__title">България</span>
+						<span class="calendar_item__desc">София, Белоградчик, Велико Търново, Велинград, Банско</span>
+						<span class="calendar_item__days">9 дни</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					
+
+
+					<h2>Юли</h2>
+
+					<a class="calendar_item" href="/bg/moto-tours/highlights-of-bulgaria/">
+						<span class="calendar_item__date">1 - 9 Юли</span>
+						<span class="calendar_item__title">България</span>
+						<span class="calendar_item__desc">София, Белоградчик, Велико Търново, Велинград, Банско</span>
+						<span class="calendar_item__days">9 дни</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					<a class="calendar_item" href="/bg/moto-tours/5-countries/">
+						<span class="calendar_item__date">1 - 14 Юли</span>
+						<span class="calendar_item__title">Около Балканите</span>
+						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
+						<span class="calendar_item__days">14 дни</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+						</a>
+
+
+					<a class="calendar_item" href="/bg/moto-tours/romania/">
+						<span class="calendar_item__date">20 - 28 Юли</span>
+						<span class="calendar_item__title">Румъния</span>
+						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Букорещ, Русе</span>
+						<span class="calendar_item__days">9 дни</span>
+						<span class="calendar_item__price"><?php echo$price_romania; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+					<a class="calendar_item" href="/bg/moto-tours/romania/">
+						<span class="calendar_item__date">30 Юли - 7 Август</span>
+						<span class="calendar_item__title">Румъния</span>
+						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Букорещ, Русе</span>
+						<span class="calendar_item__days">9 дни</span>
+						<span class="calendar_item__price"><?php echo$price_romania; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+				
+
+					
+					<h2>Август</h2>
+
+					<a class="calendar_item" href="/bg/moto-tours/highlights-of-bulgaria/">
+						<span class="calendar_item__date">12 - 20 Август</span>
+						<span class="calendar_item__title">България</span>
+						<span class="calendar_item__desc">София, Белоградчик, Велико Търново, Велинград, Банско</span>
+						<span class="calendar_item__days">9 дни</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+					<a class="calendar_item" href="/bg/moto-tours/5-countries/">
+						<span class="calendar_item__date">26 Август - 8 Септември</span>
+						<span class="calendar_item__title">Около Балканите</span>
+						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
+						<span class="calendar_item__days">14 дни</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+
+
+					<h2>Септември</h2>
+
+					<a class="calendar_item" href="/bg/moto-tours/wine-spa-history/">
+						<span class="calendar_item__date">10 - 14 Септември</span>
+						<span class="calendar_item__title">България: Вино, СПА и история</span>
+						<span class="calendar_item__desc">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="calendar_item__days">5 дни</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_5; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					<a class="calendar_item" href="/bg/moto-tours/romania/">
+						<span class="calendar_item__date">16 - 24 Септември</span>
+						<span class="calendar_item__title">Румъния</span>
+						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Букорещ, Русе</span>
+						<span class="calendar_item__days">9 дни</span>
+						<span class="calendar_item__price"><?php echo$price_romania; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+					<a class="calendar_item" href="/moto-tours/turkey/">
+						<span class="calendar_item__date">30 Септември - 10 Октмоври</span>
+						<span class="calendar_item__title">Турция</span>
+						<span class="calendar_item__desc">Истанбул, Анкара, Кападокия, Памуккале, Бергама, Чанаккале</span>
+						<span class="calendar_item__days">11 дни</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+
+
+					<h2>Октмоври</h2>
+
+					<a class="calendar_item" href="/moto-tours/turkey/">
+						<span class="calendar_item__date">14 - 24 Октмоври</span>
+						<span class="calendar_item__title">Турция</span>
+						<span class="calendar_item__desc">Истанбул, Анкара, Кападокия, Памуккале, Бергама, Чанаккале</span>
+						<span class="calendar_item__days">11 дни</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+
 				<?php }
 				// de
 				else if (get_locale() == 'de_DE') { ?>
-					<h2>Juni 2022</h2>
 
-					<a class="calendar_item" href="/de/moto-tours/bulgaria-offroad-7-day/">
-						<span class="calendar_item__date">4 - 10 Juni</span>
-						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>
-						<span class="calendar_item__desc">Bulgarien | Offroad</span>
-						<span class="calendar_item__days">7 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/de/moto-tours/5-countries">
-						<span class="calendar_item__date">6 - 19 Juni</span>
-						<span class="calendar_item__title">Vokrut Balkan</span>
-						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
-						<span class="calendar_item__days">14 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/de/moto-tours/bulgari-offroad-11-dnej/">
-						<span class="calendar_item__date">18 - 28 Juni</span>
-						<span class="calendar_item__title">Bulgarien | Offroad | 11 Tage</span>
-						<span class="calendar_item__desc">Bulgarien | Offroad</span>
-						<span class="calendar_item__days">11 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/de/moto-tours/5-countries">
-						<span class="calendar_item__date">24 Juni - 7 Juli</span>
-						<span class="calendar_item__title">Vokrut Balkan</span>
-						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
-						<span class="calendar_item__days">14 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>Juli 2022</h2>
-
-					<a class="calendar_item" href="/de/moto-tours/bulgaria-offroad-7-day/">
-						<span class="calendar_item__date">9 - 15 Juli</span>
-						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>
-						<span class="calendar_item__desc">Bulgarien | Offroad</span>
-						<span class="calendar_item__days">7 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/de/moto-tours/romania/">
-						<span class="calendar_item__date">15 - 23 Juli</span>
-						<span class="calendar_item__title">Rumänien</span>
-						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bukarest, Russe.</span>
-						<span class="calendar_item__days">9 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/de/moto-tours/bulgari-offroad-11-dnej/">
-						<span class="calendar_item__date">23 Juli - 2 August</span>
-						<span class="calendar_item__title">Bulgarien | Offroad | 11 Tage</span>
-						<span class="calendar_item__desc">Bulgarien | Offroad</span>
-						<span class="calendar_item__days">11 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/de/moto-tours/5-countries">
-						<span class="calendar_item__date">31 Juli - 13 August</span>
-						<span class="calendar_item__title">Vokrut Balkan</span>
-						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
-						<span class="calendar_item__days">14 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>August 2022</h2>
-
-					<a class="calendar_item" href="/de/moto-tours/bulgaria-offroad-7-day/">
-						<span class="calendar_item__date">8 - 14 August</span>
-						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>
-						<span class="calendar_item__desc">Bulgarien | Offroad</span>
-						<span class="calendar_item__days">7 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/de/moto-tours/romania/">
-						<span class="calendar_item__date">19 - 27 August</span>
-						<span class="calendar_item__title">Rumänien</span>
-						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bukarest, Russe.</span>
-						<span class="calendar_item__days">9 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/de/moto-tours/bulgari-offroad-11-dnej/">
-						<span class="calendar_item__date">20 - 30 August</span>
-						<span class="calendar_item__title">Bulgarien | Offroad | 11 Tage</span>
-						<span class="calendar_item__desc">Bulgarien | Offroad</span>
-						<span class="calendar_item__days">11 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>September 2022</h2>
-
-					<a class="calendar_item" href="/de/moto-tours/romania/">
-						<span class="calendar_item__date">2 - 10 September</span>
-						<span class="calendar_item__title">Rumänien</span>
-						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bukarest, Russe.</span>
-						<span class="calendar_item__days">9 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/de/moto-tours/bulgaria-offroad-7-day/">
-						<span class="calendar_item__date">3 - 9 September</span>
-						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>
-						<span class="calendar_item__desc">Bulgarien | Offroad</span>
-						<span class="calendar_item__days">7 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/de/moto-tours/5-countries">
-						<span class="calendar_item__date">16 - 29 September</span>
-						<span class="calendar_item__title">Vokrut Balkan</span>
-						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
-						<span class="calendar_item__days">14 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/de/moto-tours/bulgari-offroad-11-dnej/">
-						<span class="calendar_item__date">17 - 27 September</span>
-						<span class="calendar_item__title">Bulgarien | Offroad | 11 Tage</span>
-						<span class="calendar_item__desc">Bulgarien | Offroad</span>
-						<span class="calendar_item__days">11 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/de/moto-tours/bulgaria-offroad-7-day/">
-						<span class="calendar_item__date">17 - 23 September</span>
-						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>
-						<span class="calendar_item__desc">Bulgarien | Offroad</span>
-						<span class="calendar_item__days">7 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>Oktober 2022</h2>
+					<h2>April</h2>
 
 					<a class="calendar_item" href="/de/moto-tours/die-tuerkei/">
-						<span class="calendar_item__date">10 - 20 Oktober</span>
-						<span class="calendar_item__title">Die Türkei</span>
-						<span class="calendar_item__desc">Istanbul, Ankara, Kappadokien, Pamukkale, Bergama, Canakkale.</span>
+						<span class="calendar_item__date">15 - 25 April</span>
+						<span class="calendar_item__title"> Die Türkei </span>
+						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
 						<span class="calendar_item__days">11 Tage</span>
 						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
-					<a class="calendar_item" href="/de/moto-tours/bulgaria-offroad-7-day/">
-						<span class="calendar_item__date">3 - 9 Oktober</span>
-						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>
-						<span class="calendar_item__desc">Bulgarien | Offroad</span>
-						<span class="calendar_item__days">7 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
+					<a class="calendar_item" href="/de/moto-tours/die-tuerkei/">
+						<span class="calendar_item__date">29 April - 9 Mai</span>
+						<span class="calendar_item__title">Die Türkei</span>
+						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
+						<span class="calendar_item__days">11 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
-					<a class="calendar_item" href="/de/moto-tours/bulgaria-offroad-7-day/">
-						<span class="calendar_item__date">17 - 23 Oktober</span>
-						<span class="calendar_item__title">Bulgarien | Offroad | 7 Tage</span>
-						<span class="calendar_item__desc">Bulgarien | Offroad</span>
-						<span class="calendar_item__days">7 Tage</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
+
+					<h2>Mai</h2>
+
+					<a class="calendar_item" href="/de/moto-tours/highlights-of-bulgaria/">
+						<span class="calendar_item__date">13 - 21 Mai</span>
+						<span class="calendar_item__title">Bulgarien</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Veliko Tarnovo, Velingrad, Devin, Bansko</span>
+						<span class="calendar_item__days">9 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
+
+
+					<a class="calendar_item" href="/de/moto-tours/highlights-of-bulgaria/">
+						<span class="calendar_item__date">27 May - 4 Juni</span>
+						<span class="calendar_item__title">Bulgarien</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Veliko Tarnovo, Velingrad, Devin, Bansko</span>
+						<span class="calendar_item__days">9 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+
+					<h2>Juni</h2>
+
+					<a class="calendar_item" href="/de/moto-tours/5-countries/">
+						<span class="calendar_item__date">10 - 23 Juni</span>
+						<span class="calendar_item__title">Balkan Moto Cruise</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
+						<span class="calendar_item__days">14 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					<a class="calendar_item" href="/de/moto-tours/highlights-of-bulgaria/">
+						<span class="calendar_item__date">10 - 18 Juni</span>
+						<span class="calendar_item__title">Bulgarien</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Veliko Tarnovo, Velingrad, Devin, Bansko</span>
+						<span class="calendar_item__days">9 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					
+
+
+					<h2>Juli</h2>
+
+					<a class="calendar_item" href="/de/moto-tours/highlights-of-bulgaria/">
+						<span class="calendar_item__date">1 - 9 Juli</span>
+						<span class="calendar_item__title">Bulgarien</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Veliko Tarnovo, Velingrad, Devin, Bansko</span>
+						<span class="calendar_item__days">9 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					<a class="calendar_item" href="/de/moto-tours/5-countries/">
+						<span class="calendar_item__date">1 - 14 Juli</span>
+						<span class="calendar_item__title">Balkan Moto Cruise</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
+						<span class="calendar_item__days">14 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+						</a>
+
+
+					<a class="calendar_item" href="/de/moto-tours/romania/">
+						<span class="calendar_item__date">20 - 28 Juli</span>
+						<span class="calendar_item__title">Rumänien</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
+						<span class="calendar_item__days">9 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+					<a class="calendar_item" href="/de/moto-tours/romania/">
+						<span class="calendar_item__date">30 Juli - 7 August</span>
+						<span class="calendar_item__title">Rumänien</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
+						<span class="calendar_item__days">9 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+				
+
+					
+					<h2>August</h2>
+
+					<a class="calendar_item" href="/de/moto-tours/highlights-of-bulgaria/">
+						<span class="calendar_item__date">12 - 20 August</span>
+						<span class="calendar_item__title">Bulgarien</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Veliko Tarnovo, Velingrad, Devin, Bansko</span>
+						<span class="calendar_item__days">9 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+					<a class="calendar_item" href="/de/moto-tours/5-countries/">
+						<span class="calendar_item__date">26 August - 8 September</span>
+						<span class="calendar_item__title">Balkan Moto Cruise</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Zlatibor, Kolasin, Budva, Durres, Ohrid, Bitola, Skopje</span>
+						<span class="calendar_item__days">14 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+
+
+					<h2>September</h2>
+
+					<a class="calendar_item" href="/de/moto-tours/wine-spa-history/">
+						<span class="calendar_item__date">10 - 14 September</span>
+						<span class="calendar_item__title">Bulgarien: Wein, Spa & Geschichte</span>
+						<span class="calendar_item__desc">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="calendar_item__days">5 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_5; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					<a class="calendar_item" href="/de/moto-tours/romania/">
+						<span class="calendar_item__date">16 - 24 September</span>
+						<span class="calendar_item__title">Rumänien</span>
+						<span class="calendar_item__desc">Sofia, Belogradchik, Novaci, Turda, Brasov, Bucharest, Ruse.</span>
+						<span class="calendar_item__days">9 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+					<a class="calendar_item" href="/de/moto-tours/die-tuerkei/">
+						<span class="calendar_item__date">30 September - 10 Oktober</span>
+						<span class="calendar_item__title">Die Türkei</span>
+						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
+						<span class="calendar_item__days">11 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+
+
+					<h2>Oktober</h2>
+
+					<a class="calendar_item" href="/de/moto-tours/die-tuerkei/">
+						<span class="calendar_item__date">14 - 24 Oktober</span>
+						<span class="calendar_item__title">Die Türkei</span>
+						<span class="calendar_item__desc">Istanbul, Ankara, Cappadocia, Pamukkale, Bergama, Canakkale</span>
+						<span class="calendar_item__days">11 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
 				<?php }
 				// ru
 				else if (get_locale() == 'ru_RU') { ?>
-					<h2>Июнь 2022</h2>
 
-					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad-7-dnej/">
-						<span class="calendar_item__date">4 - 10 июня</span>
-						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>
-						<span class="calendar_item__desc">Болгария | Offroad</span>
-						<span class="calendar_item__days">7 дней</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/ru/moto-tours/5-countries/">
-						<span class="calendar_item__date">7 - 19 июня</span>
-						<span class="calendar_item__title">Вокруг Балкан</span>
-						<span class="calendar_item__desc">Страны: Сербия, Черногория, Албания, Северная Македония.<br /><br />Города: София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
-						<span class="calendar_item__days">14 дней</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad/">
-						<span class="calendar_item__date">18 - 28 июня</span>
-						<span class="calendar_item__title">Болгария | Offroad | 11 дней</span>
-						<span class="calendar_item__desc">Болгария | Offroad</span>
-						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/ru/moto-tours/5-countries/">
-						<span class="calendar_item__date">25 июня - 7 июля</span>
-						<span class="calendar_item__title">Вокруг Балкан</span>
-						<span class="calendar_item__desc">Страны: Сербия, Черногория, Албания, Северная Македония.<br /><br />Города: София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
-						<span class="calendar_item__days">14 дней</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>Июль 2022</h2>
-
-					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad-7-dnej/">
-						<span class="calendar_item__date">9 - 15 июля</span>
-						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>
-						<span class="calendar_item__desc">Болгария | Offroad</span>
-						<span class="calendar_item__days">7 дней</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/ru/moto-tours/romania/">
-						<span class="calendar_item__date">15 - 23 июля</span>
-						<span class="calendar_item__title">Румыния</span>
-						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Бухарест, Русе.</span>
-						<span class="calendar_item__days">9 дней</span>
-						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad/">
-						<span class="calendar_item__date">23 июля - 2 августа</span>
-						<span class="calendar_item__title">Болгария | Offroad | 11 дней</span>
-						<span class="calendar_item__desc">Болгария | Offroad</span>
-						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/ru/moto-tours/5-countries/">
-						<span class="calendar_item__date">31 июля - 12 августа</span>
-						<span class="calendar_item__title">Вокруг Балкан</span>
-						<span class="calendar_item__desc">Страны: Сербия, Черногория, Албания, Северная Македония.<br /><br />Города: София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
-						<span class="calendar_item__days">14 дней</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>Август 2022</h2>
-
-					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad-7-dnej/">
-						<span class="calendar_item__date">8 - 14 августа</span>
-						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>
-						<span class="calendar_item__desc">Болгария | Offroad</span>
-						<span class="calendar_item__days">7 дней</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/ru/moto-tours/romania/">
-						<span class="calendar_item__date">19 - 27 августа</span>
-						<span class="calendar_item__title">Румыния</span>
-						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Бухарест, Русе.</span>
-						<span class="calendar_item__days">9 дней</span>
-						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad/">
-						<span class="calendar_item__date">20 - 30 августа</span>
-						<span class="calendar_item__title">Болгария | Offroad | 11 дней</span>
-						<span class="calendar_item__desc">Болгария | Offroad</span>
-						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>Сентябрь 2022</h2>
-
-					<a class="calendar_item" href="/ru/moto-tours/romania/">
-						<span class="calendar_item__date">2 - 10 сентября</span>
-						<span class="calendar_item__title">Румыния</span>
-						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Бухарест, Русе.</span>
-						<span class="calendar_item__days">9 дней</span>
-						<span class="calendar_item__price"><?php echo $price_romania; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad-7-dnej/">
-						<span class="calendar_item__date">3 - 9 сентября</span>
-						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>
-						<span class="calendar_item__desc">Болгария | Offroad</span>
-						<span class="calendar_item__days">7 дней</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/ru/moto-tours/5-countries/">
-						<span class="calendar_item__date">16 - 29 сентября</span>
-						<span class="calendar_item__title">Вокруг Балкан</span>
-						<span class="calendar_item__desc">Страны: Сербия, Черногория, Албания, Северная Македония.<br /><br />Города: София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
-						<span class="calendar_item__days">14 дней</span>
-						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad/">
-						<span class="calendar_item__date">17 - 27 сентября</span>
-						<span class="calendar_item__title">Болгария | Offroad | 11 дней</span>
-						<span class="calendar_item__desc">Болгария | Offroad</span>
-						<span class="calendar_item__days">11 дней</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_11; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad-7-dnej/">
-						<span class="calendar_item__date">17 - 23 сентября</span>
-						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>
-						<span class="calendar_item__desc">Болгария | Offroad</span>
-						<span class="calendar_item__days">7 дней</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
-						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
-					</a>
-
-
-
-					<h2>Октябрь 2022</h2>
+					<h2>Апрель</h2>
 
 					<a class="calendar_item" href="/ru/moto-tours/turcziya/">
-						<span class="calendar_item__date">10 - 20 октября</span>
+						<span class="calendar_item__date">15 - 25 Апреля</span>
 						<span class="calendar_item__title">Турция</span>
-						<span class="calendar_item__desc">Стамбул, Анкара, Каппадокия, Памуккале, Бергама, Чанаккале</span>
+						<span class="calendar_item__desc">Стамбул, Анкара, Кападокия, Памуккале, Бергама, Чанаккале</span>
+						<span class="calendar_item__days">11 дни</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					<a class="calendar_item" href="/ru/moto-tours/turcziya/">
+						<span class="calendar_item__date">29 Апреля - 9 Мая</span>
+						<span class="calendar_item__title">Турция</span>
+						<span class="calendar_item__desc">Стамбул, Анкара, Кападокия, Памуккале, Бергама, Чанаккале</span>
 						<span class="calendar_item__days">11 дней</span>
 						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
-					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad-7-dnej/">
-						<span class="calendar_item__date">3 - 9 октября</span>
-						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>
-						<span class="calendar_item__desc">Болгария | Offroad</span>
-						<span class="calendar_item__days">7 дней</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
+
+					<h2>Май</h2>
+
+					<a class="calendar_item" href="/ru/moto-tours/highlights-of-bulgaria/">
+						<span class="calendar_item__date">13 - 21 Мая</span>
+						<span class="calendar_item__title">Болгария</span>
+						<span class="calendar_item__desc">София, Белоградчик, Велико Търново, Велинград, Банско</span>
+						<span class="calendar_item__days">9 дней</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
-					<a class="calendar_item" href="/ru/moto-tours/bolgariya-offroad-7-dnej/">
-						<span class="calendar_item__date">17 - 23 октября</span>
-						<span class="calendar_item__title">Болгария | Offroad | 7 дней</span>
-						<span class="calendar_item__desc">Болгария | Offroad</span>
-						<span class="calendar_item__days">7 дней</span>
-						<span class="calendar_item__price"><?php echo $price_offroad_7; ?></span>
+
+					<a class="calendar_item" href="/ru/moto-tours/highlights-of-bulgaria/">
+						<span class="calendar_item__date">27 Мая - 4 Июня</span>
+						<span class="calendar_item__title">Болгария</span>
+						<span class="calendar_item__desc">София, Белоградчик, Велико Търново, Велинград, Банско</span>
+						<span class="calendar_item__days">9 дней</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
+
+
+
+					<h2>Июнь</h2>
+
+					<a class="calendar_item" href="/ru/moto-tours/5-countries/">
+						<span class="calendar_item__date">10 - 23 Июня</span>
+						<span class="calendar_item__title">Вокруг Балкан</span>
+						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
+						<span class="calendar_item__days">14 дней</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					<a class="calendar_item" href="/ru/moto-tours/highlights-of-bulgaria/">
+						<span class="calendar_item__date">10 - 18 Июня</span>
+						<span class="calendar_item__title">Болгария</span>
+						<span class="calendar_item__desc">София, Белоградчик, Велико Търново, Велинград, Банско</span>
+						<span class="calendar_item__days">9 дней</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					
+
+
+					<h2>Июль</h2>
+
+					<a class="calendar_item" href="/ru/moto-tours/highlights-of-bulgaria/">
+						<span class="calendar_item__date">1 - 9 Июля</span>
+						<span class="calendar_item__title">Болгария</span>
+						<span class="calendar_item__desc">София, Белоградчик, Велико Търново, Велинград, Банско</span>
+						<span class="calendar_item__days">9 дней</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					<a class="calendar_item" href="/ru/moto-tours/5-countries/">
+						<span class="calendar_item__date">1 - 14 Июля</span>
+						<span class="calendar_item__title">Вокруг Балкан</span>
+						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
+						<span class="calendar_item__days">14 дней</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+						</a>
+
+
+					<a class="calendar_item" href="/ru/moto-tours/romania/">
+						<span class="calendar_item__date">20 - 28 Июля</span>
+						<span class="calendar_item__title">Румъния</span>
+						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Букорещ, Русе</span>
+						<span class="calendar_item__days">9 дней</span>
+						<span class="calendar_item__price"><?php echo$price_romania; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+					<a class="calendar_item" href="/ru/moto-tours/romania/">
+						<span class="calendar_item__date">30 Июля - 7 Августа</span>
+						<span class="calendar_item__title">Румъния</span>
+						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Букорещ, Русе</span>
+						<span class="calendar_item__days">9 дней</span>
+						<span class="calendar_item__price"><?php echo$price_romania; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+				
+
+					
+					<h2>Август</h2>
+
+					<a class="calendar_item" href="/ru/moto-tours/highlights-of-bulgaria/">
+						<span class="calendar_item__date">12 - 20 Августа</span>
+						<span class="calendar_item__title">Болгария</span>
+						<span class="calendar_item__desc">София, Белоградчик, Велико Търново, Велинград, Банско</span>
+						<span class="calendar_item__days">9 дней</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_9; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+					<a class="calendar_item" href="/ru/moto-tours/5-countries/">
+						<span class="calendar_item__date">26 Августа - 8 Сентября</span>
+						<span class="calendar_item__title">Вокруг Балкан</span>
+						<span class="calendar_item__desc">София, Белоградчик, Златибор, Колашин, Будва, Дуррес, Охрид, Битола, Скопие</span>
+						<span class="calendar_item__days">14 дней</span>
+						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+
+
+					<h2>Сентябрь</h2>
+
+					<a class="calendar_item" href="/ru/moto-tours/wine-spa-history/">
+						<span class="calendar_item__date">10 - 14 Сентября </span>
+						<span class="calendar_item__title">Болгария: Вино, СПА и история</span>
+						<span class="calendar_item__desc">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="calendar_item__days">5 дней</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_5; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+					<a class="calendar_item" href="/ru/moto-tours/romania/">
+						<span class="calendar_item__date">16 - 24 Сентября </span>
+						<span class="calendar_item__title">Румъния</span>
+						<span class="calendar_item__desc">София, Белоградчик, Новачи, Турда, Брашов, Букорещ, Русе</span>
+						<span class="calendar_item__days">9 дней</span>
+						<span class="calendar_item__price"><?php echo$price_romania; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+					<a class="calendar_item" href="/ru/moto-tours/turcziya/">
+						<span class="calendar_item__date">30 Сентября - 10 Октября</span>
+						<span class="calendar_item__title">Турция</span>
+						<span class="calendar_item__desc">Стамбул, Анкара, Кападокия, Памуккале, Бергама, Чанаккале</span>
+						<span class="calendar_item__days">11 дней</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
+
+
+					<h2> Октябрь</h2>
+
+					<a class="calendar_item" href="/ru/moto-tours/turcziya/">
+						<span class="calendar_item__date">14 - 24 Октября </span>
+						<span class="calendar_item__title">Турция</span>
+						<span class="calendar_item__desc">Стамбул, Анкара, Кападокия, Памуккале, Бергама, Чанаккале</span>
+						<span class="calendar_item__days">11 дней</span>
+						<span class="calendar_item__price"><?php echo $price_turkey; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
 				<?php }
 				else { ?>
 					<h2><?php echo __('April', 'khl_template'); ?> 2022</h2>
