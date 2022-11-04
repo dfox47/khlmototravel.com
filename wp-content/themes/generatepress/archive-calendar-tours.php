@@ -271,6 +271,15 @@ switch ($langCode) {
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
+					<a class="calendar_item" href="/moto-tours/wine-spa-history">
+						<span class="calendar_item__date">22 - 26 May</span>
+						<span class="calendar_item__title">Bulgaria: Wine, Spa & History</span>
+						<span class="calendar_item__desc">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="calendar_item__days">5 days</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_5; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
 
 					<a class="calendar_item" href="/moto-tours/highlights-of-bulgaria">
 						<span class="calendar_item__date">27 May - 4 June</span>
@@ -325,6 +334,15 @@ switch ($langCode) {
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 						</a>
+
+					<a class="calendar_item" href="/moto-tours/wine-spa-history">
+						<span class="calendar_item__date">20 - 25 July</span>
+						<span class="calendar_item__title">Bulgaria: Wine, Spa & History</span>
+						<span class="calendar_item__desc">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="calendar_item__days">5 days</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_5; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
 
 
 					<a class="calendar_item" href="/moto-tours/romania/">
@@ -455,6 +473,15 @@ switch ($langCode) {
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
+					<a class="calendar_item" href="/bg/moto-tours/wine-spa-history/">
+						<span class="calendar_item__date">22 - 26 Май</span>
+						<span class="calendar_item__title">България: Вино, СПА и история</span>
+						<span class="calendar_item__desc">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="calendar_item__days">5 дни</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_5; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
 
 					<a class="calendar_item" href="/bg/moto-tours/highlights-of-bulgaria/">
 						<span class="calendar_item__date">27 Май - 4 Юни</span>
@@ -509,6 +536,15 @@ switch ($langCode) {
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 						</a>
+
+					<a class="calendar_item" href="/bg/moto-tours/wine-spa-history/">
+						<span class="calendar_item__date">20 - 25 Июли</span>
+						<span class="calendar_item__title">България: Вино, СПА и история</span>
+						<span class="calendar_item__desc">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="calendar_item__days">5 дни</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_5; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
 
 
 					<a class="calendar_item" href="/bg/moto-tours/romania/">
@@ -640,6 +676,15 @@ switch ($langCode) {
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
+					<a class="calendar_item" href="/de/moto-tours/wine-spa-history/">
+						<span class="calendar_item__date">22 - 26 Mai</span>
+						<span class="calendar_item__title">Bulgarien: Wein, Spa & Geschichte</span>
+						<span class="calendar_item__desc">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="calendar_item__days">5 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_5; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
 
 					<a class="calendar_item" href="/de/moto-tours/highlights-of-bulgaria/">
 						<span class="calendar_item__date">27 May - 4 Juni</span>
@@ -694,6 +739,15 @@ switch ($langCode) {
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 						</a>
+
+					<a class="calendar_item" href="/de/moto-tours/wine-spa-history/">
+						<span class="calendar_item__date">20 - 25 Juli</span>
+						<span class="calendar_item__title">Bulgarien: Wein, Spa & Geschichte</span>
+						<span class="calendar_item__desc">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="calendar_item__days">5 Tage</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_5; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
 
 
 					<a class="calendar_item" href="/de/moto-tours/romania/">
@@ -824,6 +878,16 @@ switch ($langCode) {
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 					</a>
 
+					<a class="calendar_item" href="/ru/moto-tours/wine-spa-history/">
+						<span class="calendar_item__date">22 - 26 Мая </span>
+						<span class="calendar_item__title">Болгария: Вино, СПА и история</span>
+						<span class="calendar_item__desc">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="calendar_item__days">5 дней</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_5; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
+
+
 
 					<a class="calendar_item" href="/ru/moto-tours/highlights-of-bulgaria/">
 						<span class="calendar_item__date">27 Мая - 4 Июня</span>
@@ -878,6 +942,15 @@ switch ($langCode) {
 						<span class="calendar_item__price"><?php echo $price_5_countries; ?></span>
 						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
 						</a>
+
+					<a class="calendar_item" href="/ru/moto-tours/wine-spa-history/">
+						<span class="calendar_item__date">20 - 25 Июля </span>
+						<span class="calendar_item__title">Болгария: Вино, СПА и история</span>
+						<span class="calendar_item__desc">Sofia, Veliko Tarnovo, Velingrad</span>
+						<span class="calendar_item__days">5 дней</span>
+						<span class="calendar_item__price"><?php echo $price_bulgaria_5; ?></span>
+						<span class="calendar_item__book"><?php echo $textReadMore; ?></span>
+					</a>
 
 
 					<a class="calendar_item" href="/ru/moto-tours/romania/">
