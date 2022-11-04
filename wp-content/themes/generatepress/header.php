@@ -39,20 +39,20 @@ $favicon        = $i . '/icons/favicon'; ?>
 
 	<!-- Meta Pixel Code -->
 	<script>
-	!function(f,b,e,v,n,t,s)
-	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	n.queue=[];t=b.createElement(e);t.async=!0;
-	t.src=v;s=b.getElementsByTagName(e)[0];
-	s.parentNode.insertBefore(t,s)}(window, document,'script',
-	'https://connect.facebook.net/en_US/fbevents.js');
-	fbq('init', '748258353103321');
-	fbq('track', 'PageView');
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+			n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t,s)}(window, document,'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '748258353103321');
+		fbq('track', 'PageView');
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
-	src="https://www.facebook.com/tr?id=748258353103321&ev=PageView&noscript=1"
-	/></noscript>
+	               src="https://www.facebook.com/tr?id=748258353103321&ev=PageView&noscript=1"
+		/></noscript>
 	<!-- End Meta Pixel Code -->
 
 	<meta name="facebook-domain-verification" content="ujmufe44ju0nlrao9xhloz9yfiyh6v" />
@@ -93,42 +93,48 @@ $favicon        = $i . '/icons/favicon'; ?>
 <body <?php body_class(); ?> <?php generate_do_microdata( 'body' ); ?>>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5MKXQ7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<?php
-/**
- * wp_body_open hook.
- *
- * @since 2.3
- */
-do_action( 'wp_body_open' ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- core WP hook.
+<div class="header_wrap">
+	<a class="logo" href="/" title="KHL Moto Travel" rel="home"><img class="header-image is-logo-image" alt="KHL Moto Travel" src="/wp-content/uploads/2020/05/khl_logo-1.jpg" title="KHL Moto Travel"></a>
 
-/**
- * generate_before_header hook.
- *
- * @since 0.1
- *
- * @hooked generate_do_skip_to_content_link - 2
- * @hooked generate_top_bar - 5
- * @hooked generate_add_navigation_before_header - 5
- */
-do_action( 'generate_before_header' );
+	<?php
+	/**
+	 * wp_body_open hook.
+	 *
+	 * @since 2.3
+	 */
+	do_action( 'wp_body_open' ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- core WP hook.
 
-/**
- * generate_header hook.
- *
- * @since 1.3.42
- *
- * @hooked generate_construct_header - 10
- */
-do_action( 'generate_header' );
 
-/**
- * generate_after_header hook.
- *
- * @since 0.1
- *
- * @hooked generate_featured_page_header - 10
- */
-do_action( 'generate_after_header' ); ?>
+
+	/**
+	 * generate_before_header hook.
+	 *
+	 * @since 0.1
+	 *
+	 * @hooked generate_do_skip_to_content_link - 2
+	 * @hooked generate_top_bar - 5
+	 * @hooked generate_add_navigation_before_header - 5
+	 */
+	do_action( 'generate_before_header' );
+
+	/**
+	 * generate_header hook.
+	 *
+	 * @since 1.3.42
+	 *
+	 * @hooked generate_construct_header - 10
+	 */
+	do_action( 'generate_header' );
+
+	/**
+	 * generate_after_header hook.
+	 *
+	 * @since 0.1
+	 *
+	 * @hooked generate_featured_page_header - 10
+	 */
+	do_action( 'generate_after_header' ); ?>
+</div>
 
 <div id="page" <?php generate_do_element_classes( 'page' ); ?>>
 	<?php
