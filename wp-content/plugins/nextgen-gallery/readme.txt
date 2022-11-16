@@ -2,8 +2,8 @@
 Contributors: photocrati, imagely
 Tags: wordpress gallery plugin, gallery, nextgen, nextgen gallery, photo gallery, image gallery, photography, slideshow, images, photo, photo album, watermark
 Requires at least: 5.5.4
-Stable tag: 3.26
-Tested up to: 5.9
+Stable tag: 3.30
+Tested up to: 6.0.2
 License: GPLv3
 Requires PHP: 5.6
 
@@ -178,6 +178,20 @@ For more information, feel free to visit the official website for the NextGEN Ga
 
 
 == Changelog ==
+
+= V3.30  - 10.05.2022 =
+* Fixed:   Rotating images was broken for some users after the last release.
+
+= V3.29  - 09.28.2022 =
+* Fixed:   Added nonce verification to some legacy XHR handlers.
+
+= V3.28  - 07.20.2022 =
+* NEW:     Added NGG_DISABLE_IMAGICK constant to disable use of ImageMagick.
+
+= V3.27  - 05.25.2022 =
+* Fixed:   A possible PHP warning in the third party compatibility warning.
+* Fixed:   PHP 8 may emit a warning in the taxonomy controller when viewing the site frontpage while no posts or pages exist.
+* Fixed:   ThickBox's loadingAnimation.gif and tb-close.png URL were incorrect.
 
 = V3.25  - 04.27.2022 =
 * Fixed:   A change in NextGEN 3.23 broke albums pagination.
